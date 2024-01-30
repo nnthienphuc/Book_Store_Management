@@ -237,7 +237,7 @@ insert into PhanQuyen (maQuyen, tenQuyen, chiTietQuyen) values
 	('Q2', 'Nhân viên', 'qlBanHang qlNhapHang xemSach xemKhachHang xemNCC xemKM'),
 	('Q1', 'Admin', 'qlBanHang qlNhapHang qlSach qlHoaDonBan qlKhuyenMai qlNhanVien qlKhachHang qlHoaDonNhap qlNCC qlTaiKhoan qlQuyen');
 
-insert into TaiKhoan (tenTaiKhoan, matKhau, maNV, maQuyen) values
+insert into TaiKhoan (tenDangNhap, matKhau, maNV, maQuyen) values
 	("nnthienphuc", "nnthienphuc", "NV1", "Q1"),
     ("thuyngan", "thuyngan", "NV2", "Q2"),
     ("songnguyen", "songnguyen", "NV3", "Q2");
