@@ -28,7 +28,7 @@ public class QuanLyKhachHangDAO {
             String qry = "SELECT * FROM khachhang";
             ResultSet resultSet = qlkhConnection.sqlQuery(qry);
             if (resultSet != null) {
-                while (r.next()) {
+                while (resultSet.next()) {
                     String maKH = resultSet.getString("maKH");
                     String tenKH = resultSet.getString("tenKH");
                     String diaChi = resultSet.getString("diaChi");
@@ -52,7 +52,7 @@ public class QuanLyKhachHangDAO {
         try {
             String qry = "SELECT * FROM khachhang WHERE " + columnName + " LIKE '%" + value + "%'";
             ResultSet resultSet = qlkhConnection.sqlQuery(qry);
-            if (r != null) {
+            if (resultSet != null) {
                 while (resultSet.next()) {
                     String maKH = resultSet.getString("maKH");
                     String tenKH = resultSet.getString("tenKH");
