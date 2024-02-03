@@ -4,7 +4,7 @@
  */
 package bookstoremanagement.model.Backend.KhuyenMai;
 
-import bookstoremanagement.model.BackEnd.ConnectDB.ConnectionDB;
+import bookstoremanagement.model.Backend.ConnectDB.ConnectionDB;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.time.LocalDate;
@@ -29,7 +29,7 @@ public class QuanLyKhuyenMaiDAO {
             String qry = "SELECT * FROM khuyenmai";
             ResultSet resultSet = qlkmConnection.sqlQuery(qry);
             if (resultSet != null) {
-                while (r.next()) {
+                while (resultSet.next()) {
                     String maKM = resultSet.getString("maKM");
                     String tenKM = resultSet.getString("tenKM");
                     float dieuKienKM = resultSet.getFloat("dieuKienKM");
@@ -97,7 +97,7 @@ public class QuanLyKhuyenMaiDAO {
     public Boolean update(String maKM, String tenKM, float dieuKienKM, float phanTramKM, LocalDate ngayBD, LocalDate ngayKT) {
         qlkmConnection = new ConnectionDB();
         Boolean queyBoolean = qlkmConnection.sqlUpdate("Update KhuyenMai Set "
-                + "tenKM='" + tenkm
+                + "tenKM='" + tenKM
                 + "', dieuKienKM='" + dieuKienKM
                 + "', phanTramKM='" + phanTramKM
                 + "', ngayBD='" + ngayBD
