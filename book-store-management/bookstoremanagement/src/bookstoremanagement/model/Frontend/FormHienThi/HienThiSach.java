@@ -23,10 +23,9 @@ public class HienThiSach {
                 sp.getTheLoai(),
                 sp.getTacGia(),
                 sp.getNamXB(),
-                PriceFormat.format(sp.getGiaBan()),
                 String.valueOf(sp.getSoLuong()),
-//                sp.getSoLuong(),
-//                sp.getFileHinhAnh()
+                PriceFormat.format(sp.getGiaNhap()),
+                PriceFormat.format(sp.getGiaBan()),
             }, table);
             stt++;
         }
