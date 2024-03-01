@@ -3,6 +3,8 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
+package bookstoremanagement.model.Frontend.FormHienThi;
+
 
 import bookstoremanagement.model.Backend.KhuyenMai.KhuyenMai;
 import bookstoremanagement.model.Backend.Price.PriceFormat;
