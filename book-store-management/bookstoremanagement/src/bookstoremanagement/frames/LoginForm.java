@@ -195,7 +195,7 @@ public class LoginForm extends javax.swing.JFrame {
     }//GEN-LAST:event_jLabel5MousePressed
 
     private void jButton1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton1MouseClicked
-          String tentk = jTextField2.getText();
+        String tentk = jTextField2.getText();
         String mk = jPasswordField1.getText();
         QuanLyTaiKhoanBUS qltk = new QuanLyTaiKhoanBUS();
         TaiKhoan tk = qltk.getTaiKhoan(tentk);
@@ -206,7 +206,7 @@ public class LoginForm extends javax.swing.JFrame {
             
 
             // check password
-            if (tk.getPassword().equals(mk)) {
+            if (tk.getMatKhau().equals(mk)) {
                 taiKhoanLogin = tk;
                 nhanVienLogin = nv;
                 quyenLogin = new QuanLyQuyenBUS().getQuyen(taiKhoanLogin.getMaQuyen());
