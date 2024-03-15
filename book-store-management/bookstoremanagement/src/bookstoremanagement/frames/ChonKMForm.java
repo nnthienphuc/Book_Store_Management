@@ -28,20 +28,20 @@ public class ChonKMForm extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jPanel1 = new javax.swing.JPanel();
+        pnlChonKM = new javax.swing.JPanel();
         jScrollPane1 = new javax.swing.JScrollPane();
         SubKMTable = new javax.swing.JTable();
-        BHthem = new javax.swing.JPanel();
-        jLabel67 = new javax.swing.JLabel();
-        BHxoa = new javax.swing.JPanel();
-        jLabel62 = new javax.swing.JLabel();
-        FilterSearch = new java.awt.TextField();
-        jLabel4 = new javax.swing.JLabel();
-        SearchType = new javax.swing.JComboBox<>();
+        pnlThem = new javax.swing.JPanel();
+        lblThem = new javax.swing.JLabel();
+        pnlHuy = new javax.swing.JPanel();
+        lblHuy = new javax.swing.JLabel();
+        txtSearch = new java.awt.TextField();
+        lblSearch = new javax.swing.JLabel();
+        cboSearchType = new javax.swing.JComboBox<>();
 
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jPanel1.setBackground(new java.awt.Color(255, 255, 255));
+        pnlChonKM.setBackground(new java.awt.Color(255, 255, 255));
 
         jScrollPane1.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
         jScrollPane1.setForeground(new java.awt.Color(255, 255, 255));
@@ -72,160 +72,160 @@ public class ChonKMForm extends javax.swing.JFrame {
         SubKMTable.getTableHeader().setReorderingAllowed(false);
         jScrollPane1.setViewportView(SubKMTable);
 
-        BHthem.setBackground(new java.awt.Color(0, 204, 204));
-        BHthem.setPreferredSize(new java.awt.Dimension(80, 24));
-        BHthem.addMouseListener(new java.awt.event.MouseAdapter() {
+        pnlThem.setBackground(new java.awt.Color(0, 204, 204));
+        pnlThem.setPreferredSize(new java.awt.Dimension(80, 24));
+        pnlThem.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mousePressed(java.awt.event.MouseEvent evt) {
-                BHthemMousePressed(evt);
+                pnlThemMousePressed(evt);
             }
             public void mouseReleased(java.awt.event.MouseEvent evt) {
-                BHthemMouseReleased(evt);
+                pnlThemMouseReleased(evt);
             }
         });
 
-        jLabel67.setBackground(new java.awt.Color(255, 255, 255));
-        jLabel67.setFont(new java.awt.Font("Segoe UI", 1, 15)); // NOI18N
-        jLabel67.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel67.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel67.setText("Thêm");
+        lblThem.setBackground(new java.awt.Color(255, 255, 255));
+        lblThem.setFont(new java.awt.Font("Segoe UI", 1, 15)); // NOI18N
+        lblThem.setForeground(new java.awt.Color(255, 255, 255));
+        lblThem.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        lblThem.setText("Thêm");
 
-        javax.swing.GroupLayout BHthemLayout = new javax.swing.GroupLayout(BHthem);
-        BHthem.setLayout(BHthemLayout);
-        BHthemLayout.setHorizontalGroup(
-            BHthemLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jLabel67, javax.swing.GroupLayout.DEFAULT_SIZE, 109, Short.MAX_VALUE)
+        javax.swing.GroupLayout pnlThemLayout = new javax.swing.GroupLayout(pnlThem);
+        pnlThem.setLayout(pnlThemLayout);
+        pnlThemLayout.setHorizontalGroup(
+            pnlThemLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(lblThem, javax.swing.GroupLayout.DEFAULT_SIZE, 109, Short.MAX_VALUE)
         );
-        BHthemLayout.setVerticalGroup(
-            BHthemLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jLabel67, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+        pnlThemLayout.setVerticalGroup(
+            pnlThemLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(lblThem, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
-        BHxoa.setBackground(new java.awt.Color(255, 0, 0));
-        BHxoa.setPreferredSize(new java.awt.Dimension(80, 24));
-        BHxoa.addMouseListener(new java.awt.event.MouseAdapter() {
+        pnlHuy.setBackground(new java.awt.Color(255, 0, 0));
+        pnlHuy.setPreferredSize(new java.awt.Dimension(80, 24));
+        pnlHuy.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mousePressed(java.awt.event.MouseEvent evt) {
-                BHxoaMousePressed(evt);
+                pnlHuyMousePressed(evt);
             }
             public void mouseReleased(java.awt.event.MouseEvent evt) {
-                BHxoaMouseReleased(evt);
+                pnlHuyMouseReleased(evt);
             }
         });
 
-        jLabel62.setBackground(new java.awt.Color(255, 255, 255));
-        jLabel62.setFont(new java.awt.Font("Segoe UI", 1, 15)); // NOI18N
-        jLabel62.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel62.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel62.setText("Hủy");
+        lblHuy.setBackground(new java.awt.Color(255, 255, 255));
+        lblHuy.setFont(new java.awt.Font("Segoe UI", 1, 15)); // NOI18N
+        lblHuy.setForeground(new java.awt.Color(255, 255, 255));
+        lblHuy.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        lblHuy.setText("Hủy");
 
-        javax.swing.GroupLayout BHxoaLayout = new javax.swing.GroupLayout(BHxoa);
-        BHxoa.setLayout(BHxoaLayout);
-        BHxoaLayout.setHorizontalGroup(
-            BHxoaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jLabel62, javax.swing.GroupLayout.DEFAULT_SIZE, 113, Short.MAX_VALUE)
+        javax.swing.GroupLayout pnlHuyLayout = new javax.swing.GroupLayout(pnlHuy);
+        pnlHuy.setLayout(pnlHuyLayout);
+        pnlHuyLayout.setHorizontalGroup(
+            pnlHuyLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(lblHuy, javax.swing.GroupLayout.DEFAULT_SIZE, 113, Short.MAX_VALUE)
         );
-        BHxoaLayout.setVerticalGroup(
-            BHxoaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jLabel62, javax.swing.GroupLayout.DEFAULT_SIZE, 68, Short.MAX_VALUE)
+        pnlHuyLayout.setVerticalGroup(
+            pnlHuyLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(lblHuy, javax.swing.GroupLayout.DEFAULT_SIZE, 68, Short.MAX_VALUE)
         );
 
-        FilterSearch.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
-        FilterSearch.setFont(new java.awt.Font("Dialog", 0, 18)); // NOI18N
-        FilterSearch.setMinimumSize(new java.awt.Dimension(28, 25));
-        FilterSearch.addActionListener(new java.awt.event.ActionListener() {
+        txtSearch.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
+        txtSearch.setFont(new java.awt.Font("Dialog", 0, 18)); // NOI18N
+        txtSearch.setMinimumSize(new java.awt.Dimension(28, 25));
+        txtSearch.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                FilterSearchActionPerformed(evt);
+                txtSearchActionPerformed(evt);
             }
         });
-        FilterSearch.addKeyListener(new java.awt.event.KeyAdapter() {
+        txtSearch.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyReleased(java.awt.event.KeyEvent evt) {
-                FilterSearchKeyReleased(evt);
+                txtSearchKeyReleased(evt);
             }
         });
 
-        jLabel4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/quanlycuahangsach/icons/icons8-search-25.png"))); // NOI18N
+        lblSearch.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        lblSearch.setIcon(new javax.swing.ImageIcon(getClass().getResource("/bookstoremanagement/icons/icons8-search-25.png"))); // NOI18N
 
-        SearchType.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        SearchType.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Tất cả", "Mã loại", "Tên loại", "Mô tả" }));
+        cboSearchType.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        cboSearchType.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Tất cả", "Mã loại", "Tên loại", "Mô tả" }));
 
-        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
-        jPanel1.setLayout(jPanel1Layout);
-        jPanel1Layout.setHorizontalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+        javax.swing.GroupLayout pnlChonKMLayout = new javax.swing.GroupLayout(pnlChonKM);
+        pnlChonKM.setLayout(pnlChonKMLayout);
+        pnlChonKMLayout.setHorizontalGroup(
+            pnlChonKMLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(pnlChonKMLayout.createSequentialGroup()
+                .addGroup(pnlChonKMLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, pnlChonKMLayout.createSequentialGroup()
                         .addContainerGap(89, Short.MAX_VALUE)
                         .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 795, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
+                    .addGroup(pnlChonKMLayout.createSequentialGroup()
                         .addGap(123, 123, 123)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addComponent(BHthem, javax.swing.GroupLayout.PREFERRED_SIZE, 109, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGroup(pnlChonKMLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addGroup(pnlChonKMLayout.createSequentialGroup()
+                                .addComponent(pnlThem, javax.swing.GroupLayout.PREFERRED_SIZE, 109, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(91, 91, 91)
-                                .addComponent(BHxoa, javax.swing.GroupLayout.PREFERRED_SIZE, 113, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(pnlHuy, javax.swing.GroupLayout.PREFERRED_SIZE, 113, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(pnlChonKMLayout.createSequentialGroup()
+                                .addComponent(lblSearch, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(2, 2, 2)
-                                .addComponent(FilterSearch, javax.swing.GroupLayout.PREFERRED_SIZE, 220, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(txtSearch, javax.swing.GroupLayout.PREFERRED_SIZE, 220, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(SearchType, javax.swing.GroupLayout.PREFERRED_SIZE, 111, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                .addComponent(cboSearchType, javax.swing.GroupLayout.PREFERRED_SIZE, 111, javax.swing.GroupLayout.PREFERRED_SIZE)))
                         .addGap(0, 0, Short.MAX_VALUE)))
                 .addContainerGap())
         );
-        jPanel1Layout.setVerticalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
+        pnlChonKMLayout.setVerticalGroup(
+            pnlChonKMLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(pnlChonKMLayout.createSequentialGroup()
                 .addGap(27, 27, 27)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(SearchType, javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(FilterSearch, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jLabel4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGroup(pnlChonKMLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(cboSearchType, javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(txtSearch, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(lblSearch, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addGap(27, 27, 27)
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 407, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(BHxoa, javax.swing.GroupLayout.DEFAULT_SIZE, 68, Short.MAX_VALUE)
-                    .addComponent(BHthem, javax.swing.GroupLayout.DEFAULT_SIZE, 68, Short.MAX_VALUE))
+                .addGroup(pnlChonKMLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(pnlHuy, javax.swing.GroupLayout.DEFAULT_SIZE, 68, Short.MAX_VALUE)
+                    .addComponent(pnlThem, javax.swing.GroupLayout.DEFAULT_SIZE, 68, Short.MAX_VALUE))
                 .addContainerGap(29, Short.MAX_VALUE))
         );
 
-        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(-90, 0, 890, 590));
+        getContentPane().add(pnlChonKM, new org.netbeans.lib.awtextra.AbsoluteConstraints(-90, 0, 890, 590));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void BHthemMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BHthemMousePressed
-        MainPage.changecolor(BHthem,new Color(0,163,163));
-    }//GEN-LAST:event_BHthemMousePressed
+    private void pnlThemMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_pnlThemMousePressed
+        MainPage.changecolor(pnlThem,new Color(0,163,163));
+    }//GEN-LAST:event_pnlThemMousePressed
 
-    private void BHthemMouseReleased(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BHthemMouseReleased
+    private void pnlThemMouseReleased(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_pnlThemMouseReleased
 
-        MainPage.changecolor(BHthem,new Color(0,204,204));
+        MainPage.changecolor(pnlThem,new Color(0,204,204));
 
         editKM.setText();
 
         this.dispose();
-    }//GEN-LAST:event_BHthemMouseReleased
+    }//GEN-LAST:event_pnlThemMouseReleased
 
-    private void BHxoaMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BHxoaMousePressed
-        MainPage.changecolor(BHxoa,new Color(221,0,0));
-    }//GEN-LAST:event_BHxoaMousePressed
+    private void pnlHuyMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_pnlHuyMousePressed
+        MainPage.changecolor(pnlHuy,new Color(221,0,0));
+    }//GEN-LAST:event_pnlHuyMousePressed
 
-    private void BHxoaMouseReleased(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BHxoaMouseReleased
-        MainPage.changecolor(BHxoa,new Color(255,0,0));
+    private void pnlHuyMouseReleased(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_pnlHuyMouseReleased
+        MainPage.changecolor(pnlHuy,new Color(255,0,0));
         this.dispose();
-    }//GEN-LAST:event_BHxoaMouseReleased
+    }//GEN-LAST:event_pnlHuyMouseReleased
 
-    private void FilterSearchActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_FilterSearchActionPerformed
+    private void txtSearchActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtSearchActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_FilterSearchActionPerformed
+    }//GEN-LAST:event_txtSearchActionPerformed
 
-    private void FilterSearchKeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_FilterSearchKeyReleased
-        String query = FilterSearch.getText().toLowerCase();
+    private void txtSearchKeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtSearchKeyReleased
+        String query = txtSearch.getText().toLowerCase();
 
-        MainPage.filterTable(SubKMTable, query, SearchType.getSelectedIndex()-1);
-    }//GEN-LAST:event_FilterSearchKeyReleased
+        MainPage.filterTable(SubKMTable, query, cboSearchType.getSelectedIndex()-1);
+    }//GEN-LAST:event_txtSearchKeyReleased
 
     /**
      * @param args the command line arguments
@@ -264,15 +264,15 @@ public class ChonKMForm extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JPanel BHthem;
-    private javax.swing.JPanel BHxoa;
-    private java.awt.TextField FilterSearch;
-    public static javax.swing.JComboBox<String> SearchType;
     public static javax.swing.JTable SubKMTable;
-    private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel62;
-    private javax.swing.JLabel jLabel67;
-    private javax.swing.JPanel jPanel1;
+    public static javax.swing.JComboBox<String> cboSearchType;
     private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JLabel lblHuy;
+    private javax.swing.JLabel lblSearch;
+    private javax.swing.JLabel lblThem;
+    private javax.swing.JPanel pnlChonKM;
+    private javax.swing.JPanel pnlHuy;
+    private javax.swing.JPanel pnlThem;
+    private java.awt.TextField txtSearch;
     // End of variables declaration//GEN-END:variables
 }

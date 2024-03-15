@@ -31,7 +31,7 @@ public class ThemSuaKhachHangForm extends JFrame {
 
     public static void btnSuaMouseClicked() {
         if (checkEmptyEdit()) {
-            String makh = editKH.txMaKH.getText();
+            String makh = editKH.txtTenKH.getText();
             String tenkh = editKH.txTenKH.getText();
             String diachi = editKH.txDiaChi.getText();
             String sdt = editKH.txSDT.getText();
@@ -66,13 +66,13 @@ public class ThemSuaKhachHangForm extends JFrame {
     }
         
         private static Boolean checkEmptyEdit() {
-        String makh = editKH.txMaKH.getText();
+        String makh = editKH.txtTenKH.getText();
         String tenkh = editKH.txTenKH.getText();
         String diachi = editKH.txDiaChi.getText();
         String sdt = editKH.txSDT.getText();
 
         if (makh.trim().equals("")) {
-            return showErrorTx(editKH.txMaKH, "Mã khách hàng không được để trống");
+            return showErrorTx(editKH.txtTenKH, "Mã khách hàng không được để trống");
 
         } else if (tenkh.trim().equals("")) {
             return showErrorTx(editKH.txTenKH, "Tên khách hàng không được để trống");

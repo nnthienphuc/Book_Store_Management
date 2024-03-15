@@ -15,15 +15,15 @@ public class ThemSuaKhuyenMaiForm extends JFrame{
     
     public static void btnThemMouseClicked() {
         if (checkEmptyAdd()) {
-            String makm = addKM.txMaKM.getText();
-            String tenkm = addKM.txTenKM.getText();
-            float dieukien = Float.parseFloat(addKM.txDieuKienKM.getText());
-            float phantram = Float.parseFloat(addKM.txPhanTramKM.getText());
-            LocalDate ngaybd = LocalDate.parse(addKM.txNgayBD.getText());
-            LocalDate ngaykt = LocalDate.parse(addKM.txNgayKT.getText());
+            String makm = addKM.txtMaKM.getText();
+            String tenkm = addKM.txtTenKM.getText();
+            float dieukien = Float.parseFloat(addKM.txtDieuKienKM.getText());
+            float phantram = Float.parseFloat(addKM.txtPhanTramKM.getText());
+            LocalDate ngaybd = LocalDate.parse(addKM.txtNgayBD.getText());
+            LocalDate ngaykt = LocalDate.parse(addKM.txtNgayKT.getText());
 
             if (qlkhBUS.add(makm, tenkm, dieukien, phantram, ngaybd, ngaykt)) {
-                JOptionPane.showMessageDialog(addKM.txNgayBD, "Thêm " + tenkm + " thành công!");
+                JOptionPane.showMessageDialog(addKM.txtNgayBD, "Thêm " + tenkm + " thành công!");
                 
             }
         }
@@ -31,63 +31,63 @@ public class ThemSuaKhuyenMaiForm extends JFrame{
     
     public static void btnSuaMouseClicked() {
         if (checkEmptyEdit()) {
-            String makm = editKM.txMaKM.getText();
-            String tenkm = editKM.txTenKM.getText();
-            float dieukien = Float.parseFloat(editKM.txDieuKienKM.getText());
-            float phantram = Float.parseFloat(editKM.txPhanTramKM.getText());
-            LocalDate ngaybd = LocalDate.parse(editKM.txNgayBD.getText());
-            LocalDate ngaykt = LocalDate.parse(editKM.txNgayKT.getText());
+            String makm = editKM.txtMaKM.getText();
+            String tenkm = editKM.txtTenKM.getText();
+            float dieukien = Float.parseFloat(editKM.txtDieuKienKM.getText());
+            float phantram = Float.parseFloat(editKM.txtPhanTramKM.getText());
+            LocalDate ngaybd = LocalDate.parse(editKM.txtNgayBD.getText());
+            LocalDate ngaykt = LocalDate.parse(editKM.txtNgayKT.getText());
 
             if (qlkhBUS.update(makm, tenkm, dieukien, phantram, ngaybd, ngaykt)) {
-                JOptionPane.showMessageDialog(editKM.txNgayBD, "Sửa " + makm + " thành công!");
+                JOptionPane.showMessageDialog(editKM.txtNgayBD, "Sửa " + makm + " thành công!");
                 
             }
         }
     }
 
     private static Boolean checkEmptyAdd() {
-        String makm = addKM.txMaKM.getText();
-        String tenkm = addKM.txTenKM.getText();
-        String dieukien = addKM.txDieuKienKM.getText();
-        String phantram = addKM.txPhanTramKM.getText();
-        String ngaybd = addKM.txNgayBD.getText();
-        String ngaykt = addKM.txNgayKT.getText();
+        String makm = addKM.txtMaKM.getText();
+        String tenkm = addKM.txtTenKM.getText();
+        String dieukien = addKM.txtDieuKienKM.getText();
+        String phantram = addKM.txtPhanTramKM.getText();
+        String ngaybd = addKM.txtNgayBD.getText();
+        String ngaykt = addKM.txtNgayKT.getText();
 
         if (makm.trim().equals("")) {
-            return showErrorTx(addKM.txMaKM, "Mã khuyến mãi không được để trống");
+            return showErrorTx(addKM.txtMaKM, "Mã khuyến mãi không được để trống");
 
         } else if (tenkm.trim().equals("")) {
-            return showErrorTx(addKM.txTenKM, "Tên khuyến mãi không được để trống");
+            return showErrorTx(addKM.txtTenKM, "Tên khuyến mãi không được để trống");
 
         } else if (dieukien.trim().equals("")) {
-            return showErrorTx(addKM.txTenKM, "Điều kiện khuyến mãi không được để trống");
+            return showErrorTx(addKM.txtTenKM, "Điều kiện khuyến mãi không được để trống");
 
         } else if (phantram.trim().equals("")) {
-            return showErrorTx(addKM.txTenKM, "Phần trăm khuyến mãi không được để trống");
+            return showErrorTx(addKM.txtTenKM, "Phần trăm khuyến mãi không được để trống");
 
         } else {
             try {
                 Float.parseFloat(dieukien);
             } catch (NumberFormatException e) {
-                return showErrorTx(addKM.txDieuKienKM, "Điều kiện khuyến mãi là giá hóa đơn tối thiểu để được khuyến mãi, phải là số thực");
+                return showErrorTx(addKM.txtDieuKienKM, "Điều kiện khuyến mãi là giá hóa đơn tối thiểu để được khuyến mãi, phải là số thực");
             }
             try {
                 float fPhanTram = Float.parseFloat(phantram);
                 if (fPhanTram > 100) {
-                    return showErrorTx(addKM.txPhanTramKM, "Phần trăm khuyến mãi phải là số thực < 100 (%)");
+                    return showErrorTx(addKM.txtPhanTramKM, "Phần trăm khuyến mãi phải là số thực < 100 (%)");
                 }
             } catch (NumberFormatException e) {
-                return showErrorTx(addKM.txPhanTramKM, "Phần trăm khuyến mãi phải là số thực");
+                return showErrorTx(addKM.txtPhanTramKM, "Phần trăm khuyến mãi phải là số thực");
             }
             try {
                 LocalDate.parse(ngaybd);
             } catch (Exception e) {
-                return showErrorTx(addKM.txNgayBD, "Ngày bắt đầu không hợp lệ");
+                return showErrorTx(addKM.txtNgayBD, "Ngày bắt đầu không hợp lệ");
             }
             try {
                 LocalDate.parse(ngaykt);
             } catch (Exception e) {
-                return showErrorTx(addKM.txNgayKT, "Ngày kết thúc không hợp lệ");
+                return showErrorTx(addKM.txtNgayKT, "Ngày kết thúc không hợp lệ");
             }
         }
 
@@ -95,48 +95,48 @@ public class ThemSuaKhuyenMaiForm extends JFrame{
     }
     
     private static Boolean checkEmptyEdit() {
-        String makm = editKM.txMaKM.getText();
-        String tenkm = editKM.txTenKM.getText();
-        String dieukien = editKM.txDieuKienKM.getText();
-        String phantram = editKM.txPhanTramKM.getText();
-        String ngaybd = editKM.txNgayBD.getText();
-        String ngaykt = editKM.txNgayKT.getText();
+        String makm = editKM.txtMaKM.getText();
+        String tenkm = editKM.txtTenKM.getText();
+        String dieukien = editKM.txtDieuKienKM.getText();
+        String phantram = editKM.txtPhanTramKM.getText();
+        String ngaybd = editKM.txtNgayBD.getText();
+        String ngaykt = editKM.txtNgayKT.getText();
 
         if (makm.trim().equals("")) {
-            return showErrorTx(editKM.txMaKM, "Mã khuyến mãi không được để trống");
+            return showErrorTx(editKM.txtMaKM, "Mã khuyến mãi không được để trống");
 
         } else if (tenkm.trim().equals("")) {
-            return showErrorTx(editKM.txTenKM, "Tên khuyến mãi không được để trống");
+            return showErrorTx(editKM.txtTenKM, "Tên khuyến mãi không được để trống");
 
         } else if (dieukien.trim().equals("")) {
-            return showErrorTx(editKM.txTenKM, "Điều kiện khuyến mãi không được để trống");
+            return showErrorTx(editKM.txtTenKM, "Điều kiện khuyến mãi không được để trống");
 
         } else if (phantram.trim().equals("")) {
-            return showErrorTx(editKM.txTenKM, "Phần trăm khuyến mãi không được để trống");
+            return showErrorTx(editKM.txtTenKM, "Phần trăm khuyến mãi không được để trống");
 
         } else {
             try {
                 Float.parseFloat(dieukien);
             } catch (NumberFormatException e) {
-                return showErrorTx(editKM.txDieuKienKM, "Điều kiện khuyến mãi là giá hóa đơn tối thiểu để được khuyến mãi, phải là số thực");
+                return showErrorTx(editKM.txtDieuKienKM, "Điều kiện khuyến mãi là giá hóa đơn tối thiểu để được khuyến mãi, phải là số thực");
             }
             try {
                 float fPhanTram = Float.parseFloat(phantram);
                 if (fPhanTram > 100) {
-                    return showErrorTx(editKM.txPhanTramKM, "Phần trăm khuyến mãi phải là số thực < 100 (%)");
+                    return showErrorTx(editKM.txtPhanTramKM, "Phần trăm khuyến mãi phải là số thực < 100 (%)");
                 }
             } catch (NumberFormatException e) {
-                return showErrorTx(editKM.txPhanTramKM, "Phần trăm khuyến mãi phải là số thực");
+                return showErrorTx(editKM.txtPhanTramKM, "Phần trăm khuyến mãi phải là số thực");
             }
             try {
                 LocalDate.parse(ngaybd);
             } catch (Exception e) {
-                return showErrorTx(editKM.txNgayBD, "Ngày bắt đầu không hợp lệ");
+                return showErrorTx(editKM.txtNgayBD, "Ngày bắt đầu không hợp lệ");
             }
             try {
                 LocalDate.parse(ngaykt);
             } catch (Exception e) {
-                return showErrorTx(editKM.txNgayKT, "Ngày kết thúc không hợp lệ");
+                return showErrorTx(editKM.txtNgayKT, "Ngày kết thúc không hợp lệ");
             }
         }
 
