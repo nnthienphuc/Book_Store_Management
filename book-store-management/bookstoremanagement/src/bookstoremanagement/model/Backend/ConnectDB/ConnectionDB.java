@@ -65,7 +65,7 @@ public class ConnectionDB {
             System.out.println("**\n" + connectionCount + ": Success! Connected to '" + databaseName + "'");
 
         } catch (SQLException e) {
-            System.err.println("-- ERROR! Không thể kết nối tới '" + databaseName + "'");
+            System.err.println("-- ERROR! Cannot access '" + databaseName + "'");
             JOptionPane.showMessageDialog(null, "-- ERROR! Cannot connect to '" + databaseName + "'");
         }
     }
@@ -120,9 +120,9 @@ public class ConnectionDB {
             if (stmt != null) {
                 stmt.close();
             }
-            System.out.println("Success! Đóng kết nối tới '" + databaseName + "' thành công.\n**");
+            System.out.println("Success! Close connection '" + databaseName + "' successfully.\n**");
         } catch (SQLException ex) {
-            JOptionPane.showMessageDialog(null, "-- ERROR! Cannot close connection to " + databaseName + "\n" + ex.getLocalizedMessage());
+            JOptionPane.showMessageDialog(null, "-- ERROR! Cannot close connection " + databaseName + "\n" + ex.getLocalizedMessage());
         }
     }
 
