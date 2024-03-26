@@ -62,11 +62,11 @@ public class ConnectionDB {
             conn = DriverManager.getConnection(url, userName, pwd);
             stmt = conn.createStatement();
             connectionCount++;
-            System.out.println("**\n" + connectionCount + ": Success! Connected to '" + databaseName + "'");
+            System.out.println("**\n" + connectionCount + ": Success! Kết nối tới '" + databaseName + "'");
 
         } catch (SQLException e) {
-            System.err.println("-- ERROR! Cannot access '" + databaseName + "'");
-            JOptionPane.showMessageDialog(null, "-- ERROR! Cannot connect to '" + databaseName + "'");
+            System.err.println("-- ERROR! Không thể truy cập '" + databaseName + "'");
+            JOptionPane.showMessageDialog(null, "-- ERROR! Không thể kết nối tới '" + databaseName + "'");
         }
     }
 
@@ -83,11 +83,11 @@ public class ConnectionDB {
             try {
                 rs = stmt.executeQuery(qry);
                 queryCount++;
-                System.out.println(queryCount + ": Success Query! " + qry);
+                System.out.println(queryCount + ": Truy vấn thành công! " + qry);
                 return rs;
 
             } catch (SQLException ex) {
-                JOptionPane.showMessageDialog(null, "-- ERROR! Cannot load data from " + databaseName + "\n" + ex.getLocalizedMessage());
+                JOptionPane.showMessageDialog(null, "-- ERROR! không thể lấy data từ " + databaseName + "\n" + ex.getLocalizedMessage());
                 return null;
             }
         }
@@ -100,11 +100,11 @@ public class ConnectionDB {
             try {
                 stmt.executeUpdate(qry);
                 updateCount++;
-                System.out.println(updateCount + ": Success Update! " + qry);
+                System.out.println(updateCount + ": Cập nhật thành công! " + qry);
                 return true;
 
             } catch (SQLException ex) {
-                JOptionPane.showMessageDialog(null, "-- ERROR! Cannot update data to " + databaseName + "\n" + ex.getLocalizedMessage());
+                JOptionPane.showMessageDialog(null, "-- ERROR! Không thể cập nhật data tới " + databaseName + "\n" + ex.getLocalizedMessage());
                 return false;
             }
         }
@@ -120,16 +120,16 @@ public class ConnectionDB {
             if (stmt != null) {
                 stmt.close();
             }
-            System.out.println("Success! Close connection '" + databaseName + "' successfully.\n**");
+            System.out.println("Success! Đóng kết nối '" + databaseName + "' thành công.\n**");
         } catch (SQLException ex) {
-            JOptionPane.showMessageDialog(null, "-- ERROR! Cannot close connection " + databaseName + "\n" + ex.getLocalizedMessage());
+            JOptionPane.showMessageDialog(null, "-- ERROR! Không thể đóng kết nối " + databaseName + "\n" + ex.getLocalizedMessage());
         }
     }
 
     // check logIn, connect
     public Boolean checkConnect() {
         if (conn == null || stmt == null) {
-            JOptionPane.showMessageDialog(null, "-- ERROR! No connection has been established '" + databaseName + "'. Vui lòng đăng nhập để thiết lập kết nối!");
+            JOptionPane.showMessageDialog(null, "-- ERROR! Không có kết nối nào được thiết lập '" + databaseName + "'. Vui lòng đăng nhập để thiết lập kết nối!");
             return false;
         }
         return true;
@@ -140,7 +140,7 @@ public class ConnectionDB {
         try {
             Class.forName("com.mysql.jdbc.Driver");
         } catch (ClassNotFoundException e) {
-            JOptionPane.showMessageDialog(null, "-- ERROR! Cannot find Driver MySQL");
+            JOptionPane.showMessageDialog(null, "-- ERROR! Không thể tìm Driver MySQL");
         }
     }
 }
