@@ -3295,7 +3295,7 @@ public class MainPage extends javax.swing.JFrame {
 
         jLabel1.setBackground(new java.awt.Color(115, 144, 114));
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/quanlycuahangsach/icons/icons8-subtract-30.png"))); // NOI18N
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/bookstoremanagement/icons/icons8-subtract-30.png"))); // NOI18N
         jLabel1.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         jLabel1.setOpaque(true);
         Nutthunho.add(jLabel1, java.awt.BorderLayout.CENTER);
@@ -3318,7 +3318,7 @@ public class MainPage extends javax.swing.JFrame {
 
         jLabel2.setBackground(new java.awt.Color(115, 144, 114));
         jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/quanlycuahangsach/icons/icons8-close-30.png"))); // NOI18N
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/bookstoremanagement/icons/icons8-close-30.png"))); // NOI18N
         jLabel2.setOpaque(true);
         Nutdong.add(jLabel2, java.awt.BorderLayout.CENTER);
 
@@ -3382,7 +3382,7 @@ public class MainPage extends javax.swing.JFrame {
 
         jLabel114.setBackground(new java.awt.Color(115, 144, 114));
         jLabel114.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel114.setIcon(new javax.swing.ImageIcon(getClass().getResource("/quanlycuahangsach/icons/vong-60.png"))); // NOI18N
+        jLabel114.setIcon(new javax.swing.ImageIcon(getClass().getResource("/bookstoremanagement/icons/vong-60.png"))); // NOI18N
         jLabel114.setName(""); // NOI18N
         jLabel114.setOpaque(true);
         jLabel114.setPreferredSize(new java.awt.Dimension(64, 64));
