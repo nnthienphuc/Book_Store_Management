@@ -225,13 +225,13 @@ public class ChonMaQuyenForm extends javax.swing.JFrame {
 
         MainPage.changecolor(BHthem,new Color(0,204,204));
         
-        if(editTK.txMaQuyen != null){
+        if(editTK.txtMaQuyen != null){
             String text = (String) SubQuyenTable.getValueAt(SubQuyenTable.getSelectedRow(), 1);
-            editTK.txMaQuyen.setText(text);
+            editTK.txtMaQuyen.setText(text);
         }
-        if(addTK.txMaQuyen != null){
+        if(addTK.txtMaQuyen != null){
             String text = (String) SubQuyenTable.getValueAt(SubQuyenTable.getSelectedRow(), 1);
-            addTK.txMaQuyen.setText(text);
+            addTK.txtMaQuyen.setText(text);
         }
         
         this.dispose();
