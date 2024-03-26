@@ -172,7 +172,7 @@ public class QuanLySachBUS {
         return queryBoolean;
     }
 
-    public Boolean add(String maSach, String tenSach, String theLoai, String tacGia, String namXB, int soLuong, float giaNhap, float giaBan, short trangThai) {
+    public Boolean add(String maSach, String tenSach, String theLoai, String tacGia, String namXB, int soLuong, float giaNhap, float giaBan, int trangThai) {
         Sach sach = new Sach(maSach, tenSach, theLoai, tacGia, namXB, soLuong, giaNhap, giaBan, trangThai);
         return add(sach);
     }
@@ -190,7 +190,7 @@ public class QuanLySachBUS {
         return queryBoolean;
     }
 
-    public Boolean update(String maSach, String tenSach, String theLoai, String tacGia, String namXB, int soLuong, float giaNhap, float giaBan, short trangThai) {
+    public Boolean update(String maSach, String tenSach, String theLoai, String tacGia, String namXB, int soLuong, float giaNhap, float giaBan, int trangThai) {
         Boolean queryBoolean = qlsachDAO.update(maSach, tenSach, theLoai, tacGia, namXB, soLuong, giaNhap, giaBan, trangThai);
 
         if (queryBoolean) {
@@ -225,7 +225,7 @@ public class QuanLySachBUS {
         return queryBoolean;
     }
 
-    public Boolean updateTrangThai(String maSach, short trangThai) {
+    public Boolean updateTrangThai(String maSach, int trangThai) {
         Boolean queryBoolean = qlsachDAO.updateTrangThai(maSach, trangThai);
 
         if (queryBoolean) {

@@ -17,12 +17,12 @@ public class Sach {
     int soLuong;
     float giaNhap;
     float giaBan;
-    short trangThai;
+    int trangThai;
 
     public Sach() {
     }
 
-    public Sach(String maSach, String tenSach, String theLoai, String tacGia, String namXB, int soLuong, float giaNhap, float giaBan, short trangThai) {
+    public Sach(String maSach, String tenSach, String theLoai, String tacGia, String namXB, int soLuong, float giaNhap, float giaBan, int trangThai) {
         this.maSach = maSach;
         this.tenSach = tenSach;
         this.theLoai = theLoai;
@@ -98,11 +98,11 @@ public class Sach {
         this.giaBan = giaBan;
     }
 
-    public short getTrangThai() {
+    public int getTrangThai() {
         return trangThai;
     }
 
-    public void setTrangThai(short trangThai) {
+    public void setTrangThai(int trangThai) {
         this.trangThai = trangThai;
     }
 }

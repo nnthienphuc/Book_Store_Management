@@ -101,7 +101,7 @@ public class QuanLySachDAO {
         return queryBoolean;
     }
     
-    public Boolean update(String maSach, String tenSach, String theLoai, String tacGia, String namXB, int soLuong, float giaNhap, float giaBan, short trangThai) {
+    public Boolean update(String maSach, String tenSach, String theLoai, String tacGia, String namXB, int soLuong, float giaNhap, float giaBan, int trangThai) {
         qlsachConnection = new ConnectionDB();
         Boolean query = qlsachConnection.sqlUpdate("Update sach Set "
                 + "tenSach='" + tenSach
