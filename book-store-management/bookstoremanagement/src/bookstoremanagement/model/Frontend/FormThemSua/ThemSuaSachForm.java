@@ -13,17 +13,17 @@ public class ThemSuaSachForm {
     public static void btnThemMouseClicked() {
       
         if (checkEmptyAdd()) {
-            String maSach = addForm.txMasp.getText();
-            String theLoai = addForm.txTheloai.getText();
-            String ten = addForm.txTen.getText();            float giaNhap = Float.parseFloat(addForm.txGia.getText());
-            float giaNhap = Float.parseFloat(addForm.txGiaNhap.getText());
-            float giaBan = Float.parseFloat(addForm.txGiaBan.getText());
-            int soLuong = Integer.parseInt(addForm.txSoLuong.getText());
-            String tacGia = addForm.txTacgia.getText();
-            String namXB = addForm.txNamXB.getText();
-            short trangThai = (addForm.cbChonTrangThai.getSelectedItem().toString().equals("Hiện") ? 0 : 1);
+            String maSach = addForm.txtMaSach.getText();
+            String theLoai = addForm.txtTheLoai.getText();
+            String ten = addForm.txtTenSach.getText();
+            float giaNhap = Float.parseFloat(addForm.txtGiaNhap.getText());
+            float giaBan = Float.parseFloat(addForm.txtGiaBan.getText());
+            int soLuong = Integer.parseInt(addForm.txtSoLuong.getText());
+            String tacGia = addForm.txtTacGia.getText();
+            String namXB = addForm.txtNamXB.getText();
+            int trangThai = (addForm.cboTrangThai.getSelectedItem().toString().equals("Hiện") ? 0 : 1);
             if (qlsBUS.add(maSach, ten, theLoai, tacGia, namXB, soLuong, giaNhap, giaBan, trangThai)) {
-                JOptionPane.showMessageDialog( addForm.txGia,"Thêm " + ten + " thành công!");
+                JOptionPane.showMessageDialog( addForm.txtGiaNhap,"Thêm " + ten + " thành công!");
                 
 //                return true;
               
@@ -35,17 +35,17 @@ public class ThemSuaSachForm {
 
     public static void btnSuaMouseClicked() {
         if (checkEmptyEdit()) {
-            String maSach = editForm.txMasp.getText();
-            String theLoai = editForm.txTheloai.getText();
-            String ten = editForm.txTen.getText();            float giaNhap = Float.parseFloat(editForm.txGia.getText());
-            float giaNhap = Float.parseFloat(editForm.txGiaNhap.getText());
-            float giaBan = Float.parseFloat(editForm.txGiaBan.getText());
-            int soLuong = Integer.parseInt(editForm.txSoLuong.getText());
-            String tacGia = editForm.txTacgia.getText();
-            String namXB = editForm.txNamXB.getText();
+            String maSach = editForm.txtMaSach.getText();
+            String theLoai = editForm.txtTheloai.getText();
+            String ten = editForm.txtTen.getText();            float giaNhap = Float.parseFloat(editForm.txtGia.getText());
+            float giaNhap = Float.parseFloat(editForm.txtGiaNhap.getText());
+            float giaBan = Float.parseFloat(editForm.txtGiaBan.getText());
+            int soLuong = Integer.parseInt(editForm.txtSoLuong.getText());
+            String tacGia = editForm.txtTacgia.getText();
+            String namXB = editForm.txtNamXB.getText();
             short trangThai = (editForm.cbChonTrangThai.getSelectedItem().toString().equals("Hiện") ? 0 : 1);
             if (qlsBUS.update(maSach, ten, theLoai, tacGia, namXB, soLuong, giaNhap, giaBan, trangThai)) {
-                JOptionPane.showMessageDialog(editForm.txGia, "Sửa " + maSach + " thành công!");
+                JOptionPane.showMessageDialog(editForm.txtGia, "Sửa " + maSach + " thành công!");
 //                return true;
             }
         }
@@ -71,7 +71,7 @@ public class ThemSuaSachForm {
     }
 
 //    private void btnChonLoaiMouseClicked() {
-//        ChonLoaiSanPhamForm clsp = new ChonLoaiSanPhamForm(txMalsp); // truyền vào textfield
+//        ChonLoaiSanPhamForm clsp = new ChonLoaiSanPhamForm(txtMalsp); // truyền vào textfield
 //    }
 //
 //    private void btnChonAnhMouseClicked() {
@@ -79,63 +79,63 @@ public class ThemSuaSachForm {
 //        fd.setVisible(true);
 //        String filename = fd.getFile();
 //        if (filename != null) {
-//            addForm.txHinhAnh.setText(filename);
+//            addForm.txtHinhAnh.setText(filename);
 //        }
 //    }
 
     public static Boolean checkEmptyAdd() {
-        String maSach = addForm.txMasp.getText();
-        String theLoai = addForm.txTheloai.getText();
-        String ten = addForm.txTen.getText();
-        String giaNhap = Float.parseFloat(addForm.txGiaNhap.getText());
-        String giaBan = Float.parseFloat(addForm.txGiaBan.getText());
-        String soLuong = Integer.parseInt(addForm.txSoLuong.getText());
-        String tacGia = addForm.txTacgia.getText();
-        String namXB = addForm.txNamXB.getText();
+        String maSach = addForm.txtMasp.getText();
+        String theLoai = addForm.txtTheloai.getText();
+        String ten = addForm.txtTen.getText();
+        String giaNhap = Float.parseFloat(addForm.txtGiaNhap.getText());
+        String giaBan = Float.parseFloat(addForm.txtGiaBan.getText());
+        String soLuong = Integer.parseInt(addForm.txtSoLuong.getText());
+        String tacGia = addForm.txtTacgia.getText();
+        String namXB = addForm.txtNamXB.getText();
         if (maSach.trim().equals("")) {
-            return showErrorTx(addForm.txMasp, "Mã sp không được để trống");
+            return showErrortxt(addForm.txtMasp, "Mã sp không được để trống");
 
         } else if (ten.trim().equals("")) {
-            return showErrorTx(addForm.txTen, "Tên không được để trống");
+            return showErrortxt(addForm.txtTen, "Tên không được để trống");
             
         } else if (tacGia.trim().equals("")) {
-            return showErrorTx(addForm.txTacgia, "Tên tác giả không được để trống");
+            return showErrortxt(addForm.txtTacgia, "Tên tác giả không được để trống");
             
         } else if (theLoai.trim().equals("")) {
-            return showErrorTx(addForm.txTheloai, "Thể loại không được để trống");
+            return showErrortxt(addForm.txtTheloai, "Thể loại không được để trống");
             
         } else if (namXB.trim().equals("")) {
-            return showErrorTx(addForm.txNamxb, "Năm xuất bản không được để trống"); 
+            return showErrortxt(addForm.txtNamxb, "Năm xuất bản không được để trống"); 
             
         } else if (giaNhap.trim().equals("")) {
-            return showErrorTx(addForm.txGiaNhap, "Đơn giá không được để trống");
+            return showErrortxt(addForm.txtGiaNhap, "Đơn giá không được để trống");
         
         } else if (giaBan.trim().equals("")) {
-            return showErrorTx(addForm.txGiaBan, "Đơn giá không được để trống");
+            return showErrortxt(addForm.txtGiaBan, "Đơn giá không được để trống");
 
         } else if (soLuong.trim().equals("")) {
-            return showErrorTx(addForm.txSoLuong, "Số lượng không được để trống");
+            return showErrortxt(addForm.txtSoLuong, "Số lượng không được để trống");
 
         } else {
             try {
                 float dg = Float.parseFloat(giaNhap);
             } catch (NumberFormatException e) {
-                return showErrorTx(addForm.txGiaNhap, "Giá nhập không hợp lệ (phải là số thực)");
+                return showErrortxt(addForm.txtGiaNhap, "Giá nhập không hợp lệ (phải là số thực)");
             }
             
             try {
                 float dg = Float.parseFloat(giaBan);
             } catch (NumberFormatException e) {
-                return showErrorTx(addForm.txGiaBan, "Giá bán không hợp lệ (phải là số thực)");
+                return showErrortxt(addForm.txtGiaBan, "Giá bán không hợp lệ (phải là số thực)");
             }
 
             try {
                 int sl = Integer.parseInt(soLuong);
                 if (sl < 0) {
-                    return showErrorTx(addForm.txSoLuong, "Số lượng không hợp lệ (phải là số duơng)");
+                    return showErrortxt(addForm.txtSoLuong, "Số lượng không hợp lệ (phải là số duơng)");
                 }
             } catch (NumberFormatException e) {
-                return showErrorTx(addForm.txSoLuong, "Số lượng không hợp lệ (phải là số nguyên)");
+                return showErrortxt(addForm.txtSoLuong, "Số lượng không hợp lệ (phải là số nguyên)");
             }
         }
         return true;
@@ -143,67 +143,67 @@ public class ThemSuaSachForm {
 
     
      public static Boolean checkEmptyEdit() {
-        String maSach = addForm.txMasp.getText();
-        String theLoai = addForm.txTheloai.getText();
-        String ten = addForm.txTen.getText();
-        String giaNhap = Float.parseFloat(addForm.txGiaNhap.getText());
-        String giaBan = Float.parseFloat(addForm.txGiaBan.getText());
-        String soLuong = Integer.parseInt(addForm.txSoLuong.getText());
-        String tacGia = addForm.txTacgia.getText();
-        String namXB = addForm.txNamXB.getText();
+        String maSach = addForm.txtMasp.getText();
+        String theLoai = addForm.txtTheloai.getText();
+        String ten = addForm.txtTen.getText();
+        String giaNhap = Float.parseFloat(addForm.txtGiaNhap.getText());
+        String giaBan = Float.parseFloat(addForm.txtGiaBan.getText());
+        String soLuong = Integer.parseInt(addForm.txtSoLuong.getText());
+        String tacGia = addForm.txtTacgia.getText();
+        String namXB = addForm.txtNamXB.getText();
 
         if (mấch.trim().equals("")) {
-            return showErrorTx(editForm.txMasp, "Mã sp không được để trống");
+            return showErrortxt(editForm.txtMasp, "Mã sp không được để trống");
 
         } else if (ten.trim().equals("")) {
-            return showErrorTx(editForm.txTen, "Tên không được để trống");
+            return showErrortxt(editForm.txtTen, "Tên không được để trống");
             
         } else if (tacGia.trim().equals("")) {
-            return showErrorTx(editForm.txTacgia, "Tên tác giả không được để trống");
+            return showErrortxt(editForm.txtTacgia, "Tên tác giả không được để trống");
             
         } else if (theLoai.trim().equals("")) {
-            return showErrorTx(editForm.txTheloai, "Thể loại không được để trống");
+            return showErrortxt(editForm.txtTheloai, "Thể loại không được để trống");
             
         } else if (namXB.trim().equals("")) {
-            return showErrorTx(editForm.txNamxb, "Năm xuất bản không được để trống"); 
+            return showErrortxt(editForm.txtNamxb, "Năm xuất bản không được để trống"); 
             
         } else if (giaNhap.trim().equals("")) {
-            return showErrorTx(editForm.txGiaNhap, "Giá nhập không được để trống");
+            return showErrortxt(editForm.txtGiaNhap, "Giá nhập không được để trống");
             
         } else if (giaBan.trim().equals("")) {
-            return showErrorTx(editForm.txGiaBan, "Giá bán không được để trống");
+            return showErrortxt(editForm.txtGiaBan, "Giá bán không được để trống");
 
         } else if (soLuong.trim().equals("")) {
-            return showErrorTx(editForm.txSoLuong, "Số lượng không được để trống");
+            return showErrortxt(editForm.txtSoLuong, "Số lượng không được để trống");
 
         } else {
             try {
                 float dg = Float.parseFloat(giaNhap);
             } catch (NumberFormatException e) {
-                return showErrorTx(editForm.txGiaNhap, "Giá nhập không hợp lệ (phải là số thực)");
+                return showErrortxt(editForm.txtGiaNhap, "Giá nhập không hợp lệ (phải là số thực)");
             }
             
             try {
                 float dg = Float.parseFloat(giaBan);
             } catch (NumberFormatException e) {
-                return showErrorTx(editForm.txGiaBan, "Giá bán không hợp lệ (phải là số thực)");
+                return showErrortxt(editForm.txtGiaBan, "Giá bán không hợp lệ (phải là số thực)");
             }
 
             try {
                 int sl = Integer.parseInt(soLuong);
                 if (sl < 0) {
-                    return showErrorTx(editForm.txSoLuong, "Số lượng không hợp lệ (phải là số duơng)");
+                    return showErrortxt(editForm.txtSoLuong, "Số lượng không hợp lệ (phải là số duơng)");
                 }
             } catch (NumberFormatException e) {
-                return showErrorTx(editForm.txSoLuong, "Số lượng không hợp lệ (phải là số nguyên)");
+                return showErrortxt(editForm.txtSoLuong, "Số lượng không hợp lệ (phải là số nguyên)");
             }
         }
         return true;
     }
     
-    public static Boolean showErrorTx(JTextField tx, String errorInfo) {
-        JOptionPane.showMessageDialog(tx, errorInfo);
-        tx.requestFocus();
+    public static Boolean showErrortxt(JTextField txt, String errorInfo) {
+        JOptionPane.showMessageDialog(txt, errorInfo);
+        txt.requestFocus();
         return false;
     }
 }

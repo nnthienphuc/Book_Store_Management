@@ -18,10 +18,10 @@ public class ThemSuaKhachHangForm extends JFrame {
 
     public static void btnThemMouseClicked() {
         if (checkEmptyAdd()) {
-            String makh = addKH.txMaKH.getText();
-            String tenkh = addKH.txTenKH.getText();
-            String diachi = addKH.txDiaChi.getText();
-            String sdt = addKH.txSDT.getText();
+            String makh = addKH.txtMaKH.getText();
+            String tenkh = addKH.txtTenKH.getText();
+            String diachi = addKH.txtDiaChi.getText();
+            String sdt = addKH.txtSDT.getText();
             if (qlkhBUS.add(makh, tenkh, diachi, sdt)) {
                 JOptionPane.showMessageDialog( null, "Thêm " + tenkh + " thành công!");
                 
@@ -32,9 +32,9 @@ public class ThemSuaKhachHangForm extends JFrame {
     public static void btnSuaMouseClicked() {
         if (checkEmptyEdit()) {
             String makh = editKH.txtTenKH.getText();
-            String tenkh = editKH.txTenKH.getText();
-            String diachi = editKH.txDiaChi.getText();
-            String sdt = editKH.txSDT.getText();
+            String tenkh = editKH.txtTenKH.getText();
+            String diachi = editKH.txtDiaChi.getText();
+            String sdt = editKH.txtSDT.getText();
 
             if (qlkhBUS.update(makh, tenkh, diachi, sdt)) {
                 JOptionPane.showMessageDialog(null, "Sửa " + makh + " thành công!");
@@ -44,22 +44,22 @@ public class ThemSuaKhachHangForm extends JFrame {
     }
 
     private static Boolean checkEmptyAdd() {
-        String makh = addKH.txMaKH.getText();
-        String tenkh = addKH.txTenKH.getText();
-        String diachi = addKH.txDiaChi.getText();
-        String sdt = addKH.txSDT.getText();
+        String makh = addKH.txtMaKH.getText();
+        String tenkh = addKH.txtTenKH.getText();
+        String diachi = addKH.txtDiaChi.getText();
+        String sdt = addKH.txtSDT.getText();
 
         if (makh.trim().equals("")) {
-            return showErrorTx(addKH.txMaKH, "Mã khách hàng không được để trống");
+            return showErrorTx(addKH.txtMaKH, "Mã khách hàng không được để trống");
 
         } else if (tenkh.trim().equals("")) {
-            return showErrorTx(addKH.txTenKH, "Tên khách hàng không được để trống");
+            return showErrorTx(addKH.txtTenKH, "Tên khách hàng không được để trống");
 
         } else if (diachi.trim().equals("")) {
-            return showErrorTx(addKH.txDiaChi, "Địa chỉ không được để trống");
+            return showErrorTx(addKH.txtDiaChi, "Địa chỉ không được để trống");
 
         } else if (sdt.trim().equals("")) {
-            return showErrorTx(addKH.txSDT, "Số điện thoại không được để trống");
+            return showErrorTx(addKH.txtSDT, "Số điện thoại không được để trống");
         }
 
         return true;
@@ -67,21 +67,21 @@ public class ThemSuaKhachHangForm extends JFrame {
         
         private static Boolean checkEmptyEdit() {
         String makh = editKH.txtTenKH.getText();
-        String tenkh = editKH.txTenKH.getText();
-        String diachi = editKH.txDiaChi.getText();
-        String sdt = editKH.txSDT.getText();
+        String tenkh = editKH.txtTenKH.getText();
+        String diachi = editKH.txtDiaChi.getText();
+        String sdt = editKH.txtSDT.getText();
 
         if (makh.trim().equals("")) {
             return showErrorTx(editKH.txtTenKH, "Mã khách hàng không được để trống");
 
         } else if (tenkh.trim().equals("")) {
-            return showErrorTx(editKH.txTenKH, "Tên khách hàng không được để trống");
+            return showErrorTx(editKH.txtTenKH, "Tên khách hàng không được để trống");
 
         } else if (diachi.trim().equals("")) {
-            return showErrorTx(editKH.txDiaChi, "Địa chỉ không được để trống");
+            return showErrorTx(editKH.txtDiaChi, "Địa chỉ không được để trống");
 
         } else if (sdt.trim().equals("")) {
-            return showErrorTx(editKH.txSDT, "Số điện thoại không được để trống");
+            return showErrorTx(editKH.txtSDT, "Số điện thoại không được để trống");
         }
 
         return true;
