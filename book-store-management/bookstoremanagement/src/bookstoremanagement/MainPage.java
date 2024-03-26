@@ -3328,7 +3328,7 @@ public class MainPage extends javax.swing.JFrame {
         jLabel62.setForeground(new java.awt.Color(255, 255, 255));
         jLabel62.setText("Book store");
 
-        jLabel111.setIcon(new javax.swing.ImageIcon(getClass().getResource("/quanlycuahangsach/images/logo/PTIT_logo__Custom_-removebg-preview.png"))); // NOI18N
+        jLabel111.setIcon(new javax.swing.ImageIcon(getClass().getResource("/bookstoremanagement/images/logo/PTIT_logo__Custom_-removebg-preview.png"))); // NOI18N
 
         jLabel112.setFont(new java.awt.Font("Comic Sans MS", 0, 15)); // NOI18N
         jLabel112.setForeground(new java.awt.Color(255, 255, 255));
@@ -3356,7 +3356,7 @@ public class MainPage extends javax.swing.JFrame {
 
         jLabel113.setBackground(new java.awt.Color(115, 144, 114));
         jLabel113.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel113.setIcon(new javax.swing.ImageIcon(getClass().getResource("/quanlycuahangsach/icons/chuong-60.png"))); // NOI18N
+        jLabel113.setIcon(new javax.swing.ImageIcon(getClass().getResource("/bookstoremanagement/icons/chuong-60.png"))); // NOI18N
         jLabel113.setOpaque(true);
 
         javax.swing.GroupLayout jPanel7Layout = new javax.swing.GroupLayout(jPanel7);
