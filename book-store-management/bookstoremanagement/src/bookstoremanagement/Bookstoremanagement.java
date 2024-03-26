@@ -4,6 +4,7 @@
  */
 package bookstoremanagement;
 
+import bookstoremanagement.frames.LoginForm;
 /**
  *
  * @author ADMIN
@@ -14,7 +15,8 @@ public class Bookstoremanagement {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+       System.setProperty("sun.java2d.uiScale", "1.0");
+       new LoginForm().setVisible(true);
     }
     
 }
