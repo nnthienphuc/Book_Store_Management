@@ -7,11 +7,7 @@ import javax.swing.JPanel;
 import java.awt.Color;
 import javax.swing.JOptionPane;
 import static bookstoremanagement.MainPage.TKTable;
-import static bookstoremanagement.frames.ChonNVForm.SubNVTable;
-import bookstoremanagement.model.Backend.QuanLyTaiKhoan.QuanLyTaiKhoanBUS;
-import bookstoremanagement.model.Backend.QuanLyTaiKhoan.TaiKhoan;
 import bookstoremanagement.model.Frontend.FormThemSua.ThemSuaTaiKhoanForm;
-import static bookstoremanagement.frames.ChonMaQuyenForm.SubQuyenTable;
 import bookstoremanagement.model.Backend.TaiKhoan.QuanLyTaiKhoanBUS;
 import bookstoremanagement.model.Backend.TaiKhoan.TaiKhoan;
 
@@ -442,7 +438,7 @@ public class editTK extends javax.swing.JFrame {
     {   TaiKhoan tkSua = null;
         QuanLyTaiKhoanBUS qltkBUS = new QuanLyTaiKhoanBUS();
         for (TaiKhoan tk : qltkBUS.getDstk()) {
-                if (tk.getUsername().equals( tendangnhap)) {
+                if (tk.getTenDangNhap().equals( tendangnhap)) {
                     tkSua = tk;
                 }
             }
@@ -452,9 +448,9 @@ public class editTK extends javax.swing.JFrame {
 //            }
 
             
-            txtTenTK.setText(tkSua.getUsername());
+            txtTenTK.setText(tkSua.getTenDangNhap());
             txtMaNV.setText(tkSua.getMaNV());
-            txtMatKhau.setText(String.valueOf(tkSua.getPassword()));
+            txtMatKhau.setText(String.valueOf(tkSua.getMatKhau()));
             txtMaQuyen.setText(tkSua.getMaQuyen());
     }
     

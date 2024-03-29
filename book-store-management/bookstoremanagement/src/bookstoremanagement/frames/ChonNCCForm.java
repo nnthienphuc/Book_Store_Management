@@ -9,8 +9,6 @@ import javax.swing.JLabel;
 import bookstoremanagement.MainPage;
 import bookstoremanagement.model.Backend.NhaCungCap.NhaCungCap;
 import bookstoremanagement.model.Backend.NhaCungCap.QuanLyNhaCungCapBUS;
-import bookstoremanagement.model.Backend.QuanLyNhaCungCap.QuanLyNhaCungCap;
-import bookstoremanagement.model.Backend.QuanLyNhaCungCap.QuanLyNhaCungCapBUS;
 import bookstoremanagement.model.Frontend.FormHienThi.HienThiNhaCungCap;
 
 /**

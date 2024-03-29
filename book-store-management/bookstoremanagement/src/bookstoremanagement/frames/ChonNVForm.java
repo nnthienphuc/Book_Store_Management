@@ -20,7 +20,7 @@ public class ChonNVForm extends javax.swing.JFrame {
         initComponents();        
         MainPage.Tabledesign(SubNVTable);
         QuanLyNhanVienBUS dsnvBUS = new QuanLyNhanVienBUS();
-        HienThiNhanVien.addTable(dsnvBUS.getDsnv(), SubNVTable);
+        HienThiNhanVien.AddTable(dsnvBUS.getDsnv(), SubNVTable);
         MainPage.setTableCellAlignment(JLabel.CENTER, SubNVTable);    
     }
    
@@ -222,11 +222,11 @@ public class ChonNVForm extends javax.swing.JFrame {
 //            addNV.setText();
 //        }
         String text = (String) SubNVTable.getValueAt(SubNVTable.getSelectedRow(), 1);
-        if(editTK.txMaNV != null){
-        editTK.txMaNV.setText(text);
+        if(editTK.txtMaNV != null){
+        editTK.txtMaNV.setText(text);
         }
-        if(addTK.txMaNV != null){
-        addTK.txMaNV.setText(text);}
+        if(addTK.txtMaNV != null){
+        addTK.txtMaNV.setText(text);}
         this.dispose();
     }//GEN-LAST:event_BHthemMouseReleased
 

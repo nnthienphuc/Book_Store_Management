@@ -1,6 +1,7 @@
 
 package bookstoremanagement.model.Frontend.FormThemSua;
-
+import bookstoremanagement.frames.editNCC;
+import bookstoremanagement.frames.addNCC;
 import bookstoremanagement.model.Backend.NhaCungCap.NhaCungCap;
 import bookstoremanagement.model.Backend.NhaCungCap.QuanLyNhaCungCapBUS;
 import javax.swing.JFrame;
@@ -12,14 +13,14 @@ public class ThemSuaNhaCungCapForm extends JFrame {
 
     public static void btnSuaMouseClicked() {
         if (checkEmptyEdit()) {
-            String maNCC = editNCC.txMaNCC.getText();
-            String tenNCC = editNCC.txTenNCC.getText();
-            String diaChi = editNCC.txDiaChi.getText();
-            String SDT = editNCC.txSDT.getText();
-            String Fax = editNCC.txFax.getText();
+            String maNCC = editNCC.txtMaNCC.getText();
+            String tenNCC = editNCC.txtTenNCC.getText();
+            String diaChi = editNCC.txtDiaChi.getText();
+            String SDT = editNCC.txtSDT.getText();
+            String Fax = editNCC.txtFax.getText();
 
             if (qlnccBUS.update(maNCC, tenNCC, diaChi, SDT, Fax)) {
-                JOptionPane.showMessageDialog(editNCC.txFax, "Sửa " + maNCC + " thành công!");
+                JOptionPane.showMessageDialog(editNCC.txtFax, "Sửa " + maNCC + " thành công!");
                 
             }
         }
@@ -27,9 +28,9 @@ public class ThemSuaNhaCungCapForm extends JFrame {
 
     public static void btnThemMouseClicked() {
         if (checkEmptyAdd()) {
-            NhaCungCap ncc = new NhaCungCap(addNCC.txMaNCC.getText(), addNCC.txTenNCC.getText(), addNCC.txDiaChi.getText(), addNCC.txSDT.getText(), addNCC.txFax.getText());
+            NhaCungCap ncc = new NhaCungCap(addNCC.txMaNCC.getText(), addNCC.txtTenNCC.getText(), addNCC.txtDiaChi.getText(), addNCC.txtSDT.getText(), addNCC.txtFax.getText());
             if (qlnccBUS.add(ncc)) {
-                JOptionPane.showMessageDialog(addNCC.txFax, "Thêm " + addNCC.txTenNCC.getText() + " thành công!");
+                JOptionPane.showMessageDialog(addNCC.txtFax, "Thêm " + addNCC.txtTenNCC.getText() + " thành công!");
               
             }
         }
@@ -37,59 +38,59 @@ public class ThemSuaNhaCungCapForm extends JFrame {
 
     private static Boolean checkEmptyAdd() {
         String ma = addNCC.txMaNCC.getText();
-        String ten = addNCC.txTenNCC.getText();
-        String diachi = addNCC.txDiaChi.getText();
-        String sdt = addNCC.txSDT.getText();
-        String fax = addNCC.txFax.getText();
+        String ten = addNCC.txtTenNCC.getText();
+        String diachi = addNCC.txtDiaChi.getText();
+        String sdt = addNCC.txtSDT.getText();
+        String fax = addNCC.txtFax.getText();
         if (ma.trim().equals("")) {
             JOptionPane.showMessageDialog(null, "Mã nhà cung cấp không được để trống");
             addNCC.txMaNCC.requestFocus();
             return false;
         } else if (ten.trim().equals("")) {
             JOptionPane.showMessageDialog(null, "Tên nhà cung cấp không được để trống");
-            addNCC.txTenNCC.requestFocus();
+            addNCC.txtTenNCC.requestFocus();
             return false;
         } else if (diachi.trim().equals("")) {
             JOptionPane.showMessageDialog(null, "Địa chỉ nhà cung cấp không được để trống");
-            addNCC.txDiaChi.requestFocus();
+            addNCC.txtDiaChi.requestFocus();
             return false;
         } else if (sdt.trim().equals("")) {
             JOptionPane.showMessageDialog(null, "Số điện thoại nhà cung cấp không được để trống");
-            addNCC.txSDT.requestFocus();
+            addNCC.txtSDT.requestFocus();
             return false;
         } else if (fax.trim().equals("")) {
             JOptionPane.showMessageDialog(null, "Số fax nhà cung cấp không được để trống");
-            addNCC.txFax.requestFocus();
+            addNCC.txtFax.requestFocus();
             return false;
         }
         return true;
     }
     
     private static Boolean checkEmptyEdit() {
-        String ma = editNCC.txMaNCC.getText();
-        String ten = editNCC.txTenNCC.getText();
-        String diachi = editNCC.txDiaChi.getText();
-        String sdt = editNCC.txSDT.getText();
-        String fax = editNCC.txFax.getText();
+        String ma = editNCC.txtMaNCC.getText();
+        String ten = editNCC.txtTenNCC.getText();
+        String diachi = editNCC.txtDiaChi.getText();
+        String sdt = editNCC.txtSDT.getText();
+        String fax = editNCC.txtFax.getText();
         if (ma.trim().equals("")) {
             JOptionPane.showMessageDialog(null, "Mã nhà cung cấp không được để trống");
-            editNCC.txMaNCC.requestFocus();
+            editNCC.txtMaNCC.requestFocus();
             return false;
         } else if (ten.trim().equals("")) {
             JOptionPane.showMessageDialog(null, "Tên nhà cung cấp không được để trống");
-            editNCC.txTenNCC.requestFocus();
+            editNCC.txtTenNCC.requestFocus();
             return false;
         } else if (diachi.trim().equals("")) {
             JOptionPane.showMessageDialog(null, "Địa chỉ nhà cung cấp không được để trống");
-            editNCC.txDiaChi.requestFocus();
+            editNCC.txtDiaChi.requestFocus();
             return false;
         } else if (sdt.trim().equals("")) {
             JOptionPane.showMessageDialog(null, "Số điện thoại nhà cung cấp không được để trống");
-            editNCC.txSDT.requestFocus();
+            editNCC.txtSDT.requestFocus();
             return false;
         } else if (fax.trim().equals("")) {
             JOptionPane.showMessageDialog(null, "Số fax nhà cung cấp không được để trống");
-            editNCC.txFax.requestFocus();
+            editNCC.txtFax.requestFocus();
             return false;
         }
         return true;

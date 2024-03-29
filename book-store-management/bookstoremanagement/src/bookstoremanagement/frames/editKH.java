@@ -69,9 +69,9 @@ public class editKH extends javax.swing.JFrame {
 
            
             txtTenKH.setText(khSua.getMaKH());
-            txTenKH.setText(khSua.getTenKH());
-            txDiaChi.setText(khSua.getDiaChi());
-            txSDT.setText(String.valueOf(khSua.getSDT()));
+            txtTenKH.setText(khSua.getTenKH());
+            txtDiaChi.setText(khSua.getDiaChi());
+            txtSDT.setText(String.valueOf(khSua.getSDT()));
             
     }
     public static void XoaKH(String maKH){
@@ -88,7 +88,7 @@ public class editKH extends javax.swing.JFrame {
     public static void ThemKH()
     {   
         QuanLyKhachHangBUS qlkhBUS = new QuanLyKhachHangBUS();
-        addKH.txMaKH.setText(qlkhBUS.getNextID());
+        addKH.txtMaKH.setText(qlkhBUS.getNextID());
         
     }
 

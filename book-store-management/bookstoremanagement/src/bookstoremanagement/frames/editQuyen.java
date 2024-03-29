@@ -9,8 +9,8 @@ import java.awt.Color;
 import java.awt.event.ItemEvent;
 import javax.swing.JOptionPane;
 
-import bookstoremanagement.model.Backend.Quyen.QuanLyQuyenBUS;
 import bookstoremanagement.model.Backend.Quyen.QuanLyQuyen;
+import bookstoremanagement.model.Backend.Quyen.QuanLyQuyenBUS;
 import bookstoremanagement.model.Frontend.FormThemSua.ThemSuaQuyenForm;
 import static bookstoremanagement.MainPage.QuyenTable;
 import static bookstoremanagement.frames.ChonMaQuyenForm.SubQuyenTable;
@@ -95,9 +95,9 @@ public class editQuyen extends javax.swing.JFrame {
     }
     
     public static void SuaQuyen (String maQuyen)
-    {   Quyen quyenSua = null;
+    {   QuanLyQuyen quyenSua = null;
         QuanLyQuyenBUS qlquyenBUS = new QuanLyQuyenBUS();
-        for (Quyen quyen : qlquyenBUS.getDsq()) {
+        for (QuanLyQuyen quyen : qlquyenBUS.getDsq()) {
                 if (quyen.getMaQuyen().equals(maQuyen)) {
                     quyenSua = quyen;
                 }

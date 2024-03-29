@@ -19,7 +19,7 @@ public class addQuyen extends javax.swing.JFrame {
     {
         String text = (String) SubQuyenTable.getValueAt(SubQuyenTable.getSelectedRow(), 1);
         
-        addTK.txMaQuyen.setText(text);
+        addTK.txtMaQuyen.setText(text);
     }
     
    
