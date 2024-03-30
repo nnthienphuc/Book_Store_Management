@@ -448,11 +448,11 @@ public class MainPage extends javax.swing.JFrame {
 
             },
             new String [] {
-                "STT", "Mã sách", "Tên sách", "Thể loại", "Tác giả", "Năm xb", "Đơn giá", "Số lượng"
+                "STT", "Mã sách", "Tên sách", "Thể loại", "Tác giả", "Năm xb", "Số lượng", "Giá bán", "Giá nhập"
             }
         ) {
             boolean[] canEdit = new boolean [] {
-                false, false, false, false, false, false, false, false
+                false, false, false, false, false, false, false, false, true
             };
 
             public boolean isCellEditable(int rowIndex, int columnIndex) {
@@ -1079,11 +1079,11 @@ public class MainPage extends javax.swing.JFrame {
 
             },
             new String [] {
-                "STT", "Mã sách", "Tên sách", "Thể loại", "Tác giả", "Năm xb", "Đơn giá", "Số lượng"
+                "STT", "Mã sách", "Tên sách", "Thể loại", "Tác giả", "Năm xb", "Số lượng", "Giá bán", "Giá nhập"
             }
         ) {
             boolean[] canEdit = new boolean [] {
-                false, false, false, false, false, false, false, false
+                false, false, false, false, false, false, false, false, true
             };
 
             public boolean isCellEditable(int rowIndex, int columnIndex) {
@@ -4569,7 +4569,7 @@ public class MainPage extends javax.swing.JFrame {
         TableModel model = NHSPTable.getModel();
         String masp = model.getValueAt(index, 1).toString();
         String tensp = model.getValueAt(index, 2).toString();
-        String dongia = model.getValueAt(index, 6).toString();
+        String dongia = model.getValueAt(index, 8).toString();
         txMaSPNH.setText(masp);
         txTenSPNH.setText(tensp);
         txDonGiaNH.setText(dongia);
@@ -4737,7 +4737,7 @@ public class MainPage extends javax.swing.JFrame {
         TableModel model = BHSPTable.getModel();
         String masach = model.getValueAt(index, 1).toString();
         String tensach = model.getValueAt(index, 2).toString();
-        String dongia = model.getValueAt(index, 6).toString();
+        String dongia = model.getValueAt(index, 7).toString();
         txMaSPBH.setText(masach);
         txTenSPBH.setText(tensach);
         txDonGiaBH.setText(dongia);
