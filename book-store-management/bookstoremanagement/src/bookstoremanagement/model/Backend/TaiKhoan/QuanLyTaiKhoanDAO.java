@@ -25,7 +25,7 @@ public class QuanLyTaiKhoanDAO {
             ResultSet r = qltkConnection.sqlQuery(qry);
             if (r != null) {
                 while (r.next()) {
-                    String ten = r.getString("tenTaiKhoan");
+                    String ten = r.getString("tenDangNhap");
                     String matkhau = r.getString("matKhau");
                     String manv = r.getString("maNV");
                     String maquyen = r.getString("maQuyen");
