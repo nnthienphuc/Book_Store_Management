@@ -450,7 +450,15 @@ public class MainPage extends javax.swing.JFrame {
             new String [] {
                 "STT", "Mã sách", "Tên sách", "Thể loại", "Tác giả", "Năm xb", "Đơn giá", "Số lượng"
             }
-        ));
+        ) {
+            boolean[] canEdit = new boolean [] {
+                false, false, false, false, false, false, false, false
+            };
+
+            public boolean isCellEditable(int rowIndex, int columnIndex) {
+                return canEdit [columnIndex];
+            }
+        });
         BHSPTable.setFocusable(false);
         BHSPTable.setGridColor(new java.awt.Color(128, 128, 128));
         BHSPTable.setRowHeight(25);
@@ -1073,7 +1081,15 @@ public class MainPage extends javax.swing.JFrame {
             new String [] {
                 "STT", "Mã sách", "Tên sách", "Thể loại", "Tác giả", "Năm xb", "Đơn giá", "Số lượng"
             }
-        ));
+        ) {
+            boolean[] canEdit = new boolean [] {
+                false, false, false, false, false, false, false, false
+            };
+
+            public boolean isCellEditable(int rowIndex, int columnIndex) {
+                return canEdit [columnIndex];
+            }
+        });
         NHSPTable.setFocusable(false);
         NHSPTable.setGridColor(new java.awt.Color(128, 128, 128));
         NHSPTable.setRowHeight(25);
@@ -1553,7 +1569,15 @@ public class MainPage extends javax.swing.JFrame {
             new String [] {
                 "STT", "Mã hóa đơn", "Mã nhân viên", "Mã khách hàng", "Mã khuyến mãi", "Ngày bán", "Giờ bán", "Tổng tiền"
             }
-        ));
+        ) {
+            boolean[] canEdit = new boolean [] {
+                false, false, false, false, false, false, false, false
+            };
+
+            public boolean isCellEditable(int rowIndex, int columnIndex) {
+                return canEdit [columnIndex];
+            }
+        });
         HDTable.setFocusable(false);
         HDTable.setGridColor(new java.awt.Color(128, 128, 128));
         HDTable.setRowHeight(25);
@@ -1757,7 +1781,15 @@ public class MainPage extends javax.swing.JFrame {
             new String [] {
                 "STT", "Mã sách", "Tên sách", "Thể loại", "Tác giả", "Năm xb", "Số lượng", "Giá nhập", "Giá bán", "Trạng thái"
             }
-        ));
+        ) {
+            boolean[] canEdit = new boolean [] {
+                false, false, false, false, false, false, false, false, false, false
+            };
+
+            public boolean isCellEditable(int rowIndex, int columnIndex) {
+                return canEdit [columnIndex];
+            }
+        });
         SPTable.setFocusable(false);
         SPTable.setGridColor(new java.awt.Color(128, 128, 128));
         SPTable.setRowHeight(25);
@@ -1952,7 +1984,15 @@ public class MainPage extends javax.swing.JFrame {
             new String [] {
                 "STT", "Mã khuyến mãi", "Tên", "Điều kiện", "Giảm giá", "Ngày bắt đầu", "Ngày kết thúc"
             }
-        ));
+        ) {
+            boolean[] canEdit = new boolean [] {
+                false, false, false, false, false, false, false
+            };
+
+            public boolean isCellEditable(int rowIndex, int columnIndex) {
+                return canEdit [columnIndex];
+            }
+        });
         KMTable.setFocusable(false);
         KMTable.setGridColor(new java.awt.Color(128, 128, 128));
         KMTable.setRowHeight(25);
@@ -2131,7 +2171,15 @@ public class MainPage extends javax.swing.JFrame {
             new String [] {
                 "STT", "Mã khách hàng", "Tên khách hàng", "Địa chỉ", "Số điện thoại"
             }
-        ));
+        ) {
+            boolean[] canEdit = new boolean [] {
+                false, false, false, false, false
+            };
+
+            public boolean isCellEditable(int rowIndex, int columnIndex) {
+                return canEdit [columnIndex];
+            }
+        });
         KHTable.setFocusable(false);
         KHTable.setGridColor(new java.awt.Color(128, 128, 128));
         KHTable.setRowHeight(25);
@@ -2309,7 +2357,15 @@ public class MainPage extends javax.swing.JFrame {
             new String [] {
                 "STT", "Mã nhân viên", "Tên nhân viên", "Ngày sinh", "Địa chỉ", "Số điện thoại"
             }
-        ));
+        ) {
+            boolean[] canEdit = new boolean [] {
+                false, false, false, false, false, false
+            };
+
+            public boolean isCellEditable(int rowIndex, int columnIndex) {
+                return canEdit [columnIndex];
+            }
+        });
         NVTable.setFocusable(false);
         NVTable.setGridColor(new java.awt.Color(128, 128, 128));
         NVTable.setRowHeight(25);
@@ -2487,7 +2543,15 @@ public class MainPage extends javax.swing.JFrame {
             new String [] {
                 "STT", "Mã NCC", "Tên NCC", "Địa chỉ", "Số điện thoại", "Fax"
             }
-        ));
+        ) {
+            boolean[] canEdit = new boolean [] {
+                false, false, false, false, false, false
+            };
+
+            public boolean isCellEditable(int rowIndex, int columnIndex) {
+                return canEdit [columnIndex];
+            }
+        });
         NCCTable.setFocusable(false);
         NCCTable.setGridColor(new java.awt.Color(128, 128, 128));
         NCCTable.setRowHeight(25);
@@ -2670,7 +2734,15 @@ public class MainPage extends javax.swing.JFrame {
             new String [] {
                 "STT", "Tên tài khoản", "Mật khẩu", "Mã nhân viên", "Mã quyền"
             }
-        ));
+        ) {
+            boolean[] canEdit = new boolean [] {
+                false, false, false, false, false
+            };
+
+            public boolean isCellEditable(int rowIndex, int columnIndex) {
+                return canEdit [columnIndex];
+            }
+        });
         TKTable.setFocusable(false);
         TKTable.setGridColor(new java.awt.Color(128, 128, 128));
         TKTable.setRowHeight(25);
@@ -2730,7 +2802,15 @@ public class MainPage extends javax.swing.JFrame {
             new String [] {
                 "STT", "Mã hóa đơn", "Mã nhà cung cấp", "Mã nhân viên", "Ngày nhập", "Giờ nhập", "Tổng tiền"
             }
-        ));
+        ) {
+            boolean[] canEdit = new boolean [] {
+                false, false, false, false, false, false, false
+            };
+
+            public boolean isCellEditable(int rowIndex, int columnIndex) {
+                return canEdit [columnIndex];
+            }
+        });
         PNTable.setFocusable(false);
         PNTable.setGridColor(new java.awt.Color(128, 128, 128));
         PNTable.setRowHeight(25);
@@ -3018,7 +3098,15 @@ public class MainPage extends javax.swing.JFrame {
             new String [] {
                 "STT", "Mã quyền", "Tên quyền", "Chi tiết quyền"
             }
-        ));
+        ) {
+            boolean[] canEdit = new boolean [] {
+                false, true, false, true
+            };
+
+            public boolean isCellEditable(int rowIndex, int columnIndex) {
+                return canEdit [columnIndex];
+            }
+        });
         QuyenTable.setFocusable(false);
         QuyenTable.setGridColor(new java.awt.Color(128, 128, 128));
         QuyenTable.setRowHeight(25);

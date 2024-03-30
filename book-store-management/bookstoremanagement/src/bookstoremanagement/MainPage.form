@@ -123,14 +123,14 @@
                         </Property>
                         <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.editors2.TableModelEditor">
                           <Table columnCount="8" rowCount="0">
-                            <Column editable="true" title="STT" type="java.lang.Object"/>
-                            <Column editable="true" title="M&#xe3; sa&#x301;ch" type="java.lang.Object"/>
-                            <Column editable="true" title="T&#xea;n sa&#x301;ch" type="java.lang.Object"/>
-                            <Column editable="true" title="Th&#xea;&#x309; loa&#x323;i" type="java.lang.Object"/>
-                            <Column editable="true" title="Ta&#x301;c gia&#x309;" type="java.lang.Object"/>
-                            <Column editable="true" title="N&#x103;m xb" type="java.lang.Object"/>
-                            <Column editable="true" title="&#x110;&#x1a1;n gi&#xe1;" type="java.lang.Object"/>
-                            <Column editable="true" title="S&#x1ed1; l&#x1b0;&#x1ee3;ng" type="java.lang.Object"/>
+                            <Column editable="false" title="STT" type="java.lang.Object"/>
+                            <Column editable="false" title="M&#xe3; sa&#x301;ch" type="java.lang.Object"/>
+                            <Column editable="false" title="T&#xea;n sa&#x301;ch" type="java.lang.Object"/>
+                            <Column editable="false" title="Th&#xea;&#x309; loa&#x323;i" type="java.lang.Object"/>
+                            <Column editable="false" title="Ta&#x301;c gia&#x309;" type="java.lang.Object"/>
+                            <Column editable="false" title="N&#x103;m xb" type="java.lang.Object"/>
+                            <Column editable="false" title="&#x110;&#x1a1;n gi&#xe1;" type="java.lang.Object"/>
+                            <Column editable="false" title="S&#x1ed1; l&#x1b0;&#x1ee3;ng" type="java.lang.Object"/>
                           </Table>
                         </Property>
                         <Property name="columnModel" type="javax.swing.table.TableColumnModel" editor="org.netbeans.modules.form.editors2.TableColumnModelEditor">
@@ -1259,14 +1259,14 @@
                         </Property>
                         <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.editors2.TableModelEditor">
                           <Table columnCount="8" rowCount="0">
-                            <Column editable="true" title="STT" type="java.lang.Object"/>
-                            <Column editable="true" title="M&#xe3; sa&#x301;ch" type="java.lang.Object"/>
-                            <Column editable="true" title="T&#xea;n sa&#x301;ch" type="java.lang.Object"/>
-                            <Column editable="true" title="Th&#xea;&#x309; loa&#x323;i" type="java.lang.Object"/>
-                            <Column editable="true" title="Ta&#x301;c gia&#x309;" type="java.lang.Object"/>
-                            <Column editable="true" title="N&#x103;m xb" type="java.lang.Object"/>
-                            <Column editable="true" title="&#x110;&#x1a1;n gi&#xe1;" type="java.lang.Object"/>
-                            <Column editable="true" title="S&#x1ed1; l&#x1b0;&#x1ee3;ng" type="java.lang.Object"/>
+                            <Column editable="false" title="STT" type="java.lang.Object"/>
+                            <Column editable="false" title="M&#xe3; sa&#x301;ch" type="java.lang.Object"/>
+                            <Column editable="false" title="T&#xea;n sa&#x301;ch" type="java.lang.Object"/>
+                            <Column editable="false" title="Th&#xea;&#x309; loa&#x323;i" type="java.lang.Object"/>
+                            <Column editable="false" title="Ta&#x301;c gia&#x309;" type="java.lang.Object"/>
+                            <Column editable="false" title="N&#x103;m xb" type="java.lang.Object"/>
+                            <Column editable="false" title="&#x110;&#x1a1;n gi&#xe1;" type="java.lang.Object"/>
+                            <Column editable="false" title="S&#x1ed1; l&#x1b0;&#x1ee3;ng" type="java.lang.Object"/>
                           </Table>
                         </Property>
                         <Property name="columnModel" type="javax.swing.table.TableColumnModel" editor="org.netbeans.modules.form.editors2.TableColumnModelEditor">
@@ -2209,14 +2209,14 @@
                         </Property>
                         <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.editors2.TableModelEditor">
                           <Table columnCount="8" rowCount="0">
-                            <Column editable="true" title="STT" type="java.lang.Object"/>
-                            <Column editable="true" title="M&#xe3; h&#xf3;a &#x111;&#x1a1;n" type="java.lang.Object"/>
-                            <Column editable="true" title="M&#xe3; nh&#xe2;n vi&#xea;n" type="java.lang.Object"/>
-                            <Column editable="true" title="M&#xe3; kh&#xe1;ch h&#xe0;ng" type="java.lang.Object"/>
-                            <Column editable="true" title="M&#xe3; khuy&#x1ebf;n m&#xe3;i" type="java.lang.Object"/>
-                            <Column editable="true" title="Ng&#xe0;y ba&#x301;n" type="java.lang.Object"/>
-                            <Column editable="true" title="Gi&#x1edd; ba&#x301;n" type="java.lang.Object"/>
-                            <Column editable="true" title="T&#x1ed5;ng ti&#x1ec1;n" type="java.lang.Object"/>
+                            <Column editable="false" title="STT" type="java.lang.Object"/>
+                            <Column editable="false" title="M&#xe3; h&#xf3;a &#x111;&#x1a1;n" type="java.lang.Object"/>
+                            <Column editable="false" title="M&#xe3; nh&#xe2;n vi&#xea;n" type="java.lang.Object"/>
+                            <Column editable="false" title="M&#xe3; kh&#xe1;ch h&#xe0;ng" type="java.lang.Object"/>
+                            <Column editable="false" title="M&#xe3; khuy&#x1ebf;n m&#xe3;i" type="java.lang.Object"/>
+                            <Column editable="false" title="Ng&#xe0;y ba&#x301;n" type="java.lang.Object"/>
+                            <Column editable="false" title="Gi&#x1edd; ba&#x301;n" type="java.lang.Object"/>
+                            <Column editable="false" title="T&#x1ed5;ng ti&#x1ec1;n" type="java.lang.Object"/>
                           </Table>
                         </Property>
                         <Property name="columnModel" type="javax.swing.table.TableColumnModel" editor="org.netbeans.modules.form.editors2.TableColumnModelEditor">
@@ -2665,16 +2665,16 @@
                         </Property>
                         <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.editors2.TableModelEditor">
                           <Table columnCount="10" rowCount="0">
-                            <Column editable="true" title="STT" type="java.lang.Object"/>
-                            <Column editable="true" title="M&#xe3; sa&#x301;ch" type="java.lang.Object"/>
-                            <Column editable="true" title="T&#xea;n sa&#x301;ch" type="java.lang.Object"/>
-                            <Column editable="true" title="Th&#xea;&#x309; loa&#x323;i" type="java.lang.Object"/>
-                            <Column editable="true" title="Ta&#x301;c gia&#x309;" type="java.lang.Object"/>
-                            <Column editable="true" title="N&#x103;m xb" type="java.lang.Object"/>
-                            <Column editable="true" title="S&#x1ed1; l&#x1b0;&#x1ee3;ng" type="java.lang.Object"/>
-                            <Column editable="true" title="Gia&#x301; nh&#xe2;&#x323;p" type="java.lang.Object"/>
-                            <Column editable="true" title="Gia&#x301; ba&#x301;n" type="java.lang.Object"/>
-                            <Column editable="true" title="Tra&#x323;ng tha&#x301;i" type="java.lang.Object"/>
+                            <Column editable="false" title="STT" type="java.lang.Object"/>
+                            <Column editable="false" title="M&#xe3; sa&#x301;ch" type="java.lang.Object"/>
+                            <Column editable="false" title="T&#xea;n sa&#x301;ch" type="java.lang.Object"/>
+                            <Column editable="false" title="Th&#xea;&#x309; loa&#x323;i" type="java.lang.Object"/>
+                            <Column editable="false" title="Ta&#x301;c gia&#x309;" type="java.lang.Object"/>
+                            <Column editable="false" title="N&#x103;m xb" type="java.lang.Object"/>
+                            <Column editable="false" title="S&#x1ed1; l&#x1b0;&#x1ee3;ng" type="java.lang.Object"/>
+                            <Column editable="false" title="Gia&#x301; nh&#xe2;&#x323;p" type="java.lang.Object"/>
+                            <Column editable="false" title="Gia&#x301; ba&#x301;n" type="java.lang.Object"/>
+                            <Column editable="false" title="Tra&#x323;ng tha&#x301;i" type="java.lang.Object"/>
                           </Table>
                         </Property>
                         <Property name="columnModel" type="javax.swing.table.TableColumnModel" editor="org.netbeans.modules.form.editors2.TableColumnModelEditor">
@@ -3095,13 +3095,13 @@
                         </Property>
                         <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.editors2.TableModelEditor">
                           <Table columnCount="7" rowCount="0">
-                            <Column editable="true" title="STT" type="java.lang.Object"/>
-                            <Column editable="true" title="M&#xe3; khuy&#x1ebf;n m&#xe3;i" type="java.lang.Object"/>
-                            <Column editable="true" title="T&#xea;n" type="java.lang.Object"/>
-                            <Column editable="true" title="&#x110;i&#x1ec1;u ki&#x1ec7;n" type="java.lang.Object"/>
-                            <Column editable="true" title="Gi&#x1ea3;m gi&#xe1;" type="java.lang.Object"/>
-                            <Column editable="true" title="Ng&#xe0;y b&#x1eaf;t &#x111;&#x1ea7;u" type="java.lang.Object"/>
-                            <Column editable="true" title="Ng&#xe0;y k&#x1ebf;t th&#xfa;c" type="java.lang.Object"/>
+                            <Column editable="false" title="STT" type="java.lang.Object"/>
+                            <Column editable="false" title="M&#xe3; khuy&#x1ebf;n m&#xe3;i" type="java.lang.Object"/>
+                            <Column editable="false" title="T&#xea;n" type="java.lang.Object"/>
+                            <Column editable="false" title="&#x110;i&#x1ec1;u ki&#x1ec7;n" type="java.lang.Object"/>
+                            <Column editable="false" title="Gi&#x1ea3;m gi&#xe1;" type="java.lang.Object"/>
+                            <Column editable="false" title="Ng&#xe0;y b&#x1eaf;t &#x111;&#x1ea7;u" type="java.lang.Object"/>
+                            <Column editable="false" title="Ng&#xe0;y k&#x1ebf;t th&#xfa;c" type="java.lang.Object"/>
                           </Table>
                         </Property>
                         <Property name="columnModel" type="javax.swing.table.TableColumnModel" editor="org.netbeans.modules.form.editors2.TableColumnModelEditor">
@@ -3492,21 +3492,16 @@
                         </Property>
                         <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.editors2.TableModelEditor">
                           <Table columnCount="5" rowCount="0">
-                            <Column editable="true" title="STT" type="java.lang.Object"/>
-                            <Column editable="true" title="M&#xe3; kh&#xe1;ch h&#xe0;ng" type="java.lang.Object"/>
-                            <Column editable="true" title="T&#xea;n kh&#xe1;ch h&#xe0;ng" type="java.lang.Object"/>
-                            <Column editable="true" title="&#x110;&#x1ecb;a ch&#x1ec9;" type="java.lang.Object"/>
-                            <Column editable="true" title="S&#x1ed1; &#x111;i&#x1ec7;n tho&#x1ea1;i" type="java.lang.Object"/>
+                            <Column editable="false" title="STT" type="java.lang.Object"/>
+                            <Column editable="false" title="M&#xe3; kh&#xe1;ch h&#xe0;ng" type="java.lang.Object"/>
+                            <Column editable="false" title="T&#xea;n kh&#xe1;ch h&#xe0;ng" type="java.lang.Object"/>
+                            <Column editable="false" title="&#x110;&#x1ecb;a ch&#x1ec9;" type="java.lang.Object"/>
+                            <Column editable="false" title="S&#x1ed1; &#x111;i&#x1ec7;n tho&#x1ea1;i" type="java.lang.Object"/>
                           </Table>
                         </Property>
                         <Property name="columnModel" type="javax.swing.table.TableColumnModel" editor="org.netbeans.modules.form.editors2.TableColumnModelEditor">
                           <TableColumnModel selectionModel="0">
                             <Column maxWidth="100" minWidth="-1" prefWidth="-1" resizable="true">
-                              <Title/>
-                              <Editor/>
-                              <Renderer/>
-                            </Column>
-                            <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
                               <Title/>
                               <Editor/>
                               <Renderer/>
@@ -3883,12 +3878,12 @@
                         </Property>
                         <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.editors2.TableModelEditor">
                           <Table columnCount="6" rowCount="0">
-                            <Column editable="true" title="STT" type="java.lang.Object"/>
-                            <Column editable="true" title="M&#xe3; nh&#xe2;n vi&#xea;n" type="java.lang.Object"/>
-                            <Column editable="true" title="T&#xea;n nh&#xe2;n vi&#xea;n" type="java.lang.Object"/>
-                            <Column editable="true" title="Ng&#xe0;y sinh" type="java.lang.Object"/>
-                            <Column editable="true" title="&#x110;&#x1ecb;a ch&#x1ec9;" type="java.lang.Object"/>
-                            <Column editable="true" title="S&#x1ed1; &#x111;i&#x1ec7;n tho&#x1ea1;i" type="java.lang.Object"/>
+                            <Column editable="false" title="STT" type="java.lang.Object"/>
+                            <Column editable="false" title="M&#xe3; nh&#xe2;n vi&#xea;n" type="java.lang.Object"/>
+                            <Column editable="false" title="T&#xea;n nh&#xe2;n vi&#xea;n" type="java.lang.Object"/>
+                            <Column editable="false" title="Ng&#xe0;y sinh" type="java.lang.Object"/>
+                            <Column editable="false" title="&#x110;&#x1ecb;a ch&#x1ec9;" type="java.lang.Object"/>
+                            <Column editable="false" title="S&#x1ed1; &#x111;i&#x1ec7;n tho&#x1ea1;i" type="java.lang.Object"/>
                           </Table>
                         </Property>
                         <Property name="columnModel" type="javax.swing.table.TableColumnModel" editor="org.netbeans.modules.form.editors2.TableColumnModelEditor">
@@ -4274,12 +4269,12 @@
                         </Property>
                         <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.editors2.TableModelEditor">
                           <Table columnCount="6" rowCount="0">
-                            <Column editable="true" title="STT" type="java.lang.Object"/>
-                            <Column editable="true" title="M&#xe3; NCC" type="java.lang.Object"/>
-                            <Column editable="true" title="T&#xea;n NCC" type="java.lang.Object"/>
-                            <Column editable="true" title="&#x110;&#x1ecb;a ch&#x1ec9;" type="java.lang.Object"/>
-                            <Column editable="true" title="S&#x1ed1; &#x111;i&#x1ec7;n tho&#x1ea1;i" type="java.lang.Object"/>
-                            <Column editable="true" title="Fax" type="java.lang.Object"/>
+                            <Column editable="false" title="STT" type="java.lang.Object"/>
+                            <Column editable="false" title="M&#xe3; NCC" type="java.lang.Object"/>
+                            <Column editable="false" title="T&#xea;n NCC" type="java.lang.Object"/>
+                            <Column editable="false" title="&#x110;&#x1ecb;a ch&#x1ec9;" type="java.lang.Object"/>
+                            <Column editable="false" title="S&#x1ed1; &#x111;i&#x1ec7;n tho&#x1ea1;i" type="java.lang.Object"/>
+                            <Column editable="false" title="Fax" type="java.lang.Object"/>
                           </Table>
                         </Property>
                         <Property name="columnModel" type="javax.swing.table.TableColumnModel" editor="org.netbeans.modules.form.editors2.TableColumnModelEditor">
@@ -4667,11 +4662,11 @@
                         </Property>
                         <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.editors2.TableModelEditor">
                           <Table columnCount="5" rowCount="0">
-                            <Column editable="true" title="STT" type="java.lang.Object"/>
-                            <Column editable="true" title="T&#xea;n t&#xe0;i kho&#x1ea3;n" type="java.lang.Object"/>
-                            <Column editable="true" title="M&#x1ead;t kh&#x1ea9;u" type="java.lang.Object"/>
-                            <Column editable="true" title="M&#xe3; nh&#xe2;n vi&#xea;n" type="java.lang.Object"/>
-                            <Column editable="true" title="M&#xe3; quy&#x1ec1;n" type="java.lang.Object"/>
+                            <Column editable="false" title="STT" type="java.lang.Object"/>
+                            <Column editable="false" title="T&#xea;n t&#xe0;i kho&#x1ea3;n" type="java.lang.Object"/>
+                            <Column editable="false" title="M&#x1ead;t kh&#x1ea9;u" type="java.lang.Object"/>
+                            <Column editable="false" title="M&#xe3; nh&#xe2;n vi&#xea;n" type="java.lang.Object"/>
+                            <Column editable="false" title="M&#xe3; quy&#x1ec1;n" type="java.lang.Object"/>
                           </Table>
                         </Property>
                         <Property name="columnModel" type="javax.swing.table.TableColumnModel" editor="org.netbeans.modules.form.editors2.TableColumnModelEditor">
@@ -4840,13 +4835,13 @@
                         </Property>
                         <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.editors2.TableModelEditor">
                           <Table columnCount="7" rowCount="0">
-                            <Column editable="true" title="STT" type="java.lang.Object"/>
-                            <Column editable="true" title="Ma&#x303; ho&#x301;a &#x111;&#x1a1;n" type="java.lang.Object"/>
-                            <Column editable="true" title="M&#xe3; nh&#xe0; cung c&#x1ea5;p" type="java.lang.Object"/>
-                            <Column editable="true" title="M&#xe3; nh&#xe2;n vi&#xea;n" type="java.lang.Object"/>
-                            <Column editable="true" title="Ng&#xe0;y nh&#x1ead;p" type="java.lang.Object"/>
-                            <Column editable="true" title="Gi&#x1edd; nh&#x1ead;p" type="java.lang.Object"/>
-                            <Column editable="true" title="T&#x1ed5;ng ti&#x1ec1;n" type="java.lang.Object"/>
+                            <Column editable="false" title="STT" type="java.lang.Object"/>
+                            <Column editable="false" title="Ma&#x303; ho&#x301;a &#x111;&#x1a1;n" type="java.lang.Object"/>
+                            <Column editable="false" title="M&#xe3; nh&#xe0; cung c&#x1ea5;p" type="java.lang.Object"/>
+                            <Column editable="false" title="M&#xe3; nh&#xe2;n vi&#xea;n" type="java.lang.Object"/>
+                            <Column editable="false" title="Ng&#xe0;y nh&#x1ead;p" type="java.lang.Object"/>
+                            <Column editable="false" title="Gi&#x1edd; nh&#x1ead;p" type="java.lang.Object"/>
+                            <Column editable="false" title="T&#x1ed5;ng ti&#x1ec1;n" type="java.lang.Object"/>
                           </Table>
                         </Property>
                         <Property name="columnModel" type="javax.swing.table.TableColumnModel" editor="org.netbeans.modules.form.editors2.TableColumnModelEditor">
@@ -5443,9 +5438,9 @@
                         </Property>
                         <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.editors2.TableModelEditor">
                           <Table columnCount="4" rowCount="0">
-                            <Column editable="true" title="STT" type="java.lang.Object"/>
+                            <Column editable="false" title="STT" type="java.lang.Object"/>
                             <Column editable="true" title="M&#xe3; quy&#x1ec1;n" type="java.lang.Object"/>
-                            <Column editable="true" title="T&#xea;n quy&#x1ec1;n" type="java.lang.Object"/>
+                            <Column editable="false" title="T&#xea;n quy&#x1ec1;n" type="java.lang.Object"/>
                             <Column editable="true" title="Chi ti&#x1ebf;t quy&#x1ec1;n" type="java.lang.Object"/>
                           </Table>
                         </Property>
