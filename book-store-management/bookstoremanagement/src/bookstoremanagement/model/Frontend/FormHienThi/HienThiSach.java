@@ -26,6 +26,7 @@ public class HienThiSach {
                 String.valueOf(sp.getSoLuong()),
                 PriceFormat.format(sp.getGiaNhap()),
                 PriceFormat.format(sp.getGiaBan()),
+                (sp.getTrangThai() == 0 ? "Hiện" : "Ẩn")
             }, table);
             stt++;
         }
