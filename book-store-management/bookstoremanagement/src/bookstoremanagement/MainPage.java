@@ -3115,10 +3115,10 @@ public class MainPage extends javax.swing.JFrame {
 
         formcontainer.add(TabContainer, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, -30, 1140, 710));
 
-        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/quanlycuahangsach/icons/cay-thong (Custom).png"))); // NOI18N
+        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/bookstoremanagement/icons/cay-thong (Custom).png"))); // NOI18N
         formcontainer.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(1180, 190, -1, -1));
 
-        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/quanlycuahangsach/icons/hop-qua (Custom).png"))); // NOI18N
+        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/bookstoremanagement/icons/hop-qua (Custom).png"))); // NOI18N
         formcontainer.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(1140, 500, -1, -1));
 
         getContentPane().add(formcontainer, java.awt.BorderLayout.CENTER);
@@ -3130,7 +3130,7 @@ public class MainPage extends javax.swing.JFrame {
         BanHang.setBackground(new java.awt.Color(79, 111, 82));
         BanHang.setFont(new java.awt.Font("Times New Roman", 1, 20)); // NOI18N
         BanHang.setForeground(new java.awt.Color(255, 255, 255));
-        BanHang.setIcon(new javax.swing.ImageIcon(getClass().getResource("/quanlycuahangsach/icons/icons8-shopping-cart-48 (1).png"))); // NOI18N
+        BanHang.setIcon(new javax.swing.ImageIcon(getClass().getResource("/bookstoremanagement/icons/icons8-shopping-cart-48 (1).png"))); // NOI18N
         BanHang.setText("Bán Hàng");
         BanHang.setBorder(null);
         BanHang.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
@@ -3145,7 +3145,7 @@ public class MainPage extends javax.swing.JFrame {
         NhapHang.setBackground(new java.awt.Color(79, 111, 82));
         NhapHang.setFont(new java.awt.Font("Times New Roman", 1, 20)); // NOI18N
         NhapHang.setForeground(new java.awt.Color(255, 255, 255));
-        NhapHang.setIcon(new javax.swing.ImageIcon(getClass().getResource("/quanlycuahangsach/icons/icons8-truck-48.png"))); // NOI18N
+        NhapHang.setIcon(new javax.swing.ImageIcon(getClass().getResource("/bookstoremanagement/icons/icons8-truck-48.png"))); // NOI18N
         NhapHang.setText("Nhập Hàng");
         NhapHang.setBorder(null);
         NhapHang.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
@@ -3159,7 +3159,7 @@ public class MainPage extends javax.swing.JFrame {
         HoaDon.setBackground(new java.awt.Color(79, 111, 82));
         HoaDon.setFont(new java.awt.Font("Times New Roman", 1, 20)); // NOI18N
         HoaDon.setForeground(new java.awt.Color(255, 255, 255));
-        HoaDon.setIcon(new javax.swing.ImageIcon(getClass().getResource("/quanlycuahangsach/icons/icons8-cheque-48.png"))); // NOI18N
+        HoaDon.setIcon(new javax.swing.ImageIcon(getClass().getResource("/bookstoremanagement/icons/icons8-cheque-48.png"))); // NOI18N
         HoaDon.setText("Hóa Đơn");
         HoaDon.setBorder(null);
         HoaDon.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
@@ -3174,7 +3174,7 @@ public class MainPage extends javax.swing.JFrame {
         Sach.setBackground(new java.awt.Color(79, 111, 82));
         Sach.setFont(new java.awt.Font("Times New Roman", 1, 20)); // NOI18N
         Sach.setForeground(new java.awt.Color(255, 255, 255));
-        Sach.setIcon(new javax.swing.ImageIcon(getClass().getResource("/quanlycuahangsach/icons/icons8-bookshelf-48.png"))); // NOI18N
+        Sach.setIcon(new javax.swing.ImageIcon(getClass().getResource("/bookstoremanagement/icons/icons8-bookshelf-48.png"))); // NOI18N
         Sach.setText("Sách");
         Sach.setBorder(null);
         Sach.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
@@ -3188,7 +3188,7 @@ public class MainPage extends javax.swing.JFrame {
         KM.setBackground(new java.awt.Color(79, 111, 82));
         KM.setFont(new java.awt.Font("Times New Roman", 1, 20)); // NOI18N
         KM.setForeground(new java.awt.Color(255, 255, 255));
-        KM.setIcon(new javax.swing.ImageIcon(getClass().getResource("/quanlycuahangsach/icons/icons8-sale-price-tag-48.png"))); // NOI18N
+        KM.setIcon(new javax.swing.ImageIcon(getClass().getResource("/bookstoremanagement/icons/icons8-sale-price-tag-48.png"))); // NOI18N
         KM.setText("Khuyến Mãi");
         KM.setBorder(null);
         KM.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
@@ -3203,7 +3203,7 @@ public class MainPage extends javax.swing.JFrame {
         KH.setBackground(new java.awt.Color(79, 111, 82));
         KH.setFont(new java.awt.Font("Times New Roman", 1, 20)); // NOI18N
         KH.setForeground(new java.awt.Color(255, 255, 255));
-        KH.setIcon(new javax.swing.ImageIcon(getClass().getResource("/quanlycuahangsach/icons/icons8-user-48.png"))); // NOI18N
+        KH.setIcon(new javax.swing.ImageIcon(getClass().getResource("/bookstoremanagement/icons/icons8-user-48.png"))); // NOI18N
         KH.setText("Khách hàng");
         KH.setBorder(null);
         KH.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
@@ -3217,7 +3217,7 @@ public class MainPage extends javax.swing.JFrame {
         NV.setBackground(new java.awt.Color(79, 111, 82));
         NV.setFont(new java.awt.Font("Times New Roman", 1, 20)); // NOI18N
         NV.setForeground(new java.awt.Color(255, 255, 255));
-        NV.setIcon(new javax.swing.ImageIcon(getClass().getResource("/quanlycuahangsach/icons/icons8-id-card-48.png"))); // NOI18N
+        NV.setIcon(new javax.swing.ImageIcon(getClass().getResource("/bookstoremanagement/icons/icons8-id-card-48.png"))); // NOI18N
         NV.setText("Nhân Viên");
         NV.setBorder(null);
         NV.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
@@ -3231,7 +3231,7 @@ public class MainPage extends javax.swing.JFrame {
         NCC.setBackground(new java.awt.Color(79, 111, 82));
         NCC.setFont(new java.awt.Font("Times New Roman", 1, 20)); // NOI18N
         NCC.setForeground(new java.awt.Color(255, 255, 255));
-        NCC.setIcon(new javax.swing.ImageIcon(getClass().getResource("/quanlycuahangsach/icons/icons8-skyscrapers-48.png"))); // NOI18N
+        NCC.setIcon(new javax.swing.ImageIcon(getClass().getResource("/bookstoremanagement/icons/icons8-skyscrapers-48.png"))); // NOI18N
         NCC.setText("Nhà Cung Cấp");
         NCC.setBorder(null);
         NCC.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
@@ -3245,7 +3245,7 @@ public class MainPage extends javax.swing.JFrame {
         TK.setBackground(new java.awt.Color(79, 111, 82));
         TK.setFont(new java.awt.Font("Times New Roman", 1, 20)); // NOI18N
         TK.setForeground(new java.awt.Color(255, 255, 255));
-        TK.setIcon(new javax.swing.ImageIcon(getClass().getResource("/quanlycuahangsach/icons/icons8-user-folder-48.png"))); // NOI18N
+        TK.setIcon(new javax.swing.ImageIcon(getClass().getResource("/bookstoremanagement/icons/icons8-user-folder-48.png"))); // NOI18N
         TK.setText("Tài Khoản");
         TK.setBorder(null);
         TK.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
