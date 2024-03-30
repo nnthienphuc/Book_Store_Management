@@ -25,7 +25,7 @@
     <AuxValue name="FormSettings_listenerGenerationStyle" type="java.lang.Integer" value="0"/>
     <AuxValue name="FormSettings_variablesLocal" type="java.lang.Boolean" value="false"/>
     <AuxValue name="FormSettings_variablesModifier" type="java.lang.Integer" value="2"/>
-    <AuxValue name="designerSize" type="java.awt.Dimension" value="-84,-19,0,5,115,114,0,18,106,97,118,97,46,97,119,116,46,68,105,109,101,110,115,105,111,110,65,-114,-39,-41,-84,95,68,20,2,0,2,73,0,6,104,101,105,103,104,116,73,0,5,119,105,100,116,104,120,112,0,0,3,12,0,0,6,82"/>
+    <AuxValue name="designerSize" type="java.awt.Dimension" value="-84,-19,0,5,115,114,0,18,106,97,118,97,46,97,119,116,46,68,105,109,101,110,115,105,111,110,65,-114,-39,-41,-84,95,68,20,2,0,2,73,0,6,104,101,105,103,104,116,73,0,5,119,105,100,116,104,120,112,0,0,3,-101,0,0,6,-112"/>
   </AuxValues>
 
   <Layout class="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout"/>
@@ -1125,7 +1125,7 @@
                                           <Component id="jLabel56" min="-2" max="-2" attributes="0"/>
                                           <Component id="txTenSPNH" min="-2" pref="141" max="-2" attributes="0"/>
                                       </Group>
-                                      <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                                      <EmptySpace min="0" pref="14" max="32767" attributes="0"/>
                                   </Group>
                               </Group>
                           </Group>
@@ -1154,7 +1154,7 @@
                                   <Component id="txSoLuongNH" alignment="3" min="-2" pref="33" max="-2" attributes="0"/>
                                   <Component id="txDonGiaNH" alignment="3" min="-2" pref="33" max="-2" attributes="0"/>
                               </Group>
-                              <EmptySpace max="32767" attributes="0"/>
+                              <EmptySpace pref="13" max="32767" attributes="0"/>
                           </Group>
                       </Group>
                     </DimensionLayout>
@@ -1372,7 +1372,7 @@
                                       <Component id="txMaNVNH" alignment="0" max="32767" attributes="0"/>
                                   </Group>
                               </Group>
-                              <EmptySpace max="32767" attributes="0"/>
+                              <EmptySpace pref="7" max="32767" attributes="0"/>
                           </Group>
                       </Group>
                     </DimensionLayout>
@@ -1597,7 +1597,7 @@
                           <Group type="102" alignment="0" attributes="0">
                               <EmptySpace min="-2" pref="97" max="-2" attributes="0"/>
                               <Component id="jLabel106" min="-2" pref="103" max="-2" attributes="0"/>
-                              <EmptySpace max="32767" attributes="0"/>
+                              <EmptySpace pref="120" max="32767" attributes="0"/>
                           </Group>
                       </Group>
                     </DimensionLayout>
@@ -1955,7 +1955,7 @@
                   <Layout>
                     <DimensionLayout dim="0">
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="jLabel107" alignment="0" max="32767" attributes="0"/>
+                          <Component id="jLabel107" alignment="0" pref="120" max="32767" attributes="0"/>
                       </Group>
                     </DimensionLayout>
                     <DimensionLayout dim="1">
@@ -4437,7 +4437,7 @@
                   <Layout>
                     <DimensionLayout dim="0">
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="jLabel86" alignment="0" max="32767" attributes="0"/>
+                          <Component id="jLabel86" alignment="0" pref="120" max="32767" attributes="0"/>
                       </Group>
                     </DimensionLayout>
                     <DimensionLayout dim="1">
@@ -4492,7 +4492,7 @@
                   <Layout>
                     <DimensionLayout dim="0">
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="jLabel87" alignment="0" max="32767" attributes="0"/>
+                          <Component id="jLabel87" alignment="0" pref="120" max="32767" attributes="0"/>
                       </Group>
                     </DimensionLayout>
                     <DimensionLayout dim="1">
@@ -4547,7 +4547,7 @@
                   <Layout>
                     <DimensionLayout dim="0">
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="jLabel88" alignment="0" max="32767" attributes="0"/>
+                          <Component id="jLabel88" alignment="0" pref="120" max="32767" attributes="0"/>
                       </Group>
                     </DimensionLayout>
                     <DimensionLayout dim="1">
@@ -4602,7 +4602,7 @@
                   <Layout>
                     <DimensionLayout dim="0">
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="jLabel89" alignment="0" max="32767" attributes="0"/>
+                          <Component id="jLabel89" alignment="0" pref="120" max="32767" attributes="0"/>
                       </Group>
                     </DimensionLayout>
                     <DimensionLayout dim="1">
@@ -5648,24 +5648,24 @@
         <Component class="javax.swing.JLabel" name="jLabel3">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/quanlycuahangsach/icons/cay-thong (Custom).png"/>
+              <Image iconType="3" name="/bookstoremanagement/icons/cay-thong (Custom).png"/>
             </Property>
           </Properties>
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-              <AbsoluteConstraints x="1180" y="190" width="-1" height="-1"/>
+              <AbsoluteConstraints x="1230" y="50" width="200" height="410"/>
             </Constraint>
           </Constraints>
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel5">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/quanlycuahangsach/icons/hop-qua (Custom).png"/>
+              <Image iconType="3" name="/bookstoremanagement/icons/hop-qua (Custom).png"/>
             </Property>
           </Properties>
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-              <AbsoluteConstraints x="1140" y="500" width="-1" height="-1"/>
+              <AbsoluteConstraints x="1160" y="310" width="290" height="180"/>
             </Constraint>
           </Constraints>
         </Component>
@@ -5702,7 +5702,7 @@
               <Color blue="ff" green="ff" red="ff" type="rgb"/>
             </Property>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/quanlycuahangsach/icons/icons8-shopping-cart-48 (1).png"/>
+              <Image iconType="3" name="/bookstoremanagement/icons/icons8-shopping-cart-48 (1).png"/>
             </Property>
             <Property name="text" type="java.lang.String" value="Ba&#x301;n Ha&#x300;ng"/>
             <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
@@ -5734,7 +5734,7 @@
               <Color blue="ff" green="ff" red="ff" type="rgb"/>
             </Property>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/quanlycuahangsach/icons/icons8-truck-48.png"/>
+              <Image iconType="3" name="/bookstoremanagement/icons/icons8-truck-48.png"/>
             </Property>
             <Property name="text" type="java.lang.String" value="Nh&#xe2;&#x323;p Ha&#x300;ng"/>
             <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
@@ -5763,7 +5763,7 @@
               <Color blue="ff" green="ff" red="ff" type="rgb"/>
             </Property>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/quanlycuahangsach/icons/icons8-cheque-48.png"/>
+              <Image iconType="3" name="/bookstoremanagement/icons/icons8-cheque-48.png"/>
             </Property>
             <Property name="text" type="java.lang.String" value="Ho&#x301;a &#x110;&#x1a1;n"/>
             <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
@@ -5795,7 +5795,7 @@
               <Color blue="ff" green="ff" red="ff" type="rgb"/>
             </Property>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/quanlycuahangsach/icons/icons8-bookshelf-48.png"/>
+              <Image iconType="3" name="/bookstoremanagement/icons/icons8-bookshelf-48.png"/>
             </Property>
             <Property name="text" type="java.lang.String" value="Sa&#x301;ch"/>
             <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
@@ -5824,7 +5824,7 @@
               <Color blue="ff" green="ff" red="ff" type="rgb"/>
             </Property>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/quanlycuahangsach/icons/icons8-sale-price-tag-48.png"/>
+              <Image iconType="3" name="/bookstoremanagement/icons/icons8-sale-price-tag-48.png"/>
             </Property>
             <Property name="text" type="java.lang.String" value="Khuy&#xea;&#x301;n Ma&#x303;i"/>
             <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
@@ -5856,7 +5856,7 @@
               <Color blue="ff" green="ff" red="ff" type="rgb"/>
             </Property>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/quanlycuahangsach/icons/icons8-user-48.png"/>
+              <Image iconType="3" name="/bookstoremanagement/icons/icons8-user-48.png"/>
             </Property>
             <Property name="text" type="java.lang.String" value="Kha&#x301;ch ha&#x300;ng"/>
             <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
@@ -5885,7 +5885,7 @@
               <Color blue="ff" green="ff" red="ff" type="rgb"/>
             </Property>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/quanlycuahangsach/icons/icons8-id-card-48.png"/>
+              <Image iconType="3" name="/bookstoremanagement/icons/icons8-id-card-48.png"/>
             </Property>
             <Property name="text" type="java.lang.String" value="Nh&#xe2;n Vi&#xea;n"/>
             <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
@@ -5914,7 +5914,7 @@
               <Color blue="ff" green="ff" red="ff" type="rgb"/>
             </Property>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/quanlycuahangsach/icons/icons8-skyscrapers-48.png"/>
+              <Image iconType="3" name="/bookstoremanagement/icons/icons8-skyscrapers-48.png"/>
             </Property>
             <Property name="text" type="java.lang.String" value="Nha&#x300; Cung C&#xe2;&#x301;p"/>
             <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
@@ -5943,7 +5943,7 @@
               <Color blue="ff" green="ff" red="ff" type="rgb"/>
             </Property>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/quanlycuahangsach/icons/icons8-user-folder-48.png"/>
+              <Image iconType="3" name="/bookstoremanagement/icons/icons8-user-folder-48.png"/>
             </Property>
             <Property name="text" type="java.lang.String" value="Ta&#x300;i Khoa&#x309;n"/>
             <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
@@ -5995,7 +5995,7 @@
                   </Group>
                   <EmptySpace min="-2" pref="42" max="-2" attributes="0"/>
                   <Component id="txCurrentPage" min="-2" pref="183" max="-2" attributes="0"/>
-                  <EmptySpace pref="623" max="32767" attributes="0"/>
+                  <EmptySpace pref="685" max="32767" attributes="0"/>
                   <Component id="txNhanVienDangNhap" min="-2" pref="286" max="-2" attributes="0"/>
                   <EmptySpace max="-2" attributes="0"/>
                   <Component id="jPanel8" min="-2" max="-2" attributes="0"/>

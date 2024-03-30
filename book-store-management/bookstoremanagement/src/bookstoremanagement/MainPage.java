@@ -1043,7 +1043,7 @@ public class MainPage extends javax.swing.JFrame {
                             .addComponent(jLabel57, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jLabel56)
                             .addComponent(txTenSPNH, javax.swing.GroupLayout.PREFERRED_SIZE, 141, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(0, 0, Short.MAX_VALUE))))
+                        .addGap(0, 14, Short.MAX_VALUE))))
         );
         jPanel4Layout.setVerticalGroup(
             jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -1064,7 +1064,7 @@ public class MainPage extends javax.swing.JFrame {
                 .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(txSoLuongNH, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(txDonGiaNH, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(13, Short.MAX_VALUE))
         );
 
         TabNH.add(jPanel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(810, 110, 320, 180));
@@ -1214,7 +1214,7 @@ public class MainPage extends javax.swing.JFrame {
                     .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                         .addComponent(txGioLapPN, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 222, Short.MAX_VALUE)
                         .addComponent(txMaNVNH, javax.swing.GroupLayout.Alignment.LEADING)))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(7, Short.MAX_VALUE))
         );
         jPanel5Layout.setVerticalGroup(
             jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -1278,7 +1278,7 @@ public class MainPage extends javax.swing.JFrame {
             .addGroup(BHthem11Layout.createSequentialGroup()
                 .addGap(97, 97, 97)
                 .addComponent(jLabel106, javax.swing.GroupLayout.PREFERRED_SIZE, 103, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(120, Short.MAX_VALUE))
         );
         BHthem11Layout.setVerticalGroup(
             BHthem11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -1454,7 +1454,7 @@ public class MainPage extends javax.swing.JFrame {
         LamMoiSP4.setLayout(LamMoiSP4Layout);
         LamMoiSP4Layout.setHorizontalGroup(
             LamMoiSP4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jLabel107, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(jLabel107, javax.swing.GroupLayout.DEFAULT_SIZE, 120, Short.MAX_VALUE)
         );
         LamMoiSP4Layout.setVerticalGroup(
             LamMoiSP4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -2620,7 +2620,7 @@ public class MainPage extends javax.swing.JFrame {
         LamMoiSP8.setLayout(LamMoiSP8Layout);
         LamMoiSP8Layout.setHorizontalGroup(
             LamMoiSP8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jLabel86, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(jLabel86, javax.swing.GroupLayout.DEFAULT_SIZE, 120, Short.MAX_VALUE)
         );
         LamMoiSP8Layout.setVerticalGroup(
             LamMoiSP8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -2651,7 +2651,7 @@ public class MainPage extends javax.swing.JFrame {
         BHsua6.setLayout(BHsua6Layout);
         BHsua6Layout.setHorizontalGroup(
             BHsua6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jLabel87, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(jLabel87, javax.swing.GroupLayout.DEFAULT_SIZE, 120, Short.MAX_VALUE)
         );
         BHsua6Layout.setVerticalGroup(
             BHsua6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -2682,7 +2682,7 @@ public class MainPage extends javax.swing.JFrame {
         BHxoa6.setLayout(BHxoa6Layout);
         BHxoa6Layout.setHorizontalGroup(
             BHxoa6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jLabel88, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(jLabel88, javax.swing.GroupLayout.DEFAULT_SIZE, 120, Short.MAX_VALUE)
         );
         BHxoa6Layout.setVerticalGroup(
             BHxoa6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -2713,7 +2713,7 @@ public class MainPage extends javax.swing.JFrame {
         BHthem6.setLayout(BHthem6Layout);
         BHthem6Layout.setHorizontalGroup(
             BHthem6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jLabel89, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(jLabel89, javax.swing.GroupLayout.DEFAULT_SIZE, 120, Short.MAX_VALUE)
         );
         BHthem6Layout.setVerticalGroup(
             BHthem6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -3203,10 +3203,10 @@ public class MainPage extends javax.swing.JFrame {
         formcontainer.add(TabContainer, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, -30, 1140, 710));
 
         jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/bookstoremanagement/icons/cay-thong (Custom).png"))); // NOI18N
-        formcontainer.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(1180, 190, -1, -1));
+        formcontainer.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(1230, 50, 200, 410));
 
         jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/bookstoremanagement/icons/hop-qua (Custom).png"))); // NOI18N
-        formcontainer.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(1140, 500, -1, -1));
+        formcontainer.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(1160, 310, 290, 180));
 
         getContentPane().add(formcontainer, java.awt.BorderLayout.CENTER);
 
@@ -3498,7 +3498,7 @@ public class MainPage extends javax.swing.JFrame {
                     .addComponent(jLabel62, javax.swing.GroupLayout.PREFERRED_SIZE, 137, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(42, 42, 42)
                 .addComponent(txCurrentPage, javax.swing.GroupLayout.PREFERRED_SIZE, 183, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 623, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 685, Short.MAX_VALUE)
                 .addComponent(txNhanVienDangNhap, javax.swing.GroupLayout.PREFERRED_SIZE, 286, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jPanel8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
