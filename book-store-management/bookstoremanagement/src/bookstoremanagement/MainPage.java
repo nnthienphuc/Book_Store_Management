@@ -1755,7 +1755,7 @@ public class MainPage extends javax.swing.JFrame {
 
             },
             new String [] {
-                "STT", "Mã sách", "Tên sách", "Thể loại", "Tác giả", "Năm xb", "Giá", "Số lượng", "tenfile"
+                "STT", "Mã sách", "Tên sách", "Thể loại", "Tác giả", "Năm xb", "Số lượng", "Giá nhập", "Giá bán", "Trạng thái"
             }
         ));
         SPTable.setFocusable(false);
@@ -1771,20 +1771,19 @@ public class MainPage extends javax.swing.JFrame {
         });
         jScrollPane2.setViewportView(SPTable);
         if (SPTable.getColumnModel().getColumnCount() > 0) {
-            SPTable.getColumnModel().getColumn(0).setMaxWidth(100);
-            SPTable.getColumnModel().getColumn(1).setMinWidth(10);
-            SPTable.getColumnModel().getColumn(1).setPreferredWidth(10);
-            SPTable.getColumnModel().getColumn(3).setPreferredWidth(20);
-            SPTable.getColumnModel().getColumn(4).setMinWidth(10);
-            SPTable.getColumnModel().getColumn(4).setPreferredWidth(10);
-            SPTable.getColumnModel().getColumn(7).setMinWidth(10);
+            SPTable.getColumnModel().getColumn(0).setPreferredWidth(5);
+            SPTable.getColumnModel().getColumn(1).setPreferredWidth(5);
+            SPTable.getColumnModel().getColumn(2).setPreferredWidth(40);
+            SPTable.getColumnModel().getColumn(3).setPreferredWidth(25);
+            SPTable.getColumnModel().getColumn(4).setPreferredWidth(25);
+            SPTable.getColumnModel().getColumn(5).setPreferredWidth(5);
+            SPTable.getColumnModel().getColumn(6).setPreferredWidth(5);
             SPTable.getColumnModel().getColumn(7).setPreferredWidth(10);
-            SPTable.getColumnModel().getColumn(8).setMinWidth(0);
-            SPTable.getColumnModel().getColumn(8).setPreferredWidth(0);
-            SPTable.getColumnModel().getColumn(8).setMaxWidth(0);
+            SPTable.getColumnModel().getColumn(8).setPreferredWidth(10);
+            SPTable.getColumnModel().getColumn(9).setPreferredWidth(10);
         }
 
-        TabSP.add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 180, 1020, 500));
+        TabSP.add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 180, 1110, 500));
 
         ImageLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         TabSP.add(ImageLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(830, 180, 320, 500));
