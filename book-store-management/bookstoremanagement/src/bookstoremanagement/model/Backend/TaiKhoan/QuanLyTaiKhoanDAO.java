@@ -11,18 +11,18 @@ import javax.swing.JOptionPane;
  * @author ADMIN
  */
 public class QuanLyTaiKhoanDAO {
-    ConnectionDB qltkConnectiion;
+    ConnectionDB qltkConnection;
 
     public QuanLyTaiKhoanDAO() {
 
     }
 
     public ArrayList<TaiKhoan> readDB() {
-        qltkConnectiion = new ConnectionDB();
+        qltkConnection = new ConnectionDB();
         ArrayList<TaiKhoan> dstk = new ArrayList<>();
         try {
             String qry = "SELECT * FROM TaiKhoan";
-            ResultSet r = qltkConnectiion.sqlQuery(qry);
+            ResultSet r = qltkConnection.sqlQuery(qry);
             if (r != null) {
                 while (r.next()) {
                     String ten = r.getString("tenTaiKhoan");
@@ -37,35 +37,35 @@ public class QuanLyTaiKhoanDAO {
         } catch (SQLException ex) {
             JOptionPane.showMessageDialog(null, "-- ERROR! Lỗi đọc dữ liệu bảng tài khoản");
         } finally {
-            qltkConnectiion.closeConnect();
+            qltkConnection.closeConnect();
         }
         return dstk;
     }
 
     public Boolean add(TaiKhoan tk) {
-        qltkConnectiion = new ConnectionDB();
-        Boolean ok = qltkConnectiion.sqlUpdate("INSERT INTO `TaiKhoan` (`tenTaiKhoan`, `matKhau`, `maNV`, `maQuyen`) VALUES ('"
+        qltkConnection = new ConnectionDB();
+        Boolean ok = qltkConnection.sqlUpdate("INSERT INTO `TaiKhoan` (`tenTaiKhoan`, `matKhau`, `maNV`, `maQuyen`) VALUES ('"
                 + tk.getTenDangNhap()+ "', '" + tk.getMatKhau() + "', '" + tk.getMaNV() + "', '" + tk.getMaQuyen() + "');");
-        qltkConnectiion.closeConnect();
+        qltkConnection.closeConnect();
         return ok;
     }
 
     public Boolean delete(String tendangnhap) {
-        qltkConnectiion = new ConnectionDB();
-        Boolean ok = qltkConnectiion.sqlUpdate("DELETE FROM `TaiKhoan` WHERE `TaiKhoan`.`tenTaiKhoan` = '" + tendangnhap + "'");
-        qltkConnectiion.closeConnect();
+        qltkConnection = new ConnectionDB();
+        Boolean ok = qltkConnection.sqlUpdate("DELETE FROM `TaiKhoan` WHERE `TaiKhoan`.`tenTaiKhoan` = '" + tendangnhap + "'");
+        qltkConnection.closeConnect();
         return ok;
     }
 
     public Boolean update(String tendangnhap, String matkhau, String maNV, String maQuyen) {
-        qltkConnectiion = new ConnectionDB();
-        Boolean ok = qltkConnectiion.sqlUpdate("Update TaiKhoan Set matKhau='" + matkhau + "',maNV='" + maNV
+        qltkConnection = new ConnectionDB();
+        Boolean ok = qltkConnection.sqlUpdate("Update TaiKhoan Set matKhau='" + matkhau + "',maNV='" + maNV
                 + "',maQuyen='" + maQuyen + "' where tenTaiKhoan='" + tendangnhap + "'");
-        qltkConnectiion.closeConnect();
+        qltkConnection.closeConnect();
         return ok;
     }
 
     public void close() {
-        qltkConnectiion.closeConnect();
+        qltkConnection.closeConnect();
     }
 }
