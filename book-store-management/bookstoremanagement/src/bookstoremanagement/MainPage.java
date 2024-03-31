@@ -3736,7 +3736,8 @@ public class MainPage extends javax.swing.JFrame {
 //        int soluongtonkho = spBH.getSoLuong();
 //        float giamtien = thanhtien * KhuyenMai.getPhanTramKM();
 //        float thanhtiensauKM = thanhtien - giamtien;
-        tongtienBH = 0;
+//        tongtienBH = 0;
+
         tongtienBH = tongtienBH + thanhTienBan;
        
         
@@ -3782,7 +3783,7 @@ public class MainPage extends javax.swing.JFrame {
         int soluongtonkho = spNH.getSoLuong();
         float thanhTienNhap = giaNhap * soluong;
         
-        tongtienNH = 0;
+//        tongtienNH = 0;
         tongtienNH = tongtienNH + thanhTienNhap;
         txTongTienNH.setText(PriceFormat.format(tongtienNH));
         txTienTong1.setText(Float.toString(tongtienNH));
