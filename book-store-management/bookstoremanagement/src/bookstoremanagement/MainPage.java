@@ -448,11 +448,11 @@ public class MainPage extends javax.swing.JFrame {
 
             },
             new String [] {
-                "STT", "Mã sách", "Tên sách", "Thể loại", "Tác giả", "Năm xb", "Số lượng", "Giá bán", "Giá nhập"
+                "STT", "Mã sách", "Tên sách", "Thể loại", "Tác giả", "Năm xb", "Số lượng", "Giá nhập", "Giá bán"
             }
         ) {
             boolean[] canEdit = new boolean [] {
-                false, false, false, false, false, false, false, false, true
+                false, false, false, false, false, false, false, true, false
             };
 
             public boolean isCellEditable(int rowIndex, int columnIndex) {
@@ -1079,11 +1079,11 @@ public class MainPage extends javax.swing.JFrame {
 
             },
             new String [] {
-                "STT", "Mã sách", "Tên sách", "Thể loại", "Tác giả", "Năm xb", "Số lượng", "Giá bán", "Giá nhập"
+                "STT", "Mã sách", "Tên sách", "Thể loại", "Tác giả", "Năm xb", "Số lượng", "Giá nhập", "Giá bán"
             }
         ) {
             boolean[] canEdit = new boolean [] {
-                false, false, false, false, false, false, false, false, true
+                false, false, false, false, false, false, false, false, false
             };
 
             public boolean isCellEditable(int rowIndex, int columnIndex) {
@@ -3718,7 +3718,7 @@ public class MainPage extends javax.swing.JFrame {
             }
         
                                
-        float giaNhap = spBH.getGiaNhap();
+//        float giaNhap = spBH.getGiaNhap();
         float giaBan = spBH.getGiaBan();
         int soLuong = Integer.parseInt(txSoLuongBH.getText());
         float thanhTienBan = giaBan * soLuong;
@@ -3738,7 +3738,6 @@ public class MainPage extends javax.swing.JFrame {
                               masach,
                               spBH.getTenSach(),
                               soLuong,
-                              PriceFormat.format(giaNhap),
                               PriceFormat.format(giaBan),
                               PriceFormat.format(thanhTienBan)
                               },BHTTTable);            

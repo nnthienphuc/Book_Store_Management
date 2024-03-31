@@ -130,8 +130,8 @@
                             <Column editable="false" title="Ta&#x301;c gia&#x309;" type="java.lang.Object"/>
                             <Column editable="false" title="N&#x103;m xb" type="java.lang.Object"/>
                             <Column editable="false" title="S&#x1ed1; l&#x1b0;&#x1ee3;ng" type="java.lang.Object"/>
-                            <Column editable="false" title="Gia&#x301; ba&#x301;n" type="java.lang.Object"/>
                             <Column editable="true" title="Gia&#x301; nh&#xe2;&#x323;p" type="java.lang.Object"/>
+                            <Column editable="false" title="Gia&#x301; ba&#x301;n" type="java.lang.Object"/>
                           </Table>
                         </Property>
                         <Property name="columnModel" type="javax.swing.table.TableColumnModel" editor="org.netbeans.modules.form.editors2.TableColumnModelEditor">
@@ -1272,8 +1272,8 @@
                             <Column editable="false" title="Ta&#x301;c gia&#x309;" type="java.lang.Object"/>
                             <Column editable="false" title="N&#x103;m xb" type="java.lang.Object"/>
                             <Column editable="false" title="S&#x1ed1; l&#x1b0;&#x1ee3;ng" type="java.lang.Object"/>
+                            <Column editable="false" title="Gia&#x301; nh&#xe2;&#x323;p" type="java.lang.Object"/>
                             <Column editable="false" title="Gia&#x301; ba&#x301;n" type="java.lang.Object"/>
-                            <Column editable="true" title="Gia&#x301; nh&#xe2;&#x323;p" type="java.lang.Object"/>
                           </Table>
                         </Property>
                         <Property name="columnModel" type="javax.swing.table.TableColumnModel" editor="org.netbeans.modules.form.editors2.TableColumnModelEditor">
