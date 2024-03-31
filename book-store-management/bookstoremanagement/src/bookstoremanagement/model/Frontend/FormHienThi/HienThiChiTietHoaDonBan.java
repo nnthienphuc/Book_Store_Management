@@ -26,6 +26,7 @@ public class HienThiChiTietHoaDonBan {
         for (ChiTietHoaDonBan cthd : data) {
                 AddRowToTable(new Object[]{
                 stt,
+                cthd.getMaHDB(),
                 cthd.getMaSach(),
                 qlsBUS.getSach(cthd.getMaSach()).getTenSach(),
                 String.valueOf(cthd.getSoLuong()),

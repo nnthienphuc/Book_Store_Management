@@ -90,7 +90,7 @@ public class ChonCTHDBForm extends javax.swing.JFrame {
         });
 
         jLabel4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/quanlycuahangsach/icons/icons8-search-25.png"))); // NOI18N
+        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/bookstoremanagement/icons/icons8-search-25.png"))); // NOI18N
 
         cboSearchType.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         cboSearchType.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Tất cả", "Mã loại", "Tên loại", "Mô tả" }));
