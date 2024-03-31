@@ -4691,8 +4691,8 @@ public class MainPage extends javax.swing.JFrame {
 
                 HoaDonBan hdb = new HoaDonBan(
                     txMaHDBH.getText(),
-                    LoginForm.nhanVienLogin.getMaNV(),
                     KhachHang.getMaKH(),
+                    LoginForm.nhanVienLogin.getMaNV(),
                     KhuyenMai.getMaKM(),
                     LocalDate.parse(txNgayLapHD.getText()),
                     LocalTime.parse(txGioLapHD.getText()),
