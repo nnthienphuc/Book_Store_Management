@@ -24,8 +24,8 @@ public class QuanLyHoaDonBanDAO {
                 while (rs.next()) {
                     HoaDonBan hdb = new HoaDonBan();
                     hdb.setMaHDB(rs.getString(1));
-                    hdb.setMaNV(rs.getString(2));
-                    hdb.setMaKH(rs.getString(3));
+                    hdb.setMaNV(rs.getString(3));
+                    hdb.setMaKH(rs.getString(2));
                     hdb.setMaKM(rs.getString(4));
                     hdb.setNgayLap(rs.getDate(5).toLocalDate());
                     hdb.setGioLap(rs.getTime(6).toLocalTime());
