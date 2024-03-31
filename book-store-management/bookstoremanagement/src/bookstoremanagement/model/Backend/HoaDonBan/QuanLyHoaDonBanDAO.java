@@ -69,8 +69,8 @@ public class QuanLyHoaDonBanDAO {
     public Boolean update(HoaDonBan hdb) {
         connection = new ConnectionDB();
         Boolean success = connection.sqlUpdate("UPDATE HoaDonBan SET "
-                + "MaNV='" + hdb.getMaNV()
                 + "', MaKH='" + hdb.getMaKH()
+                + "MaNV='" + hdb.getMaNV()
                 + "', MaKM='" + hdb.getMaKM()
                 + "', NgayLap='" + hdb.getNgayLap() 
                 + "', GioLap='" + hdb.getGioLap() 
