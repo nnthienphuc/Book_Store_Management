@@ -38,7 +38,7 @@ public class QuanLySachDAO {
                     float giaBan = resultSet.getFloat("giaBan");
                     float giaNhap = resultSet.getFloat("giaNhap");
                     short trangThai = resultSet.getShort("trangThai");
-                    dsSach.add(new Sach(maSach, tenSach, theLoai, tacGia, namXB, soLuong, giaBan, giaNhap, trangThai));
+                    dsSach.add(new Sach(maSach, tenSach, theLoai, tacGia, namXB, soLuong, giaNhap, giaBan, trangThai));
                 }
             }
         } catch (SQLException ex) {
@@ -67,7 +67,7 @@ public class QuanLySachDAO {
                     float giaBan = resultSet.getFloat("giaBan");
                     float giaNhap = resultSet.getFloat("giaNhap");
                     short trangThai = resultSet.getShort("trangThai");
-                    dsSach.add(new Sach(maSach, tenSach, theLoai, tacGia, namXB, soLuong, giaBan, giaNhap, trangThai));
+                    dsSach.add(new Sach(maSach, tenSach, theLoai, tacGia, namXB, soLuong, giaNhap, giaBan, trangThai));
                 }
             }
         } catch (SQLException ex) {

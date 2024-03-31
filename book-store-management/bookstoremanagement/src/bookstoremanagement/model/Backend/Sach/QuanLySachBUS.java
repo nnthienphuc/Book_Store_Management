@@ -75,7 +75,7 @@ public class QuanLySachBUS {
         }
     }
 
-    public ArrayList<Sach> search(String value, String type, int soLuong1, int soLuong2, float giaNhap1, float giaNhap2, float giaBan1, float giaBan2, int trangThai) {
+    public ArrayList<Sach> search(String value, String type) {
         ArrayList<Sach> result = new ArrayList<>();
 
         dsSach.forEach((sach) -> {
@@ -146,22 +146,110 @@ public class QuanLySachBUS {
             }
         });
         
-        for (int sachCounter = result.size() - 1; sachCounter >= 0; sachCounter--) {
-            Sach sach = result.get(sachCounter);
-            int soLuong = sach.getSoLuong();
-            float giaNhap = sach.getGiaNhap();
-            float giaBan = sach.getGiaBan();
-            Boolean soLuongKhongThoa = (soLuong1 != -1 && soLuong < soLuong1) || (soLuong2 != -1 && soLuong > soLuong2);
-            Boolean giaNhapKhongThoa = (giaNhap1 != -1 && giaNhap < giaNhap1) || (giaNhap2 != -1 && giaNhap > giaNhap2);
-            Boolean giaBanKhongThoa = (giaBan1 != -1 && giaBan < giaBan1) || (giaBan2 != -1 && giaBan > giaBan2);
-
-            if (soLuongKhongThoa || giaNhapKhongThoa || giaBanKhongThoa) {
-                result.remove(sachCounter);
-            }
-        }
+//        for (int sachCounter = result.size() - 1; sachCounter >= 0; sachCounter--) {
+//            Sach sach = result.get(sachCounter);
+//            int soLuong = sach.getSoLuong();
+//            float giaNhap = sach.getGiaNhap();
+//            float giaBan = sach.getGiaBan();
+//            Boolean soLuongKhongThoa = (soLuong1 != -1 && soLuong < soLuong1) || (soLuong2 != -1 && soLuong > soLuong2);
+//            Boolean giaNhapKhongThoa = (giaNhap1 != -1 && giaNhap < giaNhap1) || (giaNhap2 != -1 && giaNhap > giaNhap2);
+//            Boolean giaBanKhongThoa = (giaBan1 != -1 && giaBan < giaBan1) || (giaBan2 != -1 && giaBan > giaBan2);
+//
+//            if (soLuongKhongThoa || giaNhapKhongThoa || giaBanKhongThoa) {
+//                result.remove(sachCounter);
+//            }
+//        }
 
         return result;
     }
+    
+//    public ArrayList<Sach> search(String value, String type, int soLuong1, int soLuong2, float giaNhap1, float giaNhap2, float giaBan1, float giaBan2, int trangThai) {
+//        ArrayList<Sach> result = new ArrayList<>();
+//
+//        dsSach.forEach((sach) -> {
+//            if (type.equals("Tất cả")) {
+//                if (sach.getMaSach().toLowerCase().contains(value.toLowerCase())
+//                        || sach.getTenSach().toLowerCase().contains(value.toLowerCase())
+//                        || sach.getTheLoai().toLowerCase().contains(value.toLowerCase())
+//                        || sach.getTacGia().toLowerCase().contains(value.toLowerCase())
+//                        || sach.getNamXB().toLowerCase().contains(value.toLowerCase())
+//                        || String.valueOf(sach.getSoLuong()).toLowerCase().contains(value.toLowerCase())
+//                        || String.valueOf(sach.getGiaNhap()).toLowerCase().contains(value.toLowerCase())
+//                        || String.valueOf(sach.getGiaBan()).toLowerCase().contains(value.toLowerCase())
+//                        || String.valueOf((sach.getTrangThai() == 1 ? "Ẩn" : "Hiện")).toLowerCase().contains(value.toLowerCase()))
+//                {
+//                    result.add(sach);
+//                }
+//            } else {
+//                switch (type) {
+//                    case "Mã sách":
+//                        if (sach.getMaSach().toLowerCase().contains(value.toLowerCase())) {
+//                            result.add(sach);
+//                        }
+//                        break;
+//                    case "Tên Sách":
+//                        if (sach.getTenSach().toLowerCase().contains(value.toLowerCase())) {
+//                            result.add(sach);
+//                        }
+//                        break;
+//                    case "Thể Loại":
+//                        if (sach.getTheLoai().toLowerCase().contains(value.toLowerCase())) {
+//                            result.add(sach);
+//                        }
+//                        break;
+//                    case "Tác Giả":
+//                        if (sach.getTacGia().toLowerCase().contains(value.toLowerCase())) {
+//                            result.add(sach);
+//                        }
+//                        break;
+//                    case "Năm XB":
+//                    if (sach.getNamXB().toLowerCase().contains(value.toLowerCase())) {
+//                        result.add(sach);
+//                    }
+//                    break;
+//                    case "Số Lượng":
+//                    if (String.valueOf(sach.getSoLuong()).toLowerCase().contains(value.toLowerCase())) {
+//                        result.add(sach);
+//                    }
+//                    break;
+//                    case "Giá Nhập":
+//                        if (String.valueOf(sach.getGiaNhap()).toLowerCase().contains(value.toLowerCase())) {
+//                            result.add(sach);
+//                        }
+//                        break;
+//                    case "Giá Bán":
+//                        if (String.valueOf(sach.getGiaBan()).toLowerCase().contains(value.toLowerCase())) {
+//                            result.add(sach);
+//                        }
+//                        break;
+//                    case "Trạng thái":
+//                        String tt = (sach.getTrangThai() == 1 ? "Ẩn" : "Hiện");
+//                        if (String.valueOf(tt).toLowerCase().contains(value.toLowerCase())) {
+//                            result.add(sach);
+//                        }
+//                        break;
+//                    default:
+//                        break;
+//                }
+//            }
+//        });
+//        
+//        for (int sachCounter = result.size() - 1; sachCounter >= 0; sachCounter--) {
+//            Sach sach = result.get(sachCounter);
+//            int soLuong = sach.getSoLuong();
+//            float giaNhap = sach.getGiaNhap();
+//            float giaBan = sach.getGiaBan();
+//            Boolean soLuongKhongThoa = (soLuong1 != -1 && soLuong < soLuong1) || (soLuong2 != -1 && soLuong > soLuong2);
+//            Boolean giaNhapKhongThoa = (giaNhap1 != -1 && giaNhap < giaNhap1) || (giaNhap2 != -1 && giaNhap > giaNhap2);
+//            Boolean giaBanKhongThoa = (giaBan1 != -1 && giaBan < giaBan1) || (giaBan2 != -1 && giaBan > giaBan2);
+//
+//            if (soLuongKhongThoa || giaNhapKhongThoa || giaBanKhongThoa) {
+//                result.remove(sachCounter);
+//            }
+//        }
+//
+//        return result;
+//    }
 
     public Boolean add(Sach sach) {
         Boolean queryBoolean = qlsachDAO.add(sach);
