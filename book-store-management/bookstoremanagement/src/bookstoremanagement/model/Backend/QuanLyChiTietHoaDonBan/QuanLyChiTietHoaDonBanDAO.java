@@ -24,7 +24,7 @@ public class QuanLyChiTietHoaDonBanDAO {
             ResultSet rs = connection.sqlQuery(qry);
             if (rs != null) {
                 while (rs.next()) {
-                    ChiTietHoaDonBan hd = new ChiTietHoaDonBan(rs.getString(1),rs.getString(2), rs.getInt(3));
+                    ChiTietHoaDonBan hd = new ChiTietHoaDonBan(rs.getString("maHDB"),rs.getString("maSach"), rs.getInt("soLuong"));
                     dshd.add(hd);
                 }
             }

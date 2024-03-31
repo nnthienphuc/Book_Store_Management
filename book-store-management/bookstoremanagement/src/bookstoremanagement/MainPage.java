@@ -1578,7 +1578,7 @@ public class MainPage extends javax.swing.JFrame {
 
             },
             new String [] {
-                "STT", "Mã hóa đơn", "Mã nhân viên", "Mã khách hàng", "Mã khuyến mãi", "Ngày bán", "Giờ bán", "Tổng tiền"
+                "STT", "Mã hóa đơn", "Mã khách hàng", "Mã nhân viên", "Mã khuyến mãi", "Ngày bán", "Giờ bán", "Tổng tiền"
             }
         ) {
             boolean[] canEdit = new boolean [] {
