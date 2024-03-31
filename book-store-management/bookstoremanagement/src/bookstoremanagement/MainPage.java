@@ -3701,7 +3701,7 @@ public class MainPage extends javax.swing.JFrame {
     public void AddTableBH(){
         int index = BHSPTable.getSelectedRow();
         if(index<0){ JOptionPane.showMessageDialog(null, "Bạn chưa chọn sản phẩm nào");}
-        else if(Integer.parseInt(txSoLuongBH.getText()) > Integer.parseInt(BHSPTable.getModel().getValueAt(index, 5).toString()))
+        else if(Integer.parseInt(txSoLuongBH.getText()) > Integer.parseInt(BHSPTable.getModel().getValueAt(index, 6).toString()))
         {JOptionPane.showMessageDialog(null, "Số lượng tồn kho không đủ!");}
   
         else  {
@@ -4568,7 +4568,7 @@ public class MainPage extends javax.swing.JFrame {
         TableModel model = NHSPTable.getModel();
         String masp = model.getValueAt(index, 1).toString();
         String tensp = model.getValueAt(index, 2).toString();
-        String dongia = model.getValueAt(index, 8).toString();
+        String dongia = model.getValueAt(index, 7).toString();
         txMaSPNH.setText(masp);
         txTenSPNH.setText(tensp);
         txDonGiaNH.setText(dongia);
@@ -4736,7 +4736,7 @@ public class MainPage extends javax.swing.JFrame {
         TableModel model = BHSPTable.getModel();
         String masach = model.getValueAt(index, 1).toString();
         String tensach = model.getValueAt(index, 2).toString();
-        String dongia = model.getValueAt(index, 7).toString();
+        String dongia = model.getValueAt(index, 8).toString();
         txMaSPBH.setText(masach);
         txTenSPBH.setText(tensach);
         txDonGiaBH.setText(dongia);
