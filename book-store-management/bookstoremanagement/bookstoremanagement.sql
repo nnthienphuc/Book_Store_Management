@@ -146,10 +146,10 @@ alter table `TaiKhoan`
     add key `maNV`(`maNV`),
     add key `maQuyen`(`maQuyen`);
 
-alter table HoaDonBan
-	ADD CONSTRAINT `hoadonban_ibfk_1` FOREIGN KEY (maKH) REFERENCES KhachHang (maKH) ON UPDATE CASCADE,
-	ADD CONSTRAINT `hoadonban_ibfk_2` FOREIGN KEY (maNV) REFERENCES NhanVien (maNV) ON UPDATE CASCADE,
-	ADD CONSTRAINT `khuyenmai_ibfk_3` FOREIGN KEY (maKM) REFERENCES KhuyenMai (maKM) ON UPDATE CASCADE;
+alter table `HoaDonBan`
+	ADD CONSTRAINT `hoadonban_ibfk_1` FOREIGN KEY (`maKH`) REFERENCES `KhachHang` (`maKH`) ON UPDATE CASCADE,
+	ADD CONSTRAINT `hoadonban_ibfk_2` FOREIGN KEY (`maNV`) REFERENCES `NhanVien` (`maNV`) ON UPDATE CASCADE,
+	ADD CONSTRAINT `khuyenmai_ibfk_3` FOREIGN KEY (`maKM`) REFERENCES `KhuyenMai` (`maKM`) ON UPDATE CASCADE;
 
 alter table `HoaDonNhap`
 	add constraint `hoadonnhap_ibfk_1` foreign key (`maNCC`) references `NhaCungCap` (`maNCC`) on update cascade,
