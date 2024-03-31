@@ -582,6 +582,7 @@ public class MainPage extends javax.swing.JFrame {
 
         jLabel46.setText("Khách hàng");
 
+        txKhachHang.setEditable(false);
         txKhachHang.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         txKhachHang.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -589,6 +590,7 @@ public class MainPage extends javax.swing.JFrame {
             }
         });
 
+        txTongTienBH.setEditable(false);
         txTongTienBH.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         txTongTienBH.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -598,6 +600,7 @@ public class MainPage extends javax.swing.JFrame {
 
         jLabel47.setText("Tổng tiền");
 
+        txMaNVBH.setEditable(false);
         txMaNVBH.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         txMaNVBH.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -607,6 +610,7 @@ public class MainPage extends javax.swing.JFrame {
 
         jLabel49.setText("Nhân viên");
 
+        txNgayLapHD.setEditable(false);
         txNgayLapHD.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         txNgayLapHD.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -643,6 +647,7 @@ public class MainPage extends javax.swing.JFrame {
 
         jLabel53.setText("Giờ lập");
 
+        txGioLapHD.setEditable(false);
         txGioLapHD.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         txGioLapHD.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -650,6 +655,7 @@ public class MainPage extends javax.swing.JFrame {
             }
         });
 
+        txKhuyenMai.setEditable(false);
         txKhuyenMai.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         txKhuyenMai.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -1121,6 +1127,7 @@ public class MainPage extends javax.swing.JFrame {
 
         jLabel60.setText("Nhà cung cấp");
 
+        txNhaCungCap.setEditable(false);
         txNhaCungCap.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         txNhaCungCap.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -1128,6 +1135,7 @@ public class MainPage extends javax.swing.JFrame {
             }
         });
 
+        txTongTienNH.setEditable(false);
         txTongTienNH.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         txTongTienNH.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -1137,6 +1145,7 @@ public class MainPage extends javax.swing.JFrame {
 
         jLabel61.setText("Tổng tiền");
 
+        txMaNVNH.setEditable(false);
         txMaNVNH.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         txMaNVNH.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -1146,6 +1155,7 @@ public class MainPage extends javax.swing.JFrame {
 
         jLabel65.setText("Nhân viên");
 
+        txNgayLapPN.setEditable(false);
         txNgayLapPN.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         txNgayLapPN.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -1182,6 +1192,7 @@ public class MainPage extends javax.swing.JFrame {
 
         jLabel105.setText("Giờ lập");
 
+        txGioLapPN.setEditable(false);
         txGioLapPN.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         txGioLapPN.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -3766,7 +3777,7 @@ public class MainPage extends javax.swing.JFrame {
         
                                
         float giaNhap = spNH.getGiaNhap();
-        float giaBan = spNH.getGiaBan();
+//        float giaBan = spNH.getGiaBan();
         int soluong = Integer.parseInt(txSoLuongNH.getText());
         int soluongtonkho = spNH.getSoLuong();
         float thanhTienNhap = giaNhap * soluong;
@@ -3784,7 +3795,6 @@ public class MainPage extends javax.swing.JFrame {
                               spNH.getTenSach(),
                               soluong,
                               PriceFormat.format(giaNhap),
-                              PriceFormat.format(giaBan),
                               PriceFormat.format(thanhTienNhap)
                               },NHTTTable);            
         
