@@ -23,13 +23,13 @@ public class QuanLyHoaDonBanDAO {
             if (rs != null) {
                 while (rs.next()) {
                     HoaDonBan hdb = new HoaDonBan();
-                    hdb.setMaHDB(rs.getString(1));
-                    hdb.setMaNV(rs.getString(3));
-                    hdb.setMaKH(rs.getString(2));
-                    hdb.setMaKM(rs.getString(4));
-                    hdb.setNgayLap(rs.getDate(5).toLocalDate());
-                    hdb.setGioLap(rs.getTime(6).toLocalTime());
-                    hdb.setTongTien(rs.getFloat(7));
+                    hdb.setMaHDB(rs.getString("maHDB"));
+                    hdb.setMaKH(rs.getString("maKH"));
+                    hdb.setMaNV(rs.getString("maNV"));
+                    hdb.setMaKM(rs.getString("maKM"));
+                    hdb.setNgayLap(rs.getDate("ngayLap").toLocalDate());
+                    hdb.setGioLap(rs.getTime("gioLap").toLocalTime());
+                    hdb.setTongTien(rs.getFloat("tongTien"));
                     dshdb.add(hdb);
                 }
             }

@@ -21,7 +21,7 @@ public class QuanLyHoaDonBanBUS {
     }
     
     public String[] getHeaders() {
-        return new String[]{"Mã hóa đơn", "Mã nhân viên", "Mã khách hàng", "Mã khuyến mãi", "Ngày lập", "Giờ lập", "Tổng tiền"};
+        return new String[]{"Mã hóa đơn", "Mã khách hàng", "Mã nhân viên", "Mã khuyến mãi", "Ngày lập", "Giờ lập", "Tổng tiền"};
     }
     
     public String getNextID() {
@@ -46,13 +46,13 @@ public class QuanLyHoaDonBanBUS {
         return false;
     }
     
-    public Boolean add(String maHDB, String maNV, String maKH, String maKM, LocalDate ngayLap, LocalTime gioLap, float tongTien) {
-        HoaDonBan hdb = new HoaDonBan(maHDB, maNV, maKH, maKM, ngayLap, gioLap, tongTien);
+    public Boolean add(String maHDB, String maKH, String maNV, String maKM, LocalDate ngayLap, LocalTime gioLap, float tongTien) {
+        HoaDonBan hdb = new HoaDonBan(maHDB, maKH, maNV, maKM, ngayLap, gioLap, tongTien);
         return add(hdb);
     }
     
-    public Boolean update(String maHDB, String maNV, String maKH, String maKM, LocalDate ngayLap, LocalTime gioLap, float tongTien) {
-        HoaDonBan hdb = new HoaDonBan(maHDB, maNV, maKH, maKM, ngayLap, gioLap, tongTien);
+    public Boolean update(String maHDB, String maKH, String maNV, String maKM, LocalDate ngayLap, LocalTime gioLap, float tongTien) {
+        HoaDonBan hdb = new HoaDonBan(maHDB, maKH, maNV, maKM, ngayLap, gioLap, tongTien);
         return update(hdb);
     }
     
@@ -118,15 +118,15 @@ public class QuanLyHoaDonBanBUS {
                         result.add(hdb);
                     }
                     break;
-
-                case "Mã nhân viên":
-                    if (hdb.getMaNV().toLowerCase().contains(keyword.toLowerCase())) {
+                    
+                case "Mã khách hàng":
+                    if (hdb.getMaKH().toLowerCase().contains(keyword.toLowerCase())) {
                         result.add(hdb);
                     }
                     break;
 
-                case "Mã khách hàng":
-                    if (hdb.getMaKH().toLowerCase().contains(keyword.toLowerCase())) {
+                case "Mã nhân viên":
+                    if (hdb.getMaNV().toLowerCase().contains(keyword.toLowerCase())) {
                         result.add(hdb);
                     }
                     break;
