@@ -43,10 +43,10 @@ public class QuanLyHoaDonBanDAO {
     
     public Boolean add(HoaDonBan hdb) {
         connection = new ConnectionDB();
-        Boolean success = connection.sqlUpdate("INSERT INTO HoaDonBan(maHDB,maNV,maKH,maKM,ngayLap,gioLap,tongTien) VALUES ('" 
-                + hdb.getMaHDB()+ "','" 
-                + hdb.getMaNV()+ "','" 
+        Boolean success = connection.sqlUpdate("INSERT INTO HoaDonBan(maHDB,maKH,maNV,maKM,ngayLap,gioLap,tongTien) VALUES ('" 
+                + hdb.getMaHDB()+ "','"
                 + hdb.getMaKH()+ "','" 
+                + hdb.getMaNV()+ "','" 
                 + hdb.getMaKM()+ "','" 
                 + hdb.getNgayLap()+ "','" 
                 + hdb.getGioLap() + "','" 
@@ -69,8 +69,8 @@ public class QuanLyHoaDonBanDAO {
     public Boolean update(HoaDonBan hdb) {
         connection = new ConnectionDB();
         Boolean success = connection.sqlUpdate("UPDATE HoaDonBan SET "
-                + "', MaKH='" + hdb.getMaKH()
-                + "MaNV='" + hdb.getMaNV()
+                + "'MaKH='" + hdb.getMaKH()
+                + ", MaNV='" + hdb.getMaNV()
                 + "', MaKM='" + hdb.getMaKM()
                 + "', NgayLap='" + hdb.getNgayLap() 
                 + "', GioLap='" + hdb.getGioLap() 
