@@ -7,6 +7,7 @@ SET time_zone = "+00:00";
 /*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
 /*!40101 SET NAMES utf8mb4 */;
 
+create database bookstoremanagement;
 -- connect to database bookstoremanagement--
 use bookstoremanagement;
 
@@ -227,7 +228,7 @@ insert into NhaCungCap (maNCC, tenNCC, diaChi, SDT, FAX) values
 	('NCC5', 'Thế Giới Công Nghệ Độc Lạ', 'Bình Dương', '0801729329', '1830-7288-8900-7712');
 
 insert into KhuyenMai (maKM, tenKM, dieuKienKM, phanTramKM, ngayBD, ngayKT) values
-	("KM1", "Không Khuyến Mãi", 0, 0, "2024-01-01", "2024-10-25"),
+	("KM1", "Không Khuyến Mãi", 0, 0, "2023-01-01", "2024-10-25"),
 	("KM2", "Khuyễn Mãi Nhập Học", 500, 30, "2024-08-01", "2024-08-25"),
 	("KM3", "Khuyến Mãi Valentine", 400, 14, "2024-02-13", "2024-02-15"),
 	("KM4", "Khuyến Mãi Đầu Năm", 700, 50, "2024-01-01", "2024-01-30"),
@@ -241,3 +242,27 @@ insert into TaiKhoan (tenDangNhap, matKhau, maNV, maQuyen) values
 	("nnthienphuc", "nnthienphuc", "NV1", "Q1"),
     ("thuyngan", "thuyngan", "NV2", "Q2"),
     ("songnguyen", "songnguyen", "NV3", "Q2");
+
+insert into HoaDonBan (maHDB, maKH, maNV, maKM, ngayLap, gioLap, tongTien) Values
+	("HDB1", "KH1", "NV1", "KM1", "2023-10-18", "22:45:52", 399),
+	("HDB2", "KH3", "NV3", "KM1", "2023-10-16", "12:22:52", 299),
+	("HDB3", "KH3", "NV2", "KM1", "2023-09-15", "02:22:52", 299),
+	("HDB4", "KH4", "NV2", "KM1", "2023-09-02", "02:22:52", 499);
+
+insert into ChiTietHoaDonBan (maHDB, maSach, soLuong) values
+	("HDB1", "MS3", 1),
+	("HDB2", "MS5", 1),
+	("HDB3", "MS5", 1),
+	("HDB4", "MS11", 1);
+
+insert into HoaDonNhap (maHDN, maNCC, maNV, ngayLap, gioLap, tongTien) Values
+	("HDN1", "NCC1", "NV2", "2023-10-14", "22:45:52", 299),
+	("HDN2", "NCC3", "NV3", "2023-10-16", "12:22:52", 199),
+	("HDN3", "NCC2", "NV1", "2023-09-12", "02:22:52", 199),
+	("HDN4", "NCC1", "NV2", "2023-09-11", "02:22:52", 399);
+
+insert into ChiTietHoaDonNhap (maHDN, maSach, soLuong) values
+	("HDN1", "MS3", 1),
+	("HDN2", "MS5", 1),
+	("HDN3", "MS5", 1),
+	("HDN4", "MS11", 1);
