@@ -30,7 +30,7 @@ public class QuanLyHoaDonNhapDAO {
                 }
             }
         } catch (SQLException e) {
-            JOptionPane.showMessageDialog(null, "Khong tim thay du lieu !!");
+            JOptionPane.showMessageDialog(null, "Không tìm thấy dữ liệu !!");
         } finally {
             connection.closeConnect();
         }
