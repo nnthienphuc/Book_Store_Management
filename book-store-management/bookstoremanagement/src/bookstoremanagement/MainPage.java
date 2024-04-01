@@ -895,6 +895,7 @@ public class MainPage extends javax.swing.JFrame {
 
         TabBH.add(LamMoiSP2, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 10, 120, -1));
 
+        txMaSPBH.setEditable(false);
         txMaSPBH.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         txMaSPBH.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -904,6 +905,7 @@ public class MainPage extends javax.swing.JFrame {
 
         jLabel108.setText("Mã sách");
 
+        txTenSPBH.setEditable(false);
         txTenSPBH.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         txTenSPBH.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -913,6 +915,7 @@ public class MainPage extends javax.swing.JFrame {
 
         jLabel118.setText("Tên sách");
 
+        txDonGiaBH.setEditable(false);
         txDonGiaBH.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         txDonGiaBH.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -991,6 +994,7 @@ public class MainPage extends javax.swing.JFrame {
         });
         TabNH.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
+        txMaSPNH.setEditable(false);
         txMaSPNH.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         txMaSPNH.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -1000,6 +1004,7 @@ public class MainPage extends javax.swing.JFrame {
 
         jLabel54.setText("Mã sách");
 
+        txTenSPNH.setEditable(false);
         txTenSPNH.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         txTenSPNH.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -1009,6 +1014,7 @@ public class MainPage extends javax.swing.JFrame {
 
         jLabel56.setText("Tên sách");
 
+        txDonGiaNH.setEditable(false);
         txDonGiaNH.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         txDonGiaNH.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
