@@ -84,6 +84,7 @@ public class addQuyen extends javax.swing.JFrame {
      */
     public addQuyen() {
         initComponents();
+        setLocationRelativeTo(null);
     }
 
     /**
@@ -133,6 +134,8 @@ public class addQuyen extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));
+
+        txMaQuyen.setEditable(false);
 
         jLabel1.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         jLabel1.setText("Mã quyền");

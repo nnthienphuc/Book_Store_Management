@@ -83,6 +83,7 @@ public class editForm extends javax.swing.JFrame {
     public editForm() {
         initComponents();
         SuaSP();
+        setLocationRelativeTo(null);
     }
 
     /**

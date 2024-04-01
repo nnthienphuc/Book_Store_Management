@@ -17,6 +17,7 @@ public class ChonKMForm extends javax.swing.JFrame {
         QuanLyKhuyenMaiBUS dskmBUS = new QuanLyKhuyenMaiBUS();
         HienThiKhuyenMai.AddTable(dskmBUS.getDskm(),SubKMTable);
         MainPage.setTableCellAlignment(JLabel.CENTER, SubKMTable);
+        setLocationRelativeTo(null);
     }
 
     /**

@@ -82,6 +82,7 @@ public class editNCC extends javax.swing.JFrame {
      */
     public editNCC() {
         initComponents();
+        setLocationRelativeTo(null);
     }
 
     /**

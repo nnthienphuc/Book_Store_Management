@@ -26,7 +26,7 @@ public class ChonCTHDNForm extends javax.swing.JFrame {
         MainPage.setTableCellAlignment(JLabel.CENTER, tblCTPN);
         QuanLyChiTietHoaDonNhapBUS dsctpnBUS = new QuanLyChiTietHoaDonNhapBUS();
         HienThiChiTietHoaDonNhap.AddTable(dsctpnBUS.search("Mã hoá đơn nhập",mahdn),tblCTPN);
-              
+              setLocationRelativeTo(null);
     }
 
     /**

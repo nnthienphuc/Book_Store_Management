@@ -21,6 +21,7 @@ public class addForm extends javax.swing.JFrame {
     public addForm() {
         initComponents();
         setLocationRelativeTo(null);
+        
     }
 
     /**
@@ -66,6 +67,8 @@ public class addForm extends javax.swing.JFrame {
         lblHuy = new javax.swing.JLabel();
 
         pnlAddForm.setBackground(new java.awt.Color(255, 255, 255));
+
+        txtMaSach.setEditable(false);
 
         lblMaSach.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         lblMaSach.setText("Mã sách");

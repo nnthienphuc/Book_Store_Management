@@ -17,6 +17,7 @@ public class ChonMaQuyenForm extends javax.swing.JFrame {
         QuanLyQuyenBUS dsquyenBUS = new QuanLyQuyenBUS();
         HienThiQuyen.AddTable(dsquyenBUS.getDsq(),SubQuyenTable);
         MainPage.setTableCellAlignment(JLabel.CENTER, SubQuyenTable);
+        setLocationRelativeTo(null);
     }
 
     /**

@@ -135,6 +135,7 @@ public class editQuyen extends javax.swing.JFrame {
      */
     public editQuyen() {
         initComponents();
+        setLocationRelativeTo(null);
     }
 
     /**

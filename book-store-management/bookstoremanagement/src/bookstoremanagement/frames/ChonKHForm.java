@@ -25,6 +25,7 @@ public class ChonKHForm extends javax.swing.JFrame {
         QuanLyKhachHangBUS dskhBUS = new QuanLyKhachHangBUS();
         HienThiKhachHang.addTable(dskhBUS.getDskh(),SubKHTable);
         MainPage.setTableCellAlignment(JLabel.CENTER, SubKHTable);
+        setLocationRelativeTo(null);
     }
 
     /**

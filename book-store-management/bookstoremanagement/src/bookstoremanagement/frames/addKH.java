@@ -20,6 +20,8 @@ public class addKH extends javax.swing.JFrame {
         String makh = (String) SubKHTable.getValueAt(SubKHTable.getSelectedRow(), 1);
         String tenkh =(String) SubKHTable.getValueAt(SubKHTable.getSelectedRow(), 2);
         MainPage.txKhachHang.setText(makh + "-"+ tenkh);
+        
+        
     }
     
    
@@ -31,6 +33,7 @@ public class addKH extends javax.swing.JFrame {
      */
     public addKH() {
         initComponents();
+        setLocationRelativeTo(null);
         setLocationRelativeTo(null);
     }
 
@@ -64,6 +67,8 @@ public class addKH extends javax.swing.JFrame {
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         pnlAddKH.setBackground(new java.awt.Color(255, 255, 255));
+
+        txtMaKH.setEditable(false);
 
         lblMaKH.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         lblMaKH.setText("Mã khách hàng");

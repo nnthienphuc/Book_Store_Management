@@ -11,10 +11,7 @@ import bookstoremanagement.MainPage;
 import bookstoremanagement.model.Backend.NhanVien.QuanLyNhanVienBUS;
 import bookstoremanagement.model.Frontend.FormHienThi.HienThiNhanVien;
 
-/**
- *
- * @author songnguyen
- */
+
 public class ChonNVForm extends javax.swing.JFrame {
     public ChonNVForm() {
         initComponents();        
@@ -22,6 +19,7 @@ public class ChonNVForm extends javax.swing.JFrame {
         QuanLyNhanVienBUS dsnvBUS = new QuanLyNhanVienBUS();
         HienThiNhanVien.AddTable(dsnvBUS.getDsnv(), SubNVTable);
         MainPage.setTableCellAlignment(JLabel.CENTER, SubNVTable);    
+        setLocationRelativeTo(null);
     }
    
 

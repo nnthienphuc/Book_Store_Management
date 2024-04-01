@@ -33,6 +33,7 @@ public class addTK extends javax.swing.JFrame {
      */
     public addTK() {
         initComponents();
+        setLocationRelativeTo(null);
     }
 
     /**
@@ -69,6 +70,8 @@ public class addTK extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         pnlAddTK.setBackground(new java.awt.Color(255, 255, 255));
+
+        txtTenTK.setEditable(false);
 
         lblTenTK.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         lblTenTK.setText("Tên tài khoản");

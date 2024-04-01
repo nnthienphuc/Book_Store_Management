@@ -19,7 +19,7 @@ public class ChonCTHDBForm extends javax.swing.JFrame {
         MainPage.setTableCellAlignment(JLabel.CENTER, tblCTHD);
         QuanLyChiTietHoaDonBanBUS dscthdBUS = new QuanLyChiTietHoaDonBanBUS();
         HienThiChiTietHoaDonBan.AddTable(dscthdBUS.search("Mã hóa đơn",mahd, -1, -1, -1, -1),tblCTHD);
-              
+              setLocationRelativeTo(null);
     }
 
     /**

@@ -21,6 +21,7 @@ public class addNCC extends javax.swing.JFrame {
      */
     public addNCC() {
         initComponents();
+        setLocationRelativeTo(null);
     }
 
     /**
@@ -57,6 +58,8 @@ public class addNCC extends javax.swing.JFrame {
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         pnlAddNCC.setBackground(new java.awt.Color(255, 255, 255));
+
+        txMaNCC.setEditable(false);
 
         lblMaNCC.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         lblMaNCC.setText("Mã nhà cung cấp");

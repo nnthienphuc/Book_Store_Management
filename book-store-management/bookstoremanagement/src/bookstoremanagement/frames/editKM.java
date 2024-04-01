@@ -111,6 +111,7 @@ public class editKM extends javax.swing.JFrame {
         initComponents();
         setLocationRelativeTo(null);
         SuaKM();
+        setLocationRelativeTo(null);
     }
 
     /**

@@ -22,6 +22,7 @@ public class ChonNCCForm extends javax.swing.JFrame {
         QuanLyNhaCungCapBUS dsnccBUS = new QuanLyNhaCungCapBUS();
         HienThiNhaCungCap.AddTable(dsnccBUS.getDsncc(),SubNCCTable);
         MainPage.setTableCellAlignment(JLabel.CENTER, SubNCCTable);
+        setLocationRelativeTo(null);
         
     }
     /**

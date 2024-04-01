@@ -22,6 +22,7 @@ public class addKM extends javax.swing.JFrame {
     public addKM() {
         initComponents();
         setLocationRelativeTo(null);
+        setLocationRelativeTo(null);
     }
 
     /**
@@ -58,6 +59,8 @@ public class addKM extends javax.swing.JFrame {
         lblHuy = new javax.swing.JLabel();
 
         pnlAddKM.setBackground(new java.awt.Color(255, 255, 255));
+
+        txtMaKM.setEditable(false);
 
         lblMaKM.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         lblMaKM.setText("Mã khuyến mãi");

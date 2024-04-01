@@ -60,6 +60,7 @@ public class editNV extends javax.swing.JFrame {
     public editNV() {
         initComponents();
         SuaNV();
+        setLocationRelativeTo(null);
     }
 
     /**

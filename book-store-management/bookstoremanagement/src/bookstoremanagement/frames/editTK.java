@@ -20,6 +20,7 @@ public class editTK extends javax.swing.JFrame {
      */
     public editTK() {
         initComponents();
+        setLocationRelativeTo(null);
     }
 
     /**
