@@ -452,7 +452,7 @@ public class MainPage extends javax.swing.JFrame {
             }
         ) {
             boolean[] canEdit = new boolean [] {
-                false, false, false, false, false, false, false, true, false
+                false, false, false, false, false, false, false, false, false
             };
 
             public boolean isCellEditable(int rowIndex, int columnIndex) {
@@ -475,6 +475,9 @@ public class MainPage extends javax.swing.JFrame {
             BHSPTable.getColumnModel().getColumn(0).setMinWidth(10);
             BHSPTable.getColumnModel().getColumn(0).setPreferredWidth(10);
             BHSPTable.getColumnModel().getColumn(1).setMaxWidth(800);
+            BHSPTable.getColumnModel().getColumn(7).setMinWidth(0);
+            BHSPTable.getColumnModel().getColumn(7).setPreferredWidth(0);
+            BHSPTable.getColumnModel().getColumn(7).setMaxWidth(0);
         }
 
         TabBH.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 40, 810, 300));
