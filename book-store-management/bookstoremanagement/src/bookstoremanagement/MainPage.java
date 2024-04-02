@@ -99,6 +99,10 @@ import bookstoremanagement.model.Frontend.FormHienThi.HienThiTaiKhoan;
 import bookstoremanagement.model.Frontend.FormHienThi.HienThiHoaDonBan;
 import bookstoremanagement.model.Frontend.FormHienThi.HienThiSach;
 import bookstoremanagement.model.Backend.Price.PriceFormat;
+import bookstoremanagement.model.Backend.ThongKe.Ngay.BUS;
+import bookstoremanagement.model.Backend.ThongKe.ThangNam.BUSThangNam;
+import bookstoremanagement.model.Frontend.FormHienThi.HienThiThongKeNgay;
+import bookstoremanagement.model.Frontend.FormHienThi.HienThiThongKeThangNam;
 /**
  *
  * @author ACER
@@ -150,7 +154,8 @@ public class MainPage extends javax.swing.JFrame {
         Tabledesign(NCCTable);
         Tabledesign(TKTable);
         Tabledesign(QuyenTable);
-        
+        Tabledesign(TableTKNgay);
+        Tabledesign(TableTKThangNam);
         //End Table design
         
     }
@@ -387,6 +392,11 @@ public class MainPage extends javax.swing.JFrame {
         dateLabel = new javax.swing.JLabel();
         dayLabel = new javax.swing.JLabel();
         jLabel116 = new javax.swing.JLabel();
+        TabThongKe = new javax.swing.JPanel();
+        TKNgay = new javax.swing.JScrollPane();
+        TableTKNgay = new javax.swing.JTable();
+        jScrollPane9 = new javax.swing.JScrollPane();
+        TableTKThangNam = new javax.swing.JTable();
         jLabel3 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
         menu2 = new javax.swing.JPanel();
@@ -399,6 +409,7 @@ public class MainPage extends javax.swing.JFrame {
         NV = new javax.swing.JButton();
         NCC = new javax.swing.JButton();
         TK = new javax.swing.JButton();
+        ThongKe = new javax.swing.JButton();
         header = new keeptoo.KGradientPanel();
         minclose = new javax.swing.JPanel();
         Nutthunho = new javax.swing.JPanel();
@@ -3218,6 +3229,65 @@ public class MainPage extends javax.swing.JFrame {
 
         TabContainer.addTab("TrangChu", TabTrangChu);
 
+        TableTKNgay.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+
+            },
+            new String [] {
+                "Ngày", "Tổng tiền"
+            }
+        ) {
+            boolean[] canEdit = new boolean [] {
+                false, false
+            };
+
+            public boolean isCellEditable(int rowIndex, int columnIndex) {
+                return canEdit [columnIndex];
+            }
+        });
+        TKNgay.setViewportView(TableTKNgay);
+
+        TableTKThangNam.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+
+            },
+            new String [] {
+                "Tháng", "Năm", "Tiền"
+            }
+        ) {
+            boolean[] canEdit = new boolean [] {
+                false, false, false
+            };
+
+            public boolean isCellEditable(int rowIndex, int columnIndex) {
+                return canEdit [columnIndex];
+            }
+        });
+        jScrollPane9.setViewportView(TableTKThangNam);
+
+        javax.swing.GroupLayout TabThongKeLayout = new javax.swing.GroupLayout(TabThongKe);
+        TabThongKe.setLayout(TabThongKeLayout);
+        TabThongKeLayout.setHorizontalGroup(
+            TabThongKeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(TabThongKeLayout.createSequentialGroup()
+                .addGap(30, 30, 30)
+                .addComponent(TKNgay, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(39, 39, 39)
+                .addComponent(jScrollPane9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(167, Short.MAX_VALUE))
+        );
+        TabThongKeLayout.setVerticalGroup(
+            TabThongKeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(TabThongKeLayout.createSequentialGroup()
+                .addGap(93, 93, 93)
+                .addGroup(TabThongKeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jScrollPane9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(TKNgay, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(159, Short.MAX_VALUE))
+        );
+
+        TabContainer.addTab("tab13", TabThongKe);
+
         TabContainer.setSelectedIndex(11);
 
         formcontainer.add(TabContainer, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, -30, 1140, 710));
@@ -3362,6 +3432,20 @@ public class MainPage extends javax.swing.JFrame {
             }
         });
         menu2.add(TK, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 560, 230, 70));
+
+        ThongKe.setBackground(new java.awt.Color(0, 102, 0));
+        ThongKe.setFont(new java.awt.Font("Times New Roman", 1, 20)); // NOI18N
+        ThongKe.setForeground(new java.awt.Color(255, 255, 255));
+        ThongKe.setText("Thống Kê");
+        ThongKe.setBorder(null);
+        ThongKe.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        ThongKe.setPreferredSize(new java.awt.Dimension(145, 48));
+        ThongKe.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                ThongKeActionPerformed(evt);
+            }
+        });
+        menu2.add(ThongKe, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 630, -1, -1));
 
         getContentPane().add(menu2, java.awt.BorderLayout.LINE_START);
 
@@ -3630,6 +3714,12 @@ public class MainPage extends javax.swing.JFrame {
         
         QuanLyHoaDonBanBUS qlhdBUS = new QuanLyHoaDonBanBUS();
         HienThiHoaDonBan.AddTable(qlhdBUS.getDshdb(), HDTable);
+        
+        BUS qlBUSngay = new BUS();
+        HienThiThongKeNgay.AddTable(qlBUSngay.getDS(), TableTKNgay);
+        
+        BUSThangNam qlBUSthangnam = new BUSThangNam();
+        HienThiThongKeThangNam.AddTable(qlBUSthangnam.getDS(), TableTKThangNam);
         
         QuanLyHoaDonNhapBUS qlhdnBUS = new QuanLyHoaDonNhapBUS();
         HienThiHoaDonNhap.AddTable(qlhdnBUS.getDshdn(), PNTable);
@@ -5035,6 +5125,11 @@ public class MainPage extends javax.swing.JFrame {
         changecolor(jPanel7, new Color(74,30,113));
     }//GEN-LAST:event_jPanel7MouseEntered
 
+    private void ThongKeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ThongKeActionPerformed
+        txCurrentPage.setText("Thống kê");
+        TabContainer.setSelectedIndex(12);        // TODO add your handling code here:
+    }//GEN-LAST:event_ThongKeActionPerformed
+
 //    
 //    public static void AddRowToTable(Object[] dataRow,JTable table)
 //    {
@@ -5176,6 +5271,7 @@ public class MainPage extends javax.swing.JFrame {
     public static javax.swing.JTable SPTable;
     private javax.swing.JButton Sach;
     private javax.swing.JButton TK;
+    private javax.swing.JScrollPane TKNgay;
     public static javax.swing.JTable TKTable;
     private javax.swing.JPanel TabBH;
     private javax.swing.JTabbedPane TabContainer;
@@ -5189,7 +5285,11 @@ public class MainPage extends javax.swing.JFrame {
     private javax.swing.JPanel TabQuyen;
     private javax.swing.JPanel TabSP;
     private javax.swing.JPanel TabTK;
+    private javax.swing.JPanel TabThongKe;
     private javax.swing.JPanel TabTrangChu;
+    public static javax.swing.JTable TableTKNgay;
+    public static javax.swing.JTable TableTKThangNam;
+    private javax.swing.JButton ThongKe;
     public static javax.swing.JLabel dateLabel;
     public static javax.swing.JLabel dayLabel;
     private javax.swing.JPanel formcontainer;
@@ -5308,6 +5408,7 @@ public class MainPage extends javax.swing.JFrame {
     private javax.swing.JScrollPane jScrollPane6;
     private javax.swing.JScrollPane jScrollPane7;
     private javax.swing.JScrollPane jScrollPane8;
+    private javax.swing.JScrollPane jScrollPane9;
     private keeptoo.KGradientPanel kGradientPanel1;
     private javax.swing.JPanel menu2;
     private javax.swing.JPanel minclose;
