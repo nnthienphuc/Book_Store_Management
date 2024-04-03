@@ -18,7 +18,7 @@ public class DAO {
     public DAO(){
         
     }
-    public ArrayList Thongkengay(){
+    public ArrayList Thongkengayban(){
         connection = new ConnectionDB();
         ArrayList<Declare> ds = new ArrayList<>();
         try {
@@ -35,7 +35,30 @@ public class DAO {
                 }
             }
         } catch (SQLException e) {
-            JOptionPane.showMessageDialog(null, "lỗi cc");
+            JOptionPane.showMessageDialog(null, "Không thể kết nối tới Thống kê");
+        } finally {
+            connection.closeConnect();
+        }
+        return ds;
+    }
+    public ArrayList Thongkengaynhap(){
+        connection = new ConnectionDB();
+        ArrayList<Declare> ds = new ArrayList<>();
+        try {
+            String qry = "SELECT ngayLap, SUM(tongTien) AS tongTienNhap FROM hoadonnhap GROUP BY ngayLap ORDER BY ngayLap ASC;";
+            ResultSet rs = connection.sqlQuery(qry);
+            if (rs != null) {
+                while (rs.next()) {
+                    Declare d = new Declare();
+                    
+                    d.setNgayLap(rs.getDate(1).toLocalDate());
+                   
+                    d.setTongTien(rs.getFloat(2));
+                    ds.add(d);
+                }
+            }
+        } catch (SQLException e) {
+            JOptionPane.showMessageDialog(null, "Không thể kết nối tới Thống kê");
         } finally {
             connection.closeConnect();
         }

@@ -11,12 +11,17 @@ import java.util.ArrayList;
  * @author songnguyen
  */
 public class BUS {
-    ArrayList<Declare> ds = new ArrayList<>();
+    ArrayList<Declare> dsb = new ArrayList<>();
+    ArrayList<Declare> dsn = new ArrayList<>();
     private DAO dsDAO = new DAO();
     public BUS(){
-        ds = dsDAO.Thongkengay();
+        dsb = dsDAO.Thongkengayban();
+        dsn = dsDAO.Thongkengaynhap();
     }
-    public ArrayList<Declare> getDS() {
-        return this.ds;
+    public ArrayList<Declare> getDSB() {
+        return this.dsb;
+    }
+    public ArrayList<Declare> getDSN() {
+        return this.dsn;
     }
 }

@@ -18,7 +18,7 @@ public class DAOThangNam {
     public DAOThangNam(){
         
     }
-    public ArrayList ThongkeThangNam(){
+    public ArrayList ThongkeThangNamBan(){
         connection = new ConnectionDB();
         ArrayList<Declare> ds = new ArrayList<>();
         try {
@@ -36,6 +36,30 @@ public class DAOThangNam {
             }
         } catch (SQLException e) {
             JOptionPane.showMessageDialog(null, "lỗi cc");
+        } finally {
+            connection.closeConnect();
+        }
+        return ds;
+    }
+    
+    public ArrayList ThongkeThangNamNhap(){
+        connection = new ConnectionDB();
+        ArrayList<Declare> ds = new ArrayList<>();
+        try {
+            String qry = "SELECT EXTRACT(MONTH FROM ngayLap) AS thang, YEAR(ngayLap) AS nam, SUM(tongTien) AS tongTienNhap FROM hoadonnhap GROUP BY EXTRACT(MONTH FROM ngayLap), YEAR(ngayLap) ORDER BY nam ASC, thang ASC;";
+            ResultSet rs = connection.sqlQuery(qry);
+            if (rs != null) {
+                while (rs.next()) {
+                    Declare d = new Declare();
+                    
+                    d.setThang(rs.getInt(1));
+                    d.setNam(rs.getInt(2));
+                    d.setTongTien(rs.getFloat(3));
+                    ds.add(d);
+                }
+            }
+        } catch (SQLException e) {
+            JOptionPane.showMessageDialog(null, "Không kết nối được với Thống kê");
         } finally {
             connection.closeConnect();
         }

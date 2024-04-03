@@ -11,12 +11,17 @@ import java.util.ArrayList;
  * @author songnguyen
  */
 public class BUSThangNam {
-    ArrayList<Declare> ds = new ArrayList<>();
+    ArrayList<Declare> dsb = new ArrayList<>();
+    ArrayList<Declare> dsn = new ArrayList<>();
     private DAOThangNam dsDAO = new DAOThangNam();
     public BUSThangNam(){
-        ds = dsDAO.ThongkeThangNam();
+        dsb = dsDAO.ThongkeThangNamBan();
+        dsn = dsDAO.ThongkeThangNamNhap();
     }
-    public ArrayList<Declare> getDS() {
-        return this.ds;
+    public ArrayList<Declare> getDSB() {
+        return this.dsb;
+    }
+    public ArrayList<Declare> getDSN() {
+        return this.dsn;
     }
 }
