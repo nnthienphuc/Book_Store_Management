@@ -172,130 +172,6 @@ public class MainPage extends javax.swing.JFrame {
 
         formcontainer = new javax.swing.JPanel();
         TabContainer = new javax.swing.JTabbedPane();
-        TabSP = new javax.swing.JPanel();
-        jLabel6 = new javax.swing.JLabel();
-        FilterSearch1 = new java.awt.TextField();
-        searchType1 = new javax.swing.JComboBox<>();
-        LamMoiSP1 = new javax.swing.JPanel();
-        jLabel67 = new javax.swing.JLabel();
-        BHsua1 = new javax.swing.JPanel();
-        jLabel68 = new javax.swing.JLabel();
-        BHxoa1 = new javax.swing.JPanel();
-        jLabel63 = new javax.swing.JLabel();
-        BHthem1 = new javax.swing.JPanel();
-        jLabel69 = new javax.swing.JLabel();
-        jScrollPane2 = new javax.swing.JScrollPane();
-        SPTable = new javax.swing.JTable();
-        ImageLabel = new javax.swing.JLabel();
-        TabKM = new javax.swing.JPanel();
-        FilterSearch3 = new java.awt.TextField();
-        jLabel14 = new javax.swing.JLabel();
-        searchType3 = new javax.swing.JComboBox<>();
-        LamMoiSP3 = new javax.swing.JPanel();
-        jLabel74 = new javax.swing.JLabel();
-        BHsua3 = new javax.swing.JPanel();
-        jLabel75 = new javax.swing.JLabel();
-        BHxoa3 = new javax.swing.JPanel();
-        jLabel76 = new javax.swing.JLabel();
-        BHthem3 = new javax.swing.JPanel();
-        jLabel77 = new javax.swing.JLabel();
-        jScrollPane5 = new javax.swing.JScrollPane();
-        KMTable = new javax.swing.JTable();
-        TabKH = new javax.swing.JPanel();
-        FilterSearch2 = new java.awt.TextField();
-        jLabel13 = new javax.swing.JLabel();
-        searchType2 = new javax.swing.JComboBox<>();
-        LamMoiSP5 = new javax.swing.JPanel();
-        jLabel70 = new javax.swing.JLabel();
-        BHsua2 = new javax.swing.JPanel();
-        jLabel71 = new javax.swing.JLabel();
-        BHxoa2 = new javax.swing.JPanel();
-        jLabel72 = new javax.swing.JLabel();
-        BHthem2 = new javax.swing.JPanel();
-        jLabel73 = new javax.swing.JLabel();
-        jScrollPane3 = new javax.swing.JScrollPane();
-        KHTable = new javax.swing.JTable();
-        TabNV = new javax.swing.JPanel();
-        FilterSearch4 = new java.awt.TextField();
-        jLabel21 = new javax.swing.JLabel();
-        searchType4 = new javax.swing.JComboBox<>();
-        LamMoiSP6 = new javax.swing.JPanel();
-        jLabel78 = new javax.swing.JLabel();
-        BHsua4 = new javax.swing.JPanel();
-        jLabel79 = new javax.swing.JLabel();
-        BHxoa4 = new javax.swing.JPanel();
-        jLabel80 = new javax.swing.JLabel();
-        BHthem4 = new javax.swing.JPanel();
-        jLabel81 = new javax.swing.JLabel();
-        jScrollPane4 = new javax.swing.JScrollPane();
-        NVTable = new javax.swing.JTable();
-        TabNCC = new javax.swing.JPanel();
-        FilterSearch5 = new java.awt.TextField();
-        jLabel23 = new javax.swing.JLabel();
-        searchType5 = new javax.swing.JComboBox<>();
-        LamMoiSP7 = new javax.swing.JPanel();
-        jLabel82 = new javax.swing.JLabel();
-        BHsua5 = new javax.swing.JPanel();
-        jLabel83 = new javax.swing.JLabel();
-        BHxoa5 = new javax.swing.JPanel();
-        jLabel84 = new javax.swing.JLabel();
-        BHthem5 = new javax.swing.JPanel();
-        jLabel85 = new javax.swing.JLabel();
-        jScrollPane6 = new javax.swing.JScrollPane();
-        NCCTable = new javax.swing.JTable();
-        TabTK = new javax.swing.JPanel();
-        FilterSearch6 = new java.awt.TextField();
-        jLabel25 = new javax.swing.JLabel();
-        searchType6 = new javax.swing.JComboBox<>();
-        LamMoiSP8 = new javax.swing.JPanel();
-        jLabel86 = new javax.swing.JLabel();
-        BHsua6 = new javax.swing.JPanel();
-        jLabel87 = new javax.swing.JLabel();
-        BHxoa6 = new javax.swing.JPanel();
-        jLabel88 = new javax.swing.JLabel();
-        BHthem6 = new javax.swing.JPanel();
-        jLabel89 = new javax.swing.JLabel();
-        jScrollPane7 = new javax.swing.JScrollPane();
-        TKTable = new javax.swing.JTable();
-        jButton3 = new javax.swing.JButton();
-        jButton6 = new javax.swing.JButton();
-        TabPN = new javax.swing.JPanel();
-        jLabel30 = new javax.swing.JLabel();
-        jScrollPane10 = new javax.swing.JScrollPane();
-        PNTable = new javax.swing.JTable();
-        searchType9 = new javax.swing.JComboBox<>();
-        FilterSearch9 = new java.awt.TextField();
-        LamMoiSP11 = new javax.swing.JPanel();
-        jLabel101 = new javax.swing.JLabel();
-        BHthem12 = new javax.swing.JPanel();
-        jLabel104 = new javax.swing.JLabel();
-        jButton4 = new javax.swing.JButton();
-        jButton5 = new javax.swing.JButton();
-        PanelTKNhap = new javax.swing.JPanel();
-        jLabel122 = new javax.swing.JLabel();
-        jLabel121 = new javax.swing.JLabel();
-        TabQuyen = new javax.swing.JPanel();
-        BHthem10 = new javax.swing.JPanel();
-        jLabel99 = new javax.swing.JLabel();
-        searchType10 = new javax.swing.JComboBox<>();
-        jLabel32 = new javax.swing.JLabel();
-        FilterSearch10 = new java.awt.TextField();
-        BHxoa9 = new javax.swing.JPanel();
-        jLabel100 = new javax.swing.JLabel();
-        BHsua9 = new javax.swing.JPanel();
-        jLabel102 = new javax.swing.JLabel();
-        LamMoiSP12 = new javax.swing.JPanel();
-        jLabel103 = new javax.swing.JLabel();
-        jScrollPane11 = new javax.swing.JScrollPane();
-        QuyenTable = new javax.swing.JTable();
-        jButton7 = new javax.swing.JButton();
-        jButton8 = new javax.swing.JButton();
-        TabTrangChu = new javax.swing.JPanel();
-        kGradientPanel1 = new keeptoo.KGradientPanel();
-        timeLabel = new javax.swing.JLabel();
-        dateLabel = new javax.swing.JLabel();
-        dayLabel = new javax.swing.JLabel();
-        jLabel116 = new javax.swing.JLabel();
         TabBH = new javax.swing.JPanel();
         jScrollPane1 = new javax.swing.JScrollPane();
         BHSPTable = new javax.swing.JTable();
@@ -384,7 +260,7 @@ public class MainPage extends javax.swing.JFrame {
         jLabel110 = new javax.swing.JLabel();
         LamMoiSP4 = new javax.swing.JPanel();
         jLabel107 = new javax.swing.JLabel();
-        TabHD = new javax.swing.JPanel();
+        TabHDB = new javax.swing.JPanel();
         FilterSearch7 = new java.awt.TextField();
         jLabel27 = new javax.swing.JLabel();
         searchType7 = new javax.swing.JComboBox<>();
@@ -399,6 +275,130 @@ public class MainPage extends javax.swing.JFrame {
         ThongKeBan = new javax.swing.JPanel();
         jLabel7 = new javax.swing.JLabel();
         jLabel94 = new javax.swing.JLabel();
+        TabHDN = new javax.swing.JPanel();
+        jLabel30 = new javax.swing.JLabel();
+        jScrollPane10 = new javax.swing.JScrollPane();
+        PNTable = new javax.swing.JTable();
+        searchType9 = new javax.swing.JComboBox<>();
+        FilterSearch9 = new java.awt.TextField();
+        LamMoiSP11 = new javax.swing.JPanel();
+        jLabel101 = new javax.swing.JLabel();
+        BHthem12 = new javax.swing.JPanel();
+        jLabel104 = new javax.swing.JLabel();
+        jButton4 = new javax.swing.JButton();
+        jButton5 = new javax.swing.JButton();
+        PanelTKNhap = new javax.swing.JPanel();
+        jLabel122 = new javax.swing.JLabel();
+        jLabel121 = new javax.swing.JLabel();
+        TabSach = new javax.swing.JPanel();
+        jLabel6 = new javax.swing.JLabel();
+        FilterSearch1 = new java.awt.TextField();
+        searchType1 = new javax.swing.JComboBox<>();
+        LamMoiSP1 = new javax.swing.JPanel();
+        jLabel67 = new javax.swing.JLabel();
+        BHsua1 = new javax.swing.JPanel();
+        jLabel68 = new javax.swing.JLabel();
+        BHxoa1 = new javax.swing.JPanel();
+        jLabel63 = new javax.swing.JLabel();
+        BHthem1 = new javax.swing.JPanel();
+        jLabel69 = new javax.swing.JLabel();
+        jScrollPane2 = new javax.swing.JScrollPane();
+        SPTable = new javax.swing.JTable();
+        ImageLabel = new javax.swing.JLabel();
+        TabKM = new javax.swing.JPanel();
+        FilterSearch3 = new java.awt.TextField();
+        jLabel14 = new javax.swing.JLabel();
+        searchType3 = new javax.swing.JComboBox<>();
+        LamMoiSP3 = new javax.swing.JPanel();
+        jLabel74 = new javax.swing.JLabel();
+        BHsua3 = new javax.swing.JPanel();
+        jLabel75 = new javax.swing.JLabel();
+        BHxoa3 = new javax.swing.JPanel();
+        jLabel76 = new javax.swing.JLabel();
+        BHthem3 = new javax.swing.JPanel();
+        jLabel77 = new javax.swing.JLabel();
+        jScrollPane5 = new javax.swing.JScrollPane();
+        KMTable = new javax.swing.JTable();
+        TabKH = new javax.swing.JPanel();
+        FilterSearch2 = new java.awt.TextField();
+        jLabel13 = new javax.swing.JLabel();
+        searchType2 = new javax.swing.JComboBox<>();
+        LamMoiSP5 = new javax.swing.JPanel();
+        jLabel70 = new javax.swing.JLabel();
+        BHsua2 = new javax.swing.JPanel();
+        jLabel71 = new javax.swing.JLabel();
+        BHxoa2 = new javax.swing.JPanel();
+        jLabel72 = new javax.swing.JLabel();
+        BHthem2 = new javax.swing.JPanel();
+        jLabel73 = new javax.swing.JLabel();
+        jScrollPane3 = new javax.swing.JScrollPane();
+        KHTable = new javax.swing.JTable();
+        TabNV = new javax.swing.JPanel();
+        FilterSearch4 = new java.awt.TextField();
+        jLabel21 = new javax.swing.JLabel();
+        searchType4 = new javax.swing.JComboBox<>();
+        LamMoiSP6 = new javax.swing.JPanel();
+        jLabel78 = new javax.swing.JLabel();
+        BHsua4 = new javax.swing.JPanel();
+        jLabel79 = new javax.swing.JLabel();
+        BHxoa4 = new javax.swing.JPanel();
+        jLabel80 = new javax.swing.JLabel();
+        BHthem4 = new javax.swing.JPanel();
+        jLabel81 = new javax.swing.JLabel();
+        jScrollPane4 = new javax.swing.JScrollPane();
+        NVTable = new javax.swing.JTable();
+        TabNCC = new javax.swing.JPanel();
+        FilterSearch5 = new java.awt.TextField();
+        jLabel23 = new javax.swing.JLabel();
+        searchType5 = new javax.swing.JComboBox<>();
+        LamMoiSP7 = new javax.swing.JPanel();
+        jLabel82 = new javax.swing.JLabel();
+        BHsua5 = new javax.swing.JPanel();
+        jLabel83 = new javax.swing.JLabel();
+        BHxoa5 = new javax.swing.JPanel();
+        jLabel84 = new javax.swing.JLabel();
+        BHthem5 = new javax.swing.JPanel();
+        jLabel85 = new javax.swing.JLabel();
+        jScrollPane6 = new javax.swing.JScrollPane();
+        NCCTable = new javax.swing.JTable();
+        TabTK = new javax.swing.JPanel();
+        FilterSearch6 = new java.awt.TextField();
+        jLabel25 = new javax.swing.JLabel();
+        searchType6 = new javax.swing.JComboBox<>();
+        LamMoiSP8 = new javax.swing.JPanel();
+        jLabel86 = new javax.swing.JLabel();
+        BHsua6 = new javax.swing.JPanel();
+        jLabel87 = new javax.swing.JLabel();
+        BHxoa6 = new javax.swing.JPanel();
+        jLabel88 = new javax.swing.JLabel();
+        BHthem6 = new javax.swing.JPanel();
+        jLabel89 = new javax.swing.JLabel();
+        jScrollPane7 = new javax.swing.JScrollPane();
+        TKTable = new javax.swing.JTable();
+        jButton3 = new javax.swing.JButton();
+        jButton6 = new javax.swing.JButton();
+        TabQuyen = new javax.swing.JPanel();
+        BHthem10 = new javax.swing.JPanel();
+        jLabel99 = new javax.swing.JLabel();
+        searchType10 = new javax.swing.JComboBox<>();
+        jLabel32 = new javax.swing.JLabel();
+        FilterSearch10 = new java.awt.TextField();
+        BHxoa9 = new javax.swing.JPanel();
+        jLabel100 = new javax.swing.JLabel();
+        BHsua9 = new javax.swing.JPanel();
+        jLabel102 = new javax.swing.JLabel();
+        LamMoiSP12 = new javax.swing.JPanel();
+        jLabel103 = new javax.swing.JLabel();
+        jScrollPane11 = new javax.swing.JScrollPane();
+        QuyenTable = new javax.swing.JTable();
+        jButton7 = new javax.swing.JButton();
+        jButton8 = new javax.swing.JButton();
+        TabTrangChu = new javax.swing.JPanel();
+        kGradientPanel1 = new keeptoo.KGradientPanel();
+        timeLabel = new javax.swing.JLabel();
+        dateLabel = new javax.swing.JLabel();
+        dayLabel = new javax.swing.JLabel();
+        jLabel116 = new javax.swing.JLabel();
         menu2 = new javax.swing.JPanel();
         BanHang = new javax.swing.JButton();
         NhapHang = new javax.swing.JButton();
@@ -438,1629 +438,6 @@ public class MainPage extends javax.swing.JFrame {
 
         TabContainer.setBackground(new java.awt.Color(255, 255, 255));
         TabContainer.setPreferredSize(new java.awt.Dimension(900, 639));
-
-        TabSP.setBackground(new java.awt.Color(255, 255, 255));
-        TabSP.setPreferredSize(new java.awt.Dimension(768, 639));
-        TabSP.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        jLabel6.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/bookstoremanagement/icons/icons8-search-25.png"))); // NOI18N
-        TabSP.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(5, 120, 30, 40));
-
-        FilterSearch1.setFont(new java.awt.Font("Dialog", 0, 18)); // NOI18N
-        FilterSearch1.setMinimumSize(new java.awt.Dimension(28, 25));
-        FilterSearch1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                FilterSearch1ActionPerformed(evt);
-            }
-        });
-        FilterSearch1.addKeyListener(new java.awt.event.KeyAdapter() {
-            public void keyReleased(java.awt.event.KeyEvent evt) {
-                FilterSearch1KeyReleased(evt);
-            }
-        });
-        TabSP.add(FilterSearch1, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 125, 220, 30));
-
-        searchType1.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        searchType1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Tất cả", "Mã sản phẩm", "Mã loại", "Tên", "Đơn giá", "Số lượng", "Trạng Thái ", " " }));
-        TabSP.add(searchType1, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 126, 110, 30));
-
-        LamMoiSP1.setBackground(new java.awt.Color(51, 204, 0));
-        LamMoiSP1.setPreferredSize(new java.awt.Dimension(80, 24));
-        LamMoiSP1.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mousePressed(java.awt.event.MouseEvent evt) {
-                LamMoiSP1MousePressed(evt);
-            }
-            public void mouseReleased(java.awt.event.MouseEvent evt) {
-                LamMoiSP1MouseReleased(evt);
-            }
-        });
-
-        jLabel67.setBackground(new java.awt.Color(255, 255, 255));
-        jLabel67.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
-        jLabel67.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel67.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel67.setIcon(new javax.swing.ImageIcon(getClass().getResource("/bookstoremanagement/icons/icons8-update-left-rotation-15.png"))); // NOI18N
-        jLabel67.setText("Làm mới");
-
-        javax.swing.GroupLayout LamMoiSP1Layout = new javax.swing.GroupLayout(LamMoiSP1);
-        LamMoiSP1.setLayout(LamMoiSP1Layout);
-        LamMoiSP1Layout.setHorizontalGroup(
-            LamMoiSP1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jLabel67, javax.swing.GroupLayout.DEFAULT_SIZE, 120, Short.MAX_VALUE)
-        );
-        LamMoiSP1Layout.setVerticalGroup(
-            LamMoiSP1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jLabel67, javax.swing.GroupLayout.DEFAULT_SIZE, 24, Short.MAX_VALUE)
-        );
-
-        TabSP.add(LamMoiSP1, new org.netbeans.lib.awtextra.AbsoluteConstraints(850, 130, 120, -1));
-
-        BHsua1.setBackground(new java.awt.Color(255, 204, 0));
-        BHsua1.setPreferredSize(new java.awt.Dimension(80, 24));
-        BHsua1.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mousePressed(java.awt.event.MouseEvent evt) {
-                BHsua1MousePressed(evt);
-            }
-            public void mouseReleased(java.awt.event.MouseEvent evt) {
-                BHsua1MouseReleased(evt);
-            }
-        });
-
-        jLabel68.setBackground(new java.awt.Color(255, 255, 255));
-        jLabel68.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
-        jLabel68.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel68.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel68.setIcon(new javax.swing.ImageIcon(getClass().getResource("/bookstoremanagement/icons/icons8-pen-15.png"))); // NOI18N
-        jLabel68.setText("Sửa");
-
-        javax.swing.GroupLayout BHsua1Layout = new javax.swing.GroupLayout(BHsua1);
-        BHsua1.setLayout(BHsua1Layout);
-        BHsua1Layout.setHorizontalGroup(
-            BHsua1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jLabel68, javax.swing.GroupLayout.DEFAULT_SIZE, 120, Short.MAX_VALUE)
-        );
-        BHsua1Layout.setVerticalGroup(
-            BHsua1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jLabel68, javax.swing.GroupLayout.DEFAULT_SIZE, 24, Short.MAX_VALUE)
-        );
-
-        TabSP.add(BHsua1, new org.netbeans.lib.awtextra.AbsoluteConstraints(710, 130, 120, -1));
-
-        BHxoa1.setBackground(new java.awt.Color(255, 0, 0));
-        BHxoa1.setPreferredSize(new java.awt.Dimension(80, 24));
-        BHxoa1.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mousePressed(java.awt.event.MouseEvent evt) {
-                BHxoa1MousePressed(evt);
-            }
-            public void mouseReleased(java.awt.event.MouseEvent evt) {
-                BHxoa1MouseReleased(evt);
-            }
-        });
-
-        jLabel63.setBackground(new java.awt.Color(255, 255, 255));
-        jLabel63.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
-        jLabel63.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel63.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel63.setIcon(new javax.swing.ImageIcon(getClass().getResource("/bookstoremanagement/icons/icons8-close-15.png"))); // NOI18N
-        jLabel63.setText("Xóa");
-
-        javax.swing.GroupLayout BHxoa1Layout = new javax.swing.GroupLayout(BHxoa1);
-        BHxoa1.setLayout(BHxoa1Layout);
-        BHxoa1Layout.setHorizontalGroup(
-            BHxoa1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jLabel63, javax.swing.GroupLayout.DEFAULT_SIZE, 120, Short.MAX_VALUE)
-        );
-        BHxoa1Layout.setVerticalGroup(
-            BHxoa1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jLabel63, javax.swing.GroupLayout.DEFAULT_SIZE, 24, Short.MAX_VALUE)
-        );
-
-        TabSP.add(BHxoa1, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 130, 120, -1));
-
-        BHthem1.setBackground(new java.awt.Color(0, 204, 204));
-        BHthem1.setPreferredSize(new java.awt.Dimension(80, 24));
-        BHthem1.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mousePressed(java.awt.event.MouseEvent evt) {
-                BHthem1MousePressed(evt);
-            }
-            public void mouseReleased(java.awt.event.MouseEvent evt) {
-                BHthem1MouseReleased(evt);
-            }
-        });
-
-        jLabel69.setBackground(new java.awt.Color(255, 255, 255));
-        jLabel69.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
-        jLabel69.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel69.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel69.setIcon(new javax.swing.ImageIcon(getClass().getResource("/bookstoremanagement/icons/icons8-plus-20.png"))); // NOI18N
-        jLabel69.setText("Thêm");
-
-        javax.swing.GroupLayout BHthem1Layout = new javax.swing.GroupLayout(BHthem1);
-        BHthem1.setLayout(BHthem1Layout);
-        BHthem1Layout.setHorizontalGroup(
-            BHthem1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jLabel69, javax.swing.GroupLayout.DEFAULT_SIZE, 120, Short.MAX_VALUE)
-        );
-        BHthem1Layout.setVerticalGroup(
-            BHthem1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jLabel69, javax.swing.GroupLayout.DEFAULT_SIZE, 24, Short.MAX_VALUE)
-        );
-
-        TabSP.add(BHthem1, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 130, 120, -1));
-
-        jScrollPane2.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
-        jScrollPane2.setForeground(new java.awt.Color(255, 255, 255));
-
-        SPTable.setAutoCreateRowSorter(true);
-        SPTable.setFont(new java.awt.Font("Segoe UI", 0, 17)); // NOI18N
-        SPTable.setModel(new javax.swing.table.DefaultTableModel(
-            new Object [][] {
-
-            },
-            new String [] {
-                "STT", "Mã sách", "Tên sách", "Thể loại", "Tác giả", "Năm xb", "Số lượng", "Giá nhập", "Giá bán", "Trạng thái"
-            }
-        ) {
-            boolean[] canEdit = new boolean [] {
-                false, false, false, false, false, false, false, false, false, false
-            };
-
-            public boolean isCellEditable(int rowIndex, int columnIndex) {
-                return canEdit [columnIndex];
-            }
-        });
-        SPTable.setFocusable(false);
-        SPTable.setGridColor(new java.awt.Color(128, 128, 128));
-        SPTable.setRowHeight(25);
-        SPTable.setSelectionBackground(new java.awt.Color(122, 72, 221));
-        SPTable.setSelectionForeground(new java.awt.Color(255, 255, 255));
-        SPTable.getTableHeader().setReorderingAllowed(false);
-        SPTable.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                SPTableMouseClicked(evt);
-            }
-        });
-        jScrollPane2.setViewportView(SPTable);
-        if (SPTable.getColumnModel().getColumnCount() > 0) {
-            SPTable.getColumnModel().getColumn(0).setPreferredWidth(5);
-            SPTable.getColumnModel().getColumn(1).setPreferredWidth(5);
-            SPTable.getColumnModel().getColumn(2).setPreferredWidth(40);
-            SPTable.getColumnModel().getColumn(3).setPreferredWidth(25);
-            SPTable.getColumnModel().getColumn(4).setPreferredWidth(25);
-            SPTable.getColumnModel().getColumn(5).setPreferredWidth(5);
-            SPTable.getColumnModel().getColumn(6).setPreferredWidth(5);
-            SPTable.getColumnModel().getColumn(7).setPreferredWidth(10);
-            SPTable.getColumnModel().getColumn(8).setPreferredWidth(10);
-            SPTable.getColumnModel().getColumn(9).setPreferredWidth(10);
-        }
-
-        TabSP.add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 180, 1110, 500));
-
-        ImageLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        TabSP.add(ImageLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(830, 180, 320, 500));
-
-        TabContainer.addTab("Sach", TabSP);
-
-        TabKM.setBackground(new java.awt.Color(255, 255, 255));
-        TabKM.setPreferredSize(new java.awt.Dimension(768, 639));
-        TabKM.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        FilterSearch3.setFont(new java.awt.Font("Dialog", 0, 18)); // NOI18N
-        FilterSearch3.setMinimumSize(new java.awt.Dimension(28, 25));
-        FilterSearch3.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                FilterSearch3ActionPerformed(evt);
-            }
-        });
-        FilterSearch3.addKeyListener(new java.awt.event.KeyAdapter() {
-            public void keyReleased(java.awt.event.KeyEvent evt) {
-                FilterSearch3KeyReleased(evt);
-            }
-        });
-        TabKM.add(FilterSearch3, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 125, 220, 30));
-
-        jLabel14.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel14.setIcon(new javax.swing.ImageIcon(getClass().getResource("/bookstoremanagement/icons/icons8-search-25.png"))); // NOI18N
-        TabKM.add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(5, 120, 30, 40));
-
-        searchType3.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        searchType3.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Tất cả", "Mã KM", "Điều kiện", "Phầm trăm KM", "Ngày bắt đầu", "Ngày kết thúc", "Trạng thái" }));
-        TabKM.add(searchType3, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 126, 110, 30));
-
-        LamMoiSP3.setBackground(new java.awt.Color(51, 204, 0));
-        LamMoiSP3.setPreferredSize(new java.awt.Dimension(80, 24));
-        LamMoiSP3.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mousePressed(java.awt.event.MouseEvent evt) {
-                LamMoiSP3MousePressed(evt);
-            }
-            public void mouseReleased(java.awt.event.MouseEvent evt) {
-                LamMoiSP3MouseReleased(evt);
-            }
-        });
-
-        jLabel74.setBackground(new java.awt.Color(255, 255, 255));
-        jLabel74.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
-        jLabel74.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel74.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel74.setIcon(new javax.swing.ImageIcon(getClass().getResource("/bookstoremanagement/icons/icons8-update-left-rotation-15.png"))); // NOI18N
-        jLabel74.setText("Làm mới");
-
-        javax.swing.GroupLayout LamMoiSP3Layout = new javax.swing.GroupLayout(LamMoiSP3);
-        LamMoiSP3.setLayout(LamMoiSP3Layout);
-        LamMoiSP3Layout.setHorizontalGroup(
-            LamMoiSP3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jLabel74, javax.swing.GroupLayout.DEFAULT_SIZE, 120, Short.MAX_VALUE)
-        );
-        LamMoiSP3Layout.setVerticalGroup(
-            LamMoiSP3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jLabel74, javax.swing.GroupLayout.DEFAULT_SIZE, 24, Short.MAX_VALUE)
-        );
-
-        TabKM.add(LamMoiSP3, new org.netbeans.lib.awtextra.AbsoluteConstraints(850, 130, 120, -1));
-
-        BHsua3.setBackground(new java.awt.Color(255, 204, 0));
-        BHsua3.setPreferredSize(new java.awt.Dimension(80, 24));
-        BHsua3.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mousePressed(java.awt.event.MouseEvent evt) {
-                BHsua3MousePressed(evt);
-            }
-            public void mouseReleased(java.awt.event.MouseEvent evt) {
-                BHsua3MouseReleased(evt);
-            }
-        });
-
-        jLabel75.setBackground(new java.awt.Color(255, 255, 255));
-        jLabel75.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
-        jLabel75.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel75.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel75.setIcon(new javax.swing.ImageIcon(getClass().getResource("/bookstoremanagement/icons/icons8-pen-15.png"))); // NOI18N
-        jLabel75.setText("Sửa");
-
-        javax.swing.GroupLayout BHsua3Layout = new javax.swing.GroupLayout(BHsua3);
-        BHsua3.setLayout(BHsua3Layout);
-        BHsua3Layout.setHorizontalGroup(
-            BHsua3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jLabel75, javax.swing.GroupLayout.DEFAULT_SIZE, 120, Short.MAX_VALUE)
-        );
-        BHsua3Layout.setVerticalGroup(
-            BHsua3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jLabel75, javax.swing.GroupLayout.DEFAULT_SIZE, 24, Short.MAX_VALUE)
-        );
-
-        TabKM.add(BHsua3, new org.netbeans.lib.awtextra.AbsoluteConstraints(710, 130, 120, -1));
-
-        BHxoa3.setBackground(new java.awt.Color(255, 0, 0));
-        BHxoa3.setPreferredSize(new java.awt.Dimension(80, 24));
-        BHxoa3.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mousePressed(java.awt.event.MouseEvent evt) {
-                BHxoa3MousePressed(evt);
-            }
-            public void mouseReleased(java.awt.event.MouseEvent evt) {
-                BHxoa3MouseReleased(evt);
-            }
-        });
-
-        jLabel76.setBackground(new java.awt.Color(255, 255, 255));
-        jLabel76.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
-        jLabel76.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel76.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel76.setIcon(new javax.swing.ImageIcon(getClass().getResource("/bookstoremanagement/icons/icons8-close-15.png"))); // NOI18N
-        jLabel76.setText("Xóa");
-
-        javax.swing.GroupLayout BHxoa3Layout = new javax.swing.GroupLayout(BHxoa3);
-        BHxoa3.setLayout(BHxoa3Layout);
-        BHxoa3Layout.setHorizontalGroup(
-            BHxoa3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jLabel76, javax.swing.GroupLayout.DEFAULT_SIZE, 120, Short.MAX_VALUE)
-        );
-        BHxoa3Layout.setVerticalGroup(
-            BHxoa3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jLabel76, javax.swing.GroupLayout.DEFAULT_SIZE, 24, Short.MAX_VALUE)
-        );
-
-        TabKM.add(BHxoa3, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 130, 120, -1));
-
-        BHthem3.setBackground(new java.awt.Color(0, 204, 204));
-        BHthem3.setPreferredSize(new java.awt.Dimension(80, 24));
-        BHthem3.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mousePressed(java.awt.event.MouseEvent evt) {
-                BHthem3MousePressed(evt);
-            }
-            public void mouseReleased(java.awt.event.MouseEvent evt) {
-                BHthem3MouseReleased(evt);
-            }
-        });
-
-        jLabel77.setBackground(new java.awt.Color(255, 255, 255));
-        jLabel77.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
-        jLabel77.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel77.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel77.setIcon(new javax.swing.ImageIcon(getClass().getResource("/bookstoremanagement/icons/icons8-plus-20.png"))); // NOI18N
-        jLabel77.setText("Thêm");
-
-        javax.swing.GroupLayout BHthem3Layout = new javax.swing.GroupLayout(BHthem3);
-        BHthem3.setLayout(BHthem3Layout);
-        BHthem3Layout.setHorizontalGroup(
-            BHthem3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(BHthem3Layout.createSequentialGroup()
-                .addComponent(jLabel77, javax.swing.GroupLayout.PREFERRED_SIZE, 101, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 19, Short.MAX_VALUE))
-        );
-        BHthem3Layout.setVerticalGroup(
-            BHthem3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jLabel77, javax.swing.GroupLayout.DEFAULT_SIZE, 24, Short.MAX_VALUE)
-        );
-
-        TabKM.add(BHthem3, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 130, 120, -1));
-
-        jScrollPane5.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
-        jScrollPane5.setForeground(new java.awt.Color(255, 255, 255));
-
-        KMTable.setAutoCreateRowSorter(true);
-        KMTable.setFont(new java.awt.Font("Segoe UI", 0, 17)); // NOI18N
-        KMTable.setModel(new javax.swing.table.DefaultTableModel(
-            new Object [][] {
-
-            },
-            new String [] {
-                "STT", "Mã khuyến mãi", "Tên", "Điều kiện", "Giảm giá", "Ngày bắt đầu", "Ngày kết thúc"
-            }
-        ) {
-            boolean[] canEdit = new boolean [] {
-                false, false, false, false, false, false, false
-            };
-
-            public boolean isCellEditable(int rowIndex, int columnIndex) {
-                return canEdit [columnIndex];
-            }
-        });
-        KMTable.setFocusable(false);
-        KMTable.setGridColor(new java.awt.Color(128, 128, 128));
-        KMTable.setRowHeight(25);
-        KMTable.setSelectionBackground(new java.awt.Color(122, 72, 221));
-        KMTable.setSelectionForeground(new java.awt.Color(255, 255, 255));
-        KMTable.getTableHeader().setReorderingAllowed(false);
-        jScrollPane5.setViewportView(KMTable);
-        if (KMTable.getColumnModel().getColumnCount() > 0) {
-            KMTable.getColumnModel().getColumn(0).setMaxWidth(100);
-            KMTable.getColumnModel().getColumn(6).setPreferredWidth(20);
-        }
-
-        TabKM.add(jScrollPane5, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 170, 1110, 500));
-
-        TabContainer.addTab("KhuyenMai", TabKM);
-
-        TabKH.setBackground(new java.awt.Color(255, 255, 255));
-        TabKH.setPreferredSize(new java.awt.Dimension(768, 639));
-        TabKH.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        FilterSearch2.setFont(new java.awt.Font("Dialog", 0, 18)); // NOI18N
-        FilterSearch2.setMinimumSize(new java.awt.Dimension(28, 25));
-        FilterSearch2.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                FilterSearch2ActionPerformed(evt);
-            }
-        });
-        FilterSearch2.addKeyListener(new java.awt.event.KeyAdapter() {
-            public void keyReleased(java.awt.event.KeyEvent evt) {
-                FilterSearch2KeyReleased(evt);
-            }
-        });
-        TabKH.add(FilterSearch2, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 125, 220, 30));
-
-        jLabel13.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel13.setIcon(new javax.swing.ImageIcon(getClass().getResource("/bookstoremanagement/icons/icons8-search-25.png"))); // NOI18N
-        TabKH.add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(5, 120, 30, 40));
-
-        searchType2.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        searchType2.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Tất cả", "Mã khách hàng", "Tên khách hàng", "Địa chỉ", "Số điện thoại", "Trạng thái" }));
-        TabKH.add(searchType2, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 126, 110, 30));
-
-        LamMoiSP5.setBackground(new java.awt.Color(51, 204, 0));
-        LamMoiSP5.setPreferredSize(new java.awt.Dimension(80, 24));
-        LamMoiSP5.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mousePressed(java.awt.event.MouseEvent evt) {
-                LamMoiSP5MousePressed(evt);
-            }
-            public void mouseReleased(java.awt.event.MouseEvent evt) {
-                LamMoiSP5MouseReleased(evt);
-            }
-        });
-
-        jLabel70.setBackground(new java.awt.Color(255, 255, 255));
-        jLabel70.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
-        jLabel70.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel70.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel70.setIcon(new javax.swing.ImageIcon(getClass().getResource("/bookstoremanagement/icons/icons8-update-left-rotation-15.png"))); // NOI18N
-        jLabel70.setText("Làm mới");
-
-        javax.swing.GroupLayout LamMoiSP5Layout = new javax.swing.GroupLayout(LamMoiSP5);
-        LamMoiSP5.setLayout(LamMoiSP5Layout);
-        LamMoiSP5Layout.setHorizontalGroup(
-            LamMoiSP5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jLabel70, javax.swing.GroupLayout.DEFAULT_SIZE, 120, Short.MAX_VALUE)
-        );
-        LamMoiSP5Layout.setVerticalGroup(
-            LamMoiSP5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jLabel70, javax.swing.GroupLayout.DEFAULT_SIZE, 24, Short.MAX_VALUE)
-        );
-
-        TabKH.add(LamMoiSP5, new org.netbeans.lib.awtextra.AbsoluteConstraints(850, 130, 120, -1));
-
-        BHsua2.setBackground(new java.awt.Color(255, 204, 0));
-        BHsua2.setPreferredSize(new java.awt.Dimension(80, 24));
-        BHsua2.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mousePressed(java.awt.event.MouseEvent evt) {
-                BHsua2MousePressed(evt);
-            }
-            public void mouseReleased(java.awt.event.MouseEvent evt) {
-                BHsua2MouseReleased(evt);
-            }
-        });
-
-        jLabel71.setBackground(new java.awt.Color(255, 255, 255));
-        jLabel71.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
-        jLabel71.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel71.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel71.setIcon(new javax.swing.ImageIcon(getClass().getResource("/bookstoremanagement/icons/icons8-pen-15.png"))); // NOI18N
-        jLabel71.setText("Sửa");
-
-        javax.swing.GroupLayout BHsua2Layout = new javax.swing.GroupLayout(BHsua2);
-        BHsua2.setLayout(BHsua2Layout);
-        BHsua2Layout.setHorizontalGroup(
-            BHsua2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jLabel71, javax.swing.GroupLayout.DEFAULT_SIZE, 120, Short.MAX_VALUE)
-        );
-        BHsua2Layout.setVerticalGroup(
-            BHsua2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jLabel71, javax.swing.GroupLayout.DEFAULT_SIZE, 24, Short.MAX_VALUE)
-        );
-
-        TabKH.add(BHsua2, new org.netbeans.lib.awtextra.AbsoluteConstraints(710, 130, 120, -1));
-
-        BHxoa2.setBackground(new java.awt.Color(255, 0, 0));
-        BHxoa2.setPreferredSize(new java.awt.Dimension(80, 24));
-        BHxoa2.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mousePressed(java.awt.event.MouseEvent evt) {
-                BHxoa2MousePressed(evt);
-            }
-            public void mouseReleased(java.awt.event.MouseEvent evt) {
-                BHxoa2MouseReleased(evt);
-            }
-        });
-
-        jLabel72.setBackground(new java.awt.Color(255, 255, 255));
-        jLabel72.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
-        jLabel72.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel72.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel72.setIcon(new javax.swing.ImageIcon(getClass().getResource("/bookstoremanagement/icons/icons8-close-15.png"))); // NOI18N
-        jLabel72.setText("Xóa");
-
-        javax.swing.GroupLayout BHxoa2Layout = new javax.swing.GroupLayout(BHxoa2);
-        BHxoa2.setLayout(BHxoa2Layout);
-        BHxoa2Layout.setHorizontalGroup(
-            BHxoa2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jLabel72, javax.swing.GroupLayout.DEFAULT_SIZE, 120, Short.MAX_VALUE)
-        );
-        BHxoa2Layout.setVerticalGroup(
-            BHxoa2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jLabel72, javax.swing.GroupLayout.DEFAULT_SIZE, 24, Short.MAX_VALUE)
-        );
-
-        TabKH.add(BHxoa2, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 130, 120, -1));
-
-        BHthem2.setBackground(new java.awt.Color(0, 204, 204));
-        BHthem2.setPreferredSize(new java.awt.Dimension(80, 24));
-        BHthem2.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mousePressed(java.awt.event.MouseEvent evt) {
-                BHthem2MousePressed(evt);
-            }
-            public void mouseReleased(java.awt.event.MouseEvent evt) {
-                BHthem2MouseReleased(evt);
-            }
-        });
-
-        jLabel73.setBackground(new java.awt.Color(255, 255, 255));
-        jLabel73.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
-        jLabel73.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel73.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel73.setIcon(new javax.swing.ImageIcon(getClass().getResource("/bookstoremanagement/icons/icons8-plus-20.png"))); // NOI18N
-        jLabel73.setText("Thêm");
-
-        javax.swing.GroupLayout BHthem2Layout = new javax.swing.GroupLayout(BHthem2);
-        BHthem2.setLayout(BHthem2Layout);
-        BHthem2Layout.setHorizontalGroup(
-            BHthem2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jLabel73, javax.swing.GroupLayout.DEFAULT_SIZE, 120, Short.MAX_VALUE)
-        );
-        BHthem2Layout.setVerticalGroup(
-            BHthem2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jLabel73, javax.swing.GroupLayout.DEFAULT_SIZE, 24, Short.MAX_VALUE)
-        );
-
-        TabKH.add(BHthem2, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 130, 120, -1));
-
-        jScrollPane3.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
-        jScrollPane3.setForeground(new java.awt.Color(255, 255, 255));
-
-        KHTable.setAutoCreateRowSorter(true);
-        KHTable.setFont(new java.awt.Font("Segoe UI", 0, 17)); // NOI18N
-        KHTable.setModel(new javax.swing.table.DefaultTableModel(
-            new Object [][] {
-
-            },
-            new String [] {
-                "STT", "Mã khách hàng", "Tên khách hàng", "Địa chỉ", "Số điện thoại"
-            }
-        ) {
-            boolean[] canEdit = new boolean [] {
-                false, false, false, false, false
-            };
-
-            public boolean isCellEditable(int rowIndex, int columnIndex) {
-                return canEdit [columnIndex];
-            }
-        });
-        KHTable.setFocusable(false);
-        KHTable.setGridColor(new java.awt.Color(128, 128, 128));
-        KHTable.setRowHeight(25);
-        KHTable.setSelectionBackground(new java.awt.Color(122, 72, 221));
-        KHTable.setSelectionForeground(new java.awt.Color(255, 255, 255));
-        KHTable.getTableHeader().setReorderingAllowed(false);
-        jScrollPane3.setViewportView(KHTable);
-        if (KHTable.getColumnModel().getColumnCount() > 0) {
-            KHTable.getColumnModel().getColumn(0).setMaxWidth(100);
-        }
-
-        TabKH.add(jScrollPane3, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 180, 1110, 500));
-
-        TabContainer.addTab("KhachHang", TabKH);
-
-        TabNV.setBackground(new java.awt.Color(255, 255, 255));
-        TabNV.setPreferredSize(new java.awt.Dimension(768, 639));
-        TabNV.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        FilterSearch4.setFont(new java.awt.Font("Dialog", 0, 18)); // NOI18N
-        FilterSearch4.setMinimumSize(new java.awt.Dimension(28, 25));
-        FilterSearch4.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                FilterSearch4ActionPerformed(evt);
-            }
-        });
-        FilterSearch4.addKeyListener(new java.awt.event.KeyAdapter() {
-            public void keyReleased(java.awt.event.KeyEvent evt) {
-                FilterSearch4KeyReleased(evt);
-            }
-        });
-        TabNV.add(FilterSearch4, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 125, 220, 30));
-
-        jLabel21.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel21.setIcon(new javax.swing.ImageIcon(getClass().getResource("/bookstoremanagement/icons/icons8-search-25.png"))); // NOI18N
-        TabNV.add(jLabel21, new org.netbeans.lib.awtextra.AbsoluteConstraints(5, 120, 30, 40));
-
-        searchType4.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        searchType4.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Tất cả", "Mã nhân viên", "Tên nhân viên", "Ngày sinh", "Địa chỉ", "Số điện thoại", "Trạng thái" }));
-        TabNV.add(searchType4, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 126, 110, 30));
-
-        LamMoiSP6.setBackground(new java.awt.Color(51, 204, 0));
-        LamMoiSP6.setPreferredSize(new java.awt.Dimension(80, 24));
-        LamMoiSP6.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mousePressed(java.awt.event.MouseEvent evt) {
-                LamMoiSP6MousePressed(evt);
-            }
-            public void mouseReleased(java.awt.event.MouseEvent evt) {
-                LamMoiSP6MouseReleased(evt);
-            }
-        });
-
-        jLabel78.setBackground(new java.awt.Color(255, 255, 255));
-        jLabel78.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
-        jLabel78.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel78.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel78.setIcon(new javax.swing.ImageIcon(getClass().getResource("/bookstoremanagement/icons/icons8-update-left-rotation-15.png"))); // NOI18N
-        jLabel78.setText("Làm mới");
-
-        javax.swing.GroupLayout LamMoiSP6Layout = new javax.swing.GroupLayout(LamMoiSP6);
-        LamMoiSP6.setLayout(LamMoiSP6Layout);
-        LamMoiSP6Layout.setHorizontalGroup(
-            LamMoiSP6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jLabel78, javax.swing.GroupLayout.DEFAULT_SIZE, 120, Short.MAX_VALUE)
-        );
-        LamMoiSP6Layout.setVerticalGroup(
-            LamMoiSP6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jLabel78, javax.swing.GroupLayout.DEFAULT_SIZE, 24, Short.MAX_VALUE)
-        );
-
-        TabNV.add(LamMoiSP6, new org.netbeans.lib.awtextra.AbsoluteConstraints(850, 130, 120, -1));
-
-        BHsua4.setBackground(new java.awt.Color(255, 204, 0));
-        BHsua4.setPreferredSize(new java.awt.Dimension(80, 24));
-        BHsua4.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mousePressed(java.awt.event.MouseEvent evt) {
-                BHsua4MousePressed(evt);
-            }
-            public void mouseReleased(java.awt.event.MouseEvent evt) {
-                BHsua4MouseReleased(evt);
-            }
-        });
-
-        jLabel79.setBackground(new java.awt.Color(255, 255, 255));
-        jLabel79.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
-        jLabel79.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel79.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel79.setIcon(new javax.swing.ImageIcon(getClass().getResource("/bookstoremanagement/icons/icons8-pen-15.png"))); // NOI18N
-        jLabel79.setText("Sửa");
-
-        javax.swing.GroupLayout BHsua4Layout = new javax.swing.GroupLayout(BHsua4);
-        BHsua4.setLayout(BHsua4Layout);
-        BHsua4Layout.setHorizontalGroup(
-            BHsua4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jLabel79, javax.swing.GroupLayout.DEFAULT_SIZE, 120, Short.MAX_VALUE)
-        );
-        BHsua4Layout.setVerticalGroup(
-            BHsua4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jLabel79, javax.swing.GroupLayout.DEFAULT_SIZE, 24, Short.MAX_VALUE)
-        );
-
-        TabNV.add(BHsua4, new org.netbeans.lib.awtextra.AbsoluteConstraints(710, 130, 120, -1));
-
-        BHxoa4.setBackground(new java.awt.Color(255, 0, 0));
-        BHxoa4.setPreferredSize(new java.awt.Dimension(80, 24));
-        BHxoa4.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mousePressed(java.awt.event.MouseEvent evt) {
-                BHxoa4MousePressed(evt);
-            }
-            public void mouseReleased(java.awt.event.MouseEvent evt) {
-                BHxoa4MouseReleased(evt);
-            }
-        });
-
-        jLabel80.setBackground(new java.awt.Color(255, 255, 255));
-        jLabel80.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
-        jLabel80.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel80.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel80.setIcon(new javax.swing.ImageIcon(getClass().getResource("/bookstoremanagement/icons/icons8-close-15.png"))); // NOI18N
-        jLabel80.setText("Xóa");
-
-        javax.swing.GroupLayout BHxoa4Layout = new javax.swing.GroupLayout(BHxoa4);
-        BHxoa4.setLayout(BHxoa4Layout);
-        BHxoa4Layout.setHorizontalGroup(
-            BHxoa4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jLabel80, javax.swing.GroupLayout.DEFAULT_SIZE, 120, Short.MAX_VALUE)
-        );
-        BHxoa4Layout.setVerticalGroup(
-            BHxoa4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jLabel80, javax.swing.GroupLayout.DEFAULT_SIZE, 24, Short.MAX_VALUE)
-        );
-
-        TabNV.add(BHxoa4, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 130, 120, -1));
-
-        BHthem4.setBackground(new java.awt.Color(0, 204, 204));
-        BHthem4.setPreferredSize(new java.awt.Dimension(80, 24));
-        BHthem4.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mousePressed(java.awt.event.MouseEvent evt) {
-                BHthem4MousePressed(evt);
-            }
-            public void mouseReleased(java.awt.event.MouseEvent evt) {
-                BHthem4MouseReleased(evt);
-            }
-        });
-
-        jLabel81.setBackground(new java.awt.Color(255, 255, 255));
-        jLabel81.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
-        jLabel81.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel81.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel81.setIcon(new javax.swing.ImageIcon(getClass().getResource("/bookstoremanagement/icons/icons8-plus-20.png"))); // NOI18N
-        jLabel81.setText("Thêm");
-
-        javax.swing.GroupLayout BHthem4Layout = new javax.swing.GroupLayout(BHthem4);
-        BHthem4.setLayout(BHthem4Layout);
-        BHthem4Layout.setHorizontalGroup(
-            BHthem4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jLabel81, javax.swing.GroupLayout.DEFAULT_SIZE, 120, Short.MAX_VALUE)
-        );
-        BHthem4Layout.setVerticalGroup(
-            BHthem4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jLabel81, javax.swing.GroupLayout.DEFAULT_SIZE, 24, Short.MAX_VALUE)
-        );
-
-        TabNV.add(BHthem4, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 130, 120, -1));
-
-        jScrollPane4.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
-        jScrollPane4.setForeground(new java.awt.Color(255, 255, 255));
-
-        NVTable.setAutoCreateRowSorter(true);
-        NVTable.setFont(new java.awt.Font("Segoe UI", 0, 17)); // NOI18N
-        NVTable.setModel(new javax.swing.table.DefaultTableModel(
-            new Object [][] {
-
-            },
-            new String [] {
-                "STT", "Mã nhân viên", "Tên nhân viên", "Ngày sinh", "Địa chỉ", "Số điện thoại"
-            }
-        ) {
-            boolean[] canEdit = new boolean [] {
-                false, false, false, false, false, false
-            };
-
-            public boolean isCellEditable(int rowIndex, int columnIndex) {
-                return canEdit [columnIndex];
-            }
-        });
-        NVTable.setFocusable(false);
-        NVTable.setGridColor(new java.awt.Color(128, 128, 128));
-        NVTable.setRowHeight(25);
-        NVTable.setSelectionBackground(new java.awt.Color(122, 72, 221));
-        NVTable.setSelectionForeground(new java.awt.Color(255, 255, 255));
-        NVTable.getTableHeader().setReorderingAllowed(false);
-        jScrollPane4.setViewportView(NVTable);
-        if (NVTable.getColumnModel().getColumnCount() > 0) {
-            NVTable.getColumnModel().getColumn(0).setMaxWidth(100);
-        }
-
-        TabNV.add(jScrollPane4, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 180, 1110, 500));
-
-        TabContainer.addTab("NhanVien", TabNV);
-
-        TabNCC.setBackground(new java.awt.Color(255, 255, 255));
-        TabNCC.setPreferredSize(new java.awt.Dimension(768, 639));
-        TabNCC.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        FilterSearch5.setFont(new java.awt.Font("Dialog", 0, 18)); // NOI18N
-        FilterSearch5.setMinimumSize(new java.awt.Dimension(28, 25));
-        FilterSearch5.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                FilterSearch5ActionPerformed(evt);
-            }
-        });
-        FilterSearch5.addKeyListener(new java.awt.event.KeyAdapter() {
-            public void keyReleased(java.awt.event.KeyEvent evt) {
-                FilterSearch5KeyReleased(evt);
-            }
-        });
-        TabNCC.add(FilterSearch5, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 125, 220, 30));
-
-        jLabel23.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel23.setIcon(new javax.swing.ImageIcon(getClass().getResource("/bookstoremanagement/icons/icons8-search-25.png"))); // NOI18N
-        TabNCC.add(jLabel23, new org.netbeans.lib.awtextra.AbsoluteConstraints(5, 120, 30, 40));
-
-        searchType5.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        searchType5.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Tất cả", "Mã NCC", "Tên NCC", "Địa chỉ", "Số điện thoại", "Fax" }));
-        TabNCC.add(searchType5, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 126, 110, 30));
-
-        LamMoiSP7.setBackground(new java.awt.Color(51, 204, 0));
-        LamMoiSP7.setPreferredSize(new java.awt.Dimension(80, 24));
-        LamMoiSP7.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mousePressed(java.awt.event.MouseEvent evt) {
-                LamMoiSP7MousePressed(evt);
-            }
-            public void mouseReleased(java.awt.event.MouseEvent evt) {
-                LamMoiSP7MouseReleased(evt);
-            }
-        });
-
-        jLabel82.setBackground(new java.awt.Color(255, 255, 255));
-        jLabel82.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
-        jLabel82.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel82.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel82.setIcon(new javax.swing.ImageIcon(getClass().getResource("/bookstoremanagement/icons/icons8-update-left-rotation-15.png"))); // NOI18N
-        jLabel82.setText("Làm mới");
-
-        javax.swing.GroupLayout LamMoiSP7Layout = new javax.swing.GroupLayout(LamMoiSP7);
-        LamMoiSP7.setLayout(LamMoiSP7Layout);
-        LamMoiSP7Layout.setHorizontalGroup(
-            LamMoiSP7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jLabel82, javax.swing.GroupLayout.DEFAULT_SIZE, 120, Short.MAX_VALUE)
-        );
-        LamMoiSP7Layout.setVerticalGroup(
-            LamMoiSP7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jLabel82, javax.swing.GroupLayout.DEFAULT_SIZE, 24, Short.MAX_VALUE)
-        );
-
-        TabNCC.add(LamMoiSP7, new org.netbeans.lib.awtextra.AbsoluteConstraints(850, 130, 120, -1));
-
-        BHsua5.setBackground(new java.awt.Color(255, 204, 0));
-        BHsua5.setPreferredSize(new java.awt.Dimension(80, 24));
-        BHsua5.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mousePressed(java.awt.event.MouseEvent evt) {
-                BHsua5MousePressed(evt);
-            }
-            public void mouseReleased(java.awt.event.MouseEvent evt) {
-                BHsua5MouseReleased(evt);
-            }
-        });
-
-        jLabel83.setBackground(new java.awt.Color(255, 255, 255));
-        jLabel83.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
-        jLabel83.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel83.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel83.setIcon(new javax.swing.ImageIcon(getClass().getResource("/bookstoremanagement/icons/icons8-pen-15.png"))); // NOI18N
-        jLabel83.setText("Sửa");
-
-        javax.swing.GroupLayout BHsua5Layout = new javax.swing.GroupLayout(BHsua5);
-        BHsua5.setLayout(BHsua5Layout);
-        BHsua5Layout.setHorizontalGroup(
-            BHsua5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jLabel83, javax.swing.GroupLayout.DEFAULT_SIZE, 120, Short.MAX_VALUE)
-        );
-        BHsua5Layout.setVerticalGroup(
-            BHsua5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jLabel83, javax.swing.GroupLayout.DEFAULT_SIZE, 24, Short.MAX_VALUE)
-        );
-
-        TabNCC.add(BHsua5, new org.netbeans.lib.awtextra.AbsoluteConstraints(710, 130, 120, -1));
-
-        BHxoa5.setBackground(new java.awt.Color(255, 0, 0));
-        BHxoa5.setPreferredSize(new java.awt.Dimension(80, 24));
-        BHxoa5.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mousePressed(java.awt.event.MouseEvent evt) {
-                BHxoa5MousePressed(evt);
-            }
-            public void mouseReleased(java.awt.event.MouseEvent evt) {
-                BHxoa5MouseReleased(evt);
-            }
-        });
-
-        jLabel84.setBackground(new java.awt.Color(255, 255, 255));
-        jLabel84.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
-        jLabel84.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel84.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel84.setIcon(new javax.swing.ImageIcon(getClass().getResource("/bookstoremanagement/icons/icons8-close-15.png"))); // NOI18N
-        jLabel84.setText("Xóa");
-
-        javax.swing.GroupLayout BHxoa5Layout = new javax.swing.GroupLayout(BHxoa5);
-        BHxoa5.setLayout(BHxoa5Layout);
-        BHxoa5Layout.setHorizontalGroup(
-            BHxoa5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jLabel84, javax.swing.GroupLayout.DEFAULT_SIZE, 120, Short.MAX_VALUE)
-        );
-        BHxoa5Layout.setVerticalGroup(
-            BHxoa5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jLabel84, javax.swing.GroupLayout.DEFAULT_SIZE, 24, Short.MAX_VALUE)
-        );
-
-        TabNCC.add(BHxoa5, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 130, 120, -1));
-
-        BHthem5.setBackground(new java.awt.Color(0, 204, 204));
-        BHthem5.setPreferredSize(new java.awt.Dimension(80, 24));
-        BHthem5.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mousePressed(java.awt.event.MouseEvent evt) {
-                BHthem5MousePressed(evt);
-            }
-            public void mouseReleased(java.awt.event.MouseEvent evt) {
-                BHthem5MouseReleased(evt);
-            }
-        });
-
-        jLabel85.setBackground(new java.awt.Color(255, 255, 255));
-        jLabel85.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
-        jLabel85.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel85.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel85.setIcon(new javax.swing.ImageIcon(getClass().getResource("/bookstoremanagement/icons/icons8-plus-20.png"))); // NOI18N
-        jLabel85.setText("Thêm");
-
-        javax.swing.GroupLayout BHthem5Layout = new javax.swing.GroupLayout(BHthem5);
-        BHthem5.setLayout(BHthem5Layout);
-        BHthem5Layout.setHorizontalGroup(
-            BHthem5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jLabel85, javax.swing.GroupLayout.DEFAULT_SIZE, 120, Short.MAX_VALUE)
-        );
-        BHthem5Layout.setVerticalGroup(
-            BHthem5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jLabel85, javax.swing.GroupLayout.DEFAULT_SIZE, 24, Short.MAX_VALUE)
-        );
-
-        TabNCC.add(BHthem5, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 130, 120, -1));
-
-        jScrollPane6.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
-        jScrollPane6.setForeground(new java.awt.Color(255, 255, 255));
-
-        NCCTable.setAutoCreateRowSorter(true);
-        NCCTable.setFont(new java.awt.Font("Segoe UI", 0, 17)); // NOI18N
-        NCCTable.setModel(new javax.swing.table.DefaultTableModel(
-            new Object [][] {
-
-            },
-            new String [] {
-                "STT", "Mã NCC", "Tên NCC", "Địa chỉ", "Số điện thoại", "Fax"
-            }
-        ) {
-            boolean[] canEdit = new boolean [] {
-                false, false, false, false, false, false
-            };
-
-            public boolean isCellEditable(int rowIndex, int columnIndex) {
-                return canEdit [columnIndex];
-            }
-        });
-        NCCTable.setFocusable(false);
-        NCCTable.setGridColor(new java.awt.Color(128, 128, 128));
-        NCCTable.setRowHeight(25);
-        NCCTable.setSelectionBackground(new java.awt.Color(122, 72, 221));
-        NCCTable.setSelectionForeground(new java.awt.Color(255, 255, 255));
-        NCCTable.getTableHeader().setReorderingAllowed(false);
-        jScrollPane6.setViewportView(NCCTable);
-        if (NCCTable.getColumnModel().getColumnCount() > 0) {
-            NCCTable.getColumnModel().getColumn(0).setMaxWidth(100);
-        }
-
-        TabNCC.add(jScrollPane6, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 180, 1110, 500));
-
-        TabContainer.addTab("NhaCungCap", TabNCC);
-
-        TabTK.setBackground(new java.awt.Color(255, 255, 255));
-        TabTK.setPreferredSize(new java.awt.Dimension(768, 639));
-        TabTK.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        FilterSearch6.setFont(new java.awt.Font("Dialog", 0, 18)); // NOI18N
-        FilterSearch6.setMinimumSize(new java.awt.Dimension(28, 25));
-        FilterSearch6.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                FilterSearch6ActionPerformed(evt);
-            }
-        });
-        FilterSearch6.addKeyListener(new java.awt.event.KeyAdapter() {
-            public void keyReleased(java.awt.event.KeyEvent evt) {
-                FilterSearch6KeyReleased(evt);
-            }
-        });
-        TabTK.add(FilterSearch6, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 125, 220, 30));
-
-        jLabel25.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel25.setIcon(new javax.swing.ImageIcon(getClass().getResource("/bookstoremanagement/icons/icons8-search-25.png"))); // NOI18N
-        TabTK.add(jLabel25, new org.netbeans.lib.awtextra.AbsoluteConstraints(5, 120, 30, 40));
-
-        searchType6.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        searchType6.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Tất cả", "Tên tài khoản", "Mật khẩu", "Mã nhân viên", "Mã quyền" }));
-        searchType6.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                searchType6ActionPerformed(evt);
-            }
-        });
-        TabTK.add(searchType6, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 126, 110, 30));
-
-        LamMoiSP8.setBackground(new java.awt.Color(51, 204, 0));
-        LamMoiSP8.setPreferredSize(new java.awt.Dimension(80, 24));
-        LamMoiSP8.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mousePressed(java.awt.event.MouseEvent evt) {
-                LamMoiSP8MousePressed(evt);
-            }
-            public void mouseReleased(java.awt.event.MouseEvent evt) {
-                LamMoiSP8MouseReleased(evt);
-            }
-        });
-
-        jLabel86.setBackground(new java.awt.Color(255, 255, 255));
-        jLabel86.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
-        jLabel86.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel86.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel86.setIcon(new javax.swing.ImageIcon(getClass().getResource("/bookstoremanagement/icons/icons8-update-left-rotation-15.png"))); // NOI18N
-        jLabel86.setText("Làm mới");
-
-        javax.swing.GroupLayout LamMoiSP8Layout = new javax.swing.GroupLayout(LamMoiSP8);
-        LamMoiSP8.setLayout(LamMoiSP8Layout);
-        LamMoiSP8Layout.setHorizontalGroup(
-            LamMoiSP8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jLabel86, javax.swing.GroupLayout.DEFAULT_SIZE, 120, Short.MAX_VALUE)
-        );
-        LamMoiSP8Layout.setVerticalGroup(
-            LamMoiSP8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jLabel86, javax.swing.GroupLayout.DEFAULT_SIZE, 24, Short.MAX_VALUE)
-        );
-
-        TabTK.add(LamMoiSP8, new org.netbeans.lib.awtextra.AbsoluteConstraints(850, 130, 120, -1));
-
-        BHsua6.setBackground(new java.awt.Color(255, 204, 0));
-        BHsua6.setPreferredSize(new java.awt.Dimension(80, 24));
-        BHsua6.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mousePressed(java.awt.event.MouseEvent evt) {
-                BHsua6MousePressed(evt);
-            }
-            public void mouseReleased(java.awt.event.MouseEvent evt) {
-                BHsua6MouseReleased(evt);
-            }
-        });
-
-        jLabel87.setBackground(new java.awt.Color(255, 255, 255));
-        jLabel87.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
-        jLabel87.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel87.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel87.setIcon(new javax.swing.ImageIcon(getClass().getResource("/bookstoremanagement/icons/icons8-pen-15.png"))); // NOI18N
-        jLabel87.setText("Sửa");
-
-        javax.swing.GroupLayout BHsua6Layout = new javax.swing.GroupLayout(BHsua6);
-        BHsua6.setLayout(BHsua6Layout);
-        BHsua6Layout.setHorizontalGroup(
-            BHsua6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jLabel87, javax.swing.GroupLayout.DEFAULT_SIZE, 120, Short.MAX_VALUE)
-        );
-        BHsua6Layout.setVerticalGroup(
-            BHsua6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jLabel87, javax.swing.GroupLayout.DEFAULT_SIZE, 24, Short.MAX_VALUE)
-        );
-
-        TabTK.add(BHsua6, new org.netbeans.lib.awtextra.AbsoluteConstraints(710, 130, 120, -1));
-
-        BHxoa6.setBackground(new java.awt.Color(255, 0, 0));
-        BHxoa6.setPreferredSize(new java.awt.Dimension(80, 24));
-        BHxoa6.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mousePressed(java.awt.event.MouseEvent evt) {
-                BHxoa6MousePressed(evt);
-            }
-            public void mouseReleased(java.awt.event.MouseEvent evt) {
-                BHxoa6MouseReleased(evt);
-            }
-        });
-
-        jLabel88.setBackground(new java.awt.Color(255, 255, 255));
-        jLabel88.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
-        jLabel88.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel88.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel88.setIcon(new javax.swing.ImageIcon(getClass().getResource("/bookstoremanagement/icons/icons8-close-15.png"))); // NOI18N
-        jLabel88.setText("Xóa");
-
-        javax.swing.GroupLayout BHxoa6Layout = new javax.swing.GroupLayout(BHxoa6);
-        BHxoa6.setLayout(BHxoa6Layout);
-        BHxoa6Layout.setHorizontalGroup(
-            BHxoa6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jLabel88, javax.swing.GroupLayout.DEFAULT_SIZE, 120, Short.MAX_VALUE)
-        );
-        BHxoa6Layout.setVerticalGroup(
-            BHxoa6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jLabel88, javax.swing.GroupLayout.DEFAULT_SIZE, 24, Short.MAX_VALUE)
-        );
-
-        TabTK.add(BHxoa6, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 130, 120, -1));
-
-        BHthem6.setBackground(new java.awt.Color(0, 204, 204));
-        BHthem6.setPreferredSize(new java.awt.Dimension(80, 24));
-        BHthem6.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mousePressed(java.awt.event.MouseEvent evt) {
-                BHthem6MousePressed(evt);
-            }
-            public void mouseReleased(java.awt.event.MouseEvent evt) {
-                BHthem6MouseReleased(evt);
-            }
-        });
-
-        jLabel89.setBackground(new java.awt.Color(255, 255, 255));
-        jLabel89.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
-        jLabel89.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel89.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel89.setIcon(new javax.swing.ImageIcon(getClass().getResource("/bookstoremanagement/icons/icons8-pen-20.png"))); // NOI18N
-        jLabel89.setText("Thêm");
-
-        javax.swing.GroupLayout BHthem6Layout = new javax.swing.GroupLayout(BHthem6);
-        BHthem6.setLayout(BHthem6Layout);
-        BHthem6Layout.setHorizontalGroup(
-            BHthem6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jLabel89, javax.swing.GroupLayout.DEFAULT_SIZE, 120, Short.MAX_VALUE)
-        );
-        BHthem6Layout.setVerticalGroup(
-            BHthem6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jLabel89, javax.swing.GroupLayout.DEFAULT_SIZE, 24, Short.MAX_VALUE)
-        );
-
-        TabTK.add(BHthem6, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 130, 120, -1));
-
-        jScrollPane7.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
-        jScrollPane7.setForeground(new java.awt.Color(255, 255, 255));
-
-        TKTable.setAutoCreateRowSorter(true);
-        TKTable.setFont(new java.awt.Font("Segoe UI", 0, 17)); // NOI18N
-        TKTable.setModel(new javax.swing.table.DefaultTableModel(
-            new Object [][] {
-
-            },
-            new String [] {
-                "STT", "Tên tài khoản", "Mật khẩu", "Mã nhân viên", "Mã quyền"
-            }
-        ) {
-            boolean[] canEdit = new boolean [] {
-                false, false, false, false, false
-            };
-
-            public boolean isCellEditable(int rowIndex, int columnIndex) {
-                return canEdit [columnIndex];
-            }
-        });
-        TKTable.setFocusable(false);
-        TKTable.setGridColor(new java.awt.Color(128, 128, 128));
-        TKTable.setRowHeight(25);
-        TKTable.setSelectionBackground(new java.awt.Color(122, 72, 221));
-        TKTable.setSelectionForeground(new java.awt.Color(255, 255, 255));
-        TKTable.getTableHeader().setReorderingAllowed(false);
-        jScrollPane7.setViewportView(TKTable);
-        if (TKTable.getColumnModel().getColumnCount() > 0) {
-            TKTable.getColumnModel().getColumn(0).setMaxWidth(100);
-        }
-
-        TabTK.add(jScrollPane7, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 180, 1110, 500));
-
-        jButton3.setBackground(new java.awt.Color(1, 134, 53));
-        jButton3.setFont(new java.awt.Font("Dialog", 0, 14)); // NOI18N
-        jButton3.setForeground(new java.awt.Color(255, 255, 255));
-        jButton3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/bookstoremanagement/icons/icons8-user-48.png"))); // NOI18N
-        jButton3.setText("Tài khoản");
-        jButton3.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                TKSubButton(evt);
-            }
-        });
-        TabTK.add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 150, -1));
-
-        jButton6.setBackground(new java.awt.Color(1, 134, 53));
-        jButton6.setFont(new java.awt.Font("Dialog", 0, 12)); // NOI18N
-        jButton6.setForeground(new java.awt.Color(255, 255, 255));
-        jButton6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/bookstoremanagement/icons/icons8-unlock-security-lock-with-permission-granted-to-access-48.png"))); // NOI18N
-        jButton6.setText("Quyền");
-        jButton6.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                QuyenSubButton(evt);
-            }
-        });
-        TabTK.add(jButton6, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 0, 150, -1));
-
-        TabContainer.addTab("TaiKhoan", TabTK);
-
-        TabPN.setBackground(new java.awt.Color(255, 255, 255));
-        TabPN.setPreferredSize(new java.awt.Dimension(768, 639));
-        TabPN.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        jLabel30.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel30.setIcon(new javax.swing.ImageIcon(getClass().getResource("/bookstoremanagement/icons/icons8-search-25.png"))); // NOI18N
-        TabPN.add(jLabel30, new org.netbeans.lib.awtextra.AbsoluteConstraints(5, 120, 30, 40));
-
-        jScrollPane10.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
-        jScrollPane10.setForeground(new java.awt.Color(255, 255, 255));
-
-        PNTable.setAutoCreateRowSorter(true);
-        PNTable.setFont(new java.awt.Font("Segoe UI", 0, 17)); // NOI18N
-        PNTable.setModel(new javax.swing.table.DefaultTableModel(
-            new Object [][] {
-
-            },
-            new String [] {
-                "STT", "Mã hóa đơn", "Mã nhà cung cấp", "Mã nhân viên", "Ngày nhập", "Giờ nhập", "Tổng tiền"
-            }
-        ) {
-            boolean[] canEdit = new boolean [] {
-                false, false, false, false, false, false, false
-            };
-
-            public boolean isCellEditable(int rowIndex, int columnIndex) {
-                return canEdit [columnIndex];
-            }
-        });
-        PNTable.setFocusable(false);
-        PNTable.setGridColor(new java.awt.Color(128, 128, 128));
-        PNTable.setRowHeight(25);
-        PNTable.setSelectionBackground(new java.awt.Color(122, 72, 221));
-        PNTable.setSelectionForeground(new java.awt.Color(255, 255, 255));
-        PNTable.getTableHeader().setReorderingAllowed(false);
-        jScrollPane10.setViewportView(PNTable);
-        if (PNTable.getColumnModel().getColumnCount() > 0) {
-            PNTable.getColumnModel().getColumn(0).setMaxWidth(800);
-            PNTable.getColumnModel().getColumn(1).setPreferredWidth(20);
-        }
-
-        TabPN.add(jScrollPane10, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 180, 1110, 500));
-
-        searchType9.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        searchType9.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Tất cả", "Mã phiếu nhập", "Mã nhà cung cấp", "Mã nhân viên", "Ngày nhập", "Giờ nhập", "Tổng tiền", " " }));
-        TabPN.add(searchType9, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 126, 110, 30));
-
-        FilterSearch9.setFont(new java.awt.Font("Dialog", 0, 18)); // NOI18N
-        FilterSearch9.setMinimumSize(new java.awt.Dimension(28, 25));
-        FilterSearch9.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                FilterSearch9ActionPerformed(evt);
-            }
-        });
-        FilterSearch9.addKeyListener(new java.awt.event.KeyAdapter() {
-            public void keyReleased(java.awt.event.KeyEvent evt) {
-                FilterSearch9KeyReleased(evt);
-            }
-        });
-        TabPN.add(FilterSearch9, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 125, 220, 30));
-
-        LamMoiSP11.setBackground(new java.awt.Color(51, 204, 0));
-        LamMoiSP11.setPreferredSize(new java.awt.Dimension(80, 24));
-        LamMoiSP11.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mousePressed(java.awt.event.MouseEvent evt) {
-                LamMoiSP11MousePressed(evt);
-            }
-            public void mouseReleased(java.awt.event.MouseEvent evt) {
-                LamMoiSP11MouseReleased(evt);
-            }
-        });
-
-        jLabel101.setBackground(new java.awt.Color(255, 255, 255));
-        jLabel101.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
-        jLabel101.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel101.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel101.setIcon(new javax.swing.ImageIcon(getClass().getResource("/bookstoremanagement/icons/icons8-update-left-rotation-15.png"))); // NOI18N
-        jLabel101.setText("Làm mới");
-
-        javax.swing.GroupLayout LamMoiSP11Layout = new javax.swing.GroupLayout(LamMoiSP11);
-        LamMoiSP11.setLayout(LamMoiSP11Layout);
-        LamMoiSP11Layout.setHorizontalGroup(
-            LamMoiSP11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(LamMoiSP11Layout.createSequentialGroup()
-                .addGap(21, 21, 21)
-                .addComponent(jLabel101, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(24, Short.MAX_VALUE))
-        );
-        LamMoiSP11Layout.setVerticalGroup(
-            LamMoiSP11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, LamMoiSP11Layout.createSequentialGroup()
-                .addGap(0, 0, Short.MAX_VALUE)
-                .addComponent(jLabel101, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE))
-        );
-
-        TabPN.add(LamMoiSP11, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 130, 120, -1));
-
-        BHthem12.setBackground(new java.awt.Color(0, 204, 204));
-        BHthem12.setPreferredSize(new java.awt.Dimension(80, 24));
-        BHthem12.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mousePressed(java.awt.event.MouseEvent evt) {
-                BHthem12MousePressed(evt);
-            }
-            public void mouseReleased(java.awt.event.MouseEvent evt) {
-                BHthem12MouseReleased(evt);
-            }
-        });
-
-        jLabel104.setBackground(new java.awt.Color(255, 255, 255));
-        jLabel104.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
-        jLabel104.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel104.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel104.setIcon(new javax.swing.ImageIcon(getClass().getResource("/bookstoremanagement/icons/icons8-search-20.png"))); // NOI18N
-        jLabel104.setText("Xem chi tiết");
-
-        javax.swing.GroupLayout BHthem12Layout = new javax.swing.GroupLayout(BHthem12);
-        BHthem12.setLayout(BHthem12Layout);
-        BHthem12Layout.setHorizontalGroup(
-            BHthem12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jLabel104, javax.swing.GroupLayout.DEFAULT_SIZE, 120, Short.MAX_VALUE)
-        );
-        BHthem12Layout.setVerticalGroup(
-            BHthem12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jLabel104, javax.swing.GroupLayout.DEFAULT_SIZE, 24, Short.MAX_VALUE)
-        );
-
-        TabPN.add(BHthem12, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 130, 120, -1));
-
-        jButton4.setBackground(new java.awt.Color(1, 134, 53));
-        jButton4.setFont(new java.awt.Font("Dialog", 0, 14)); // NOI18N
-        jButton4.setForeground(new java.awt.Color(255, 255, 255));
-        jButton4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/bookstoremanagement/icons/icons8-cheque-48.png"))); // NOI18N
-        jButton4.setText("Hóa đơn bán");
-        jButton4.setOpaque(true);
-        jButton4.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton4HDBSubButton(evt);
-            }
-        });
-        TabPN.add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 180, 60));
-
-        jButton5.setBackground(new java.awt.Color(1, 134, 53));
-        jButton5.setFont(new java.awt.Font("Dialog", 0, 14)); // NOI18N
-        jButton5.setForeground(new java.awt.Color(255, 255, 255));
-        jButton5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/bookstoremanagement/icons/icons8-truck-48.png"))); // NOI18N
-        jButton5.setText("Hóa đơn nhập");
-        jButton5.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton5HDNSubButton(evt);
-            }
-        });
-        TabPN.add(jButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 0, 180, 60));
-
-        PanelTKNhap.setBackground(new java.awt.Color(255, 204, 0));
-        PanelTKNhap.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mousePressed(java.awt.event.MouseEvent evt) {
-                PanelTKNhapMousePressed(evt);
-            }
-        });
-
-        jLabel122.setBackground(new java.awt.Color(255, 255, 255));
-        jLabel122.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
-        jLabel122.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel122.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel122.setText("Thống kê");
-
-        javax.swing.GroupLayout PanelTKNhapLayout = new javax.swing.GroupLayout(PanelTKNhap);
-        PanelTKNhap.setLayout(PanelTKNhapLayout);
-        PanelTKNhapLayout.setHorizontalGroup(
-            PanelTKNhapLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(PanelTKNhapLayout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jLabel122, javax.swing.GroupLayout.PREFERRED_SIZE, 89, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(25, Short.MAX_VALUE))
-        );
-        PanelTKNhapLayout.setVerticalGroup(
-            PanelTKNhapLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, PanelTKNhapLayout.createSequentialGroup()
-                .addGap(0, 0, Short.MAX_VALUE)
-                .addComponent(jLabel122, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE))
-        );
-
-        TabPN.add(PanelTKNhap, new org.netbeans.lib.awtextra.AbsoluteConstraints(690, 130, 120, -1));
-
-        jLabel121.setBackground(new java.awt.Color(255, 255, 255));
-        jLabel121.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
-        jLabel121.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel121.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel121.setIcon(new javax.swing.ImageIcon(getClass().getResource("/bookstoremanagement/icons/icons8-update-left-rotation-15.png"))); // NOI18N
-        jLabel121.setText("Làm mới");
-        TabPN.add(jLabel121, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
-
-        TabContainer.addTab("HoaDonNhap", TabPN);
-
-        TabQuyen.setBackground(new java.awt.Color(255, 255, 255));
-        TabQuyen.setPreferredSize(new java.awt.Dimension(768, 639));
-        TabQuyen.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        BHthem10.setBackground(new java.awt.Color(0, 204, 204));
-        BHthem10.setPreferredSize(new java.awt.Dimension(80, 24));
-        BHthem10.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mousePressed(java.awt.event.MouseEvent evt) {
-                BHthem10MousePressed(evt);
-            }
-            public void mouseReleased(java.awt.event.MouseEvent evt) {
-                BHthem10MouseReleased(evt);
-            }
-        });
-
-        jLabel99.setBackground(new java.awt.Color(255, 255, 255));
-        jLabel99.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
-        jLabel99.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel99.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel99.setIcon(new javax.swing.ImageIcon(getClass().getResource("/bookstoremanagement/icons/icons8-plus-20.png"))); // NOI18N
-        jLabel99.setText("Thêm");
-
-        javax.swing.GroupLayout BHthem10Layout = new javax.swing.GroupLayout(BHthem10);
-        BHthem10.setLayout(BHthem10Layout);
-        BHthem10Layout.setHorizontalGroup(
-            BHthem10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jLabel99, javax.swing.GroupLayout.DEFAULT_SIZE, 120, Short.MAX_VALUE)
-        );
-        BHthem10Layout.setVerticalGroup(
-            BHthem10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jLabel99, javax.swing.GroupLayout.DEFAULT_SIZE, 24, Short.MAX_VALUE)
-        );
-
-        TabQuyen.add(BHthem10, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 130, 120, -1));
-
-        searchType10.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        searchType10.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Tất cả", "Mã quyền", "Tên quyền", "Chi tiết quyền" }));
-        TabQuyen.add(searchType10, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 126, 110, 30));
-
-        jLabel32.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel32.setIcon(new javax.swing.ImageIcon(getClass().getResource("/bookstoremanagement/icons/icons8-search-25.png"))); // NOI18N
-        TabQuyen.add(jLabel32, new org.netbeans.lib.awtextra.AbsoluteConstraints(5, 120, 30, 40));
-
-        FilterSearch10.setFont(new java.awt.Font("Dialog", 0, 18)); // NOI18N
-        FilterSearch10.setMinimumSize(new java.awt.Dimension(28, 25));
-        FilterSearch10.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                FilterSearch10ActionPerformed(evt);
-            }
-        });
-        FilterSearch10.addKeyListener(new java.awt.event.KeyAdapter() {
-            public void keyReleased(java.awt.event.KeyEvent evt) {
-                FilterSearch10KeyReleased(evt);
-            }
-        });
-        TabQuyen.add(FilterSearch10, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 125, 220, 30));
-
-        BHxoa9.setBackground(new java.awt.Color(255, 0, 0));
-        BHxoa9.setPreferredSize(new java.awt.Dimension(80, 24));
-        BHxoa9.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mousePressed(java.awt.event.MouseEvent evt) {
-                BHxoa9MousePressed(evt);
-            }
-            public void mouseReleased(java.awt.event.MouseEvent evt) {
-                BHxoa9MouseReleased(evt);
-            }
-        });
-
-        jLabel100.setBackground(new java.awt.Color(255, 255, 255));
-        jLabel100.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
-        jLabel100.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel100.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel100.setIcon(new javax.swing.ImageIcon(getClass().getResource("/bookstoremanagement/icons/icons8-close-15.png"))); // NOI18N
-        jLabel100.setText("Xóa");
-
-        javax.swing.GroupLayout BHxoa9Layout = new javax.swing.GroupLayout(BHxoa9);
-        BHxoa9.setLayout(BHxoa9Layout);
-        BHxoa9Layout.setHorizontalGroup(
-            BHxoa9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jLabel100, javax.swing.GroupLayout.DEFAULT_SIZE, 120, Short.MAX_VALUE)
-        );
-        BHxoa9Layout.setVerticalGroup(
-            BHxoa9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jLabel100, javax.swing.GroupLayout.DEFAULT_SIZE, 24, Short.MAX_VALUE)
-        );
-
-        TabQuyen.add(BHxoa9, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 130, 120, -1));
-
-        BHsua9.setBackground(new java.awt.Color(255, 204, 0));
-        BHsua9.setPreferredSize(new java.awt.Dimension(80, 24));
-        BHsua9.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mousePressed(java.awt.event.MouseEvent evt) {
-                BHsua9MousePressed(evt);
-            }
-            public void mouseReleased(java.awt.event.MouseEvent evt) {
-                BHsua9MouseReleased(evt);
-            }
-        });
-
-        jLabel102.setBackground(new java.awt.Color(255, 255, 255));
-        jLabel102.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
-        jLabel102.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel102.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel102.setIcon(new javax.swing.ImageIcon(getClass().getResource("/bookstoremanagement/icons/icons8-pen-15.png"))); // NOI18N
-        jLabel102.setText("Sửa");
-
-        javax.swing.GroupLayout BHsua9Layout = new javax.swing.GroupLayout(BHsua9);
-        BHsua9.setLayout(BHsua9Layout);
-        BHsua9Layout.setHorizontalGroup(
-            BHsua9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, BHsua9Layout.createSequentialGroup()
-                .addGap(0, 16, Short.MAX_VALUE)
-                .addComponent(jLabel102, javax.swing.GroupLayout.PREFERRED_SIZE, 104, javax.swing.GroupLayout.PREFERRED_SIZE))
-        );
-        BHsua9Layout.setVerticalGroup(
-            BHsua9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jLabel102, javax.swing.GroupLayout.DEFAULT_SIZE, 24, Short.MAX_VALUE)
-        );
-
-        TabQuyen.add(BHsua9, new org.netbeans.lib.awtextra.AbsoluteConstraints(710, 130, 120, -1));
-
-        LamMoiSP12.setBackground(new java.awt.Color(51, 204, 0));
-        LamMoiSP12.setPreferredSize(new java.awt.Dimension(80, 24));
-        LamMoiSP12.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mousePressed(java.awt.event.MouseEvent evt) {
-                LamMoiSP12MousePressed(evt);
-            }
-            public void mouseReleased(java.awt.event.MouseEvent evt) {
-                LamMoiSP12MouseReleased(evt);
-            }
-        });
-
-        jLabel103.setBackground(new java.awt.Color(255, 255, 255));
-        jLabel103.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
-        jLabel103.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel103.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel103.setIcon(new javax.swing.ImageIcon(getClass().getResource("/bookstoremanagement/icons/icons8-update-left-rotation-15.png"))); // NOI18N
-        jLabel103.setText("Làm mới");
-
-        javax.swing.GroupLayout LamMoiSP12Layout = new javax.swing.GroupLayout(LamMoiSP12);
-        LamMoiSP12.setLayout(LamMoiSP12Layout);
-        LamMoiSP12Layout.setHorizontalGroup(
-            LamMoiSP12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jLabel103, javax.swing.GroupLayout.DEFAULT_SIZE, 120, Short.MAX_VALUE)
-        );
-        LamMoiSP12Layout.setVerticalGroup(
-            LamMoiSP12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jLabel103, javax.swing.GroupLayout.DEFAULT_SIZE, 24, Short.MAX_VALUE)
-        );
-
-        TabQuyen.add(LamMoiSP12, new org.netbeans.lib.awtextra.AbsoluteConstraints(850, 130, 120, -1));
-
-        jScrollPane11.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
-        jScrollPane11.setForeground(new java.awt.Color(255, 255, 255));
-
-        QuyenTable.setAutoCreateRowSorter(true);
-        QuyenTable.setFont(new java.awt.Font("Segoe UI", 0, 17)); // NOI18N
-        QuyenTable.setModel(new javax.swing.table.DefaultTableModel(
-            new Object [][] {
-
-            },
-            new String [] {
-                "STT", "Mã quyền", "Tên quyền", "Chi tiết quyền"
-            }
-        ) {
-            boolean[] canEdit = new boolean [] {
-                false, true, false, true
-            };
-
-            public boolean isCellEditable(int rowIndex, int columnIndex) {
-                return canEdit [columnIndex];
-            }
-        });
-        QuyenTable.setFocusable(false);
-        QuyenTable.setGridColor(new java.awt.Color(128, 128, 128));
-        QuyenTable.setRowHeight(25);
-        QuyenTable.setSelectionBackground(new java.awt.Color(122, 72, 221));
-        QuyenTable.setSelectionForeground(new java.awt.Color(255, 255, 255));
-        QuyenTable.getTableHeader().setReorderingAllowed(false);
-        jScrollPane11.setViewportView(QuyenTable);
-        if (QuyenTable.getColumnModel().getColumnCount() > 0) {
-            QuyenTable.getColumnModel().getColumn(0).setMaxWidth(800);
-            QuyenTable.getColumnModel().getColumn(1).setPreferredWidth(20);
-        }
-
-        TabQuyen.add(jScrollPane11, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 170, 1110, 500));
-
-        jButton7.setBackground(new java.awt.Color(1, 134, 53));
-        jButton7.setFont(new java.awt.Font("Dialog", 0, 14)); // NOI18N
-        jButton7.setForeground(new java.awt.Color(255, 255, 255));
-        jButton7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/bookstoremanagement/icons/icons8-user-48.png"))); // NOI18N
-        jButton7.setText("Tài khoản");
-        jButton7.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton7TKSubButton(evt);
-            }
-        });
-        TabQuyen.add(jButton7, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 150, -1));
-
-        jButton8.setBackground(new java.awt.Color(1, 134, 53));
-        jButton8.setFont(new java.awt.Font("Dialog", 0, 12)); // NOI18N
-        jButton8.setForeground(new java.awt.Color(255, 255, 255));
-        jButton8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/bookstoremanagement/icons/icons8-unlock-security-lock-with-permission-granted-to-access-48.png"))); // NOI18N
-        jButton8.setText("Quyền");
-        jButton8.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton8QuyenSubButton(evt);
-            }
-        });
-        TabQuyen.add(jButton8, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 0, 150, -1));
-
-        TabContainer.addTab("Quyen", TabQuyen);
-
-        TabTrangChu.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        kGradientPanel1.setkEndColor(new java.awt.Color(255, 248, 222));
-        kGradientPanel1.setkGradientFocus(50);
-        kGradientPanel1.setkStartColor(new java.awt.Color(115, 144, 114));
-        kGradientPanel1.setkTransparentControls(false);
-        kGradientPanel1.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                kGradientPanel1MouseClicked(evt);
-            }
-        });
-
-        jLabel116.setFont(new java.awt.Font("Comic Sans MS", 0, 48)); // NOI18N
-        jLabel116.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel116.setText("Book Store Management System");
-
-        javax.swing.GroupLayout kGradientPanel1Layout = new javax.swing.GroupLayout(kGradientPanel1);
-        kGradientPanel1.setLayout(kGradientPanel1Layout);
-        kGradientPanel1Layout.setHorizontalGroup(
-            kGradientPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(kGradientPanel1Layout.createSequentialGroup()
-                .addGroup(kGradientPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(kGradientPanel1Layout.createSequentialGroup()
-                        .addGap(175, 175, 175)
-                        .addComponent(timeLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 122, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(dateLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 124, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(dayLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 106, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(kGradientPanel1Layout.createSequentialGroup()
-                        .addGap(264, 264, 264)
-                        .addComponent(jLabel116, javax.swing.GroupLayout.PREFERRED_SIZE, 737, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(889, Short.MAX_VALUE))
-        );
-        kGradientPanel1Layout.setVerticalGroup(
-            kGradientPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(kGradientPanel1Layout.createSequentialGroup()
-                .addGap(284, 284, 284)
-                .addComponent(jLabel116)
-                .addGap(104, 104, 104)
-                .addGroup(kGradientPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(dayLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 67, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(timeLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 67, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(dateLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 51, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(218, Short.MAX_VALUE))
-        );
-
-        TabTrangChu.add(kGradientPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(-60, -1, 1890, 740));
-
-        TabContainer.addTab("TrangChu", TabTrangChu);
 
         TabBH.setBackground(new java.awt.Color(255, 255, 255));
         TabBH.setPreferredSize(new java.awt.Dimension(768, 639));
@@ -3141,9 +1518,9 @@ public class MainPage extends javax.swing.JFrame {
 
         TabContainer.addTab("NhapHang", TabNH);
 
-        TabHD.setBackground(new java.awt.Color(255, 255, 255));
-        TabHD.setPreferredSize(new java.awt.Dimension(768, 639));
-        TabHD.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        TabHDB.setBackground(new java.awt.Color(255, 255, 255));
+        TabHDB.setPreferredSize(new java.awt.Dimension(768, 639));
+        TabHDB.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         FilterSearch7.setFont(new java.awt.Font("Dialog", 0, 18)); // NOI18N
         FilterSearch7.setMinimumSize(new java.awt.Dimension(28, 25));
@@ -3157,15 +1534,15 @@ public class MainPage extends javax.swing.JFrame {
                 FilterSearch7KeyReleased(evt);
             }
         });
-        TabHD.add(FilterSearch7, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 125, 220, 30));
+        TabHDB.add(FilterSearch7, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 125, 220, 30));
 
         jLabel27.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel27.setIcon(new javax.swing.ImageIcon(getClass().getResource("/bookstoremanagement/icons/icons8-search-25.png"))); // NOI18N
-        TabHD.add(jLabel27, new org.netbeans.lib.awtextra.AbsoluteConstraints(5, 120, 30, 40));
+        TabHDB.add(jLabel27, new org.netbeans.lib.awtextra.AbsoluteConstraints(5, 120, 30, 40));
 
         searchType7.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         searchType7.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Tất cả", "Mã hóa đơn", "Mã nhân viên", "Mã khách hàng", "Mã khuyến mãi", "Ngày lập", "Giờ lập", "Tổng tiền", " " }));
-        TabHD.add(searchType7, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 126, 110, 30));
+        TabHDB.add(searchType7, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 126, 110, 30));
 
         LamMoiSP9.setBackground(new java.awt.Color(255, 0, 0));
         LamMoiSP9.setPreferredSize(new java.awt.Dimension(80, 24));
@@ -3196,7 +1573,7 @@ public class MainPage extends javax.swing.JFrame {
             .addComponent(jLabel90, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 30, Short.MAX_VALUE)
         );
 
-        TabHD.add(LamMoiSP9, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 130, 140, 30));
+        TabHDB.add(LamMoiSP9, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 130, 140, 30));
 
         BHthem7.setBackground(new java.awt.Color(0, 204, 204));
         BHthem7.setPreferredSize(new java.awt.Dimension(80, 24));
@@ -3229,7 +1606,7 @@ public class MainPage extends javax.swing.JFrame {
             .addComponent(jLabel93, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 30, Short.MAX_VALUE)
         );
 
-        TabHD.add(BHthem7, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 130, 140, 30));
+        TabHDB.add(BHthem7, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 130, 140, 30));
 
         jScrollPane8.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
         jScrollPane8.setForeground(new java.awt.Color(255, 255, 255));
@@ -3264,7 +1641,7 @@ public class MainPage extends javax.swing.JFrame {
             HDTable.getColumnModel().getColumn(6).setPreferredWidth(20);
         }
 
-        TabHD.add(jScrollPane8, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 180, 1110, 440));
+        TabHDB.add(jScrollPane8, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 180, 1110, 440));
 
         jButton1.setBackground(new java.awt.Color(1, 134, 53));
         jButton1.setFont(new java.awt.Font("Dialog", 0, 14)); // NOI18N
@@ -3277,7 +1654,7 @@ public class MainPage extends javax.swing.JFrame {
                 HDBSubButton(evt);
             }
         });
-        TabHD.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 180, 60));
+        TabHDB.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 180, 60));
 
         jButton2.setBackground(new java.awt.Color(1, 134, 53));
         jButton2.setFont(new java.awt.Font("Dialog", 0, 14)); // NOI18N
@@ -3289,7 +1666,7 @@ public class MainPage extends javax.swing.JFrame {
                 HDNSubButton(evt);
             }
         });
-        TabHD.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 0, 180, 60));
+        TabHDB.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 0, 180, 60));
 
         ThongKeBan.setBackground(new java.awt.Color(255, 204, 0));
         ThongKeBan.setForeground(new java.awt.Color(255, 255, 255));
@@ -3306,6 +1683,7 @@ public class MainPage extends javax.swing.JFrame {
         jLabel94.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         jLabel94.setForeground(new java.awt.Color(255, 255, 255));
         jLabel94.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel94.setIcon(new javax.swing.ImageIcon(getClass().getResource("/bookstoremanagement/icons/icons8-cheque-48 (Custom).png"))); // NOI18N
         jLabel94.setText("Thống kê");
 
         javax.swing.GroupLayout ThongKeBanLayout = new javax.swing.GroupLayout(ThongKeBan);
@@ -3330,9 +1708,1634 @@ public class MainPage extends javax.swing.JFrame {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
-        TabHD.add(ThongKeBan, new org.netbeans.lib.awtextra.AbsoluteConstraints(750, 130, 140, 30));
+        TabHDB.add(ThongKeBan, new org.netbeans.lib.awtextra.AbsoluteConstraints(750, 130, 140, 30));
 
-        TabContainer.addTab("HoaDonBan", TabHD);
+        TabContainer.addTab("HoaDonBan", TabHDB);
+
+        TabHDN.setBackground(new java.awt.Color(255, 255, 255));
+        TabHDN.setPreferredSize(new java.awt.Dimension(768, 639));
+        TabHDN.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel30.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel30.setIcon(new javax.swing.ImageIcon(getClass().getResource("/bookstoremanagement/icons/icons8-search-25.png"))); // NOI18N
+        TabHDN.add(jLabel30, new org.netbeans.lib.awtextra.AbsoluteConstraints(5, 120, 30, 40));
+
+        jScrollPane10.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
+        jScrollPane10.setForeground(new java.awt.Color(255, 255, 255));
+
+        PNTable.setAutoCreateRowSorter(true);
+        PNTable.setFont(new java.awt.Font("Segoe UI", 0, 17)); // NOI18N
+        PNTable.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+
+            },
+            new String [] {
+                "STT", "Mã hóa đơn", "Mã nhà cung cấp", "Mã nhân viên", "Ngày nhập", "Giờ nhập", "Tổng tiền"
+            }
+        ) {
+            boolean[] canEdit = new boolean [] {
+                false, false, false, false, false, false, false
+            };
+
+            public boolean isCellEditable(int rowIndex, int columnIndex) {
+                return canEdit [columnIndex];
+            }
+        });
+        PNTable.setFocusable(false);
+        PNTable.setGridColor(new java.awt.Color(128, 128, 128));
+        PNTable.setRowHeight(25);
+        PNTable.setSelectionBackground(new java.awt.Color(122, 72, 221));
+        PNTable.setSelectionForeground(new java.awt.Color(255, 255, 255));
+        PNTable.getTableHeader().setReorderingAllowed(false);
+        jScrollPane10.setViewportView(PNTable);
+        if (PNTable.getColumnModel().getColumnCount() > 0) {
+            PNTable.getColumnModel().getColumn(0).setMaxWidth(800);
+            PNTable.getColumnModel().getColumn(1).setPreferredWidth(20);
+        }
+
+        TabHDN.add(jScrollPane10, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 180, 1110, 500));
+
+        searchType9.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        searchType9.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Tất cả", "Mã phiếu nhập", "Mã nhà cung cấp", "Mã nhân viên", "Ngày nhập", "Giờ nhập", "Tổng tiền", " " }));
+        TabHDN.add(searchType9, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 126, 110, 30));
+
+        FilterSearch9.setFont(new java.awt.Font("Dialog", 0, 18)); // NOI18N
+        FilterSearch9.setMinimumSize(new java.awt.Dimension(28, 25));
+        FilterSearch9.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                FilterSearch9ActionPerformed(evt);
+            }
+        });
+        FilterSearch9.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyReleased(java.awt.event.KeyEvent evt) {
+                FilterSearch9KeyReleased(evt);
+            }
+        });
+        TabHDN.add(FilterSearch9, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 125, 220, 30));
+
+        LamMoiSP11.setBackground(new java.awt.Color(51, 204, 0));
+        LamMoiSP11.setPreferredSize(new java.awt.Dimension(80, 24));
+        LamMoiSP11.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                LamMoiSP11MousePressed(evt);
+            }
+            public void mouseReleased(java.awt.event.MouseEvent evt) {
+                LamMoiSP11MouseReleased(evt);
+            }
+        });
+
+        jLabel101.setBackground(new java.awt.Color(255, 255, 255));
+        jLabel101.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        jLabel101.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel101.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel101.setIcon(new javax.swing.ImageIcon(getClass().getResource("/bookstoremanagement/icons/icons8-update-left-rotation-15.png"))); // NOI18N
+        jLabel101.setText("Làm mới");
+
+        javax.swing.GroupLayout LamMoiSP11Layout = new javax.swing.GroupLayout(LamMoiSP11);
+        LamMoiSP11.setLayout(LamMoiSP11Layout);
+        LamMoiSP11Layout.setHorizontalGroup(
+            LamMoiSP11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(LamMoiSP11Layout.createSequentialGroup()
+                .addGap(21, 21, 21)
+                .addComponent(jLabel101, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(24, Short.MAX_VALUE))
+        );
+        LamMoiSP11Layout.setVerticalGroup(
+            LamMoiSP11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, LamMoiSP11Layout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addComponent(jLabel101, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE))
+        );
+
+        TabHDN.add(LamMoiSP11, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 130, 120, -1));
+
+        BHthem12.setBackground(new java.awt.Color(0, 204, 204));
+        BHthem12.setPreferredSize(new java.awt.Dimension(80, 24));
+        BHthem12.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                BHthem12MousePressed(evt);
+            }
+            public void mouseReleased(java.awt.event.MouseEvent evt) {
+                BHthem12MouseReleased(evt);
+            }
+        });
+
+        jLabel104.setBackground(new java.awt.Color(255, 255, 255));
+        jLabel104.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        jLabel104.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel104.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel104.setIcon(new javax.swing.ImageIcon(getClass().getResource("/bookstoremanagement/icons/icons8-search-20.png"))); // NOI18N
+        jLabel104.setText("Xem chi tiết");
+
+        javax.swing.GroupLayout BHthem12Layout = new javax.swing.GroupLayout(BHthem12);
+        BHthem12.setLayout(BHthem12Layout);
+        BHthem12Layout.setHorizontalGroup(
+            BHthem12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jLabel104, javax.swing.GroupLayout.DEFAULT_SIZE, 120, Short.MAX_VALUE)
+        );
+        BHthem12Layout.setVerticalGroup(
+            BHthem12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jLabel104, javax.swing.GroupLayout.DEFAULT_SIZE, 24, Short.MAX_VALUE)
+        );
+
+        TabHDN.add(BHthem12, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 130, 120, -1));
+
+        jButton4.setBackground(new java.awt.Color(1, 134, 53));
+        jButton4.setFont(new java.awt.Font("Dialog", 0, 14)); // NOI18N
+        jButton4.setForeground(new java.awt.Color(255, 255, 255));
+        jButton4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/bookstoremanagement/icons/icons8-cheque-48.png"))); // NOI18N
+        jButton4.setText("Hóa đơn bán");
+        jButton4.setOpaque(true);
+        jButton4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton4HDBSubButton(evt);
+            }
+        });
+        TabHDN.add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 180, 60));
+
+        jButton5.setBackground(new java.awt.Color(1, 134, 53));
+        jButton5.setFont(new java.awt.Font("Dialog", 0, 14)); // NOI18N
+        jButton5.setForeground(new java.awt.Color(255, 255, 255));
+        jButton5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/bookstoremanagement/icons/icons8-truck-48.png"))); // NOI18N
+        jButton5.setText("Hóa đơn nhập");
+        jButton5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton5HDNSubButton(evt);
+            }
+        });
+        TabHDN.add(jButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 0, 180, 60));
+
+        PanelTKNhap.setBackground(new java.awt.Color(255, 204, 0));
+        PanelTKNhap.setPreferredSize(new java.awt.Dimension(80, 24));
+        PanelTKNhap.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                PanelTKNhapMousePressed(evt);
+            }
+        });
+
+        jLabel122.setBackground(new java.awt.Color(255, 255, 255));
+        jLabel122.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        jLabel122.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel122.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel122.setIcon(new javax.swing.ImageIcon(getClass().getResource("/bookstoremanagement/icons/icons8-cheque-48 (Custom).png"))); // NOI18N
+        jLabel122.setText("Thống kê");
+
+        javax.swing.GroupLayout PanelTKNhapLayout = new javax.swing.GroupLayout(PanelTKNhap);
+        PanelTKNhap.setLayout(PanelTKNhapLayout);
+        PanelTKNhapLayout.setHorizontalGroup(
+            PanelTKNhapLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(PanelTKNhapLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jLabel122, javax.swing.GroupLayout.DEFAULT_SIZE, 108, Short.MAX_VALUE)
+                .addContainerGap())
+        );
+        PanelTKNhapLayout.setVerticalGroup(
+            PanelTKNhapLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, PanelTKNhapLayout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addComponent(jLabel122, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE))
+        );
+
+        TabHDN.add(PanelTKNhap, new org.netbeans.lib.awtextra.AbsoluteConstraints(690, 130, 120, -1));
+
+        jLabel121.setBackground(new java.awt.Color(255, 255, 255));
+        jLabel121.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        jLabel121.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel121.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel121.setIcon(new javax.swing.ImageIcon(getClass().getResource("/bookstoremanagement/icons/icons8-update-left-rotation-15.png"))); // NOI18N
+        jLabel121.setText("Làm mới");
+        TabHDN.add(jLabel121, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
+
+        TabContainer.addTab("HoaDonNhap", TabHDN);
+
+        TabSach.setBackground(new java.awt.Color(255, 255, 255));
+        TabSach.setPreferredSize(new java.awt.Dimension(768, 639));
+        TabSach.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel6.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/bookstoremanagement/icons/icons8-search-25.png"))); // NOI18N
+        TabSach.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(5, 120, 30, 40));
+
+        FilterSearch1.setFont(new java.awt.Font("Dialog", 0, 18)); // NOI18N
+        FilterSearch1.setMinimumSize(new java.awt.Dimension(28, 25));
+        FilterSearch1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                FilterSearch1ActionPerformed(evt);
+            }
+        });
+        FilterSearch1.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyReleased(java.awt.event.KeyEvent evt) {
+                FilterSearch1KeyReleased(evt);
+            }
+        });
+        TabSach.add(FilterSearch1, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 125, 220, 30));
+
+        searchType1.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        searchType1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Tất cả", "Mã sản phẩm", "Mã loại", "Tên", "Đơn giá", "Số lượng", "Trạng Thái ", " " }));
+        TabSach.add(searchType1, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 126, 110, 30));
+
+        LamMoiSP1.setBackground(new java.awt.Color(51, 204, 0));
+        LamMoiSP1.setPreferredSize(new java.awt.Dimension(80, 24));
+        LamMoiSP1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                LamMoiSP1MousePressed(evt);
+            }
+            public void mouseReleased(java.awt.event.MouseEvent evt) {
+                LamMoiSP1MouseReleased(evt);
+            }
+        });
+
+        jLabel67.setBackground(new java.awt.Color(255, 255, 255));
+        jLabel67.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        jLabel67.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel67.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel67.setIcon(new javax.swing.ImageIcon(getClass().getResource("/bookstoremanagement/icons/icons8-update-left-rotation-15.png"))); // NOI18N
+        jLabel67.setText("Làm mới");
+
+        javax.swing.GroupLayout LamMoiSP1Layout = new javax.swing.GroupLayout(LamMoiSP1);
+        LamMoiSP1.setLayout(LamMoiSP1Layout);
+        LamMoiSP1Layout.setHorizontalGroup(
+            LamMoiSP1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jLabel67, javax.swing.GroupLayout.DEFAULT_SIZE, 120, Short.MAX_VALUE)
+        );
+        LamMoiSP1Layout.setVerticalGroup(
+            LamMoiSP1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jLabel67, javax.swing.GroupLayout.DEFAULT_SIZE, 24, Short.MAX_VALUE)
+        );
+
+        TabSach.add(LamMoiSP1, new org.netbeans.lib.awtextra.AbsoluteConstraints(850, 130, 120, -1));
+
+        BHsua1.setBackground(new java.awt.Color(255, 204, 0));
+        BHsua1.setPreferredSize(new java.awt.Dimension(80, 24));
+        BHsua1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                BHsua1MousePressed(evt);
+            }
+            public void mouseReleased(java.awt.event.MouseEvent evt) {
+                BHsua1MouseReleased(evt);
+            }
+        });
+
+        jLabel68.setBackground(new java.awt.Color(255, 255, 255));
+        jLabel68.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        jLabel68.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel68.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel68.setIcon(new javax.swing.ImageIcon(getClass().getResource("/bookstoremanagement/icons/icons8-pen-15.png"))); // NOI18N
+        jLabel68.setText("Sửa");
+
+        javax.swing.GroupLayout BHsua1Layout = new javax.swing.GroupLayout(BHsua1);
+        BHsua1.setLayout(BHsua1Layout);
+        BHsua1Layout.setHorizontalGroup(
+            BHsua1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jLabel68, javax.swing.GroupLayout.DEFAULT_SIZE, 120, Short.MAX_VALUE)
+        );
+        BHsua1Layout.setVerticalGroup(
+            BHsua1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jLabel68, javax.swing.GroupLayout.DEFAULT_SIZE, 24, Short.MAX_VALUE)
+        );
+
+        TabSach.add(BHsua1, new org.netbeans.lib.awtextra.AbsoluteConstraints(710, 130, 120, -1));
+
+        BHxoa1.setBackground(new java.awt.Color(255, 0, 0));
+        BHxoa1.setPreferredSize(new java.awt.Dimension(80, 24));
+        BHxoa1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                BHxoa1MousePressed(evt);
+            }
+            public void mouseReleased(java.awt.event.MouseEvent evt) {
+                BHxoa1MouseReleased(evt);
+            }
+        });
+
+        jLabel63.setBackground(new java.awt.Color(255, 255, 255));
+        jLabel63.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        jLabel63.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel63.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel63.setIcon(new javax.swing.ImageIcon(getClass().getResource("/bookstoremanagement/icons/icons8-close-15.png"))); // NOI18N
+        jLabel63.setText("Xóa");
+
+        javax.swing.GroupLayout BHxoa1Layout = new javax.swing.GroupLayout(BHxoa1);
+        BHxoa1.setLayout(BHxoa1Layout);
+        BHxoa1Layout.setHorizontalGroup(
+            BHxoa1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jLabel63, javax.swing.GroupLayout.DEFAULT_SIZE, 120, Short.MAX_VALUE)
+        );
+        BHxoa1Layout.setVerticalGroup(
+            BHxoa1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jLabel63, javax.swing.GroupLayout.DEFAULT_SIZE, 24, Short.MAX_VALUE)
+        );
+
+        TabSach.add(BHxoa1, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 130, 120, -1));
+
+        BHthem1.setBackground(new java.awt.Color(0, 204, 204));
+        BHthem1.setPreferredSize(new java.awt.Dimension(80, 24));
+        BHthem1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                BHthem1MousePressed(evt);
+            }
+            public void mouseReleased(java.awt.event.MouseEvent evt) {
+                BHthem1MouseReleased(evt);
+            }
+        });
+
+        jLabel69.setBackground(new java.awt.Color(255, 255, 255));
+        jLabel69.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        jLabel69.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel69.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel69.setIcon(new javax.swing.ImageIcon(getClass().getResource("/bookstoremanagement/icons/icons8-plus-20.png"))); // NOI18N
+        jLabel69.setText("Thêm");
+
+        javax.swing.GroupLayout BHthem1Layout = new javax.swing.GroupLayout(BHthem1);
+        BHthem1.setLayout(BHthem1Layout);
+        BHthem1Layout.setHorizontalGroup(
+            BHthem1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jLabel69, javax.swing.GroupLayout.DEFAULT_SIZE, 120, Short.MAX_VALUE)
+        );
+        BHthem1Layout.setVerticalGroup(
+            BHthem1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jLabel69, javax.swing.GroupLayout.DEFAULT_SIZE, 24, Short.MAX_VALUE)
+        );
+
+        TabSach.add(BHthem1, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 130, 120, -1));
+
+        jScrollPane2.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
+        jScrollPane2.setForeground(new java.awt.Color(255, 255, 255));
+
+        SPTable.setAutoCreateRowSorter(true);
+        SPTable.setFont(new java.awt.Font("Segoe UI", 0, 17)); // NOI18N
+        SPTable.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+
+            },
+            new String [] {
+                "STT", "Mã sách", "Tên sách", "Thể loại", "Tác giả", "Năm xb", "Số lượng", "Giá nhập", "Giá bán", "Trạng thái"
+            }
+        ) {
+            boolean[] canEdit = new boolean [] {
+                false, false, false, false, false, false, false, false, false, false
+            };
+
+            public boolean isCellEditable(int rowIndex, int columnIndex) {
+                return canEdit [columnIndex];
+            }
+        });
+        SPTable.setFocusable(false);
+        SPTable.setGridColor(new java.awt.Color(128, 128, 128));
+        SPTable.setRowHeight(25);
+        SPTable.setSelectionBackground(new java.awt.Color(122, 72, 221));
+        SPTable.setSelectionForeground(new java.awt.Color(255, 255, 255));
+        SPTable.getTableHeader().setReorderingAllowed(false);
+        SPTable.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                SPTableMouseClicked(evt);
+            }
+        });
+        jScrollPane2.setViewportView(SPTable);
+        if (SPTable.getColumnModel().getColumnCount() > 0) {
+            SPTable.getColumnModel().getColumn(0).setPreferredWidth(5);
+            SPTable.getColumnModel().getColumn(1).setPreferredWidth(5);
+            SPTable.getColumnModel().getColumn(2).setPreferredWidth(40);
+            SPTable.getColumnModel().getColumn(3).setPreferredWidth(25);
+            SPTable.getColumnModel().getColumn(4).setPreferredWidth(25);
+            SPTable.getColumnModel().getColumn(5).setPreferredWidth(5);
+            SPTable.getColumnModel().getColumn(6).setPreferredWidth(5);
+            SPTable.getColumnModel().getColumn(7).setPreferredWidth(10);
+            SPTable.getColumnModel().getColumn(8).setPreferredWidth(10);
+            SPTable.getColumnModel().getColumn(9).setPreferredWidth(10);
+        }
+
+        TabSach.add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 180, 1110, 500));
+
+        ImageLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        TabSach.add(ImageLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(830, 180, 320, 500));
+
+        TabContainer.addTab("Sach", TabSach);
+
+        TabKM.setBackground(new java.awt.Color(255, 255, 255));
+        TabKM.setPreferredSize(new java.awt.Dimension(768, 639));
+        TabKM.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        FilterSearch3.setFont(new java.awt.Font("Dialog", 0, 18)); // NOI18N
+        FilterSearch3.setMinimumSize(new java.awt.Dimension(28, 25));
+        FilterSearch3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                FilterSearch3ActionPerformed(evt);
+            }
+        });
+        FilterSearch3.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyReleased(java.awt.event.KeyEvent evt) {
+                FilterSearch3KeyReleased(evt);
+            }
+        });
+        TabKM.add(FilterSearch3, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 125, 220, 30));
+
+        jLabel14.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel14.setIcon(new javax.swing.ImageIcon(getClass().getResource("/bookstoremanagement/icons/icons8-search-25.png"))); // NOI18N
+        TabKM.add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(5, 120, 30, 40));
+
+        searchType3.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        searchType3.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Tất cả", "Mã KM", "Điều kiện", "Phầm trăm KM", "Ngày bắt đầu", "Ngày kết thúc", "Trạng thái" }));
+        TabKM.add(searchType3, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 126, 110, 30));
+
+        LamMoiSP3.setBackground(new java.awt.Color(51, 204, 0));
+        LamMoiSP3.setPreferredSize(new java.awt.Dimension(80, 24));
+        LamMoiSP3.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                LamMoiSP3MousePressed(evt);
+            }
+            public void mouseReleased(java.awt.event.MouseEvent evt) {
+                LamMoiSP3MouseReleased(evt);
+            }
+        });
+
+        jLabel74.setBackground(new java.awt.Color(255, 255, 255));
+        jLabel74.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        jLabel74.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel74.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel74.setIcon(new javax.swing.ImageIcon(getClass().getResource("/bookstoremanagement/icons/icons8-update-left-rotation-15.png"))); // NOI18N
+        jLabel74.setText("Làm mới");
+
+        javax.swing.GroupLayout LamMoiSP3Layout = new javax.swing.GroupLayout(LamMoiSP3);
+        LamMoiSP3.setLayout(LamMoiSP3Layout);
+        LamMoiSP3Layout.setHorizontalGroup(
+            LamMoiSP3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jLabel74, javax.swing.GroupLayout.DEFAULT_SIZE, 120, Short.MAX_VALUE)
+        );
+        LamMoiSP3Layout.setVerticalGroup(
+            LamMoiSP3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jLabel74, javax.swing.GroupLayout.DEFAULT_SIZE, 24, Short.MAX_VALUE)
+        );
+
+        TabKM.add(LamMoiSP3, new org.netbeans.lib.awtextra.AbsoluteConstraints(850, 130, 120, -1));
+
+        BHsua3.setBackground(new java.awt.Color(255, 204, 0));
+        BHsua3.setPreferredSize(new java.awt.Dimension(80, 24));
+        BHsua3.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                BHsua3MousePressed(evt);
+            }
+            public void mouseReleased(java.awt.event.MouseEvent evt) {
+                BHsua3MouseReleased(evt);
+            }
+        });
+
+        jLabel75.setBackground(new java.awt.Color(255, 255, 255));
+        jLabel75.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        jLabel75.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel75.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel75.setIcon(new javax.swing.ImageIcon(getClass().getResource("/bookstoremanagement/icons/icons8-pen-15.png"))); // NOI18N
+        jLabel75.setText("Sửa");
+
+        javax.swing.GroupLayout BHsua3Layout = new javax.swing.GroupLayout(BHsua3);
+        BHsua3.setLayout(BHsua3Layout);
+        BHsua3Layout.setHorizontalGroup(
+            BHsua3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jLabel75, javax.swing.GroupLayout.DEFAULT_SIZE, 120, Short.MAX_VALUE)
+        );
+        BHsua3Layout.setVerticalGroup(
+            BHsua3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jLabel75, javax.swing.GroupLayout.DEFAULT_SIZE, 24, Short.MAX_VALUE)
+        );
+
+        TabKM.add(BHsua3, new org.netbeans.lib.awtextra.AbsoluteConstraints(710, 130, 120, -1));
+
+        BHxoa3.setBackground(new java.awt.Color(255, 0, 0));
+        BHxoa3.setPreferredSize(new java.awt.Dimension(80, 24));
+        BHxoa3.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                BHxoa3MousePressed(evt);
+            }
+            public void mouseReleased(java.awt.event.MouseEvent evt) {
+                BHxoa3MouseReleased(evt);
+            }
+        });
+
+        jLabel76.setBackground(new java.awt.Color(255, 255, 255));
+        jLabel76.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        jLabel76.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel76.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel76.setIcon(new javax.swing.ImageIcon(getClass().getResource("/bookstoremanagement/icons/icons8-close-15.png"))); // NOI18N
+        jLabel76.setText("Xóa");
+
+        javax.swing.GroupLayout BHxoa3Layout = new javax.swing.GroupLayout(BHxoa3);
+        BHxoa3.setLayout(BHxoa3Layout);
+        BHxoa3Layout.setHorizontalGroup(
+            BHxoa3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jLabel76, javax.swing.GroupLayout.DEFAULT_SIZE, 120, Short.MAX_VALUE)
+        );
+        BHxoa3Layout.setVerticalGroup(
+            BHxoa3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jLabel76, javax.swing.GroupLayout.DEFAULT_SIZE, 24, Short.MAX_VALUE)
+        );
+
+        TabKM.add(BHxoa3, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 130, 120, -1));
+
+        BHthem3.setBackground(new java.awt.Color(0, 204, 204));
+        BHthem3.setPreferredSize(new java.awt.Dimension(80, 24));
+        BHthem3.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                BHthem3MousePressed(evt);
+            }
+            public void mouseReleased(java.awt.event.MouseEvent evt) {
+                BHthem3MouseReleased(evt);
+            }
+        });
+
+        jLabel77.setBackground(new java.awt.Color(255, 255, 255));
+        jLabel77.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        jLabel77.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel77.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel77.setIcon(new javax.swing.ImageIcon(getClass().getResource("/bookstoremanagement/icons/icons8-plus-20.png"))); // NOI18N
+        jLabel77.setText("Thêm");
+
+        javax.swing.GroupLayout BHthem3Layout = new javax.swing.GroupLayout(BHthem3);
+        BHthem3.setLayout(BHthem3Layout);
+        BHthem3Layout.setHorizontalGroup(
+            BHthem3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(BHthem3Layout.createSequentialGroup()
+                .addComponent(jLabel77, javax.swing.GroupLayout.PREFERRED_SIZE, 101, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 19, Short.MAX_VALUE))
+        );
+        BHthem3Layout.setVerticalGroup(
+            BHthem3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jLabel77, javax.swing.GroupLayout.DEFAULT_SIZE, 24, Short.MAX_VALUE)
+        );
+
+        TabKM.add(BHthem3, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 130, 120, -1));
+
+        jScrollPane5.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
+        jScrollPane5.setForeground(new java.awt.Color(255, 255, 255));
+
+        KMTable.setAutoCreateRowSorter(true);
+        KMTable.setFont(new java.awt.Font("Segoe UI", 0, 17)); // NOI18N
+        KMTable.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+
+            },
+            new String [] {
+                "STT", "Mã khuyến mãi", "Tên", "Điều kiện", "Giảm giá", "Ngày bắt đầu", "Ngày kết thúc"
+            }
+        ) {
+            boolean[] canEdit = new boolean [] {
+                false, false, false, false, false, false, false
+            };
+
+            public boolean isCellEditable(int rowIndex, int columnIndex) {
+                return canEdit [columnIndex];
+            }
+        });
+        KMTable.setFocusable(false);
+        KMTable.setGridColor(new java.awt.Color(128, 128, 128));
+        KMTable.setRowHeight(25);
+        KMTable.setSelectionBackground(new java.awt.Color(122, 72, 221));
+        KMTable.setSelectionForeground(new java.awt.Color(255, 255, 255));
+        KMTable.getTableHeader().setReorderingAllowed(false);
+        jScrollPane5.setViewportView(KMTable);
+        if (KMTable.getColumnModel().getColumnCount() > 0) {
+            KMTable.getColumnModel().getColumn(0).setMaxWidth(100);
+            KMTable.getColumnModel().getColumn(6).setPreferredWidth(20);
+        }
+
+        TabKM.add(jScrollPane5, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 170, 1110, 500));
+
+        TabContainer.addTab("KhuyenMai", TabKM);
+
+        TabKH.setBackground(new java.awt.Color(255, 255, 255));
+        TabKH.setPreferredSize(new java.awt.Dimension(768, 639));
+        TabKH.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        FilterSearch2.setFont(new java.awt.Font("Dialog", 0, 18)); // NOI18N
+        FilterSearch2.setMinimumSize(new java.awt.Dimension(28, 25));
+        FilterSearch2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                FilterSearch2ActionPerformed(evt);
+            }
+        });
+        FilterSearch2.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyReleased(java.awt.event.KeyEvent evt) {
+                FilterSearch2KeyReleased(evt);
+            }
+        });
+        TabKH.add(FilterSearch2, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 125, 220, 30));
+
+        jLabel13.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel13.setIcon(new javax.swing.ImageIcon(getClass().getResource("/bookstoremanagement/icons/icons8-search-25.png"))); // NOI18N
+        TabKH.add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(5, 120, 30, 40));
+
+        searchType2.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        searchType2.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Tất cả", "Mã khách hàng", "Tên khách hàng", "Địa chỉ", "Số điện thoại", "Trạng thái" }));
+        TabKH.add(searchType2, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 126, 110, 30));
+
+        LamMoiSP5.setBackground(new java.awt.Color(51, 204, 0));
+        LamMoiSP5.setPreferredSize(new java.awt.Dimension(80, 24));
+        LamMoiSP5.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                LamMoiSP5MousePressed(evt);
+            }
+            public void mouseReleased(java.awt.event.MouseEvent evt) {
+                LamMoiSP5MouseReleased(evt);
+            }
+        });
+
+        jLabel70.setBackground(new java.awt.Color(255, 255, 255));
+        jLabel70.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        jLabel70.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel70.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel70.setIcon(new javax.swing.ImageIcon(getClass().getResource("/bookstoremanagement/icons/icons8-update-left-rotation-15.png"))); // NOI18N
+        jLabel70.setText("Làm mới");
+
+        javax.swing.GroupLayout LamMoiSP5Layout = new javax.swing.GroupLayout(LamMoiSP5);
+        LamMoiSP5.setLayout(LamMoiSP5Layout);
+        LamMoiSP5Layout.setHorizontalGroup(
+            LamMoiSP5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jLabel70, javax.swing.GroupLayout.DEFAULT_SIZE, 120, Short.MAX_VALUE)
+        );
+        LamMoiSP5Layout.setVerticalGroup(
+            LamMoiSP5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jLabel70, javax.swing.GroupLayout.DEFAULT_SIZE, 24, Short.MAX_VALUE)
+        );
+
+        TabKH.add(LamMoiSP5, new org.netbeans.lib.awtextra.AbsoluteConstraints(850, 130, 120, -1));
+
+        BHsua2.setBackground(new java.awt.Color(255, 204, 0));
+        BHsua2.setPreferredSize(new java.awt.Dimension(80, 24));
+        BHsua2.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                BHsua2MousePressed(evt);
+            }
+            public void mouseReleased(java.awt.event.MouseEvent evt) {
+                BHsua2MouseReleased(evt);
+            }
+        });
+
+        jLabel71.setBackground(new java.awt.Color(255, 255, 255));
+        jLabel71.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        jLabel71.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel71.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel71.setIcon(new javax.swing.ImageIcon(getClass().getResource("/bookstoremanagement/icons/icons8-pen-15.png"))); // NOI18N
+        jLabel71.setText("Sửa");
+
+        javax.swing.GroupLayout BHsua2Layout = new javax.swing.GroupLayout(BHsua2);
+        BHsua2.setLayout(BHsua2Layout);
+        BHsua2Layout.setHorizontalGroup(
+            BHsua2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jLabel71, javax.swing.GroupLayout.DEFAULT_SIZE, 120, Short.MAX_VALUE)
+        );
+        BHsua2Layout.setVerticalGroup(
+            BHsua2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jLabel71, javax.swing.GroupLayout.DEFAULT_SIZE, 24, Short.MAX_VALUE)
+        );
+
+        TabKH.add(BHsua2, new org.netbeans.lib.awtextra.AbsoluteConstraints(710, 130, 120, -1));
+
+        BHxoa2.setBackground(new java.awt.Color(255, 0, 0));
+        BHxoa2.setPreferredSize(new java.awt.Dimension(80, 24));
+        BHxoa2.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                BHxoa2MousePressed(evt);
+            }
+            public void mouseReleased(java.awt.event.MouseEvent evt) {
+                BHxoa2MouseReleased(evt);
+            }
+        });
+
+        jLabel72.setBackground(new java.awt.Color(255, 255, 255));
+        jLabel72.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        jLabel72.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel72.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel72.setIcon(new javax.swing.ImageIcon(getClass().getResource("/bookstoremanagement/icons/icons8-close-15.png"))); // NOI18N
+        jLabel72.setText("Xóa");
+
+        javax.swing.GroupLayout BHxoa2Layout = new javax.swing.GroupLayout(BHxoa2);
+        BHxoa2.setLayout(BHxoa2Layout);
+        BHxoa2Layout.setHorizontalGroup(
+            BHxoa2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jLabel72, javax.swing.GroupLayout.DEFAULT_SIZE, 120, Short.MAX_VALUE)
+        );
+        BHxoa2Layout.setVerticalGroup(
+            BHxoa2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jLabel72, javax.swing.GroupLayout.DEFAULT_SIZE, 24, Short.MAX_VALUE)
+        );
+
+        TabKH.add(BHxoa2, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 130, 120, -1));
+
+        BHthem2.setBackground(new java.awt.Color(0, 204, 204));
+        BHthem2.setPreferredSize(new java.awt.Dimension(80, 24));
+        BHthem2.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                BHthem2MousePressed(evt);
+            }
+            public void mouseReleased(java.awt.event.MouseEvent evt) {
+                BHthem2MouseReleased(evt);
+            }
+        });
+
+        jLabel73.setBackground(new java.awt.Color(255, 255, 255));
+        jLabel73.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        jLabel73.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel73.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel73.setIcon(new javax.swing.ImageIcon(getClass().getResource("/bookstoremanagement/icons/icons8-plus-20.png"))); // NOI18N
+        jLabel73.setText("Thêm");
+
+        javax.swing.GroupLayout BHthem2Layout = new javax.swing.GroupLayout(BHthem2);
+        BHthem2.setLayout(BHthem2Layout);
+        BHthem2Layout.setHorizontalGroup(
+            BHthem2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jLabel73, javax.swing.GroupLayout.DEFAULT_SIZE, 120, Short.MAX_VALUE)
+        );
+        BHthem2Layout.setVerticalGroup(
+            BHthem2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jLabel73, javax.swing.GroupLayout.DEFAULT_SIZE, 24, Short.MAX_VALUE)
+        );
+
+        TabKH.add(BHthem2, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 130, 120, -1));
+
+        jScrollPane3.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
+        jScrollPane3.setForeground(new java.awt.Color(255, 255, 255));
+
+        KHTable.setAutoCreateRowSorter(true);
+        KHTable.setFont(new java.awt.Font("Segoe UI", 0, 17)); // NOI18N
+        KHTable.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+
+            },
+            new String [] {
+                "STT", "Mã khách hàng", "Tên khách hàng", "Địa chỉ", "Số điện thoại"
+            }
+        ) {
+            boolean[] canEdit = new boolean [] {
+                false, false, false, false, false
+            };
+
+            public boolean isCellEditable(int rowIndex, int columnIndex) {
+                return canEdit [columnIndex];
+            }
+        });
+        KHTable.setFocusable(false);
+        KHTable.setGridColor(new java.awt.Color(128, 128, 128));
+        KHTable.setRowHeight(25);
+        KHTable.setSelectionBackground(new java.awt.Color(122, 72, 221));
+        KHTable.setSelectionForeground(new java.awt.Color(255, 255, 255));
+        KHTable.getTableHeader().setReorderingAllowed(false);
+        jScrollPane3.setViewportView(KHTable);
+        if (KHTable.getColumnModel().getColumnCount() > 0) {
+            KHTable.getColumnModel().getColumn(0).setMaxWidth(100);
+        }
+
+        TabKH.add(jScrollPane3, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 180, 1110, 500));
+
+        TabContainer.addTab("KhachHang", TabKH);
+
+        TabNV.setBackground(new java.awt.Color(255, 255, 255));
+        TabNV.setPreferredSize(new java.awt.Dimension(768, 639));
+        TabNV.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        FilterSearch4.setFont(new java.awt.Font("Dialog", 0, 18)); // NOI18N
+        FilterSearch4.setMinimumSize(new java.awt.Dimension(28, 25));
+        FilterSearch4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                FilterSearch4ActionPerformed(evt);
+            }
+        });
+        FilterSearch4.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyReleased(java.awt.event.KeyEvent evt) {
+                FilterSearch4KeyReleased(evt);
+            }
+        });
+        TabNV.add(FilterSearch4, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 125, 220, 30));
+
+        jLabel21.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel21.setIcon(new javax.swing.ImageIcon(getClass().getResource("/bookstoremanagement/icons/icons8-search-25.png"))); // NOI18N
+        TabNV.add(jLabel21, new org.netbeans.lib.awtextra.AbsoluteConstraints(5, 120, 30, 40));
+
+        searchType4.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        searchType4.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Tất cả", "Mã nhân viên", "Tên nhân viên", "Ngày sinh", "Địa chỉ", "Số điện thoại", "Trạng thái" }));
+        TabNV.add(searchType4, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 126, 110, 30));
+
+        LamMoiSP6.setBackground(new java.awt.Color(51, 204, 0));
+        LamMoiSP6.setPreferredSize(new java.awt.Dimension(80, 24));
+        LamMoiSP6.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                LamMoiSP6MousePressed(evt);
+            }
+            public void mouseReleased(java.awt.event.MouseEvent evt) {
+                LamMoiSP6MouseReleased(evt);
+            }
+        });
+
+        jLabel78.setBackground(new java.awt.Color(255, 255, 255));
+        jLabel78.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        jLabel78.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel78.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel78.setIcon(new javax.swing.ImageIcon(getClass().getResource("/bookstoremanagement/icons/icons8-update-left-rotation-15.png"))); // NOI18N
+        jLabel78.setText("Làm mới");
+
+        javax.swing.GroupLayout LamMoiSP6Layout = new javax.swing.GroupLayout(LamMoiSP6);
+        LamMoiSP6.setLayout(LamMoiSP6Layout);
+        LamMoiSP6Layout.setHorizontalGroup(
+            LamMoiSP6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jLabel78, javax.swing.GroupLayout.DEFAULT_SIZE, 120, Short.MAX_VALUE)
+        );
+        LamMoiSP6Layout.setVerticalGroup(
+            LamMoiSP6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jLabel78, javax.swing.GroupLayout.DEFAULT_SIZE, 24, Short.MAX_VALUE)
+        );
+
+        TabNV.add(LamMoiSP6, new org.netbeans.lib.awtextra.AbsoluteConstraints(850, 130, 120, -1));
+
+        BHsua4.setBackground(new java.awt.Color(255, 204, 0));
+        BHsua4.setPreferredSize(new java.awt.Dimension(80, 24));
+        BHsua4.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                BHsua4MousePressed(evt);
+            }
+            public void mouseReleased(java.awt.event.MouseEvent evt) {
+                BHsua4MouseReleased(evt);
+            }
+        });
+
+        jLabel79.setBackground(new java.awt.Color(255, 255, 255));
+        jLabel79.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        jLabel79.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel79.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel79.setIcon(new javax.swing.ImageIcon(getClass().getResource("/bookstoremanagement/icons/icons8-pen-15.png"))); // NOI18N
+        jLabel79.setText("Sửa");
+
+        javax.swing.GroupLayout BHsua4Layout = new javax.swing.GroupLayout(BHsua4);
+        BHsua4.setLayout(BHsua4Layout);
+        BHsua4Layout.setHorizontalGroup(
+            BHsua4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jLabel79, javax.swing.GroupLayout.DEFAULT_SIZE, 120, Short.MAX_VALUE)
+        );
+        BHsua4Layout.setVerticalGroup(
+            BHsua4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jLabel79, javax.swing.GroupLayout.DEFAULT_SIZE, 24, Short.MAX_VALUE)
+        );
+
+        TabNV.add(BHsua4, new org.netbeans.lib.awtextra.AbsoluteConstraints(710, 130, 120, -1));
+
+        BHxoa4.setBackground(new java.awt.Color(255, 0, 0));
+        BHxoa4.setPreferredSize(new java.awt.Dimension(80, 24));
+        BHxoa4.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                BHxoa4MousePressed(evt);
+            }
+            public void mouseReleased(java.awt.event.MouseEvent evt) {
+                BHxoa4MouseReleased(evt);
+            }
+        });
+
+        jLabel80.setBackground(new java.awt.Color(255, 255, 255));
+        jLabel80.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        jLabel80.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel80.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel80.setIcon(new javax.swing.ImageIcon(getClass().getResource("/bookstoremanagement/icons/icons8-close-15.png"))); // NOI18N
+        jLabel80.setText("Xóa");
+
+        javax.swing.GroupLayout BHxoa4Layout = new javax.swing.GroupLayout(BHxoa4);
+        BHxoa4.setLayout(BHxoa4Layout);
+        BHxoa4Layout.setHorizontalGroup(
+            BHxoa4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jLabel80, javax.swing.GroupLayout.DEFAULT_SIZE, 120, Short.MAX_VALUE)
+        );
+        BHxoa4Layout.setVerticalGroup(
+            BHxoa4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jLabel80, javax.swing.GroupLayout.DEFAULT_SIZE, 24, Short.MAX_VALUE)
+        );
+
+        TabNV.add(BHxoa4, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 130, 120, -1));
+
+        BHthem4.setBackground(new java.awt.Color(0, 204, 204));
+        BHthem4.setPreferredSize(new java.awt.Dimension(80, 24));
+        BHthem4.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                BHthem4MousePressed(evt);
+            }
+            public void mouseReleased(java.awt.event.MouseEvent evt) {
+                BHthem4MouseReleased(evt);
+            }
+        });
+
+        jLabel81.setBackground(new java.awt.Color(255, 255, 255));
+        jLabel81.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        jLabel81.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel81.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel81.setIcon(new javax.swing.ImageIcon(getClass().getResource("/bookstoremanagement/icons/icons8-plus-20.png"))); // NOI18N
+        jLabel81.setText("Thêm");
+
+        javax.swing.GroupLayout BHthem4Layout = new javax.swing.GroupLayout(BHthem4);
+        BHthem4.setLayout(BHthem4Layout);
+        BHthem4Layout.setHorizontalGroup(
+            BHthem4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jLabel81, javax.swing.GroupLayout.DEFAULT_SIZE, 120, Short.MAX_VALUE)
+        );
+        BHthem4Layout.setVerticalGroup(
+            BHthem4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jLabel81, javax.swing.GroupLayout.DEFAULT_SIZE, 24, Short.MAX_VALUE)
+        );
+
+        TabNV.add(BHthem4, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 130, 120, -1));
+
+        jScrollPane4.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
+        jScrollPane4.setForeground(new java.awt.Color(255, 255, 255));
+
+        NVTable.setAutoCreateRowSorter(true);
+        NVTable.setFont(new java.awt.Font("Segoe UI", 0, 17)); // NOI18N
+        NVTable.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+
+            },
+            new String [] {
+                "STT", "Mã nhân viên", "Tên nhân viên", "Ngày sinh", "Địa chỉ", "Số điện thoại"
+            }
+        ) {
+            boolean[] canEdit = new boolean [] {
+                false, false, false, false, false, false
+            };
+
+            public boolean isCellEditable(int rowIndex, int columnIndex) {
+                return canEdit [columnIndex];
+            }
+        });
+        NVTable.setFocusable(false);
+        NVTable.setGridColor(new java.awt.Color(128, 128, 128));
+        NVTable.setRowHeight(25);
+        NVTable.setSelectionBackground(new java.awt.Color(122, 72, 221));
+        NVTable.setSelectionForeground(new java.awt.Color(255, 255, 255));
+        NVTable.getTableHeader().setReorderingAllowed(false);
+        jScrollPane4.setViewportView(NVTable);
+        if (NVTable.getColumnModel().getColumnCount() > 0) {
+            NVTable.getColumnModel().getColumn(0).setMaxWidth(100);
+        }
+
+        TabNV.add(jScrollPane4, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 180, 1110, 500));
+
+        TabContainer.addTab("NhanVien", TabNV);
+
+        TabNCC.setBackground(new java.awt.Color(255, 255, 255));
+        TabNCC.setPreferredSize(new java.awt.Dimension(768, 639));
+        TabNCC.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        FilterSearch5.setFont(new java.awt.Font("Dialog", 0, 18)); // NOI18N
+        FilterSearch5.setMinimumSize(new java.awt.Dimension(28, 25));
+        FilterSearch5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                FilterSearch5ActionPerformed(evt);
+            }
+        });
+        FilterSearch5.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyReleased(java.awt.event.KeyEvent evt) {
+                FilterSearch5KeyReleased(evt);
+            }
+        });
+        TabNCC.add(FilterSearch5, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 125, 220, 30));
+
+        jLabel23.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel23.setIcon(new javax.swing.ImageIcon(getClass().getResource("/bookstoremanagement/icons/icons8-search-25.png"))); // NOI18N
+        TabNCC.add(jLabel23, new org.netbeans.lib.awtextra.AbsoluteConstraints(5, 120, 30, 40));
+
+        searchType5.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        searchType5.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Tất cả", "Mã NCC", "Tên NCC", "Địa chỉ", "Số điện thoại", "Fax" }));
+        TabNCC.add(searchType5, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 126, 110, 30));
+
+        LamMoiSP7.setBackground(new java.awt.Color(51, 204, 0));
+        LamMoiSP7.setPreferredSize(new java.awt.Dimension(80, 24));
+        LamMoiSP7.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                LamMoiSP7MousePressed(evt);
+            }
+            public void mouseReleased(java.awt.event.MouseEvent evt) {
+                LamMoiSP7MouseReleased(evt);
+            }
+        });
+
+        jLabel82.setBackground(new java.awt.Color(255, 255, 255));
+        jLabel82.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        jLabel82.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel82.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel82.setIcon(new javax.swing.ImageIcon(getClass().getResource("/bookstoremanagement/icons/icons8-update-left-rotation-15.png"))); // NOI18N
+        jLabel82.setText("Làm mới");
+
+        javax.swing.GroupLayout LamMoiSP7Layout = new javax.swing.GroupLayout(LamMoiSP7);
+        LamMoiSP7.setLayout(LamMoiSP7Layout);
+        LamMoiSP7Layout.setHorizontalGroup(
+            LamMoiSP7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jLabel82, javax.swing.GroupLayout.DEFAULT_SIZE, 120, Short.MAX_VALUE)
+        );
+        LamMoiSP7Layout.setVerticalGroup(
+            LamMoiSP7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jLabel82, javax.swing.GroupLayout.DEFAULT_SIZE, 24, Short.MAX_VALUE)
+        );
+
+        TabNCC.add(LamMoiSP7, new org.netbeans.lib.awtextra.AbsoluteConstraints(850, 130, 120, -1));
+
+        BHsua5.setBackground(new java.awt.Color(255, 204, 0));
+        BHsua5.setPreferredSize(new java.awt.Dimension(80, 24));
+        BHsua5.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                BHsua5MousePressed(evt);
+            }
+            public void mouseReleased(java.awt.event.MouseEvent evt) {
+                BHsua5MouseReleased(evt);
+            }
+        });
+
+        jLabel83.setBackground(new java.awt.Color(255, 255, 255));
+        jLabel83.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        jLabel83.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel83.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel83.setIcon(new javax.swing.ImageIcon(getClass().getResource("/bookstoremanagement/icons/icons8-pen-15.png"))); // NOI18N
+        jLabel83.setText("Sửa");
+
+        javax.swing.GroupLayout BHsua5Layout = new javax.swing.GroupLayout(BHsua5);
+        BHsua5.setLayout(BHsua5Layout);
+        BHsua5Layout.setHorizontalGroup(
+            BHsua5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jLabel83, javax.swing.GroupLayout.DEFAULT_SIZE, 120, Short.MAX_VALUE)
+        );
+        BHsua5Layout.setVerticalGroup(
+            BHsua5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jLabel83, javax.swing.GroupLayout.DEFAULT_SIZE, 24, Short.MAX_VALUE)
+        );
+
+        TabNCC.add(BHsua5, new org.netbeans.lib.awtextra.AbsoluteConstraints(710, 130, 120, -1));
+
+        BHxoa5.setBackground(new java.awt.Color(255, 0, 0));
+        BHxoa5.setPreferredSize(new java.awt.Dimension(80, 24));
+        BHxoa5.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                BHxoa5MousePressed(evt);
+            }
+            public void mouseReleased(java.awt.event.MouseEvent evt) {
+                BHxoa5MouseReleased(evt);
+            }
+        });
+
+        jLabel84.setBackground(new java.awt.Color(255, 255, 255));
+        jLabel84.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        jLabel84.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel84.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel84.setIcon(new javax.swing.ImageIcon(getClass().getResource("/bookstoremanagement/icons/icons8-close-15.png"))); // NOI18N
+        jLabel84.setText("Xóa");
+
+        javax.swing.GroupLayout BHxoa5Layout = new javax.swing.GroupLayout(BHxoa5);
+        BHxoa5.setLayout(BHxoa5Layout);
+        BHxoa5Layout.setHorizontalGroup(
+            BHxoa5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jLabel84, javax.swing.GroupLayout.DEFAULT_SIZE, 120, Short.MAX_VALUE)
+        );
+        BHxoa5Layout.setVerticalGroup(
+            BHxoa5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jLabel84, javax.swing.GroupLayout.DEFAULT_SIZE, 24, Short.MAX_VALUE)
+        );
+
+        TabNCC.add(BHxoa5, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 130, 120, -1));
+
+        BHthem5.setBackground(new java.awt.Color(0, 204, 204));
+        BHthem5.setPreferredSize(new java.awt.Dimension(80, 24));
+        BHthem5.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                BHthem5MousePressed(evt);
+            }
+            public void mouseReleased(java.awt.event.MouseEvent evt) {
+                BHthem5MouseReleased(evt);
+            }
+        });
+
+        jLabel85.setBackground(new java.awt.Color(255, 255, 255));
+        jLabel85.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        jLabel85.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel85.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel85.setIcon(new javax.swing.ImageIcon(getClass().getResource("/bookstoremanagement/icons/icons8-plus-20.png"))); // NOI18N
+        jLabel85.setText("Thêm");
+
+        javax.swing.GroupLayout BHthem5Layout = new javax.swing.GroupLayout(BHthem5);
+        BHthem5.setLayout(BHthem5Layout);
+        BHthem5Layout.setHorizontalGroup(
+            BHthem5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jLabel85, javax.swing.GroupLayout.DEFAULT_SIZE, 120, Short.MAX_VALUE)
+        );
+        BHthem5Layout.setVerticalGroup(
+            BHthem5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jLabel85, javax.swing.GroupLayout.DEFAULT_SIZE, 24, Short.MAX_VALUE)
+        );
+
+        TabNCC.add(BHthem5, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 130, 120, -1));
+
+        jScrollPane6.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
+        jScrollPane6.setForeground(new java.awt.Color(255, 255, 255));
+
+        NCCTable.setAutoCreateRowSorter(true);
+        NCCTable.setFont(new java.awt.Font("Segoe UI", 0, 17)); // NOI18N
+        NCCTable.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+
+            },
+            new String [] {
+                "STT", "Mã NCC", "Tên NCC", "Địa chỉ", "Số điện thoại", "Fax"
+            }
+        ) {
+            boolean[] canEdit = new boolean [] {
+                false, false, false, false, false, false
+            };
+
+            public boolean isCellEditable(int rowIndex, int columnIndex) {
+                return canEdit [columnIndex];
+            }
+        });
+        NCCTable.setFocusable(false);
+        NCCTable.setGridColor(new java.awt.Color(128, 128, 128));
+        NCCTable.setRowHeight(25);
+        NCCTable.setSelectionBackground(new java.awt.Color(122, 72, 221));
+        NCCTable.setSelectionForeground(new java.awt.Color(255, 255, 255));
+        NCCTable.getTableHeader().setReorderingAllowed(false);
+        jScrollPane6.setViewportView(NCCTable);
+        if (NCCTable.getColumnModel().getColumnCount() > 0) {
+            NCCTable.getColumnModel().getColumn(0).setMaxWidth(100);
+        }
+
+        TabNCC.add(jScrollPane6, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 180, 1110, 500));
+
+        TabContainer.addTab("NhaCungCap", TabNCC);
+
+        TabTK.setBackground(new java.awt.Color(255, 255, 255));
+        TabTK.setPreferredSize(new java.awt.Dimension(768, 639));
+        TabTK.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        FilterSearch6.setFont(new java.awt.Font("Dialog", 0, 18)); // NOI18N
+        FilterSearch6.setMinimumSize(new java.awt.Dimension(28, 25));
+        FilterSearch6.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                FilterSearch6ActionPerformed(evt);
+            }
+        });
+        FilterSearch6.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyReleased(java.awt.event.KeyEvent evt) {
+                FilterSearch6KeyReleased(evt);
+            }
+        });
+        TabTK.add(FilterSearch6, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 125, 220, 30));
+
+        jLabel25.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel25.setIcon(new javax.swing.ImageIcon(getClass().getResource("/bookstoremanagement/icons/icons8-search-25.png"))); // NOI18N
+        TabTK.add(jLabel25, new org.netbeans.lib.awtextra.AbsoluteConstraints(5, 120, 30, 40));
+
+        searchType6.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        searchType6.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Tất cả", "Tên tài khoản", "Mật khẩu", "Mã nhân viên", "Mã quyền" }));
+        searchType6.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                searchType6ActionPerformed(evt);
+            }
+        });
+        TabTK.add(searchType6, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 126, 110, 30));
+
+        LamMoiSP8.setBackground(new java.awt.Color(51, 204, 0));
+        LamMoiSP8.setPreferredSize(new java.awt.Dimension(80, 24));
+        LamMoiSP8.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                LamMoiSP8MousePressed(evt);
+            }
+            public void mouseReleased(java.awt.event.MouseEvent evt) {
+                LamMoiSP8MouseReleased(evt);
+            }
+        });
+
+        jLabel86.setBackground(new java.awt.Color(255, 255, 255));
+        jLabel86.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        jLabel86.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel86.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel86.setIcon(new javax.swing.ImageIcon(getClass().getResource("/bookstoremanagement/icons/icons8-update-left-rotation-15.png"))); // NOI18N
+        jLabel86.setText("Làm mới");
+
+        javax.swing.GroupLayout LamMoiSP8Layout = new javax.swing.GroupLayout(LamMoiSP8);
+        LamMoiSP8.setLayout(LamMoiSP8Layout);
+        LamMoiSP8Layout.setHorizontalGroup(
+            LamMoiSP8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jLabel86, javax.swing.GroupLayout.DEFAULT_SIZE, 120, Short.MAX_VALUE)
+        );
+        LamMoiSP8Layout.setVerticalGroup(
+            LamMoiSP8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jLabel86, javax.swing.GroupLayout.DEFAULT_SIZE, 24, Short.MAX_VALUE)
+        );
+
+        TabTK.add(LamMoiSP8, new org.netbeans.lib.awtextra.AbsoluteConstraints(850, 130, 120, -1));
+
+        BHsua6.setBackground(new java.awt.Color(255, 204, 0));
+        BHsua6.setPreferredSize(new java.awt.Dimension(80, 24));
+        BHsua6.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                BHsua6MousePressed(evt);
+            }
+            public void mouseReleased(java.awt.event.MouseEvent evt) {
+                BHsua6MouseReleased(evt);
+            }
+        });
+
+        jLabel87.setBackground(new java.awt.Color(255, 255, 255));
+        jLabel87.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        jLabel87.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel87.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel87.setIcon(new javax.swing.ImageIcon(getClass().getResource("/bookstoremanagement/icons/icons8-pen-15.png"))); // NOI18N
+        jLabel87.setText("Sửa");
+
+        javax.swing.GroupLayout BHsua6Layout = new javax.swing.GroupLayout(BHsua6);
+        BHsua6.setLayout(BHsua6Layout);
+        BHsua6Layout.setHorizontalGroup(
+            BHsua6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jLabel87, javax.swing.GroupLayout.DEFAULT_SIZE, 120, Short.MAX_VALUE)
+        );
+        BHsua6Layout.setVerticalGroup(
+            BHsua6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jLabel87, javax.swing.GroupLayout.DEFAULT_SIZE, 24, Short.MAX_VALUE)
+        );
+
+        TabTK.add(BHsua6, new org.netbeans.lib.awtextra.AbsoluteConstraints(710, 130, 120, -1));
+
+        BHxoa6.setBackground(new java.awt.Color(255, 0, 0));
+        BHxoa6.setPreferredSize(new java.awt.Dimension(80, 24));
+        BHxoa6.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                BHxoa6MousePressed(evt);
+            }
+            public void mouseReleased(java.awt.event.MouseEvent evt) {
+                BHxoa6MouseReleased(evt);
+            }
+        });
+
+        jLabel88.setBackground(new java.awt.Color(255, 255, 255));
+        jLabel88.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        jLabel88.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel88.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel88.setIcon(new javax.swing.ImageIcon(getClass().getResource("/bookstoremanagement/icons/icons8-close-15.png"))); // NOI18N
+        jLabel88.setText("Xóa");
+
+        javax.swing.GroupLayout BHxoa6Layout = new javax.swing.GroupLayout(BHxoa6);
+        BHxoa6.setLayout(BHxoa6Layout);
+        BHxoa6Layout.setHorizontalGroup(
+            BHxoa6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jLabel88, javax.swing.GroupLayout.DEFAULT_SIZE, 120, Short.MAX_VALUE)
+        );
+        BHxoa6Layout.setVerticalGroup(
+            BHxoa6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jLabel88, javax.swing.GroupLayout.DEFAULT_SIZE, 24, Short.MAX_VALUE)
+        );
+
+        TabTK.add(BHxoa6, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 130, 120, -1));
+
+        BHthem6.setBackground(new java.awt.Color(0, 204, 204));
+        BHthem6.setPreferredSize(new java.awt.Dimension(80, 24));
+        BHthem6.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                BHthem6MousePressed(evt);
+            }
+            public void mouseReleased(java.awt.event.MouseEvent evt) {
+                BHthem6MouseReleased(evt);
+            }
+        });
+
+        jLabel89.setBackground(new java.awt.Color(255, 255, 255));
+        jLabel89.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        jLabel89.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel89.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel89.setIcon(new javax.swing.ImageIcon(getClass().getResource("/bookstoremanagement/icons/icons8-pen-20.png"))); // NOI18N
+        jLabel89.setText("Thêm");
+
+        javax.swing.GroupLayout BHthem6Layout = new javax.swing.GroupLayout(BHthem6);
+        BHthem6.setLayout(BHthem6Layout);
+        BHthem6Layout.setHorizontalGroup(
+            BHthem6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jLabel89, javax.swing.GroupLayout.DEFAULT_SIZE, 120, Short.MAX_VALUE)
+        );
+        BHthem6Layout.setVerticalGroup(
+            BHthem6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jLabel89, javax.swing.GroupLayout.DEFAULT_SIZE, 24, Short.MAX_VALUE)
+        );
+
+        TabTK.add(BHthem6, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 130, 120, -1));
+
+        jScrollPane7.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
+        jScrollPane7.setForeground(new java.awt.Color(255, 255, 255));
+
+        TKTable.setAutoCreateRowSorter(true);
+        TKTable.setFont(new java.awt.Font("Segoe UI", 0, 17)); // NOI18N
+        TKTable.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+
+            },
+            new String [] {
+                "STT", "Tên tài khoản", "Mật khẩu", "Mã nhân viên", "Mã quyền"
+            }
+        ) {
+            boolean[] canEdit = new boolean [] {
+                false, false, false, false, false
+            };
+
+            public boolean isCellEditable(int rowIndex, int columnIndex) {
+                return canEdit [columnIndex];
+            }
+        });
+        TKTable.setFocusable(false);
+        TKTable.setGridColor(new java.awt.Color(128, 128, 128));
+        TKTable.setRowHeight(25);
+        TKTable.setSelectionBackground(new java.awt.Color(122, 72, 221));
+        TKTable.setSelectionForeground(new java.awt.Color(255, 255, 255));
+        TKTable.getTableHeader().setReorderingAllowed(false);
+        jScrollPane7.setViewportView(TKTable);
+        if (TKTable.getColumnModel().getColumnCount() > 0) {
+            TKTable.getColumnModel().getColumn(0).setMaxWidth(100);
+        }
+
+        TabTK.add(jScrollPane7, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 180, 1110, 500));
+
+        jButton3.setBackground(new java.awt.Color(1, 134, 53));
+        jButton3.setFont(new java.awt.Font("Dialog", 0, 14)); // NOI18N
+        jButton3.setForeground(new java.awt.Color(255, 255, 255));
+        jButton3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/bookstoremanagement/icons/icons8-user-48.png"))); // NOI18N
+        jButton3.setText("Tài khoản");
+        jButton3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                TKSubButton(evt);
+            }
+        });
+        TabTK.add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 150, -1));
+
+        jButton6.setBackground(new java.awt.Color(1, 134, 53));
+        jButton6.setFont(new java.awt.Font("Dialog", 0, 12)); // NOI18N
+        jButton6.setForeground(new java.awt.Color(255, 255, 255));
+        jButton6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/bookstoremanagement/icons/icons8-unlock-security-lock-with-permission-granted-to-access-48.png"))); // NOI18N
+        jButton6.setText("Quyền");
+        jButton6.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                QuyenSubButton(evt);
+            }
+        });
+        TabTK.add(jButton6, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 0, 150, -1));
+
+        TabContainer.addTab("TaiKhoan", TabTK);
+
+        TabQuyen.setBackground(new java.awt.Color(255, 255, 255));
+        TabQuyen.setPreferredSize(new java.awt.Dimension(768, 639));
+        TabQuyen.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        BHthem10.setBackground(new java.awt.Color(0, 204, 204));
+        BHthem10.setPreferredSize(new java.awt.Dimension(80, 24));
+        BHthem10.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                BHthem10MousePressed(evt);
+            }
+            public void mouseReleased(java.awt.event.MouseEvent evt) {
+                BHthem10MouseReleased(evt);
+            }
+        });
+
+        jLabel99.setBackground(new java.awt.Color(255, 255, 255));
+        jLabel99.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        jLabel99.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel99.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel99.setIcon(new javax.swing.ImageIcon(getClass().getResource("/bookstoremanagement/icons/icons8-plus-20.png"))); // NOI18N
+        jLabel99.setText("Thêm");
+
+        javax.swing.GroupLayout BHthem10Layout = new javax.swing.GroupLayout(BHthem10);
+        BHthem10.setLayout(BHthem10Layout);
+        BHthem10Layout.setHorizontalGroup(
+            BHthem10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jLabel99, javax.swing.GroupLayout.DEFAULT_SIZE, 120, Short.MAX_VALUE)
+        );
+        BHthem10Layout.setVerticalGroup(
+            BHthem10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jLabel99, javax.swing.GroupLayout.DEFAULT_SIZE, 24, Short.MAX_VALUE)
+        );
+
+        TabQuyen.add(BHthem10, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 130, 120, -1));
+
+        searchType10.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        searchType10.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Tất cả", "Mã quyền", "Tên quyền", "Chi tiết quyền" }));
+        TabQuyen.add(searchType10, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 126, 110, 30));
+
+        jLabel32.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel32.setIcon(new javax.swing.ImageIcon(getClass().getResource("/bookstoremanagement/icons/icons8-search-25.png"))); // NOI18N
+        TabQuyen.add(jLabel32, new org.netbeans.lib.awtextra.AbsoluteConstraints(5, 120, 30, 40));
+
+        FilterSearch10.setFont(new java.awt.Font("Dialog", 0, 18)); // NOI18N
+        FilterSearch10.setMinimumSize(new java.awt.Dimension(28, 25));
+        FilterSearch10.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                FilterSearch10ActionPerformed(evt);
+            }
+        });
+        FilterSearch10.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyReleased(java.awt.event.KeyEvent evt) {
+                FilterSearch10KeyReleased(evt);
+            }
+        });
+        TabQuyen.add(FilterSearch10, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 125, 220, 30));
+
+        BHxoa9.setBackground(new java.awt.Color(255, 0, 0));
+        BHxoa9.setPreferredSize(new java.awt.Dimension(80, 24));
+        BHxoa9.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                BHxoa9MousePressed(evt);
+            }
+            public void mouseReleased(java.awt.event.MouseEvent evt) {
+                BHxoa9MouseReleased(evt);
+            }
+        });
+
+        jLabel100.setBackground(new java.awt.Color(255, 255, 255));
+        jLabel100.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        jLabel100.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel100.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel100.setIcon(new javax.swing.ImageIcon(getClass().getResource("/bookstoremanagement/icons/icons8-close-15.png"))); // NOI18N
+        jLabel100.setText("Xóa");
+
+        javax.swing.GroupLayout BHxoa9Layout = new javax.swing.GroupLayout(BHxoa9);
+        BHxoa9.setLayout(BHxoa9Layout);
+        BHxoa9Layout.setHorizontalGroup(
+            BHxoa9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jLabel100, javax.swing.GroupLayout.DEFAULT_SIZE, 120, Short.MAX_VALUE)
+        );
+        BHxoa9Layout.setVerticalGroup(
+            BHxoa9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jLabel100, javax.swing.GroupLayout.DEFAULT_SIZE, 24, Short.MAX_VALUE)
+        );
+
+        TabQuyen.add(BHxoa9, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 130, 120, -1));
+
+        BHsua9.setBackground(new java.awt.Color(255, 204, 0));
+        BHsua9.setPreferredSize(new java.awt.Dimension(80, 24));
+        BHsua9.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                BHsua9MousePressed(evt);
+            }
+            public void mouseReleased(java.awt.event.MouseEvent evt) {
+                BHsua9MouseReleased(evt);
+            }
+        });
+
+        jLabel102.setBackground(new java.awt.Color(255, 255, 255));
+        jLabel102.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        jLabel102.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel102.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel102.setIcon(new javax.swing.ImageIcon(getClass().getResource("/bookstoremanagement/icons/icons8-pen-15.png"))); // NOI18N
+        jLabel102.setText("Sửa");
+
+        javax.swing.GroupLayout BHsua9Layout = new javax.swing.GroupLayout(BHsua9);
+        BHsua9.setLayout(BHsua9Layout);
+        BHsua9Layout.setHorizontalGroup(
+            BHsua9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, BHsua9Layout.createSequentialGroup()
+                .addGap(0, 16, Short.MAX_VALUE)
+                .addComponent(jLabel102, javax.swing.GroupLayout.PREFERRED_SIZE, 104, javax.swing.GroupLayout.PREFERRED_SIZE))
+        );
+        BHsua9Layout.setVerticalGroup(
+            BHsua9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jLabel102, javax.swing.GroupLayout.DEFAULT_SIZE, 24, Short.MAX_VALUE)
+        );
+
+        TabQuyen.add(BHsua9, new org.netbeans.lib.awtextra.AbsoluteConstraints(710, 130, 120, -1));
+
+        LamMoiSP12.setBackground(new java.awt.Color(51, 204, 0));
+        LamMoiSP12.setPreferredSize(new java.awt.Dimension(80, 24));
+        LamMoiSP12.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                LamMoiSP12MousePressed(evt);
+            }
+            public void mouseReleased(java.awt.event.MouseEvent evt) {
+                LamMoiSP12MouseReleased(evt);
+            }
+        });
+
+        jLabel103.setBackground(new java.awt.Color(255, 255, 255));
+        jLabel103.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        jLabel103.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel103.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel103.setIcon(new javax.swing.ImageIcon(getClass().getResource("/bookstoremanagement/icons/icons8-update-left-rotation-15.png"))); // NOI18N
+        jLabel103.setText("Làm mới");
+
+        javax.swing.GroupLayout LamMoiSP12Layout = new javax.swing.GroupLayout(LamMoiSP12);
+        LamMoiSP12.setLayout(LamMoiSP12Layout);
+        LamMoiSP12Layout.setHorizontalGroup(
+            LamMoiSP12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jLabel103, javax.swing.GroupLayout.DEFAULT_SIZE, 120, Short.MAX_VALUE)
+        );
+        LamMoiSP12Layout.setVerticalGroup(
+            LamMoiSP12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jLabel103, javax.swing.GroupLayout.DEFAULT_SIZE, 24, Short.MAX_VALUE)
+        );
+
+        TabQuyen.add(LamMoiSP12, new org.netbeans.lib.awtextra.AbsoluteConstraints(850, 130, 120, -1));
+
+        jScrollPane11.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
+        jScrollPane11.setForeground(new java.awt.Color(255, 255, 255));
+
+        QuyenTable.setAutoCreateRowSorter(true);
+        QuyenTable.setFont(new java.awt.Font("Segoe UI", 0, 17)); // NOI18N
+        QuyenTable.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+
+            },
+            new String [] {
+                "STT", "Mã quyền", "Tên quyền", "Chi tiết quyền"
+            }
+        ) {
+            boolean[] canEdit = new boolean [] {
+                false, true, false, true
+            };
+
+            public boolean isCellEditable(int rowIndex, int columnIndex) {
+                return canEdit [columnIndex];
+            }
+        });
+        QuyenTable.setFocusable(false);
+        QuyenTable.setGridColor(new java.awt.Color(128, 128, 128));
+        QuyenTable.setRowHeight(25);
+        QuyenTable.setSelectionBackground(new java.awt.Color(122, 72, 221));
+        QuyenTable.setSelectionForeground(new java.awt.Color(255, 255, 255));
+        QuyenTable.getTableHeader().setReorderingAllowed(false);
+        jScrollPane11.setViewportView(QuyenTable);
+        if (QuyenTable.getColumnModel().getColumnCount() > 0) {
+            QuyenTable.getColumnModel().getColumn(0).setMaxWidth(800);
+            QuyenTable.getColumnModel().getColumn(1).setPreferredWidth(20);
+        }
+
+        TabQuyen.add(jScrollPane11, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 170, 1110, 500));
+
+        jButton7.setBackground(new java.awt.Color(1, 134, 53));
+        jButton7.setFont(new java.awt.Font("Dialog", 0, 14)); // NOI18N
+        jButton7.setForeground(new java.awt.Color(255, 255, 255));
+        jButton7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/bookstoremanagement/icons/icons8-user-48.png"))); // NOI18N
+        jButton7.setText("Tài khoản");
+        jButton7.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton7TKSubButton(evt);
+            }
+        });
+        TabQuyen.add(jButton7, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 150, -1));
+
+        jButton8.setBackground(new java.awt.Color(1, 134, 53));
+        jButton8.setFont(new java.awt.Font("Dialog", 0, 12)); // NOI18N
+        jButton8.setForeground(new java.awt.Color(255, 255, 255));
+        jButton8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/bookstoremanagement/icons/icons8-unlock-security-lock-with-permission-granted-to-access-48.png"))); // NOI18N
+        jButton8.setText("Quyền");
+        jButton8.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton8QuyenSubButton(evt);
+            }
+        });
+        TabQuyen.add(jButton8, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 0, 150, -1));
+
+        TabContainer.addTab("Quyen", TabQuyen);
+
+        TabTrangChu.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        kGradientPanel1.setkEndColor(new java.awt.Color(255, 248, 222));
+        kGradientPanel1.setkGradientFocus(50);
+        kGradientPanel1.setkStartColor(new java.awt.Color(115, 144, 114));
+        kGradientPanel1.setkTransparentControls(false);
+        kGradientPanel1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                kGradientPanel1MouseClicked(evt);
+            }
+        });
+
+        jLabel116.setFont(new java.awt.Font("Comic Sans MS", 0, 48)); // NOI18N
+        jLabel116.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel116.setText("Book Store Management System");
+
+        javax.swing.GroupLayout kGradientPanel1Layout = new javax.swing.GroupLayout(kGradientPanel1);
+        kGradientPanel1.setLayout(kGradientPanel1Layout);
+        kGradientPanel1Layout.setHorizontalGroup(
+            kGradientPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(kGradientPanel1Layout.createSequentialGroup()
+                .addGroup(kGradientPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(kGradientPanel1Layout.createSequentialGroup()
+                        .addGap(175, 175, 175)
+                        .addComponent(timeLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 122, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(dateLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 124, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(dayLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 106, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(kGradientPanel1Layout.createSequentialGroup()
+                        .addGap(264, 264, 264)
+                        .addComponent(jLabel116, javax.swing.GroupLayout.PREFERRED_SIZE, 737, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(889, Short.MAX_VALUE))
+        );
+        kGradientPanel1Layout.setVerticalGroup(
+            kGradientPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(kGradientPanel1Layout.createSequentialGroup()
+                .addGap(284, 284, 284)
+                .addComponent(jLabel116)
+                .addGap(104, 104, 104)
+                .addGroup(kGradientPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(dayLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 67, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(timeLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 67, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(dateLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 51, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(218, Short.MAX_VALUE))
+        );
+
+        TabTrangChu.add(kGradientPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(-60, -1, 1890, 740));
+
+        TabContainer.addTab("TrangChu", TabTrangChu);
 
         TabContainer.setSelectedIndex(11);
 
@@ -3741,8 +3744,6 @@ public class MainPage extends javax.swing.JFrame {
         QuanLyHoaDonBanBUS qlhdBUS = new QuanLyHoaDonBanBUS();
         HienThiHoaDonBan.AddTable(qlhdBUS.getDshdb(), HDTable);
         
-        
-        
         QuanLyHoaDonNhapBUS qlhdnBUS = new QuanLyHoaDonNhapBUS();
         HienThiHoaDonNhap.AddTable(qlhdnBUS.getDshdn(), PNTable);
         
@@ -3763,7 +3764,6 @@ public class MainPage extends javax.swing.JFrame {
         
         QuanLyQuyenBUS qlquyenBUS = new QuanLyQuyenBUS();
         HienThiQuyen.AddTable(qlquyenBUS.getDsq(), QuyenTable);
-       
         
         txMaHDBH.setText(qlhdBUS.getNextID());
         txMaNVBH.setText(LoginForm.nhanVienLogin.getMaNV());
@@ -4996,7 +4996,7 @@ public class MainPage extends javax.swing.JFrame {
     private void HDNSubButton(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_HDNSubButton
                 if(LoginForm.quyenLogin.getChiTietQuyen().contains("qlHoaDonNhap") || LoginForm.quyenLogin.getChiTietQuyen().contains("xemHoaDonNhap") ){
                 txCurrentPage.setText("Hóa đơn nhập");
-                TabContainer.setSelectedIndex(9);}
+                TabContainer.setSelectedIndex(3);}
         else{
              JOptionPane.showMessageDialog(null, "Bạn không có quyền để xem trang này!");
         }
@@ -5015,7 +5015,7 @@ public class MainPage extends javax.swing.JFrame {
     private void jButton5HDNSubButton(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5HDNSubButton
         if(LoginForm.quyenLogin.getChiTietQuyen().contains("qlHoaDonNhap") || LoginForm.quyenLogin.getChiTietQuyen().contains("xemHoaDonNhap") ){
             txCurrentPage.setText("Hóa đơn nhập");
-                TabContainer.setSelectedIndex(9);}
+                TabContainer.setSelectedIndex(3);}
                 else{
              JOptionPane.showMessageDialog(null, "Bạn không có quyền để xem trang này!");
         }
@@ -5024,7 +5024,7 @@ public class MainPage extends javax.swing.JFrame {
     private void TKSubButton(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TKSubButton
         if(LoginForm.quyenLogin.getChiTietQuyen().contains("qlTaiKhoan") || LoginForm.quyenLogin.getChiTietQuyen().contains("xemTaiKhoan") ){
               txCurrentPage.setText("Tài khoản");
-             TabContainer.setSelectedIndex(8);}
+             TabContainer.setSelectedIndex(9);}
         else{
              JOptionPane.showMessageDialog(null, "Bạn không có quyền để xem trang này!");
         }
@@ -5042,7 +5042,7 @@ public class MainPage extends javax.swing.JFrame {
     private void jButton7TKSubButton(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton7TKSubButton
         if(LoginForm.quyenLogin.getChiTietQuyen().contains("qlTaiKhoan") || LoginForm.quyenLogin.getChiTietQuyen().contains("xemTaiKhoan") ){
               txCurrentPage.setText("Tài khoản");
-             TabContainer.setSelectedIndex(8);}
+             TabContainer.setSelectedIndex(9);}
         else{
              JOptionPane.showMessageDialog(null, "Bạn không có quyền để xem trang này!");
         }
@@ -5088,7 +5088,7 @@ public class MainPage extends javax.swing.JFrame {
     private void SachButton(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SachButton
         if(LoginForm.quyenLogin.getChiTietQuyen().contains("qlSach") || LoginForm.quyenLogin.getChiTietQuyen().contains("xemSach") ){
               txCurrentPage.setText("Sách");
-             TabContainer.setSelectedIndex(3);}
+             TabContainer.setSelectedIndex(4);}
         else{
              JOptionPane.showMessageDialog(null, "Bạn không có quyền để xem trang này!");
         }
@@ -5097,7 +5097,7 @@ public class MainPage extends javax.swing.JFrame {
     private void KhuyenMaiButton(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_KhuyenMaiButton
         if(LoginForm.quyenLogin.getChiTietQuyen().contains("qlKhuyenMai") || LoginForm.quyenLogin.getChiTietQuyen().contains("xemKhuyenMai") ){
              txCurrentPage.setText("Khuyến mãi");
-             TabContainer.setSelectedIndex(4);}
+             TabContainer.setSelectedIndex(5);}
         else{
              JOptionPane.showMessageDialog(null, "Bạn không có quyền để xem trang này!");
         }
@@ -5106,7 +5106,7 @@ public class MainPage extends javax.swing.JFrame {
     private void KhachHangButton(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_KhachHangButton
         if(LoginForm.quyenLogin.getChiTietQuyen().contains("qlKhachHang") || LoginForm.quyenLogin.getChiTietQuyen().contains("xemKhachHang") ){
             txCurrentPage.setText("Khách hàng");
-            TabContainer.setSelectedIndex(5);}
+            TabContainer.setSelectedIndex(6);}
         else{
              JOptionPane.showMessageDialog(null, "Bạn không có quyền để xem trang này!");
         }
@@ -5115,7 +5115,7 @@ public class MainPage extends javax.swing.JFrame {
     private void NhanVienButton(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_NhanVienButton
         if(LoginForm.quyenLogin.getChiTietQuyen().contains("qlNhanVien") || LoginForm.quyenLogin.getChiTietQuyen().contains("xemNhanVien") ){
             txCurrentPage.setText("Nhân viên");
-            TabContainer.setSelectedIndex(6);}
+            TabContainer.setSelectedIndex(7);}
         else{
              JOptionPane.showMessageDialog(null, "Bạn không có quyền để xem trang này!");
         }
@@ -5124,7 +5124,7 @@ public class MainPage extends javax.swing.JFrame {
     private void NhaCungCapButotn(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_NhaCungCapButotn
         if(LoginForm.quyenLogin.getChiTietQuyen().contains("qlNCC") || LoginForm.quyenLogin.getChiTietQuyen().contains("xemNCC") ){
             txCurrentPage.setText("Nhà cung cấp");
-            TabContainer.setSelectedIndex(7);}
+            TabContainer.setSelectedIndex(8);}
         else{
              JOptionPane.showMessageDialog(null, "Bạn không có quyền để xem trang này!");
         }
@@ -5133,7 +5133,7 @@ public class MainPage extends javax.swing.JFrame {
     private void TaiKhoanButton(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TaiKhoanButton
         if(LoginForm.quyenLogin.getChiTietQuyen().contains("qlTaiKhoan") || LoginForm.quyenLogin.getChiTietQuyen().contains("xemTaiKhoan") ){
              txCurrentPage.setText("Tài khoản");
-             TabContainer.setSelectedIndex(8);}
+             TabContainer.setSelectedIndex(9);}
         else{
              JOptionPane.showMessageDialog(null, "Bạn không có quyền để xem trang này!");
         }
@@ -5304,15 +5304,15 @@ public class MainPage extends javax.swing.JFrame {
     public static javax.swing.JTable TKTable;
     private javax.swing.JPanel TabBH;
     private javax.swing.JTabbedPane TabContainer;
-    private javax.swing.JPanel TabHD;
+    private javax.swing.JPanel TabHDB;
+    private javax.swing.JPanel TabHDN;
     private javax.swing.JPanel TabKH;
     private javax.swing.JPanel TabKM;
     private javax.swing.JPanel TabNCC;
     private javax.swing.JPanel TabNH;
     private javax.swing.JPanel TabNV;
-    private javax.swing.JPanel TabPN;
     private javax.swing.JPanel TabQuyen;
-    private javax.swing.JPanel TabSP;
+    private javax.swing.JPanel TabSach;
     private javax.swing.JPanel TabTK;
     private javax.swing.JPanel TabTrangChu;
     private javax.swing.JPanel ThongKeBan;
