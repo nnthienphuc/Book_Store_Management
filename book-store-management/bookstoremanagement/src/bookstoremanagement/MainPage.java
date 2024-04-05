@@ -264,14 +264,15 @@ public class MainPage extends javax.swing.JFrame {
         FilterSearch7 = new java.awt.TextField();
         jLabel27 = new javax.swing.JLabel();
         searchType7 = new javax.swing.JComboBox<>();
-        LamMoiSP9 = new javax.swing.JPanel();
-        jLabel90 = new javax.swing.JLabel();
-        BHthem7 = new javax.swing.JPanel();
-        jLabel93 = new javax.swing.JLabel();
         jScrollPane8 = new javax.swing.JScrollPane();
         HDTable = new javax.swing.JTable();
         jButton1 = new javax.swing.JButton();
         jButton2 = new javax.swing.JButton();
+        jLabel123 = new javax.swing.JLabel();
+        BHthem7 = new javax.swing.JPanel();
+        jLabel93 = new javax.swing.JLabel();
+        LamMoiSP9 = new javax.swing.JPanel();
+        jLabel90 = new javax.swing.JLabel();
         ThongKeBan = new javax.swing.JPanel();
         jLabel7 = new javax.swing.JLabel();
         jLabel94 = new javax.swing.JLabel();
@@ -531,10 +532,10 @@ public class MainPage extends javax.swing.JFrame {
         BHthem.setLayout(BHthemLayout);
         BHthemLayout.setHorizontalGroup(
             BHthemLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, BHthemLayout.createSequentialGroup()
-                .addContainerGap(92, Short.MAX_VALUE)
+            .addGroup(BHthemLayout.createSequentialGroup()
+                .addGap(78, 78, 78)
                 .addComponent(jLabel66, javax.swing.GroupLayout.PREFERRED_SIZE, 103, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(105, 105, 105))
+                .addContainerGap(89, Short.MAX_VALUE))
         );
         BHthemLayout.setVerticalGroup(
             BHthemLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -544,7 +545,7 @@ public class MainPage extends javax.swing.JFrame {
                 .addContainerGap())
         );
 
-        TabBH.add(BHthem, new org.netbeans.lib.awtextra.AbsoluteConstraints(830, 270, 300, 30));
+        TabBH.add(BHthem, new org.netbeans.lib.awtextra.AbsoluteConstraints(820, 270, 270, 30));
 
         BHxacNhan.setBackground(new java.awt.Color(51, 204, 0));
         BHxacNhan.setPreferredSize(new java.awt.Dimension(80, 24));
@@ -568,7 +569,7 @@ public class MainPage extends javax.swing.JFrame {
         BHxacNhan.setLayout(BHxacNhanLayout);
         BHxacNhanLayout.setHorizontalGroup(
             BHxacNhanLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jLabel115, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 130, Short.MAX_VALUE)
+            .addComponent(jLabel115, javax.swing.GroupLayout.DEFAULT_SIZE, 130, Short.MAX_VALUE)
         );
         BHxacNhanLayout.setVerticalGroup(
             BHxacNhanLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -577,7 +578,7 @@ public class MainPage extends javax.swing.JFrame {
                 .addComponent(jLabel115, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
 
-        TabBH.add(BHxacNhan, new org.netbeans.lib.awtextra.AbsoluteConstraints(930, 610, 130, 30));
+        TabBH.add(BHxacNhan, new org.netbeans.lib.awtextra.AbsoluteConstraints(880, 610, 130, 30));
 
         jLabel4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/bookstoremanagement/icons/icons8-search-25.png"))); // NOI18N
@@ -830,8 +831,8 @@ public class MainPage extends javax.swing.JFrame {
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel3Layout.createSequentialGroup()
                 .addGap(14, 14, 14)
-                .addComponent(jScrollPane12, javax.swing.GroupLayout.PREFERRED_SIZE, 485, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(102, 102, 102)
+                .addComponent(jScrollPane12, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(135, 135, 135)
                 .addComponent(txTienTong, javax.swing.GroupLayout.PREFERRED_SIZE, 0, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
@@ -846,7 +847,7 @@ public class MainPage extends javax.swing.JFrame {
                 .addContainerGap())
         );
 
-        TabBH.add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 370, 500, 220));
+        TabBH.add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 370, 470, 220));
 
         BHxoa7.setBackground(new java.awt.Color(255, 0, 0));
         BHxoa7.setPreferredSize(new java.awt.Dimension(80, 24));
@@ -870,7 +871,7 @@ public class MainPage extends javax.swing.JFrame {
         BHxoa7.setLayout(BHxoa7Layout);
         BHxoa7Layout.setHorizontalGroup(
             BHxoa7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jLabel64, javax.swing.GroupLayout.DEFAULT_SIZE, 120, Short.MAX_VALUE)
+            .addComponent(jLabel64, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 120, Short.MAX_VALUE)
         );
         BHxoa7Layout.setVerticalGroup(
             BHxoa7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -879,7 +880,7 @@ public class MainPage extends javax.swing.JFrame {
                 .addComponent(jLabel64, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
 
-        TabBH.add(BHxoa7, new org.netbeans.lib.awtextra.AbsoluteConstraints(760, 610, 120, 30));
+        TabBH.add(BHxoa7, new org.netbeans.lib.awtextra.AbsoluteConstraints(730, 610, 120, 30));
 
         LamMoiSP2.setBackground(new java.awt.Color(51, 204, 0));
         LamMoiSP2.setPreferredSize(new java.awt.Dimension(80, 24));
@@ -959,21 +960,18 @@ public class MainPage extends javax.swing.JFrame {
             .addGroup(jPanel9Layout.createSequentialGroup()
                 .addGap(18, 18, 18)
                 .addGroup(jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(txMaSPBH, javax.swing.GroupLayout.DEFAULT_SIZE, 141, Short.MAX_VALUE)
                     .addComponent(jLabel108)
                     .addComponent(jLabel120, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(txSoLuongBH))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                    .addComponent(txSoLuongBH, javax.swing.GroupLayout.DEFAULT_SIZE, 100, Short.MAX_VALUE)
+                    .addComponent(txMaSPBH))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 34, Short.MAX_VALUE)
                 .addGroup(jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel9Layout.createSequentialGroup()
-                        .addComponent(txDonGiaBH)
-                        .addGap(15, 15, 15))
-                    .addGroup(jPanel9Layout.createSequentialGroup()
-                        .addGroup(jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel119, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabel118)
-                            .addComponent(txTenSPBH, javax.swing.GroupLayout.PREFERRED_SIZE, 141, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(0, 14, Short.MAX_VALUE))))
+                    .addComponent(jLabel119, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                        .addComponent(txDonGiaBH, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 98, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(txTenSPBH, javax.swing.GroupLayout.PREFERRED_SIZE, 98, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jLabel118))
+                .addGap(20, 20, 20))
         );
         jPanel9Layout.setVerticalGroup(
             jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -997,7 +995,7 @@ public class MainPage extends javax.swing.JFrame {
                 .addContainerGap(43, Short.MAX_VALUE))
         );
 
-        TabBH.add(jPanel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(820, 50, 320, 210));
+        TabBH.add(jPanel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(820, 50, 270, 210));
 
         TabContainer.addTab("BanHang", TabBH);
         TabBH.getAccessibleContext().setAccessibleName("tab1");
@@ -1057,18 +1055,19 @@ public class MainPage extends javax.swing.JFrame {
             jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel4Layout.createSequentialGroup()
                 .addGap(16, 16, 16)
-                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(txMaSPNH, javax.swing.GroupLayout.PREFERRED_SIZE, 101, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(jLabel54)
                     .addComponent(jLabel58, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(txSoLuongNH, javax.swing.GroupLayout.PREFERRED_SIZE, 101, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 19, Short.MAX_VALUE)
+                    .addComponent(txMaSPNH, javax.swing.GroupLayout.DEFAULT_SIZE, 89, Short.MAX_VALUE)
+                    .addComponent(txSoLuongNH))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 27, Short.MAX_VALUE)
                 .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(txTenSPNH, javax.swing.GroupLayout.PREFERRED_SIZE, 101, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel56)
-                    .addComponent(jLabel57, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(txDonGiaNH, javax.swing.GroupLayout.PREFERRED_SIZE, 101, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(23, 23, 23))
+                    .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                        .addComponent(txDonGiaNH, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(txTenSPNH, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jLabel57, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18))
         );
         jPanel4Layout.setVerticalGroup(
             jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -1092,7 +1091,7 @@ public class MainPage extends javax.swing.JFrame {
                 .addContainerGap(44, Short.MAX_VALUE))
         );
 
-        TabNH.add(jPanel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(870, 50, 260, 200));
+        TabNH.add(jPanel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(870, 50, -1, 200));
 
         jScrollPane13.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
         jScrollPane13.setForeground(new java.awt.Color(255, 255, 255));
@@ -1323,10 +1322,10 @@ public class MainPage extends javax.swing.JFrame {
         BHthem11.setLayout(BHthem11Layout);
         BHthem11Layout.setHorizontalGroup(
             BHthem11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, BHthem11Layout.createSequentialGroup()
-                .addContainerGap(50, Short.MAX_VALUE)
+            .addGroup(BHthem11Layout.createSequentialGroup()
+                .addGap(56, 56, 56)
                 .addComponent(jLabel106, javax.swing.GroupLayout.PREFERRED_SIZE, 103, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(107, 107, 107))
+                .addContainerGap(81, Short.MAX_VALUE))
         );
         BHthem11Layout.setVerticalGroup(
             BHthem11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -1335,7 +1334,7 @@ public class MainPage extends javax.swing.JFrame {
                 .addComponent(jLabel106, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
 
-        TabNH.add(BHthem11, new org.netbeans.lib.awtextra.AbsoluteConstraints(870, 290, 260, 30));
+        TabNH.add(BHthem11, new org.netbeans.lib.awtextra.AbsoluteConstraints(870, 290, 240, 30));
 
         BHxoa10.setBackground(new java.awt.Color(51, 204, 0));
         BHxoa10.setPreferredSize(new java.awt.Dimension(80, 24));
@@ -1544,70 +1543,6 @@ public class MainPage extends javax.swing.JFrame {
         searchType7.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Tất cả", "Mã hóa đơn", "Mã nhân viên", "Mã khách hàng", "Mã khuyến mãi", "Ngày lập", "Giờ lập", "Tổng tiền", " " }));
         TabHDB.add(searchType7, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 126, 110, 30));
 
-        LamMoiSP9.setBackground(new java.awt.Color(255, 0, 0));
-        LamMoiSP9.setPreferredSize(new java.awt.Dimension(80, 24));
-        LamMoiSP9.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mousePressed(java.awt.event.MouseEvent evt) {
-                LamMoiSP9MousePressed(evt);
-            }
-            public void mouseReleased(java.awt.event.MouseEvent evt) {
-                LamMoiSP9MouseReleased(evt);
-            }
-        });
-
-        jLabel90.setBackground(new java.awt.Color(255, 255, 255));
-        jLabel90.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
-        jLabel90.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel90.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel90.setIcon(new javax.swing.ImageIcon(getClass().getResource("/bookstoremanagement/icons/icons8-update-left-rotation-15.png"))); // NOI18N
-        jLabel90.setText("Làm mới");
-
-        javax.swing.GroupLayout LamMoiSP9Layout = new javax.swing.GroupLayout(LamMoiSP9);
-        LamMoiSP9.setLayout(LamMoiSP9Layout);
-        LamMoiSP9Layout.setHorizontalGroup(
-            LamMoiSP9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jLabel90, javax.swing.GroupLayout.DEFAULT_SIZE, 140, Short.MAX_VALUE)
-        );
-        LamMoiSP9Layout.setVerticalGroup(
-            LamMoiSP9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jLabel90, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 30, Short.MAX_VALUE)
-        );
-
-        TabHDB.add(LamMoiSP9, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 130, 140, 30));
-
-        BHthem7.setBackground(new java.awt.Color(0, 204, 204));
-        BHthem7.setPreferredSize(new java.awt.Dimension(80, 24));
-        BHthem7.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mousePressed(java.awt.event.MouseEvent evt) {
-                BHthem7MousePressed(evt);
-            }
-            public void mouseReleased(java.awt.event.MouseEvent evt) {
-                BHthem7MouseReleased(evt);
-            }
-        });
-
-        jLabel93.setBackground(new java.awt.Color(255, 255, 255));
-        jLabel93.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
-        jLabel93.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel93.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel93.setIcon(new javax.swing.ImageIcon(getClass().getResource("/bookstoremanagement/icons/icons8-search-20.png"))); // NOI18N
-        jLabel93.setText("Xem chi tiết");
-
-        javax.swing.GroupLayout BHthem7Layout = new javax.swing.GroupLayout(BHthem7);
-        BHthem7.setLayout(BHthem7Layout);
-        BHthem7Layout.setHorizontalGroup(
-            BHthem7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(BHthem7Layout.createSequentialGroup()
-                .addComponent(jLabel93, javax.swing.GroupLayout.PREFERRED_SIZE, 119, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 21, Short.MAX_VALUE))
-        );
-        BHthem7Layout.setVerticalGroup(
-            BHthem7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jLabel93, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 30, Short.MAX_VALUE)
-        );
-
-        TabHDB.add(BHthem7, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 130, 140, 30));
-
         jScrollPane8.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
         jScrollPane8.setForeground(new java.awt.Color(255, 255, 255));
 
@@ -1668,6 +1603,76 @@ public class MainPage extends javax.swing.JFrame {
         });
         TabHDB.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 0, 180, 60));
 
+        jLabel123.setBackground(new java.awt.Color(255, 255, 255));
+        jLabel123.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        jLabel123.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel123.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel123.setIcon(new javax.swing.ImageIcon(getClass().getResource("/bookstoremanagement/icons/icons8-search-20.png"))); // NOI18N
+        jLabel123.setText("Xem chi tiết");
+        TabHDB.add(jLabel123, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 40, 120, 24));
+
+        BHthem7.setBackground(new java.awt.Color(0, 204, 204));
+        BHthem7.setPreferredSize(new java.awt.Dimension(80, 24));
+        BHthem7.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                BHthem7MousePressed(evt);
+            }
+            public void mouseReleased(java.awt.event.MouseEvent evt) {
+                BHthem7MouseReleased(evt);
+            }
+        });
+
+        jLabel93.setBackground(new java.awt.Color(255, 255, 255));
+        jLabel93.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        jLabel93.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel93.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel93.setIcon(new javax.swing.ImageIcon(getClass().getResource("/bookstoremanagement/icons/icons8-search-20.png"))); // NOI18N
+        jLabel93.setText("Xem chi tiết");
+
+        javax.swing.GroupLayout BHthem7Layout = new javax.swing.GroupLayout(BHthem7);
+        BHthem7.setLayout(BHthem7Layout);
+        BHthem7Layout.setHorizontalGroup(
+            BHthem7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jLabel93, javax.swing.GroupLayout.DEFAULT_SIZE, 120, Short.MAX_VALUE)
+        );
+        BHthem7Layout.setVerticalGroup(
+            BHthem7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jLabel93, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 24, Short.MAX_VALUE)
+        );
+
+        TabHDB.add(BHthem7, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 130, 120, -1));
+
+        LamMoiSP9.setBackground(new java.awt.Color(51, 204, 0));
+        LamMoiSP9.setPreferredSize(new java.awt.Dimension(80, 24));
+        LamMoiSP9.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                LamMoiSP9MousePressed(evt);
+            }
+            public void mouseReleased(java.awt.event.MouseEvent evt) {
+                LamMoiSP9MouseReleased(evt);
+            }
+        });
+
+        jLabel90.setBackground(new java.awt.Color(255, 255, 255));
+        jLabel90.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        jLabel90.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel90.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel90.setIcon(new javax.swing.ImageIcon(getClass().getResource("/bookstoremanagement/icons/icons8-update-left-rotation-15.png"))); // NOI18N
+        jLabel90.setText("Làm mới");
+
+        javax.swing.GroupLayout LamMoiSP9Layout = new javax.swing.GroupLayout(LamMoiSP9);
+        LamMoiSP9.setLayout(LamMoiSP9Layout);
+        LamMoiSP9Layout.setHorizontalGroup(
+            LamMoiSP9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jLabel90, javax.swing.GroupLayout.DEFAULT_SIZE, 120, Short.MAX_VALUE)
+        );
+        LamMoiSP9Layout.setVerticalGroup(
+            LamMoiSP9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jLabel90, javax.swing.GroupLayout.DEFAULT_SIZE, 24, Short.MAX_VALUE)
+        );
+
+        TabHDB.add(LamMoiSP9, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 130, 120, -1));
+
         ThongKeBan.setBackground(new java.awt.Color(255, 204, 0));
         ThongKeBan.setForeground(new java.awt.Color(255, 255, 255));
         ThongKeBan.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -1693,22 +1698,19 @@ public class MainPage extends javax.swing.JFrame {
             .addGroup(ThongKeBanLayout.createSequentialGroup()
                 .addGap(40, 40, 40)
                 .addComponent(jLabel7)
-                .addContainerGap(100, Short.MAX_VALUE))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, ThongKeBanLayout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jLabel94, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addContainerGap())
+                .addContainerGap(80, Short.MAX_VALUE))
+            .addComponent(jLabel94, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         ThongKeBanLayout.setVerticalGroup(
             ThongKeBanLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(ThongKeBanLayout.createSequentialGroup()
-                .addComponent(jLabel94, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel94, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jLabel7)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
-        TabHDB.add(ThongKeBan, new org.netbeans.lib.awtextra.AbsoluteConstraints(750, 130, 140, 30));
+        TabHDB.add(ThongKeBan, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 130, -1, 24));
 
         TabContainer.addTab("HoaDonBan", TabHDB);
 
@@ -5352,6 +5354,7 @@ public class MainPage extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel120;
     private javax.swing.JLabel jLabel121;
     private javax.swing.JLabel jLabel122;
+    private javax.swing.JLabel jLabel123;
     private javax.swing.JLabel jLabel13;
     private javax.swing.JLabel jLabel14;
     private javax.swing.JLabel jLabel2;
