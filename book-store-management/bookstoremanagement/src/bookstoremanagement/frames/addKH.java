@@ -34,7 +34,7 @@ public class addKH extends javax.swing.JFrame {
     public addKH() {
         initComponents();
         setLocationRelativeTo(null);
-        setLocationRelativeTo(null);
+        
     }
 
     /**

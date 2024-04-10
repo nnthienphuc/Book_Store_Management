@@ -47,6 +47,8 @@ public class ChonKHForm extends javax.swing.JFrame {
         txtSearch = new java.awt.TextField();
         lblSearch = new javax.swing.JLabel();
         cboSearchType = new javax.swing.JComboBox<>();
+        BHthem2 = new javax.swing.JPanel();
+        jLabel73 = new javax.swing.JLabel();
 
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
@@ -157,6 +159,35 @@ public class ChonKHForm extends javax.swing.JFrame {
         cboSearchType.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         cboSearchType.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Tất cả", "Mã khách hàng", "Tên khách hàng", "Địa chỉ", "Số điện thoại", "Trạng thái" }));
 
+        BHthem2.setBackground(new java.awt.Color(0, 204, 204));
+        BHthem2.setPreferredSize(new java.awt.Dimension(80, 24));
+        BHthem2.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                BHthem2MousePressed(evt);
+            }
+            public void mouseReleased(java.awt.event.MouseEvent evt) {
+                BHthem2MouseReleased(evt);
+            }
+        });
+
+        jLabel73.setBackground(new java.awt.Color(0, 0, 0));
+        jLabel73.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        jLabel73.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel73.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel73.setIcon(new javax.swing.ImageIcon(getClass().getResource("/bookstoremanagement/icons/icons8-plus-20.png"))); // NOI18N
+        jLabel73.setText("Thêm");
+
+        javax.swing.GroupLayout BHthem2Layout = new javax.swing.GroupLayout(BHthem2);
+        BHthem2.setLayout(BHthem2Layout);
+        BHthem2Layout.setHorizontalGroup(
+            BHthem2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jLabel73, javax.swing.GroupLayout.DEFAULT_SIZE, 120, Short.MAX_VALUE)
+        );
+        BHthem2Layout.setVerticalGroup(
+            BHthem2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jLabel73, javax.swing.GroupLayout.DEFAULT_SIZE, 24, Short.MAX_VALUE)
+        );
+
         javax.swing.GroupLayout pnlChonKHLayout = new javax.swing.GroupLayout(pnlChonKH);
         pnlChonKH.setLayout(pnlChonKHLayout);
         pnlChonKHLayout.setHorizontalGroup(
@@ -179,7 +210,9 @@ public class ChonKHForm extends javax.swing.JFrame {
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(txtSearch, javax.swing.GroupLayout.PREFERRED_SIZE, 220, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(cboSearchType, javax.swing.GroupLayout.PREFERRED_SIZE, 111, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                .addComponent(cboSearchType, javax.swing.GroupLayout.PREFERRED_SIZE, 111, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(18, 18, 18)
+                                .addComponent(BHthem2, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)))
                         .addGap(0, 0, Short.MAX_VALUE)))
                 .addContainerGap())
         );
@@ -191,7 +224,8 @@ public class ChonKHForm extends javax.swing.JFrame {
                     .addComponent(lblSearch, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(pnlChonKHLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                         .addComponent(cboSearchType, javax.swing.GroupLayout.Alignment.TRAILING)
-                        .addComponent(txtSearch, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                        .addComponent(txtSearch, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addComponent(BHthem2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(27, 27, 27)
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 407, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -238,6 +272,18 @@ public class ChonKHForm extends javax.swing.JFrame {
         MainPage.filterTable(SubKHTable, query, cboSearchType.getSelectedIndex()-1);
     }//GEN-LAST:event_txtSearchKeyReleased
 
+    private void BHthem2MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BHthem2MousePressed
+//        changecolor(BHthem2,new Color(0,163,163));
+    }//GEN-LAST:event_BHthem2MousePressed
+
+    private void BHthem2MouseReleased(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BHthem2MouseReleased
+//        changecolor(BHthem2,new Color(0,204,204));
+        addKH addKH = new addKH();
+        addKH.setVisible(true);
+        editKH.ThemKH();
+        
+    }//GEN-LAST:event_BHthem2MouseReleased
+
     /**
      * @param args the command line arguments
      */
@@ -275,8 +321,10 @@ public class ChonKHForm extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private static javax.swing.JPanel BHthem2;
     public static javax.swing.JTable SubKHTable;
     public static javax.swing.JComboBox<String> cboSearchType;
+    private javax.swing.JLabel jLabel73;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JLabel lblHuy;
     private javax.swing.JLabel lblSearch;

@@ -992,7 +992,7 @@ public class MainPage extends javax.swing.JFrame {
                 .addGroup(jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(txSoLuongBH, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(txDonGiaBH, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(43, Short.MAX_VALUE))
+                .addContainerGap(41, Short.MAX_VALUE))
         );
 
         TabBH.add(jPanel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(820, 50, 270, 210));
@@ -3967,8 +3967,6 @@ public class MainPage extends javax.swing.JFrame {
         TableModel model = BHTTTable.getModel();        
         String masp = model.getValueAt(row, 1).toString();
         String soluong = model.getValueAt(row,3).toString();
-        String giaNhap = (model.getValueAt(row, 4).toString()).substring(0, 4) ;
-        String giaBan = (model.getValueAt(row, 5).toString()).substring(0, 5) ;
         ChiTietHoaDonBan cthdb = new ChiTietHoaDonBan(mahd,masp,Integer.parseInt(soluong));
    
         QuanLyChiTietHoaDonBanBUS qlcthd = new QuanLyChiTietHoaDonBanBUS();
@@ -3987,8 +3985,6 @@ public class MainPage extends javax.swing.JFrame {
         TableModel model = NHTTTable.getModel();        
         String masach = model.getValueAt(row, 1).toString();
         String soluong = model.getValueAt(row,3).toString();
-        String giaNhap = (model.getValueAt(row, 4).toString()).substring(0, 4) ;
-        String giaBan = (model.getValueAt(row, 5).toString()).substring(0, 5) ;
         ChiTietHoaDonNhap ctpn = new ChiTietHoaDonNhap(mahdn,masach,Integer.parseInt(soluong));
    
         QuanLyChiTietHoaDonNhapBUS qlctpn = new QuanLyChiTietHoaDonNhapBUS();
@@ -4842,16 +4838,15 @@ public class MainPage extends javax.swing.JFrame {
             if(reply == JOptionPane.OK_OPTION) {
                 QuanLyHoaDonBanBUS qlhdBUS = new QuanLyHoaDonBanBUS();
 
-                HoaDonBan hdb = new HoaDonBan(
-                    txMaHDBH.getText(),
+                
+
+                qlhdBUS.add(txMaHDBH.getText(),
                     KhachHang.getMaKH(),
                     LoginForm.nhanVienLogin.getMaNV(),
                     KhuyenMai.getMaKM(),
                     LocalDate.parse(txNgayLapHD.getText()),
                     LocalTime.parse(txGioLapHD.getText()),
                     tongtiensauKM);
-
-                qlhdBUS.add(hdb);
 
                 TableModel model = BHTTTable.getModel();
                 int rowcount = model.getRowCount();
