@@ -123,8 +123,8 @@ public class editForm extends javax.swing.JFrame {
         pnlTrangThai = new javax.swing.JPanel();
         lblTrangThai = new javax.swing.JLabel();
         cboTrangThai = new javax.swing.JComboBox<>();
-        pnlThem = new javax.swing.JPanel();
-        lblThem = new javax.swing.JLabel();
+        pnlSua = new javax.swing.JPanel();
+        lblSua = new javax.swing.JLabel();
         pnlHuy = new javax.swing.JPanel();
         lblHuy = new javax.swing.JLabel();
 
@@ -396,35 +396,35 @@ public class editForm extends javax.swing.JFrame {
                 .addContainerGap())
         );
 
-        pnlThem.setBackground(new java.awt.Color(0, 204, 204));
-        pnlThem.setPreferredSize(new java.awt.Dimension(80, 24));
-        pnlThem.addMouseListener(new java.awt.event.MouseAdapter() {
+        pnlSua.setBackground(new java.awt.Color(0, 204, 204));
+        pnlSua.setPreferredSize(new java.awt.Dimension(80, 24));
+        pnlSua.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mousePressed(java.awt.event.MouseEvent evt) {
-                pnlThemMousePressed(evt);
+                pnlSuaMousePressed(evt);
             }
             public void mouseReleased(java.awt.event.MouseEvent evt) {
-                pnlThemMouseReleased(evt);
+                pnlSuaMouseReleased(evt);
             }
         });
 
-        lblThem.setBackground(new java.awt.Color(255, 255, 255));
-        lblThem.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        lblThem.setForeground(new java.awt.Color(255, 255, 255));
-        lblThem.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        lblThem.setText("Sửa");
+        lblSua.setBackground(new java.awt.Color(255, 255, 255));
+        lblSua.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        lblSua.setForeground(new java.awt.Color(255, 255, 255));
+        lblSua.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        lblSua.setText("Sửa");
 
-        javax.swing.GroupLayout pnlThemLayout = new javax.swing.GroupLayout(pnlThem);
-        pnlThem.setLayout(pnlThemLayout);
-        pnlThemLayout.setHorizontalGroup(
-            pnlThemLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(pnlThemLayout.createSequentialGroup()
+        javax.swing.GroupLayout pnlSuaLayout = new javax.swing.GroupLayout(pnlSua);
+        pnlSua.setLayout(pnlSuaLayout);
+        pnlSuaLayout.setHorizontalGroup(
+            pnlSuaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(pnlSuaLayout.createSequentialGroup()
                 .addGap(21, 21, 21)
-                .addComponent(lblThem, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(lblSua, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(24, Short.MAX_VALUE))
         );
-        pnlThemLayout.setVerticalGroup(
-            pnlThemLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(lblThem, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 54, Short.MAX_VALUE)
+        pnlSuaLayout.setVerticalGroup(
+            pnlSuaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(lblSua, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 54, Short.MAX_VALUE)
         );
 
         pnlHuy.setBackground(new java.awt.Color(255, 0, 0));
@@ -479,7 +479,7 @@ public class editForm extends javax.swing.JFrame {
                                 .addGap(0, 0, Short.MAX_VALUE))
                             .addGroup(pnlEditFormLayout.createSequentialGroup()
                                 .addGap(0, 0, Short.MAX_VALUE)
-                                .addComponent(pnlThem, javax.swing.GroupLayout.PREFERRED_SIZE, 118, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                .addComponent(pnlSua, javax.swing.GroupLayout.PREFERRED_SIZE, 118, javax.swing.GroupLayout.PREFERRED_SIZE)))
                         .addGroup(pnlEditFormLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(pnlEditFormLayout.createSequentialGroup()
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
@@ -526,7 +526,7 @@ public class editForm extends javax.swing.JFrame {
                     .addComponent(pnlTrangThai, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE))
                 .addGap(37, 37, 37)
                 .addGroup(pnlEditFormLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(pnlThem, javax.swing.GroupLayout.PREFERRED_SIZE, 54, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(pnlSua, javax.swing.GroupLayout.PREFERRED_SIZE, 54, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(pnlHuy, javax.swing.GroupLayout.PREFERRED_SIZE, 54, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(27, 27, 27))
         );
@@ -567,17 +567,17 @@ public class editForm extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_cboTrangThaiActionPerformed
 
-    private void pnlThemMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_pnlThemMousePressed
-        changecolor(pnlThem,new Color(0,163,163));
-    }//GEN-LAST:event_pnlThemMousePressed
+    private void pnlSuaMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_pnlSuaMousePressed
+        changecolor(pnlSua,new Color(0,163,163));
+    }//GEN-LAST:event_pnlSuaMousePressed
 
-    private void pnlThemMouseReleased(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_pnlThemMouseReleased
-        changecolor(pnlThem,new Color(0,204,204));
+    private void pnlSuaMouseReleased(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_pnlSuaMouseReleased
+        changecolor(pnlSua,new Color(0,204,204));
 
-        ThemSuaSachForm.btnThemMouseClicked();
+        ThemSuaSachForm.btnSuaMouseClicked();
 
         //        setTableCellAlignment(JLabel.CENTER,pTable);
-    }//GEN-LAST:event_pnlThemMouseReleased
+    }//GEN-LAST:event_pnlSuaMouseReleased
 
     private void pnlHuyMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_pnlHuyMouseClicked
 
@@ -635,10 +635,10 @@ public class editForm extends javax.swing.JFrame {
     private javax.swing.JLabel lblMaSach;
     private javax.swing.JLabel lblNamXB;
     private javax.swing.JLabel lblSoLuong;
+    private javax.swing.JLabel lblSua;
     private javax.swing.JLabel lblTacGia;
     private javax.swing.JLabel lblTenSach;
     private javax.swing.JLabel lblTheLoai;
-    private javax.swing.JLabel lblThem;
     private javax.swing.JLabel lblTrangThai;
     private javax.swing.JPanel pnlEditForm;
     private javax.swing.JPanel pnlGiaBan;
@@ -647,10 +647,10 @@ public class editForm extends javax.swing.JFrame {
     private javax.swing.JPanel pnlMaSach;
     private javax.swing.JPanel pnlNamXB;
     private javax.swing.JPanel pnlSoLuong;
+    private javax.swing.JPanel pnlSua;
     private javax.swing.JPanel pnlTacGia;
     private javax.swing.JPanel pnlTenSach;
     private javax.swing.JPanel pnlTheLoai;
-    private javax.swing.JPanel pnlThem;
     private javax.swing.JPanel pnlTrangThai;
     public static javax.swing.JTextField txtGiaBan;
     public static javax.swing.JTextField txtGiaNhap;

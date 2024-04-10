@@ -178,7 +178,7 @@ insert into `Sach` (`maSach`, `tenSach`, `theLoai`, `tacGia`, `namXB`, `soLuong`
 	("MS7", "Hành trình về phương đông", "Tâm linh", "Helena Blavatsky", "2012", 19, 299, 399, 0),
 	("MS8", "Agile Y", "Lập trình", "Alistair Cockburn", "2023", 31, 299, 399, 0),
 	("MS9", "UX Design: The Basics", "Lập trình", "Luke Wroblewski", "2023", 34, 299, 399, 0),
-	("MS10", "The Elements of User Experience: User-Centered Design for the Web and Beyond", "Lập trình", "Jesse James Garrett", "2023", 43, 299, 399, 0),
+	("MS10", "The Elements of UX", "Lập trình", "Jesse James Garrett", "2023", 43, 299, 399, 0),
 	("MS11", "The Lean Startup", "Kinh doanh", "Eric Ries", "2023", 49, 399, 499, 0),
 	("MS12", "Lập trình Python", "Lập trình", "Phạm Minh Đức", "2023", 54, 199, 299, 0),
 	("MS13", "Mạng máy tính", "Lập trình", "Nguyễn Quang Hưng", "2023", 50, 99, 199, 0),

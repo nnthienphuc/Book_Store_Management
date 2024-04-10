@@ -144,14 +144,14 @@ public class ThemSuaSachForm {
 
     
      public static Boolean checkEmptyEdit() {
-        String maSach = addForm.txtMaSach.getText();
-        String theLoai = addForm.txtTheLoai.getText();
-        String ten = addForm.txtTenSach.getText();
-        String giaNhap = addForm.txtGiaNhap.getText();
-        String giaBan = addForm.txtGiaBan.getText();
-        String soLuong = addForm.txtSoLuong.getText();
-        String tacGia = addForm.txtTacGia.getText();
-        String namXB = addForm.txtNamXB.getText();
+        String maSach = editForm.txtMaSach.getText();
+        String theLoai = editForm.txtTheLoai.getText();
+        String ten = editForm.txtTenSach.getText();
+        String giaNhap = editForm.txtGiaNhap.getText();
+        String giaBan = editForm.txtGiaBan.getText();
+        String soLuong = editForm.txtSoLuong.getText();
+        String tacGia = editForm.txtTacGia.getText();
+        String namXB = editForm.txtNamXB.getText();
 
         if (maSach.trim().equals("")) {
             return showErrortxt(editForm.txtMaSach, "Mã sp không được để trống");
