@@ -256,6 +256,7 @@ public class QuanLySachBUS {
 
         if (queryBoolean) {
             dsSach.add(sach);
+           
         }
         return queryBoolean;
     }
