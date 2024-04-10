@@ -21,7 +21,7 @@ CREATE TABLE `Sach` (
 `soLuong` int(10) NOT NULL DEFAULT 0,
 `giaNhap` float NOT NULL,
 `giaBan` float NOT NULL,
-`trangThai` bit NOT NULL DEFAULT 0
+`trangThai` int NOT NULL DEFAULT 0
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 create table  `NhanVien` (
