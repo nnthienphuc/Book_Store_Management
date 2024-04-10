@@ -2869,6 +2869,21 @@ public class MainPage extends javax.swing.JFrame {
         jScrollPane6.setViewportView(NCCTable);
         if (NCCTable.getColumnModel().getColumnCount() > 0) {
             NCCTable.getColumnModel().getColumn(0).setMaxWidth(100);
+            NCCTable.getColumnModel().getColumn(1).setMinWidth(100);
+            NCCTable.getColumnModel().getColumn(1).setPreferredWidth(100);
+            NCCTable.getColumnModel().getColumn(1).setMaxWidth(100);
+            NCCTable.getColumnModel().getColumn(2).setMinWidth(250);
+            NCCTable.getColumnModel().getColumn(2).setPreferredWidth(250);
+            NCCTable.getColumnModel().getColumn(2).setMaxWidth(400);
+            NCCTable.getColumnModel().getColumn(3).setMinWidth(120);
+            NCCTable.getColumnModel().getColumn(3).setPreferredWidth(120);
+            NCCTable.getColumnModel().getColumn(3).setMaxWidth(120);
+            NCCTable.getColumnModel().getColumn(4).setMinWidth(200);
+            NCCTable.getColumnModel().getColumn(4).setPreferredWidth(200);
+            NCCTable.getColumnModel().getColumn(4).setMaxWidth(200);
+            NCCTable.getColumnModel().getColumn(5).setMinWidth(200);
+            NCCTable.getColumnModel().getColumn(5).setPreferredWidth(200);
+            NCCTable.getColumnModel().getColumn(5).setMaxWidth(200);
         }
 
         TabNCC.add(jScrollPane6, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 180, 1110, 500));
