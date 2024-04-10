@@ -1103,7 +1103,7 @@ public class MainPage extends javax.swing.JFrame {
 
             },
             new String [] {
-                "STT", "Mã sách", "Tên sách", "Thể loại", "Tác gia", "Năm xb", "Số lượng", "Giá bán"
+                "STT", "Mã sách", "Tên sách", "Thể loại", "Tác gia", "Năm xb", "Số lượng", "Giá nhập"
             }
         ) {
             boolean[] canEdit = new boolean [] {
@@ -2070,7 +2070,7 @@ public class MainPage extends javax.swing.JFrame {
 
             },
             new String [] {
-                "STT", "Mã sách", "Tên sách", "Thể loại", "Tác giả", "Năm xb", "Số lượng", "Giá nhập", "Giá bán", "Trạng thái"
+                "STT", "Mã sách", "Tên sách", "Thể loại", "Tác giả", "Năm xb", "SL Tồn", "Giá nhập", "Giá bán", "Trạng thái"
             }
         ) {
             boolean[] canEdit = new boolean [] {
@@ -2094,16 +2094,33 @@ public class MainPage extends javax.swing.JFrame {
         });
         jScrollPane2.setViewportView(SPTable);
         if (SPTable.getColumnModel().getColumnCount() > 0) {
-            SPTable.getColumnModel().getColumn(0).setPreferredWidth(5);
-            SPTable.getColumnModel().getColumn(1).setPreferredWidth(5);
-            SPTable.getColumnModel().getColumn(2).setPreferredWidth(40);
-            SPTable.getColumnModel().getColumn(3).setPreferredWidth(25);
-            SPTable.getColumnModel().getColumn(4).setPreferredWidth(25);
-            SPTable.getColumnModel().getColumn(5).setPreferredWidth(5);
-            SPTable.getColumnModel().getColumn(6).setPreferredWidth(5);
-            SPTable.getColumnModel().getColumn(7).setPreferredWidth(10);
-            SPTable.getColumnModel().getColumn(8).setPreferredWidth(10);
-            SPTable.getColumnModel().getColumn(9).setPreferredWidth(10);
+            SPTable.getColumnModel().getColumn(0).setMinWidth(35);
+            SPTable.getColumnModel().getColumn(0).setPreferredWidth(35);
+            SPTable.getColumnModel().getColumn(0).setMaxWidth(35);
+            SPTable.getColumnModel().getColumn(1).setMinWidth(100);
+            SPTable.getColumnModel().getColumn(1).setPreferredWidth(100);
+            SPTable.getColumnModel().getColumn(1).setMaxWidth(100);
+            SPTable.getColumnModel().getColumn(2).setMinWidth(200);
+            SPTable.getColumnModel().getColumn(2).setPreferredWidth(300);
+            SPTable.getColumnModel().getColumn(2).setMaxWidth(400);
+            SPTable.getColumnModel().getColumn(4).setMinWidth(200);
+            SPTable.getColumnModel().getColumn(4).setPreferredWidth(200);
+            SPTable.getColumnModel().getColumn(4).setMaxWidth(200);
+            SPTable.getColumnModel().getColumn(5).setMinWidth(70);
+            SPTable.getColumnModel().getColumn(5).setPreferredWidth(70);
+            SPTable.getColumnModel().getColumn(5).setMaxWidth(70);
+            SPTable.getColumnModel().getColumn(6).setMinWidth(70);
+            SPTable.getColumnModel().getColumn(6).setPreferredWidth(70);
+            SPTable.getColumnModel().getColumn(6).setMaxWidth(70);
+            SPTable.getColumnModel().getColumn(7).setMinWidth(100);
+            SPTable.getColumnModel().getColumn(7).setPreferredWidth(100);
+            SPTable.getColumnModel().getColumn(7).setMaxWidth(100);
+            SPTable.getColumnModel().getColumn(8).setMinWidth(100);
+            SPTable.getColumnModel().getColumn(8).setPreferredWidth(100);
+            SPTable.getColumnModel().getColumn(8).setMaxWidth(100);
+            SPTable.getColumnModel().getColumn(9).setMinWidth(0);
+            SPTable.getColumnModel().getColumn(9).setPreferredWidth(0);
+            SPTable.getColumnModel().getColumn(9).setMaxWidth(0);
         }
 
         TabSach.add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 180, 1110, 500));
@@ -2254,9 +2271,7 @@ public class MainPage extends javax.swing.JFrame {
         BHthem3.setLayout(BHthem3Layout);
         BHthem3Layout.setHorizontalGroup(
             BHthem3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(BHthem3Layout.createSequentialGroup()
-                .addComponent(jLabel77, javax.swing.GroupLayout.PREFERRED_SIZE, 101, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 19, Short.MAX_VALUE))
+            .addComponent(jLabel77, javax.swing.GroupLayout.DEFAULT_SIZE, 120, Short.MAX_VALUE)
         );
         BHthem3Layout.setVerticalGroup(
             BHthem3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -2298,7 +2313,7 @@ public class MainPage extends javax.swing.JFrame {
             KMTable.getColumnModel().getColumn(6).setPreferredWidth(20);
         }
 
-        TabKM.add(jScrollPane5, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 170, 1110, 500));
+        TabKM.add(jScrollPane5, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 180, 1110, 490));
 
         TabContainer.addTab("KhuyenMai", TabKM);
 
