@@ -214,6 +214,8 @@ public class addForm extends javax.swing.JFrame {
                 .addContainerGap())
         );
 
+        txtSoLuong.setEditable(false);
+        txtSoLuong.setText("0");
         txtSoLuong.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txtSoLuongActionPerformed(evt);
