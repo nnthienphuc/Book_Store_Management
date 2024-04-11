@@ -30,7 +30,7 @@ create table  `NhanVien` (
 `ngaySinh` date NOT NULL,
 `diaChi` nvarchar(50) NOT NULL,
 `SDT` nvarchar(15) NOT NULL UNIQUE,
-`trangThai` bit NOT NULL DEFAULT 0
+`trangThai` int NOT NULL DEFAULT 0
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 create table `KhachHang` (
