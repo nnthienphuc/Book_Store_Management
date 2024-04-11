@@ -4877,7 +4877,7 @@ public class MainPage extends javax.swing.JFrame {
                 }
 
                 JOptionPane.showMessageDialog(null, "Thanh toán thành công");
-
+                tongtienBH = 0;
                 txMaHDBH.setText(qlhdBUS.getNextID());
 
                 clearBH();

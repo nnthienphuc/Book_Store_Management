@@ -70,7 +70,7 @@ public class QuanLyChiTietHoaDonBanBUS {
             updateSoLuongSach(ct.getMaSach(), -soLuongChiTietMoi);
             
             // update tổng tiền hóa đơn
-            updateTongTien(ct.getMaHDB());
+            //updateTongTien(ct.getMaHDB());
            
             return true;
         }
@@ -82,35 +82,35 @@ public class QuanLyChiTietHoaDonBanBUS {
         return add(hd);
     }
 
-    public Boolean update(String mahdb, String masach, int soluong) {
-        ChiTietHoaDonBan hd = new ChiTietHoaDonBan(mahdb, masach, soluong);
-        return update(hd);
-    }
+//    public Boolean update(String mahdb, String masach, int soluong) {
+//        ChiTietHoaDonBan hd = new ChiTietHoaDonBan(mahdb, masach, soluong);
+//        return update(hd);
+//    }
+//    
+//    public Boolean update(ChiTietHoaDonBan hd) {
+//        Boolean success = qlcthdDAO.update(hd);
+//        if (success) {
+//            for (ChiTietHoaDonBan cthd : dscthd) {
+//                if (cthd.getMaHDB().equals(hd.getMaHDB())) {
+//                    cthd = hd;
+//                }
+//            }
+//            updateTongTien(hd.getMaHDB());
+//        }
+//
+//        return success;
+//    }
     
-    public Boolean update(ChiTietHoaDonBan hd) {
-        Boolean success = qlcthdDAO.update(hd);
-        if (success) {
-            for (ChiTietHoaDonBan cthd : dscthd) {
-                if (cthd.getMaHDB().equals(hd.getMaHDB())) {
-                    cthd = hd;
-                }
-            }
-            updateTongTien(hd.getMaHDB());
-        }
-
-        return success;
-    }
-    
-    private Boolean updateTongTien(String _mahd) {
-        float tong = 0;
-        for (ChiTietHoaDonBan ct : dscthd) {
-            if (ct.getMaHDB().equals(_mahd)) {
-                tong += ct.getSoLuong() * qlsBUS.getSach(ct.getMaSach()).getGiaBan();
-            }
-        }
-        Boolean success = qlhdBUS.updateTongTien(_mahd, tong);
-        return success;
-    }
+//    private Boolean updateTongTien(String _mahd) {
+//        float tong = 0;
+//        for (ChiTietHoaDonBan ct : dscthd) {
+//            if (ct.getMaHDB().equals(_mahd)) {
+//                tong += ct.getSoLuong() * qlsBUS.getSach(ct.getMaSach()).getGiaBan();
+//            }
+//        }
+//        Boolean success = qlhdBUS.updateTongTien(_mahd, tong);
+//        return success;
+//    }
     
     private Boolean updateSoLuongSach(String _masach, int _soLuongThayDoi) {
         for (Sach sach : qlsBUS.getDSSach()) {
