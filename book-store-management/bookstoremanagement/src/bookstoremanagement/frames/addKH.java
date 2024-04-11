@@ -9,6 +9,7 @@ import javax.swing.JPanel;
 import bookstoremanagement.MainPage;
 import static bookstoremanagement.frames.ChonKHForm.SubKHTable;
 import bookstoremanagement.model.Frontend.FormThemSua.ThemSuaKhachHangForm;
+import javax.swing.JFrame;
 
 /**
  *
@@ -34,6 +35,7 @@ public class addKH extends javax.swing.JFrame {
     public addKH() {
         initComponents();
         setLocationRelativeTo(null);
+        setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         
     }
 

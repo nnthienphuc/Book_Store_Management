@@ -1421,7 +1421,6 @@
                                       <EmptySpace min="-2" pref="74" max="-2" attributes="0"/>
                                   </Group>
                               </Group>
-                              <EmptySpace type="separate" max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="3" attributes="0">
                                   <Component id="jLabel91" alignment="3" min="-2" max="-2" attributes="0"/>
                                   <Component id="jLabel105" alignment="3" min="-2" max="-2" attributes="0"/>
@@ -1431,7 +1430,7 @@
                                   <Component id="txGioLapPN" min="-2" pref="33" max="-2" attributes="0"/>
                                   <Component id="txNgayLapPN" alignment="0" min="-2" pref="33" max="-2" attributes="0"/>
                               </Group>
-                              <EmptySpace pref="46" max="32767" attributes="0"/>
+                              <EmptySpace pref="64" max="32767" attributes="0"/>
                           </Group>
                       </Group>
                     </DimensionLayout>

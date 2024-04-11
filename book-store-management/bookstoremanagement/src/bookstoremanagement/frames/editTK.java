@@ -10,6 +10,7 @@ import static bookstoremanagement.MainPage.TKTable;
 import bookstoremanagement.model.Frontend.FormThemSua.ThemSuaTaiKhoanForm;
 import bookstoremanagement.model.Backend.TaiKhoan.QuanLyTaiKhoanBUS;
 import bookstoremanagement.model.Backend.TaiKhoan.TaiKhoan;
+import javax.swing.JFrame;
 
 public class editTK extends javax.swing.JFrame {
     public void changecolor(JPanel hover, Color rand) {
@@ -21,6 +22,7 @@ public class editTK extends javax.swing.JFrame {
     public editTK() {
         initComponents();
         setLocationRelativeTo(null);
+        setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
     }
 
     /**
@@ -108,6 +110,7 @@ public class editTK extends javax.swing.JFrame {
         });
 
         jLabel3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/bookstoremanagement/icons/icons8-pen-15.png"))); // NOI18N
 
         javax.swing.GroupLayout ChonMaNVLayout = new javax.swing.GroupLayout(ChonMaNV);
         ChonMaNV.setLayout(ChonMaNVLayout);
@@ -115,14 +118,14 @@ public class editTK extends javax.swing.JFrame {
             ChonMaNVLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, ChonMaNVLayout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jLabel3, javax.swing.GroupLayout.DEFAULT_SIZE, 12, Short.MAX_VALUE)
+                .addComponent(jLabel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addContainerGap())
         );
         ChonMaNVLayout.setVerticalGroup(
             ChonMaNVLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(ChonMaNVLayout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jLabel3, javax.swing.GroupLayout.DEFAULT_SIZE, 12, Short.MAX_VALUE)
+                .addComponent(jLabel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addContainerGap())
         );
 
@@ -205,6 +208,7 @@ public class editTK extends javax.swing.JFrame {
         });
 
         jLabel4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/bookstoremanagement/icons/icons8-pen-15.png"))); // NOI18N
 
         javax.swing.GroupLayout ChonMaQuyenLayout = new javax.swing.GroupLayout(ChonMaQuyen);
         ChonMaQuyen.setLayout(ChonMaQuyenLayout);

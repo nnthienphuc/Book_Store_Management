@@ -44,7 +44,7 @@ public class QuanLyTaiKhoanDAO {
 
     public Boolean add(TaiKhoan tk) {
         qltkConnection = new ConnectionDB();
-        Boolean ok = qltkConnection.sqlUpdate("INSERT INTO `TaiKhoan` (`tenTaiKhoan`, `matKhau`, `maNV`, `maQuyen`) VALUES ('"
+        Boolean ok = qltkConnection.sqlUpdate("INSERT INTO `TaiKhoan` (`tenDangNhap`, `matKhau`, `maNV`, `maQuyen`) VALUES ('"
                 + tk.getTenDangNhap()+ "', '" + tk.getMatKhau() + "', '" + tk.getMaNV() + "', '" + tk.getMaQuyen() + "');");
         qltkConnection.closeConnect();
         return ok;
@@ -52,7 +52,7 @@ public class QuanLyTaiKhoanDAO {
 
     public Boolean delete(String tendangnhap) {
         qltkConnection = new ConnectionDB();
-        Boolean ok = qltkConnection.sqlUpdate("DELETE FROM `TaiKhoan` WHERE `TaiKhoan`.`tenTaiKhoan` = '" + tendangnhap + "'");
+        Boolean ok = qltkConnection.sqlUpdate("DELETE FROM `TaiKhoan` WHERE `TaiKhoan`.`tenDangNhap` = '" + tendangnhap + "'");
         qltkConnection.closeConnect();
         return ok;
     }
@@ -60,7 +60,7 @@ public class QuanLyTaiKhoanDAO {
     public Boolean update(String tendangnhap, String matkhau, String maNV, String maQuyen) {
         qltkConnection = new ConnectionDB();
         Boolean ok = qltkConnection.sqlUpdate("Update TaiKhoan Set matKhau='" + matkhau + "',maNV='" + maNV
-                + "',maQuyen='" + maQuyen + "' where tenTaiKhoan='" + tendangnhap + "'");
+                + "',maQuyen='" + maQuyen + "' where tenDangNhap='" + tendangnhap + "'");
         qltkConnection.closeConnect();
         return ok;
     }

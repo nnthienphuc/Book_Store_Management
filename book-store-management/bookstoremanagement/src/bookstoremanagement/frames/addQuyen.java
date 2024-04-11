@@ -9,6 +9,7 @@ import javax.swing.JPanel;
 import java.awt.event.ItemEvent;
 import bookstoremanagement.model.Frontend.FormThemSua.ThemSuaQuyenForm;
 import static bookstoremanagement.frames.ChonMaQuyenForm.SubQuyenTable;
+import javax.swing.JFrame;
 
 /**
  *
@@ -85,6 +86,7 @@ public class addQuyen extends javax.swing.JFrame {
     public addQuyen() {
         initComponents();
         setLocationRelativeTo(null);
+        setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
     }
 
     /**

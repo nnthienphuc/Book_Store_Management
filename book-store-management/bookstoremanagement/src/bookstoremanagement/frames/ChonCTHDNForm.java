@@ -10,6 +10,7 @@ import bookstoremanagement.model.Frontend.FormHienThi.HienThiChiTietHoaDonNhap;
 import bookstoremanagement.model.Backend.QuanLyChiTietHoaDonNhap.QuanLyChiTietHoaDonNhapBUS;
 import bookstoremanagement.MainPage;
 import static bookstoremanagement.MainPage.changecolor;
+import javax.swing.JFrame;
 
 /**
  *
@@ -27,6 +28,7 @@ public class ChonCTHDNForm extends javax.swing.JFrame {
         QuanLyChiTietHoaDonNhapBUS dsctpnBUS = new QuanLyChiTietHoaDonNhapBUS();
         HienThiChiTietHoaDonNhap.AddTable(dsctpnBUS.search("Mã hoá đơn nhập",mahdn),tblCTPN);
               setLocationRelativeTo(null);
+              setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
     }
 
     /**

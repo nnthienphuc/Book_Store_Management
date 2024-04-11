@@ -12,10 +12,12 @@ import bookstoremanagement.model.Backend.Sach.QuanLySachBUS;
 import bookstoremanagement.model.Backend.Sach.Sach;
 import bookstoremanagement.model.Frontend.FormThemSua.ThemSuaSachForm;
 import static bookstoremanagement.MainPage.SPTable;
+import javax.swing.JFrame;
 
 public class editForm extends javax.swing.JFrame {
     public void changecolor(JPanel hover, Color rand) {
         hover.setBackground(rand);
+     
     }
 //    public void GetInput(){
 //        String maSP = "";
@@ -84,6 +86,7 @@ public class editForm extends javax.swing.JFrame {
         initComponents();
         SuaSP();
         setLocationRelativeTo(null);
+        setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
     }
 
     /**

@@ -6,6 +6,7 @@ import javax.swing.JLabel;
 import bookstoremanagement.model.Backend.KhuyenMai.QuanLyKhuyenMaiBUS;
 import bookstoremanagement.model.Frontend.FormHienThi.HienThiKhuyenMai;
 import bookstoremanagement.MainPage;
+import javax.swing.JFrame;
 public class ChonKMForm extends javax.swing.JFrame {
 
     /**
@@ -18,6 +19,7 @@ public class ChonKMForm extends javax.swing.JFrame {
         HienThiKhuyenMai.AddTable(dskmBUS.getDskm(),SubKMTable);
         MainPage.setTableCellAlignment(JLabel.CENTER, SubKMTable);
         setLocationRelativeTo(null);
+        setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
     }
 
     /**

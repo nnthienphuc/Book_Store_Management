@@ -10,6 +10,7 @@ import bookstoremanagement.model.Backend.ThongKe.Ngay.BUS;
 import bookstoremanagement.model.Backend.ThongKe.ThangNam.BUSThangNam;
 import bookstoremanagement.model.Frontend.FormHienThi.HienThiThongKeNgay;
 import bookstoremanagement.model.Frontend.FormHienThi.HienThiThongKeThangNam;
+import javax.swing.JFrame;
 
 /**
  *
@@ -29,6 +30,7 @@ public class ThongKeNhap extends javax.swing.JFrame {
         BUSThangNam qlBUSthangnam = new BUSThangNam();
         HienThiThongKeThangNam.AddTable(qlBUSthangnam.getDSN(), jTable2);
         setLocationRelativeTo(null);
+        setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
     }
 
     /**

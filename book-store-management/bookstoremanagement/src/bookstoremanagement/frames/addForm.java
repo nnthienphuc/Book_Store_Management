@@ -9,6 +9,7 @@ import java.awt.Color;
 import java.awt.FileDialog;
 import bookstoremanagement.model.Frontend.FormThemSua.ThemSuaSachForm;
 import bookstoremanagement.MainPage;
+import javax.swing.JFrame;
 /**
  *
  * @author songnguyen
@@ -21,6 +22,7 @@ public class addForm extends javax.swing.JFrame {
     public addForm() {
         initComponents();
         setLocationRelativeTo(null);
+        setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         
     }
 

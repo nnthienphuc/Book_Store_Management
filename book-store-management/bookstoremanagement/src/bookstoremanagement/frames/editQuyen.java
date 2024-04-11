@@ -14,6 +14,7 @@ import bookstoremanagement.model.Backend.Quyen.QuanLyQuyenBUS;
 import bookstoremanagement.model.Frontend.FormThemSua.ThemSuaQuyenForm;
 import static bookstoremanagement.MainPage.QuyenTable;
 import static bookstoremanagement.frames.ChonMaQuyenForm.SubQuyenTable;
+import javax.swing.JFrame;
 /**
  *
  * @author songnguyen
@@ -136,6 +137,7 @@ public class editQuyen extends javax.swing.JFrame {
     public editQuyen() {
         initComponents();
         setLocationRelativeTo(null);
+        setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
     }
 
     /**

@@ -13,6 +13,7 @@ import static bookstoremanagement.frames.ChonKHForm.SubKHTable;
 import bookstoremanagement.model.Backend.KhachHang.KhachHang;
 import bookstoremanagement.model.Backend.KhachHang.QuanLyKhachHangBUS;
 import bookstoremanagement.model.Frontend.FormThemSua.ThemSuaKhachHangForm;
+import javax.swing.JFrame;
 
 /**
  *
@@ -52,6 +53,8 @@ public class editKH extends javax.swing.JFrame {
 //        SuaKH(maKH);
 //        }
 //    }
+    
+//    KHTable.getSelectedRow()
     public static void SuaKH ()
     {   
         String maKH =  (String)KHTable.getValueAt(KHTable.getSelectedRow(), 1);
@@ -67,8 +70,8 @@ public class editKH extends javax.swing.JFrame {
 //                this.dispose();
 //            }
 
-           
-            txtTenKH.setText(khSua.getMaKH());
+            txtMaKH.setText(maKH);
+//            txtMaKH.setText(khSua.getMaKH());
             txtTenKH.setText(khSua.getTenKH());
             txtDiaChi.setText(khSua.getDiaChi());
             txtSDT.setText(String.valueOf(khSua.getSDT()));
@@ -97,9 +100,9 @@ public class editKH extends javax.swing.JFrame {
      */
     public editKH() {
         initComponents();
-        setLocationRelativeTo(null);
         SuaKH();
         setLocationRelativeTo(null);
+        setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
     }
 
     /**

@@ -13,6 +13,7 @@ import bookstoremanagement.model.Backend.KhuyenMai.QuanLyKhuyenMaiBUS;
 import bookstoremanagement.model.Frontend.FormThemSua.ThemSuaKhuyenMaiForm;
 import bookstoremanagement.MainPage;
 import static bookstoremanagement.MainPage.KMTable;
+import javax.swing.JFrame;
 /**
  *
  * @author songnguyen
@@ -109,9 +110,9 @@ public class editKM extends javax.swing.JFrame {
      */
     public editKM() {
         initComponents();
-        setLocationRelativeTo(null);
         SuaKM();
         setLocationRelativeTo(null);
+        setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
     }
 
     /**
@@ -123,6 +124,8 @@ public class editKM extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        dateChooserBD = new com.raven.datechooser.DateChooser();
+        dateChooserKT = new com.raven.datechooser.DateChooser();
         pnlEditKM = new javax.swing.JPanel();
         pnlMaKM = new javax.swing.JPanel();
         txtMaKM = new javax.swing.JTextField();
@@ -146,6 +149,12 @@ public class editKM extends javax.swing.JFrame {
         lblSua = new javax.swing.JLabel();
         pnlHuy = new javax.swing.JPanel();
         lblHuy = new javax.swing.JLabel();
+
+        dateChooserBD.setDateFormat("yyyy-MM-dd");
+        dateChooserBD.setTextRefernce(txtNgayBD);
+
+        dateChooserKT.setDateFormat("yyyy-MM-dd");
+        dateChooserKT.setTextRefernce(txtNgayKT);
 
         pnlEditKM.setBackground(new java.awt.Color(255, 255, 255));
 
@@ -501,6 +510,8 @@ public class editKM extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private com.raven.datechooser.DateChooser dateChooserBD;
+    private com.raven.datechooser.DateChooser dateChooserKT;
     private javax.swing.JLabel lblDieuKienKM;
     private javax.swing.JLabel lblHuy;
     private javax.swing.JLabel lblMaKM;

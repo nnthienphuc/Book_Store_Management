@@ -8,6 +8,8 @@ import java.awt.Color;
 import javax.swing.JPanel;
 import static bookstoremanagement.frames.ChonNVForm.SubNVTable;
 import bookstoremanagement.model.Frontend.FormThemSua.ThemSuaNhanVienForm;
+import bookstoremanagement.model.Backend.NhanVien.QuanLyNhanVienBUS;
+import javax.swing.JFrame;
 
 
 public class addNV extends javax.swing.JFrame {
@@ -27,6 +29,7 @@ public class addNV extends javax.swing.JFrame {
     public addNV() {
         initComponents();
         setLocationRelativeTo(null);
+        setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
     }
 
     /**
@@ -98,6 +101,9 @@ public class addNV extends javax.swing.JFrame {
                 .addComponent(txMaNV)
                 .addContainerGap())
         );
+
+        QuanLyNhanVienBUS qlnvbus = new QuanLyNhanVienBUS();
+        txMaNV.setText(qlnvbus.getNextID());
 
         jPanel3.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 

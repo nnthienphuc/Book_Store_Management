@@ -7,9 +7,8 @@ package bookstoremanagement.frames;
 import java.awt.Color;
 import javax.swing.JPanel;
 import bookstoremanagement.model.Frontend.FormThemSua.ThemSuaTaiKhoanForm;
+import javax.swing.JFrame;
 
-import static bookstoremanagement.frames.ChonNVForm.SubNVTable;
-import static bookstoremanagement.frames.ChonMaQuyenForm.SubQuyenTable;
 public class addTK extends javax.swing.JFrame {
 //      public static void setTextQuyen()
 //    {
@@ -34,6 +33,7 @@ public class addTK extends javax.swing.JFrame {
     public addTK() {
         initComponents();
         setLocationRelativeTo(null);
+        setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
     }
 
     /**
@@ -70,8 +70,6 @@ public class addTK extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         pnlAddTK.setBackground(new java.awt.Color(255, 255, 255));
-
-        txtTenTK.setEditable(false);
 
         lblTenTK.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         lblTenTK.setText("Tên tài khoản");
@@ -124,7 +122,7 @@ public class addTK extends javax.swing.JFrame {
         });
 
         jLabel3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/quanlycuahangsach/icons/icons8-pen-15.png"))); // NOI18N
+        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/bookstoremanagement/icons/icons8-pen-15.png"))); // NOI18N
 
         javax.swing.GroupLayout ChonMaNVLayout = new javax.swing.GroupLayout(ChonMaNV);
         ChonMaNV.setLayout(ChonMaNVLayout);
@@ -191,7 +189,7 @@ public class addTK extends javax.swing.JFrame {
         });
 
         jLabel4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/quanlycuahangsach/icons/icons8-pen-15.png"))); // NOI18N
+        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/bookstoremanagement/icons/icons8-pen-15.png"))); // NOI18N
 
         javax.swing.GroupLayout ChonMaQuyenLayout = new javax.swing.GroupLayout(ChonMaQuyen);
         ChonMaQuyen.setLayout(ChonMaQuyenLayout);

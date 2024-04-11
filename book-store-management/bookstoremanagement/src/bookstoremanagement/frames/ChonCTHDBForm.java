@@ -7,6 +7,7 @@ import static bookstoremanagement.MainPage.changecolor;
 import java.awt.Color;
 import bookstoremanagement.model.Backend.QuanLyChiTietHoaDonBan.QuanLyChiTietHoaDonBanBUS;
 import bookstoremanagement.model.Frontend.FormHienThi.HienThiChiTietHoaDonBan;
+import javax.swing.JFrame;
 
 public class ChonCTHDBForm extends javax.swing.JFrame {
 
@@ -20,6 +21,7 @@ public class ChonCTHDBForm extends javax.swing.JFrame {
         QuanLyChiTietHoaDonBanBUS dscthdBUS = new QuanLyChiTietHoaDonBanBUS();
         HienThiChiTietHoaDonBan.AddTable(dscthdBUS.search("Mã hóa đơn",mahd, -1, -1, -1, -1),tblCTHD);
               setLocationRelativeTo(null);
+        setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
     }
 
     /**

@@ -31,7 +31,7 @@ public class ThemSuaKhachHangForm extends JFrame {
 
     public static void btnSuaMouseClicked() {
         if (checkEmptyEdit()) {
-            String makh = editKH.txtTenKH.getText();
+            String makh = editKH.txtMaKH.getText();
             String tenkh = editKH.txtTenKH.getText();
             String diachi = editKH.txtDiaChi.getText();
             String sdt = editKH.txtSDT.getText();

@@ -7,6 +7,7 @@ import javax.swing.JLabel;
 import bookstoremanagement.model.Backend.Quyen.QuanLyQuyenBUS;
 import bookstoremanagement.model.Frontend.FormHienThi.HienThiQuyen;
 import bookstoremanagement.MainPage;
+import javax.swing.JFrame;
 
 
 public class ChonMaQuyenForm extends javax.swing.JFrame {
@@ -18,6 +19,7 @@ public class ChonMaQuyenForm extends javax.swing.JFrame {
         HienThiQuyen.AddTable(dsquyenBUS.getDsq(),SubQuyenTable);
         MainPage.setTableCellAlignment(JLabel.CENTER, SubQuyenTable);
         setLocationRelativeTo(null);
+        setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
     }
 
     /**

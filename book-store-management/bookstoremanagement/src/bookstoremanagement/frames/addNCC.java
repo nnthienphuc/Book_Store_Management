@@ -7,7 +7,8 @@ package bookstoremanagement.frames;
 import java.awt.Color;
 import javax.swing.JPanel;
 import bookstoremanagement.model.Frontend.FormThemSua.ThemSuaNhaCungCapForm;
-
+import bookstoremanagement.model.Backend.NhaCungCap.QuanLyNhaCungCapBUS;
+import javax.swing.JFrame;
 /**
  *
  * @author songnguyen
@@ -22,6 +23,7 @@ public class addNCC extends javax.swing.JFrame {
     public addNCC() {
         initComponents();
         setLocationRelativeTo(null);
+        setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
     }
 
     /**
@@ -86,6 +88,9 @@ public class addNCC extends javax.swing.JFrame {
                 .addComponent(txMaNCC)
                 .addContainerGap())
         );
+
+        QuanLyNhaCungCapBUS qlnccbus = new QuanLyNhaCungCapBUS();
+        txMaNCC.setText(qlnccbus.getNextID());
 
         pnlTenNCC.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 

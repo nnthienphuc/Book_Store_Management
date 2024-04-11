@@ -9,6 +9,7 @@ import javax.swing.JLabel;
 import bookstoremanagement.MainPage;
 import bookstoremanagement.model.Backend.KhachHang.QuanLyKhachHangBUS;
 import bookstoremanagement.model.Frontend.FormHienThi.HienThiKhachHang;
+import javax.swing.JFrame;
 
 /**
  *
@@ -26,6 +27,7 @@ public class ChonKHForm extends javax.swing.JFrame {
         HienThiKhachHang.addTable(dskhBUS.getDskh(),SubKHTable);
         MainPage.setTableCellAlignment(JLabel.CENTER, SubKHTable);
         setLocationRelativeTo(null);
+        setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
     }
 
     /**

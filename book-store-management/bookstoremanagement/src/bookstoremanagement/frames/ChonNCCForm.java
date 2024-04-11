@@ -10,6 +10,7 @@ import bookstoremanagement.MainPage;
 import bookstoremanagement.model.Backend.NhaCungCap.NhaCungCap;
 import bookstoremanagement.model.Backend.NhaCungCap.QuanLyNhaCungCapBUS;
 import bookstoremanagement.model.Frontend.FormHienThi.HienThiNhaCungCap;
+import javax.swing.JFrame;
 
 /**
  *
@@ -23,6 +24,7 @@ public class ChonNCCForm extends javax.swing.JFrame {
         HienThiNhaCungCap.AddTable(dsnccBUS.getDsncc(),SubNCCTable);
         MainPage.setTableCellAlignment(JLabel.CENTER, SubNCCTable);
         setLocationRelativeTo(null);
+        setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         
     }
     /**
@@ -48,6 +50,7 @@ public class ChonNCCForm extends javax.swing.JFrame {
         lblHuy = new javax.swing.JLabel();
         txtSearch = new java.awt.TextField();
         txtSearchType = new javax.swing.JComboBox<>();
+        jLabel4 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -162,6 +165,9 @@ public class ChonNCCForm extends javax.swing.JFrame {
         txtSearchType.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         txtSearchType.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Tất cả", "Mã loại", "Tên loại", "Mô tả" }));
 
+        jLabel4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/bookstoremanagement/icons/icons8-search-25.png"))); // NOI18N
+
         javax.swing.GroupLayout pnlChonNCCFormLayout = new javax.swing.GroupLayout(pnlChonNCCForm);
         pnlChonNCCForm.setLayout(pnlChonNCCFormLayout);
         pnlChonNCCFormLayout.setHorizontalGroup(
@@ -179,7 +185,9 @@ public class ChonNCCForm extends javax.swing.JFrame {
                                 .addGap(91, 91, 91)
                                 .addComponent(pnlHuy, javax.swing.GroupLayout.PREFERRED_SIZE, 113, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addGroup(pnlChonNCCFormLayout.createSequentialGroup()
-                                .addGap(125, 125, 125)
+                                .addGap(90, 90, 90)
+                                .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(txtSearch, javax.swing.GroupLayout.PREFERRED_SIZE, 220, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(txtSearchType, javax.swing.GroupLayout.PREFERRED_SIZE, 111, javax.swing.GroupLayout.PREFERRED_SIZE)))
@@ -192,7 +200,8 @@ public class ChonNCCForm extends javax.swing.JFrame {
                 .addGap(25, 25, 25)
                 .addGroup(pnlChonNCCFormLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(txtSearchType, javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(txtSearch, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addComponent(txtSearch, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jLabel4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addGap(27, 27, 27)
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 407, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -289,6 +298,7 @@ public class ChonNCCForm extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     public static javax.swing.JTable SubNCCTable;
+    private javax.swing.JLabel jLabel4;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JLabel lblHuy;
     private javax.swing.JLabel lblThem;

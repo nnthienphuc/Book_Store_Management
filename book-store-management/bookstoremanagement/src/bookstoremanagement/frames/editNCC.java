@@ -13,6 +13,7 @@ import static bookstoremanagement.frames.ChonNCCForm.SubNCCTable;
 import bookstoremanagement.model.Backend.NhaCungCap.NhaCungCap;
 import bookstoremanagement.model.Backend.NhaCungCap.QuanLyNhaCungCapBUS;
 import bookstoremanagement.model.Frontend.FormThemSua.ThemSuaNhaCungCapForm;
+import javax.swing.JFrame;
 
 /**
  *
@@ -83,6 +84,7 @@ public class editNCC extends javax.swing.JFrame {
     public editNCC() {
         initComponents();
         setLocationRelativeTo(null);
+        setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
     }
 
     /**

@@ -11,6 +11,7 @@ import static bookstoremanagement.MainPage.NVTable;
 import bookstoremanagement.model.Backend.NhanVien.QuanLyNhanVien;
 import bookstoremanagement.model.Backend.NhanVien.QuanLyNhanVienBUS;
 import bookstoremanagement.model.Frontend.FormThemSua.ThemSuaNhanVienForm;
+import javax.swing.JFrame;
 
 /**
  *
@@ -61,6 +62,7 @@ public class editNV extends javax.swing.JFrame {
         initComponents();
         SuaNV();
         setLocationRelativeTo(null);
+        setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
     }
 
     /**
@@ -72,6 +74,7 @@ public class editNV extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        dateChooser1 = new com.raven.datechooser.DateChooser();
         jPanel1 = new javax.swing.JPanel();
         jPanel2 = new javax.swing.JPanel();
         txMaNV = new javax.swing.JTextField();
@@ -95,6 +98,9 @@ public class editNV extends javax.swing.JFrame {
         jPanel10 = new javax.swing.JPanel();
         jLabel10 = new javax.swing.JLabel();
         cbChonTrangThai = new javax.swing.JComboBox<>();
+
+        dateChooser1.setDateFormat("yyyy-MM-dd");
+        dateChooser1.setTextRefernce(txNgaySinh);
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -438,6 +444,7 @@ public class editNV extends javax.swing.JFrame {
     private javax.swing.JPanel BHhuy;
     private javax.swing.JPanel BHsua;
     public static javax.swing.JComboBox<String> cbChonTrangThai;
+    private com.raven.datechooser.DateChooser dateChooser1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel2;

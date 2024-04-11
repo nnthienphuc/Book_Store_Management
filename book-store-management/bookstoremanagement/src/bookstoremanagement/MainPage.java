@@ -105,6 +105,7 @@ import bookstoremanagement.model.Backend.ThongKe.Ngay.BUS;
 import bookstoremanagement.model.Backend.ThongKe.ThangNam.BUSThangNam;
 import bookstoremanagement.model.Frontend.FormHienThi.HienThiThongKeNgay;
 import bookstoremanagement.model.Frontend.FormHienThi.HienThiThongKeThangNam;
+import bookstoremanagement.frames.editForm;
 /**
  *
  * @author ACER
@@ -4545,7 +4546,9 @@ public class MainPage extends javax.swing.JFrame {
         else
         {
             new editForm().setVisible(true);
+            
         }
+        
     }//GEN-LAST:event_BHsua1MouseReleased
 
     private void BHsua1MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BHsua1MousePressed
@@ -4857,8 +4860,6 @@ public class MainPage extends javax.swing.JFrame {
                 JOptionPane.YES_NO_OPTION);
             if(reply == JOptionPane.OK_OPTION) {
                 QuanLyHoaDonBanBUS qlhdBUS = new QuanLyHoaDonBanBUS();
-
-                
 
                 qlhdBUS.add(txMaHDBH.getText(),
                     KhachHang.getMaKH(),
