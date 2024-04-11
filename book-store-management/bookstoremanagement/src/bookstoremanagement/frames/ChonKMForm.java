@@ -74,6 +74,11 @@ public class ChonKMForm extends javax.swing.JFrame {
         SubKMTable.setSelectionForeground(new java.awt.Color(255, 255, 255));
         SubKMTable.getTableHeader().setReorderingAllowed(false);
         jScrollPane1.setViewportView(SubKMTable);
+        if (SubKMTable.getColumnModel().getColumnCount() > 0) {
+            SubKMTable.getColumnModel().getColumn(0).setMinWidth(60);
+            SubKMTable.getColumnModel().getColumn(0).setPreferredWidth(60);
+            SubKMTable.getColumnModel().getColumn(0).setMaxWidth(60);
+        }
 
         pnlThem.setBackground(new java.awt.Color(0, 204, 204));
         pnlThem.setPreferredSize(new java.awt.Dimension(80, 24));

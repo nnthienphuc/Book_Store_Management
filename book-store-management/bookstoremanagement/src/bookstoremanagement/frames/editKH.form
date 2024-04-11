@@ -20,24 +20,24 @@
   <Layout>
     <DimensionLayout dim="0">
       <Group type="103" groupAlignment="0" attributes="0">
-          <EmptySpace min="0" pref="503" max="32767" attributes="0"/>
+          <EmptySpace min="0" pref="515" max="32767" attributes="0"/>
           <Group type="103" rootIndex="1" groupAlignment="0" attributes="0">
-              <Group type="102" attributes="0">
-                  <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+              <Group type="102" alignment="1" attributes="0">
+                  <EmptySpace max="32767" attributes="0"/>
                   <Component id="pnlEditKH" min="-2" max="-2" attributes="0"/>
-                  <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                  <EmptySpace max="32767" attributes="0"/>
               </Group>
           </Group>
       </Group>
     </DimensionLayout>
     <DimensionLayout dim="1">
       <Group type="103" groupAlignment="0" attributes="0">
-          <EmptySpace min="0" pref="392" max="32767" attributes="0"/>
+          <EmptySpace min="0" pref="364" max="32767" attributes="0"/>
           <Group type="103" rootIndex="1" groupAlignment="0" attributes="0">
-              <Group type="102" attributes="0">
-                  <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+              <Group type="102" alignment="1" attributes="0">
+                  <EmptySpace max="32767" attributes="0"/>
                   <Component id="pnlEditKH" min="-2" max="-2" attributes="0"/>
-                  <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                  <EmptySpace max="32767" attributes="0"/>
               </Group>
           </Group>
       </Group>
@@ -64,15 +64,10 @@
                       </Group>
                       <Group type="102" attributes="0">
                           <Group type="103" groupAlignment="0" attributes="0">
-                              <Group type="102" alignment="1" attributes="0">
-                                  <Component id="pnlSua" min="-2" pref="118" max="-2" attributes="0"/>
-                                  <EmptySpace min="-2" pref="59" max="-2" attributes="0"/>
-                              </Group>
-                              <Group type="102" alignment="1" attributes="0">
-                                  <Component id="pnlMaKH" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace min="-2" pref="58" max="-2" attributes="0"/>
-                              </Group>
+                              <Component id="pnlMaKH" min="-2" max="-2" attributes="0"/>
+                              <Component id="pnlSua" alignment="1" min="-2" pref="118" max="-2" attributes="0"/>
                           </Group>
+                          <EmptySpace min="58" pref="58" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="0" attributes="0">
                               <Component id="pnlHuy" min="-2" pref="117" max="-2" attributes="0"/>
                               <Component id="pnlTenKH" min="-2" max="-2" attributes="0"/>
@@ -96,12 +91,12 @@
                       <Component id="pnlDiaChi" min="-2" max="-2" attributes="0"/>
                       <Component id="pnlSDT" min="-2" max="-2" attributes="0"/>
                   </Group>
-                  <EmptySpace min="-2" pref="84" max="-2" attributes="0"/>
-                  <Group type="103" groupAlignment="1" attributes="0">
-                      <Component id="pnlSua" alignment="1" min="-2" pref="54" max="-2" attributes="0"/>
-                      <Component id="pnlHuy" alignment="1" min="-2" pref="54" max="-2" attributes="0"/>
+                  <EmptySpace min="-2" pref="51" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Component id="pnlSua" min="-2" pref="54" max="-2" attributes="0"/>
+                      <Component id="pnlHuy" min="-2" pref="54" max="-2" attributes="0"/>
                   </Group>
-                  <EmptySpace pref="56" max="32767" attributes="0"/>
+                  <EmptySpace pref="47" max="32767" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
@@ -143,6 +138,9 @@
                 <Property name="editable" type="boolean" value="false"/>
                 <Property name="toolTipText" type="java.lang.String" value="Kh&#xf4;ng &#x111;&#x1b0;&#x1a1;&#x323;c phe&#x301;p s&#x1b0;&#x309;a Ma&#x303; KH"/>
               </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtMaKHActionPerformed"/>
+              </Events>
               <AuxValues>
                 <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="9"/>
               </AuxValues>
@@ -181,7 +179,7 @@
                       <EmptySpace max="-2" attributes="0"/>
                       <Component id="lblTenKH" min="-2" pref="16" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
-                      <Component id="txtTenKH" pref="32" max="32767" attributes="0"/>
+                      <Component id="txtTenKH" pref="33" max="32767" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
                   </Group>
               </Group>
@@ -233,7 +231,7 @@
                       <EmptySpace max="-2" attributes="0"/>
                       <Component id="lblDiaChi" min="-2" pref="16" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
-                      <Component id="txtDiaChi" pref="32" max="32767" attributes="0"/>
+                      <Component id="txtDiaChi" pref="33" max="32767" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
                   </Group>
               </Group>
@@ -282,7 +280,7 @@
                       <EmptySpace max="-2" attributes="0"/>
                       <Component id="lblSDT" min="-2" pref="16" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
-                      <Component id="txtSDT" pref="32" max="32767" attributes="0"/>
+                      <Component id="txtSDT" pref="33" max="32767" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
                   </Group>
               </Group>

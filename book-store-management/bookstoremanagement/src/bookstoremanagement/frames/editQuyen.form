@@ -55,14 +55,14 @@
               <Group type="102" alignment="0" attributes="0">
                   <EmptySpace min="-2" pref="10" max="-2" attributes="0"/>
                   <Component id="jPanel6" max="32767" attributes="0"/>
-                  <EmptySpace pref="31" max="32767" attributes="0"/>
+                  <EmptySpace pref="39" max="32767" attributes="0"/>
               </Group>
               <Group type="102" alignment="0" attributes="0">
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Group type="102" alignment="0" attributes="0">
-                          <EmptySpace min="-2" pref="140" max="-2" attributes="0"/>
+                          <EmptySpace min="-2" pref="233" max="-2" attributes="0"/>
                           <Component id="BHsua" min="-2" pref="118" max="-2" attributes="0"/>
-                          <EmptySpace min="-2" pref="130" max="-2" attributes="0"/>
+                          <EmptySpace min="-2" pref="29" max="-2" attributes="0"/>
                           <Component id="BHhuy" min="-2" pref="117" max="-2" attributes="0"/>
                       </Group>
                       <Group type="102" alignment="0" attributes="0">
@@ -70,13 +70,13 @@
                           <Component id="jLabel9" min="-2" pref="96" max="-2" attributes="0"/>
                       </Group>
                       <Group type="102" alignment="0" attributes="0">
-                          <EmptySpace min="-2" pref="86" max="-2" attributes="0"/>
+                          <EmptySpace min="-2" pref="135" max="-2" attributes="0"/>
                           <Component id="jPanel2" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace min="-2" pref="46" max="-2" attributes="0"/>
+                          <EmptySpace min="-2" pref="37" max="-2" attributes="0"/>
                           <Component id="jPanel3" min="-2" pref="227" max="-2" attributes="0"/>
                       </Group>
                   </Group>
-                  <EmptySpace max="32767" attributes="0"/>
+                  <EmptySpace pref="112" max="32767" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
@@ -85,8 +85,8 @@
               <Group type="102" alignment="0" attributes="0">
                   <EmptySpace max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                      <Component id="jPanel2" alignment="0" min="-2" max="-2" attributes="0"/>
-                      <Component id="jPanel3" alignment="0" pref="72" max="32767" attributes="0"/>
+                      <Component id="jPanel3" pref="72" max="32767" attributes="0"/>
+                      <Component id="jPanel2" max="32767" attributes="0"/>
                   </Group>
                   <EmptySpace max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">
@@ -116,10 +116,10 @@
                   <Group type="102" alignment="0" attributes="0">
                       <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="txMaQuyen" alignment="0" max="32767" attributes="0"/>
+                          <Component id="txMaQuyen" alignment="0" pref="200" max="32767" attributes="0"/>
                           <Group type="102" alignment="0" attributes="0">
                               <Component id="jLabel1" min="-2" pref="96" max="-2" attributes="0"/>
-                              <EmptySpace min="0" pref="87" max="32767" attributes="0"/>
+                              <EmptySpace min="0" pref="104" max="32767" attributes="0"/>
                           </Group>
                       </Group>
                       <EmptySpace max="-2" attributes="0"/>
@@ -132,7 +132,7 @@
                       <EmptySpace max="-2" attributes="0"/>
                       <Component id="jLabel1" min="-2" pref="16" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
-                      <Component id="txMaQuyen" pref="32" max="32767" attributes="0"/>
+                      <Component id="txMaQuyen" max="32767" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
                   </Group>
               </Group>
@@ -172,7 +172,7 @@
               </AuxValues>
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                  <AbsoluteConstraints x="10" y="30" width="200" height="30"/>
+                  <AbsoluteConstraints x="10" y="30" width="200" height="33"/>
                 </Constraint>
               </Constraints>
             </Component>
@@ -304,62 +304,47 @@
                   <Group type="102" alignment="0" attributes="0">
                       <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <Group type="102" alignment="0" attributes="0">
-                              <Component id="checkboxNV" min="-2" pref="76" max="-2" attributes="0"/>
-                              <EmptySpace min="-2" pref="24" max="-2" attributes="0"/>
-                              <Component id="comboNV" min="-2" pref="78" max="-2" attributes="0"/>
-                          </Group>
-                          <Group type="102" alignment="0" attributes="0">
-                              <Group type="103" groupAlignment="0" attributes="0">
-                                  <Component id="checkboxNCC" alignment="0" min="-2" max="-2" attributes="0"/>
-                                  <Component id="checkboxBH" alignment="0" min="-2" pref="76" max="-2" attributes="0"/>
-                              </Group>
-                              <Group type="103" groupAlignment="1" max="-2" attributes="0">
-                                  <Component id="comboBH" alignment="0" max="32767" attributes="0"/>
-                                  <Component id="comboNCC" alignment="1" pref="0" max="32767" attributes="0"/>
-                              </Group>
+                          <Component id="checkboxNV" alignment="0" min="-2" pref="76" max="-2" attributes="0"/>
+                          <Component id="checkboxBH" alignment="0" min="-2" pref="76" max="-2" attributes="0"/>
+                          <Component id="checkboxNCC" alignment="0" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace min="-2" pref="22" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="comboNCC" min="-2" pref="81" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                              <Component id="comboBH" max="32767" attributes="0"/>
+                              <Component id="comboNV" pref="0" max="32767" attributes="0"/>
                           </Group>
                       </Group>
-                      <EmptySpace min="-2" pref="39" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="51" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <Group type="103" alignment="0" groupAlignment="0" max="-2" attributes="0">
-                              <Group type="102" alignment="0" attributes="0">
-                                  <Component id="checkboxKH" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace min="-2" pref="2" max="-2" attributes="0"/>
-                                  <Component id="comboKH" pref="0" max="32767" attributes="0"/>
-                              </Group>
-                              <Group type="102" alignment="0" attributes="0">
-                                  <Component id="checkboxHD" min="-2" pref="76" max="-2" attributes="0"/>
-                                  <EmptySpace max="-2" attributes="0"/>
-                                  <Component id="comboHD" min="-2" pref="90" max="-2" attributes="0"/>
-                              </Group>
-                              <Group type="102" alignment="0" attributes="0">
-                                  <Component id="checkboxNH" min="-2" pref="76" max="-2" attributes="0"/>
-                                  <EmptySpace max="-2" attributes="0"/>
-                                  <Component id="comboNH" min="-2" max="-2" attributes="0"/>
-                              </Group>
-                          </Group>
-                          <Group type="102" alignment="0" attributes="0">
-                              <Component id="checkboxTK" min="-2" pref="76" max="-2" attributes="0"/>
-                              <EmptySpace max="-2" attributes="0"/>
-                              <Component id="comboTK" min="-2" pref="90" max="-2" attributes="0"/>
-                          </Group>
-                      </Group>
-                      <EmptySpace min="-2" pref="42" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="checkboxPN" alignment="0" min="-2" pref="76" max="-2" attributes="0"/>
-                          <Component id="checkboxKM" alignment="0" min="-2" max="-2" attributes="0"/>
-                          <Component id="checkboxSP" alignment="0" min="-2" pref="76" max="-2" attributes="0"/>
-                          <Component id="checkboxQuyen" alignment="0" min="-2" pref="76" max="-2" attributes="0"/>
+                          <Component id="checkboxKH" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="checkboxHD" alignment="0" min="-2" pref="76" max="-2" attributes="0"/>
+                          <Component id="checkboxNH" alignment="0" min="-2" pref="76" max="-2" attributes="0"/>
+                          <Component id="checkboxTK" alignment="0" min="-2" pref="76" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace min="-2" pref="2" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="comboTK" alignment="0" min="-2" pref="84" max="-2" attributes="0"/>
+                          <Component id="comboNH" min="-2" pref="87" max="-2" attributes="0"/>
+                          <Component id="comboHD" min="-2" pref="84" max="-2" attributes="0"/>
+                          <Component id="comboKH" min="-2" pref="87" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace min="-2" pref="42" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="checkboxKM" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="checkboxSP" alignment="0" min="-2" pref="76" max="-2" attributes="0"/>
+                          <Component id="checkboxQuyen" alignment="0" min="-2" pref="76" max="-2" attributes="0"/>
+                          <Component id="checkboxPN" alignment="0" min="-2" pref="76" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace min="-2" pref="2" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="comboPN" min="-2" pref="85" max="-2" attributes="0"/>
                           <Component id="comboQuyen" alignment="0" min="-2" pref="90" max="-2" attributes="0"/>
                           <Component id="comboSP" alignment="0" min="-2" pref="87" max="-2" attributes="0"/>
                           <Component id="comboKM" alignment="0" min="-2" pref="90" max="-2" attributes="0"/>
-                          <Component id="comboPN" alignment="0" min="-2" pref="90" max="-2" attributes="0"/>
                       </Group>
-                      <EmptySpace pref="14" max="32767" attributes="0"/>
+                      <EmptySpace max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -370,16 +355,14 @@
                       <Group type="103" groupAlignment="1" attributes="0">
                           <Group type="102" alignment="1" attributes="0">
                               <Group type="103" groupAlignment="0" attributes="0">
-                                  <Group type="103" alignment="0" groupAlignment="0" max="-2" attributes="0">
-                                      <Component id="comboBH" alignment="0" max="32767" attributes="0"/>
-                                      <Component id="checkboxBH" alignment="0" max="32767" attributes="0"/>
-                                  </Group>
+                                  <Component id="checkboxBH" alignment="0" min="-2" pref="22" max="-2" attributes="0"/>
                                   <Group type="103" alignment="0" groupAlignment="0" max="-2" attributes="0">
                                       <Component id="comboSP" alignment="0" max="32767" attributes="0"/>
                                       <Component id="checkboxSP" alignment="0" min="-2" pref="26" max="-2" attributes="0"/>
                                   </Group>
+                                  <Component id="comboBH" min="-2" max="-2" attributes="0"/>
                               </Group>
-                              <EmptySpace min="-2" pref="29" max="-2" attributes="0"/>
+                              <EmptySpace min="29" pref="29" max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="0" attributes="0">
                                   <Group type="102" alignment="0" attributes="0">
                                       <EmptySpace min="-2" pref="60" max="-2" attributes="0"/>

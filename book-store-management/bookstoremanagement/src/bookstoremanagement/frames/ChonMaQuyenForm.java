@@ -76,6 +76,11 @@ public class ChonMaQuyenForm extends javax.swing.JFrame {
         SubQuyenTable.setSelectionForeground(new java.awt.Color(255, 255, 255));
         SubQuyenTable.getTableHeader().setReorderingAllowed(false);
         jScrollPane1.setViewportView(SubQuyenTable);
+        if (SubQuyenTable.getColumnModel().getColumnCount() > 0) {
+            SubQuyenTable.getColumnModel().getColumn(0).setMinWidth(60);
+            SubQuyenTable.getColumnModel().getColumn(0).setPreferredWidth(60);
+            SubQuyenTable.getColumnModel().getColumn(0).setMaxWidth(60);
+        }
 
         BHthem.setBackground(new java.awt.Color(0, 204, 204));
         BHthem.setPreferredSize(new java.awt.Dimension(80, 24));

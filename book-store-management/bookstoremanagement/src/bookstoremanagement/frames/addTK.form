@@ -35,7 +35,7 @@
     </DimensionLayout>
     <DimensionLayout dim="1">
       <Group type="103" groupAlignment="0" attributes="0">
-          <EmptySpace min="0" pref="390" max="32767" attributes="0"/>
+          <EmptySpace min="0" pref="391" max="32767" attributes="0"/>
           <Group type="103" rootIndex="1" groupAlignment="0" attributes="0">
               <Group type="102" attributes="0">
                   <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
@@ -58,32 +58,19 @@
         <DimensionLayout dim="0">
           <Group type="103" groupAlignment="0" attributes="0">
               <Group type="102" alignment="1" attributes="0">
-                  <Group type="103" groupAlignment="0" attributes="0">
-                      <Group type="102" alignment="0" attributes="0">
-                          <EmptySpace pref="91" max="32767" attributes="0"/>
-                          <Component id="pnlThem" min="-2" pref="118" max="-2" attributes="0"/>
-                          <EmptySpace min="-2" pref="39" max="-2" attributes="0"/>
+                  <EmptySpace min="-2" pref="26" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="1" attributes="0">
+                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                          <Component id="pnlTK" alignment="0" max="32767" attributes="0"/>
+                          <Component id="pnlMatKhau" alignment="0" max="32767" attributes="0"/>
                       </Group>
-                      <Group type="102" alignment="0" attributes="0">
-                          <EmptySpace min="-2" pref="26" max="-2" attributes="0"/>
-                          <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                              <Component id="pnlTK" alignment="0" max="32767" attributes="0"/>
-                              <Component id="pnlMatKhau" alignment="0" max="32767" attributes="0"/>
-                          </Group>
-                      </Group>
+                      <Component id="pnlThem" min="-2" pref="118" max="-2" attributes="0"/>
                   </Group>
+                  <EmptySpace pref="28" max="32767" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">
-                      <Group type="102" alignment="0" attributes="0">
-                          <EmptySpace min="-2" pref="20" max="-2" attributes="0"/>
-                          <Component id="pnlHuy" min="-2" pref="117" max="-2" attributes="0"/>
-                      </Group>
-                      <Group type="102" alignment="1" attributes="0">
-                          <EmptySpace min="-2" pref="10" max="-2" attributes="0"/>
-                          <Group type="103" groupAlignment="0" attributes="0">
-                              <Component id="pnlMaQuyen" alignment="0" min="-2" pref="224" max="-2" attributes="0"/>
-                              <Component id="pnlMaNV" alignment="0" min="-2" pref="224" max="-2" attributes="0"/>
-                          </Group>
-                      </Group>
+                      <Component id="pnlMaQuyen" alignment="0" min="-2" pref="224" max="-2" attributes="0"/>
+                      <Component id="pnlMaNV" alignment="0" min="-2" pref="224" max="-2" attributes="0"/>
+                      <Component id="pnlHuy" min="-2" pref="117" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
               </Group>
@@ -174,7 +161,7 @@
               </AuxValues>
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                  <AbsoluteConstraints x="10" y="30" width="170" height="30"/>
+                  <AbsoluteConstraints x="10" y="30" width="170" height="32"/>
                 </Constraint>
               </Constraints>
             </Component>
@@ -220,7 +207,7 @@
                 </DimensionLayout>
                 <DimensionLayout dim="1">
                   <Group type="103" groupAlignment="0" attributes="0">
-                      <Component id="jLabel3" alignment="1" pref="26" max="32767" attributes="0"/>
+                      <Component id="jLabel3" alignment="0" pref="26" max="32767" attributes="0"/>
                   </Group>
                 </DimensionLayout>
               </Layout>
@@ -298,7 +285,7 @@
               </AuxValues>
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                  <AbsoluteConstraints x="10" y="40" width="170" height="30"/>
+                  <AbsoluteConstraints x="10" y="40" width="170" height="32"/>
                 </Constraint>
               </Constraints>
             </Component>

@@ -83,6 +83,11 @@ public class ChonCTHDNForm extends javax.swing.JFrame {
         tblCTPN.setSelectionForeground(new java.awt.Color(255, 255, 255));
         tblCTPN.getTableHeader().setReorderingAllowed(false);
         jScrollPane1.setViewportView(tblCTPN);
+        if (tblCTPN.getColumnModel().getColumnCount() > 0) {
+            tblCTPN.getColumnModel().getColumn(0).setMinWidth(60);
+            tblCTPN.getColumnModel().getColumn(0).setPreferredWidth(60);
+            tblCTPN.getColumnModel().getColumn(0).setMaxWidth(60);
+        }
 
         txtFilterSearch.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
         txtFilterSearch.setFont(new java.awt.Font("Dialog", 0, 18)); // NOI18N

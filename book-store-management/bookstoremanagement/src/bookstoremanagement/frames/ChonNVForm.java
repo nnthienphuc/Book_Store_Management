@@ -78,6 +78,11 @@ public class ChonNVForm extends javax.swing.JFrame {
         SubNVTable.setSelectionForeground(new java.awt.Color(255, 255, 255));
         SubNVTable.getTableHeader().setReorderingAllowed(false);
         jScrollPane1.setViewportView(SubNVTable);
+        if (SubNVTable.getColumnModel().getColumnCount() > 0) {
+            SubNVTable.getColumnModel().getColumn(0).setMinWidth(60);
+            SubNVTable.getColumnModel().getColumn(0).setPreferredWidth(60);
+            SubNVTable.getColumnModel().getColumn(0).setMaxWidth(60);
+        }
 
         BHthem.setBackground(new java.awt.Color(0, 204, 204));
         BHthem.setPreferredSize(new java.awt.Dimension(80, 24));

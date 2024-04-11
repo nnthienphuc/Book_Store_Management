@@ -85,6 +85,11 @@ public class ChonNCCForm extends javax.swing.JFrame {
         SubNCCTable.setSelectionForeground(new java.awt.Color(255, 255, 255));
         SubNCCTable.getTableHeader().setReorderingAllowed(false);
         jScrollPane1.setViewportView(SubNCCTable);
+        if (SubNCCTable.getColumnModel().getColumnCount() > 0) {
+            SubNCCTable.getColumnModel().getColumn(0).setMinWidth(60);
+            SubNCCTable.getColumnModel().getColumn(0).setPreferredWidth(60);
+            SubNCCTable.getColumnModel().getColumn(0).setMaxWidth(60);
+        }
 
         pnlThem.setBackground(new java.awt.Color(0, 204, 204));
         pnlThem.setPreferredSize(new java.awt.Dimension(80, 24));

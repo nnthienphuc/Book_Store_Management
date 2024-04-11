@@ -38,7 +38,7 @@
   <Layout>
     <DimensionLayout dim="0">
       <Group type="103" groupAlignment="0" attributes="0">
-          <EmptySpace min="0" pref="500" max="32767" attributes="0"/>
+          <EmptySpace min="0" pref="436" max="32767" attributes="0"/>
           <Group type="103" rootIndex="1" groupAlignment="0" attributes="0">
               <Group type="102" attributes="0">
                   <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
@@ -50,7 +50,7 @@
     </DimensionLayout>
     <DimensionLayout dim="1">
       <Group type="103" groupAlignment="0" attributes="0">
-          <EmptySpace min="0" pref="390" max="32767" attributes="0"/>
+          <EmptySpace min="0" pref="415" max="32767" attributes="0"/>
           <Group type="103" rootIndex="1" groupAlignment="0" attributes="0">
               <Group type="102" attributes="0">
                   <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
@@ -83,14 +83,13 @@
                       <Component id="pnlThem" alignment="1" min="-2" pref="118" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace pref="44" max="32767" attributes="0"/>
-                  <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                      <Group type="102" alignment="0" attributes="0">
-                          <EmptySpace min="-2" pref="20" max="-2" attributes="0"/>
-                          <Component id="pnlHuy" min="-2" pref="117" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                          <Component id="pnlPhanTramKM" alignment="0" max="32767" attributes="0"/>
+                          <Component id="pnlTenKM" alignment="0" max="32767" attributes="0"/>
+                          <Component id="pnlNgayKT" alignment="0" max="32767" attributes="0"/>
                       </Group>
-                      <Component id="pnlPhanTramKM" alignment="0" max="32767" attributes="0"/>
-                      <Component id="pnlTenKM" alignment="0" max="32767" attributes="0"/>
-                      <Component id="pnlNgayKT" alignment="0" max="32767" attributes="0"/>
+                      <Component id="pnlHuy" min="-2" pref="117" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace min="-2" pref="42" max="-2" attributes="0"/>
               </Group>
@@ -133,7 +132,7 @@
                   <Group type="102" alignment="0" attributes="0">
                       <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="txtMaKM" alignment="0" max="32767" attributes="0"/>
+                          <Component id="txtMaKM" alignment="0" pref="150" max="32767" attributes="0"/>
                           <Group type="102" alignment="0" attributes="0">
                               <Component id="lblMaKM" min="-2" pref="121" max="-2" attributes="0"/>
                               <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
@@ -149,7 +148,7 @@
                       <EmptySpace max="-2" attributes="0"/>
                       <Component id="lblMaKM" min="-2" pref="16" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
-                      <Component id="txtMaKM" max="32767" attributes="0"/>
+                      <Component id="txtMaKM" pref="33" max="32767" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
                   </Group>
               </Group>
@@ -199,7 +198,7 @@
               </AuxValues>
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                  <AbsoluteConstraints x="10" y="30" width="180" height="-1"/>
+                  <AbsoluteConstraints x="10" y="30" width="150" height="30"/>
                 </Constraint>
               </Constraints>
             </Component>
@@ -213,10 +212,10 @@
                   <Group type="102" alignment="0" attributes="0">
                       <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="txtDieuKienKM" alignment="0" max="32767" attributes="0"/>
+                          <Component id="txtDieuKienKM" alignment="0" pref="150" max="32767" attributes="0"/>
                           <Group type="102" alignment="0" attributes="0">
                               <Component id="lblDieuKienKM" min="-2" max="-2" attributes="0"/>
-                              <EmptySpace min="0" pref="36" max="32767" attributes="0"/>
+                              <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
                           </Group>
                       </Group>
                       <EmptySpace max="-2" attributes="0"/>
@@ -229,7 +228,7 @@
                       <EmptySpace max="32767" attributes="0"/>
                       <Component id="lblDieuKienKM" min="-2" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
-                      <Component id="txtDieuKienKM" min="-2" max="-2" attributes="0"/>
+                      <Component id="txtDieuKienKM" min="-2" pref="33" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
                   </Group>
               </Group>
@@ -261,7 +260,7 @@
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Component id="lblPhanTramKM" alignment="0" max="32767" attributes="0"/>
                           <Group type="102" alignment="0" attributes="0">
-                              <Component id="txtPhanTramKM" min="-2" pref="181" max="-2" attributes="0"/>
+                              <Component id="txtPhanTramKM" min="-2" pref="150" max="-2" attributes="0"/>
                               <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
                           </Group>
                       </Group>
@@ -275,7 +274,7 @@
                       <EmptySpace max="32767" attributes="0"/>
                       <Component id="lblPhanTramKM" min="-2" pref="20" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
-                      <Component id="txtPhanTramKM" min="-2" max="-2" attributes="0"/>
+                      <Component id="txtPhanTramKM" min="-2" pref="33" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
                   </Group>
               </Group>
@@ -305,7 +304,7 @@
                   <Group type="102" alignment="0" attributes="0">
                       <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="txtNgayBD" alignment="0" max="32767" attributes="0"/>
+                          <Component id="txtNgayBD" alignment="0" pref="150" max="32767" attributes="0"/>
                           <Group type="102" alignment="0" attributes="0">
                               <Component id="lblNgayBD" min="-2" pref="109" max="-2" attributes="0"/>
                               <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
@@ -358,7 +357,7 @@
                   <Group type="102" alignment="0" attributes="0">
                       <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="txtNgayKT" alignment="0" max="32767" attributes="0"/>
+                          <Component id="txtNgayKT" alignment="0" min="-2" pref="150" max="-2" attributes="0"/>
                           <Group type="102" alignment="0" attributes="0">
                               <Component id="lblNgayKT" min="-2" pref="120" max="-2" attributes="0"/>
                               <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
@@ -373,7 +372,7 @@
                   <Group type="102" alignment="0" attributes="0">
                       <Component id="lblNgayKT" min="-2" pref="22" max="-2" attributes="0"/>
                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                      <Component id="txtNgayKT" max="32767" attributes="0"/>
+                      <Component id="txtNgayKT" min="-2" pref="33" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
                   </Group>
               </Group>
@@ -420,16 +419,12 @@
           <Layout>
             <DimensionLayout dim="0">
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Group type="102" alignment="0" attributes="0">
-                      <EmptySpace min="-2" pref="21" max="-2" attributes="0"/>
-                      <Component id="lblThem" min="-2" pref="73" max="-2" attributes="0"/>
-                      <EmptySpace pref="24" max="32767" attributes="0"/>
-                  </Group>
+                  <Component id="lblThem" alignment="1" pref="118" max="32767" attributes="0"/>
               </Group>
             </DimensionLayout>
             <DimensionLayout dim="1">
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Component id="lblThem" alignment="1" pref="54" max="32767" attributes="0"/>
+                  <Component id="lblThem" alignment="0" pref="54" max="32767" attributes="0"/>
               </Group>
             </DimensionLayout>
           </Layout>
@@ -469,11 +464,7 @@
           <Layout>
             <DimensionLayout dim="0">
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Group type="102" alignment="0" attributes="0">
-                      <EmptySpace min="-2" pref="21" max="-2" attributes="0"/>
-                      <Component id="lblHuy" min="-2" pref="73" max="-2" attributes="0"/>
-                      <EmptySpace pref="23" max="32767" attributes="0"/>
-                  </Group>
+                  <Component id="lblHuy" alignment="0" pref="117" max="32767" attributes="0"/>
               </Group>
             </DimensionLayout>
             <DimensionLayout dim="1">

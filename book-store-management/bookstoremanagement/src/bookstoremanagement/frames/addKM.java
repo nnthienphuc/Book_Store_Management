@@ -82,7 +82,7 @@ public class addKM extends javax.swing.JFrame {
             .addGroup(pnlMaKMLayout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(pnlMaKMLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(txtMaKM)
+                    .addComponent(txtMaKM, javax.swing.GroupLayout.DEFAULT_SIZE, 150, Short.MAX_VALUE)
                     .addGroup(pnlMaKMLayout.createSequentialGroup()
                         .addComponent(lblMaKM, javax.swing.GroupLayout.PREFERRED_SIZE, 121, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(0, 0, Short.MAX_VALUE)))
@@ -94,7 +94,7 @@ public class addKM extends javax.swing.JFrame {
                 .addContainerGap()
                 .addComponent(lblMaKM, javax.swing.GroupLayout.PREFERRED_SIZE, 16, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(txtMaKM)
+                .addComponent(txtMaKM, javax.swing.GroupLayout.DEFAULT_SIZE, 33, Short.MAX_VALUE)
                 .addContainerGap())
         );
 
@@ -103,7 +103,7 @@ public class addKM extends javax.swing.JFrame {
         lblTenKM.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         lblTenKM.setText("Tên khuyến mãi");
         pnlTenKM.add(lblTenKM, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 0, 140, 30));
-        pnlTenKM.add(txtTenKM, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 30, 180, -1));
+        pnlTenKM.add(txtTenKM, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 30, 150, 30));
 
         lblDieuKienKM.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         lblDieuKienKM.setText("Điều kiện khuyến mãi");
@@ -115,10 +115,10 @@ public class addKM extends javax.swing.JFrame {
             .addGroup(pnlDieuKienKMLayout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(pnlDieuKienKMLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(txtDieuKienKM)
+                    .addComponent(txtDieuKienKM, javax.swing.GroupLayout.DEFAULT_SIZE, 150, Short.MAX_VALUE)
                     .addGroup(pnlDieuKienKMLayout.createSequentialGroup()
                         .addComponent(lblDieuKienKM)
-                        .addGap(0, 36, Short.MAX_VALUE)))
+                        .addGap(0, 0, Short.MAX_VALUE)))
                 .addContainerGap())
         );
         pnlDieuKienKMLayout.setVerticalGroup(
@@ -127,7 +127,7 @@ public class addKM extends javax.swing.JFrame {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(lblDieuKienKM)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(txtDieuKienKM, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(txtDieuKienKM, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
 
@@ -143,7 +143,7 @@ public class addKM extends javax.swing.JFrame {
                 .addGroup(pnlPhanTramKMLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(lblPhanTramKM, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addGroup(pnlPhanTramKMLayout.createSequentialGroup()
-                        .addComponent(txtPhanTramKM, javax.swing.GroupLayout.PREFERRED_SIZE, 181, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(txtPhanTramKM, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(0, 0, Short.MAX_VALUE)))
                 .addContainerGap())
         );
@@ -153,7 +153,7 @@ public class addKM extends javax.swing.JFrame {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(lblPhanTramKM, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(txtPhanTramKM, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(txtPhanTramKM, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
 
@@ -174,7 +174,7 @@ public class addKM extends javax.swing.JFrame {
             .addGroup(pnlNgayBDLayout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(pnlNgayBDLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(txtNgayBD)
+                    .addComponent(txtNgayBD, javax.swing.GroupLayout.DEFAULT_SIZE, 150, Short.MAX_VALUE)
                     .addGroup(pnlNgayBDLayout.createSequentialGroup()
                         .addComponent(lblNgayBD, javax.swing.GroupLayout.PREFERRED_SIZE, 109, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(0, 0, Short.MAX_VALUE)))
@@ -206,7 +206,7 @@ public class addKM extends javax.swing.JFrame {
             .addGroup(pnlNgayKTLayout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(pnlNgayKTLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(txtNgayKT)
+                    .addComponent(txtNgayKT, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(pnlNgayKTLayout.createSequentialGroup()
                         .addComponent(lblNgayKT, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(0, 0, Short.MAX_VALUE)))
@@ -217,7 +217,7 @@ public class addKM extends javax.swing.JFrame {
             .addGroup(pnlNgayKTLayout.createSequentialGroup()
                 .addComponent(lblNgayKT, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(txtNgayKT)
+                .addComponent(txtNgayKT, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
 
@@ -242,14 +242,11 @@ public class addKM extends javax.swing.JFrame {
         pnlThem.setLayout(pnlThemLayout);
         pnlThemLayout.setHorizontalGroup(
             pnlThemLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(pnlThemLayout.createSequentialGroup()
-                .addGap(21, 21, 21)
-                .addComponent(lblThem, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(24, Short.MAX_VALUE))
+            .addComponent(lblThem, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 118, Short.MAX_VALUE)
         );
         pnlThemLayout.setVerticalGroup(
             pnlThemLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(lblThem, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 54, Short.MAX_VALUE)
+            .addComponent(lblThem, javax.swing.GroupLayout.DEFAULT_SIZE, 54, Short.MAX_VALUE)
         );
 
         pnlHuy.setBackground(new java.awt.Color(255, 0, 0));
@@ -276,10 +273,7 @@ public class addKM extends javax.swing.JFrame {
         pnlHuy.setLayout(pnlHuyLayout);
         pnlHuyLayout.setHorizontalGroup(
             pnlHuyLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(pnlHuyLayout.createSequentialGroup()
-                .addGap(21, 21, 21)
-                .addComponent(lblHuy, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(23, Short.MAX_VALUE))
+            .addComponent(lblHuy, javax.swing.GroupLayout.DEFAULT_SIZE, 117, Short.MAX_VALUE)
         );
         pnlHuyLayout.setVerticalGroup(
             pnlHuyLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -299,13 +293,12 @@ public class addKM extends javax.swing.JFrame {
                         .addComponent(pnlNgayBD, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                     .addComponent(pnlThem, javax.swing.GroupLayout.PREFERRED_SIZE, 118, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 44, Short.MAX_VALUE)
-                .addGroup(pnlAddKMLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addGroup(pnlAddKMLayout.createSequentialGroup()
-                        .addGap(20, 20, 20)
-                        .addComponent(pnlHuy, javax.swing.GroupLayout.PREFERRED_SIZE, 117, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addComponent(pnlPhanTramKM, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(pnlTenKM, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(pnlNgayKT, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGroup(pnlAddKMLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(pnlAddKMLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                        .addComponent(pnlPhanTramKM, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(pnlTenKM, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(pnlNgayKT, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addComponent(pnlHuy, javax.swing.GroupLayout.PREFERRED_SIZE, 117, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(42, 42, 42))
         );
         pnlAddKMLayout.setVerticalGroup(
@@ -334,7 +327,7 @@ public class addKM extends javax.swing.JFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 500, Short.MAX_VALUE)
+            .addGap(0, 436, Short.MAX_VALUE)
             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(layout.createSequentialGroup()
                     .addGap(0, 0, Short.MAX_VALUE)
@@ -343,7 +336,7 @@ public class addKM extends javax.swing.JFrame {
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 390, Short.MAX_VALUE)
+            .addGap(0, 415, Short.MAX_VALUE)
             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(layout.createSequentialGroup()
                     .addGap(0, 0, Short.MAX_VALUE)
