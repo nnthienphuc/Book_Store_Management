@@ -143,6 +143,7 @@ alter table `PhanQuyen`
     
 alter table `TaiKhoan`
 	add primary key (`tenDangNhap`),
+	add unique key `taikhoan_uk`(`maNV`),
     add key `maNV`(`maNV`),
     add key `maQuyen`(`maQuyen`);
 
@@ -244,10 +245,10 @@ insert into `TaiKhoan` (`tenDangNhap`, `matKhau`, `maNV`, `maQuyen`) values
     ("songnguyen", "songnguyen", "NV3", "Q2");
 
 insert into `HoaDonBan` (`maHDB`, `maKH`, `maNV`, `maKM`, `ngayLap`, `gioLap`, `tongTien`) Values
-	("HDB1", "KH1", "NV1", "KM1", "2023-10-18", "22:45:52", 399),
+	("HDB1", "KH1", "NV1", "KM1", "2023-10-10", "22:45:52", 399),
 	("HDB2", "KH3", "NV3", "KM1", "2023-10-16", "12:22:52", 299),
-	("HDB3", "KH3", "NV2", "KM1", "2023-09-15", "02:22:52", 299),
-	("HDB4", "KH4", "NV2", "KM1", "2023-09-02", "02:22:52", 499);
+	("HDB3", "KH3", "NV2", "KM1", "2023-11-15", "02:22:52", 299),
+	("HDB4", "KH4", "NV2", "KM1", "2024-09-02", "02:22:52", 499);
 
 insert into `ChiTietHoaDonBan` (`maHDB`, `maSach`, `soLuong`) values
 	("HDB1", "MS3", 1),
@@ -258,8 +259,8 @@ insert into `ChiTietHoaDonBan` (`maHDB`, `maSach`, `soLuong`) values
 insert into `HoaDonNhap` (`maHDN`, `maNCC`, `maNV`, `ngayLap`, `gioLap`, `tongTien`) Values
 	("HDN1", "NCC1", "NV2", "2023-10-14", "22:45:52", 299),
 	("HDN2", "NCC3", "NV3", "2023-10-16", "12:22:52", 199),
-	("HDN3", "NCC2", "NV1", "2023-09-12", "02:22:52", 199),
-	("HDN4", "NCC1", "NV2", "2023-09-11", "02:22:52", 399);
+	("HDN3", "NCC2", "NV1", "2023-11-12", "02:22:52", 199),
+	("HDN4", "NCC1", "NV2", "2023-12-11", "02:22:52", 399);
 
 insert into `ChiTietHoaDonNhap` (`maHDN`, `maSach`, `soLuong`) values
 	("HDN1", "MS3", 1),
