@@ -588,6 +588,7 @@ public class MainPage extends javax.swing.JFrame {
 
         jLabel43.setText("Mã hóa đơn bán");
 
+        txMaHDBH.setEditable(false);
         txMaHDBH.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         txMaHDBH.setName(""); // NOI18N
         txMaHDBH.addActionListener(new java.awt.event.ActionListener() {
@@ -1172,6 +1173,7 @@ public class MainPage extends javax.swing.JFrame {
 
         jLabel59.setText("Mã hóa đơn nhập");
 
+        txMaPNNH.setEditable(false);
         txMaPNNH.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         txMaPNNH.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -1304,7 +1306,6 @@ public class MainPage extends javax.swing.JFrame {
                                 .addComponent(txNhaCungCap, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addComponent(txMaPNNH, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)))
                         .addGap(74, 74, 74)))
-                .addGap(18, 18, 18)
                 .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel91)
                     .addComponent(jLabel105))
@@ -1312,7 +1313,7 @@ public class MainPage extends javax.swing.JFrame {
                 .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(txGioLapPN, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(txNgayLapPN, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(46, Short.MAX_VALUE))
+                .addContainerGap(64, Short.MAX_VALUE))
         );
 
         TabNH.add(jPanel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 380, 420, 260));
