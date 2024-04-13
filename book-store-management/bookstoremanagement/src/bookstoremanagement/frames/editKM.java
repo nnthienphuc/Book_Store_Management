@@ -35,8 +35,11 @@ public class editKM extends javax.swing.JFrame {
                     kmBH = km;
                 }
             }
-        if(kmBH.getTrangThai() == "Đã kết thúc"){
+        if(kmBH.getTrangThai().equals("Đã kết thúc") ){
             JOptionPane.showMessageDialog(null, "Khuyến mãi đã kết thúc");
+        }
+        else if(kmBH.getTrangThai().equals("Chưa bắt đầu")){
+            JOptionPane.showMessageDialog(null, "Khuyến mãi chưa bắt đầu");
         }
         else if(kmBH.getDieuKienKM() > Float.parseFloat(MainPage.txTienTong.getText()) ){
             JOptionPane.showMessageDialog(null, "Chưa đủ tổng tiền hóa đơn để áp dụng khuyến mãi");
