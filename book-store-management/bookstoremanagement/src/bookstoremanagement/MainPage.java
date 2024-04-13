@@ -2021,6 +2021,7 @@ public class MainPage extends javax.swing.JFrame {
         TabSach.add(BHsua1, new org.netbeans.lib.awtextra.AbsoluteConstraints(710, 130, 120, -1));
 
         BHxoa1.setBackground(new java.awt.Color(255, 0, 0));
+        BHxoa1.setEnabled(false);
         BHxoa1.setPreferredSize(new java.awt.Dimension(80, 24));
         BHxoa1.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mousePressed(java.awt.event.MouseEvent evt) {

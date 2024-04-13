@@ -2,6 +2,8 @@ package bookstoremanagement.model.Frontend.FormHienThi;
 
 import bookstoremanagement.model.Backend.Price.PriceFormat;
 import bookstoremanagement.model.Backend.QuanLyChiTietHoaDonBan.ChiTietHoaDonBan;
+import bookstoremanagement.model.Backend.HoaDonBan.*;
+import bookstoremanagement.model.Backend.KhuyenMai.*;
 import bookstoremanagement.model.Backend.Sach.QuanLySachBUS;
 import java.util.ArrayList;
 import javax.swing.JTable;
@@ -12,7 +14,8 @@ public class HienThiChiTietHoaDonBan {
 
   
     static QuanLySachBUS qlsBUS = new QuanLySachBUS();
-
+    static QuanLyHoaDonBanBUS qlhdbbus = new QuanLyHoaDonBanBUS();
+    static QuanLyKhuyenMaiBUS qlkmbus = new QuanLyKhuyenMaiBUS();
    
     
     public static void AddRowToTable(Object[] dataRow,JTable table)
@@ -31,7 +34,8 @@ public class HienThiChiTietHoaDonBan {
                 qlsBUS.getSach(cthd.getMaSach()).getTenSach(),
                 String.valueOf(cthd.getSoLuong()),
                 PriceFormat.format(qlsBUS.getSach(cthd.getMaSach()).getGiaBan()),
-                PriceFormat.format(cthd.getSoLuong() * (qlsBUS.getSach(cthd.getMaSach()).getGiaBan()))
+                qlkmbus.getKhuyenMai(qlhdbbus.getHoaDonBan(cthd.getMaHDB()).getMaKM()).getPhanTramKM(),
+                PriceFormat.format(cthd.getSoLuong() *(1 - (qlkmbus.getKhuyenMai(qlhdbbus.getHoaDonBan(cthd.getMaHDB()).getMaKM()).getPhanTramKM())/100)* (qlsBUS.getSach(cthd.getMaSach()).getGiaBan()))
                
         },table);
             stt++;
