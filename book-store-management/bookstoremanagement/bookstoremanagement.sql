@@ -17,11 +17,11 @@ CREATE TABLE `Sach` (
 `tenSach` nvarchar(100) NOT NULL,
 `theLoai` nvarchar(50) NOT NULL,
 `tacGia` nvarchar(100) NOT NULL,
-`namXB` char(6) NOT NULL,
+`namXB` char(4) NOT NULL,
 `soLuong` int(10) NOT NULL DEFAULT 0,
 `giaNhap` float NOT NULL,
 `giaBan` float NOT NULL,
-`trangThai` int NOT NULL DEFAULT 0
+`trangThai` int(1) NOT NULL DEFAULT 0
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 create table  `NhanVien` (
@@ -29,23 +29,23 @@ create table  `NhanVien` (
 `tenNV` nvarchar(100) NOT NULL,
 `ngaySinh` date NOT NULL,
 `diaChi` nvarchar(50) NOT NULL,
-`SDT` nvarchar(15) NOT NULL UNIQUE,
-`trangThai` int NOT NULL DEFAULT 0
+`SDT` nvarchar(10) NOT NULL UNIQUE,
+`trangThai` int(1) NOT NULL DEFAULT 0
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 create table `KhachHang` (
 `maKH` nvarchar(10) NOT NULL,
 `tenKH` nvarchar(100) NOT NULL,
 `diaChi` nvarchar(50) NOT NULL,
-`SDT` nvarchar(15) NOT NULL UNIQUE
+`SDT` nvarchar(10) NOT NULL UNIQUE
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 create table `NhaCungCap` (
 `maNCC` nvarchar(10) NOT NULL,
 `tenNCC` nvarchar(100) NOT NULL,
 `diaChi` nvarchar(50) NOT NULL,
-`SDT` nvarchar(15) NOT NULL UNIQUE,
-`FAX` nvarchar(30) NOT NULL UNIQUE
+`SDT` nvarchar(10) NOT NULL UNIQUE,
+`FAX` nvarchar(19) NOT NULL UNIQUE
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 create table `KhuyenMai` (

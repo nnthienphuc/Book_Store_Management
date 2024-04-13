@@ -107,7 +107,7 @@ public class LoginForm extends javax.swing.JFrame {
 
         pwdPwd.setFont(new java.awt.Font("Helvetica Neue", 0, 18)); // NOI18N
         pwdPwd.setForeground(new java.awt.Color(153, 153, 153));
-        pwdPwd.setText("jPasswordField1");
+        pwdPwd.setText("nnthienphuc");
         pwdPwd.setBorder(null);
         pwdPwd.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
