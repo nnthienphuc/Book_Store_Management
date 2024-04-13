@@ -7,7 +7,11 @@ package bookstoremanagement.frames;
 import java.awt.Color;
 import javax.swing.JPanel;
 import bookstoremanagement.MainPage;
+import static bookstoremanagement.MainPage.KHTable;
+import static bookstoremanagement.MainPage.deleteTable;
 import static bookstoremanagement.frames.ChonKHForm.SubKHTable;
+import bookstoremanagement.model.Backend.KhachHang.QuanLyKhachHangBUS;
+import bookstoremanagement.model.Frontend.FormHienThi.HienThiKhachHang;
 import bookstoremanagement.model.Frontend.FormThemSua.ThemSuaKhachHangForm;
 import javax.swing.JFrame;
 
@@ -303,6 +307,12 @@ public class addKH extends javax.swing.JFrame {
         changecolor(pnlThem,new Color(0,204,204));
 
         ThemSuaKhachHangForm.btnThemMouseClicked();
+        deleteTable(KHTable);
+        QuanLyKhachHangBUS qlkhBUS = new QuanLyKhachHangBUS();
+        HienThiKhachHang.addTable(qlkhBUS.getDskh(), KHTable);
+        
+        deleteTable(SubKHTable);
+        HienThiKhachHang.addTable(qlkhBUS.getDskh(),SubKHTable);
 
         //        setTableCellAlignment(JLabel.CENTER,pTable);
     }//GEN-LAST:event_pnlThemMouseReleased

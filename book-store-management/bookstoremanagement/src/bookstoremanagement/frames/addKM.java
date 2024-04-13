@@ -6,6 +6,10 @@ package bookstoremanagement.frames;
 import javax.swing.JPanel;
 import java.awt.Color;
 import bookstoremanagement.MainPage;
+import static bookstoremanagement.MainPage.KMTable;
+import static bookstoremanagement.MainPage.deleteTable;
+import bookstoremanagement.model.Backend.KhuyenMai.QuanLyKhuyenMaiBUS;
+import bookstoremanagement.model.Frontend.FormHienThi.HienThiKhuyenMai;
 import bookstoremanagement.model.Frontend.FormThemSua.ThemSuaKhuyenMaiForm;
 import javax.swing.JFrame;
 
@@ -376,6 +380,9 @@ public class addKM extends javax.swing.JFrame {
         changecolor(pnlThem,new Color(0,204,204));
 
         ThemSuaKhuyenMaiForm.btnThemMouseClicked();
+        deleteTable(KMTable);
+        QuanLyKhuyenMaiBUS qlkmBUS = new QuanLyKhuyenMaiBUS();
+        HienThiKhuyenMai.AddTable(qlkmBUS.getDskm(), KMTable);
 
         //        ThemSuaSanPhamForm.btnSuaMouseClicked();
     }//GEN-LAST:event_pnlThemMouseReleased

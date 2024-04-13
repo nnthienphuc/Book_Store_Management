@@ -4,11 +4,14 @@
  */
 package bookstoremanagement.frames;
 
+import static bookstoremanagement.MainPage.NVTable;
+import static bookstoremanagement.MainPage.deleteTable;
 import java.awt.Color;
 import javax.swing.JPanel;
 import static bookstoremanagement.frames.ChonNVForm.SubNVTable;
 import bookstoremanagement.model.Frontend.FormThemSua.ThemSuaNhanVienForm;
 import bookstoremanagement.model.Backend.NhanVien.QuanLyNhanVienBUS;
+import bookstoremanagement.model.Frontend.FormHienThi.HienThiNhanVien;
 import javax.swing.JFrame;
 
 
@@ -345,6 +348,9 @@ public class addNV extends javax.swing.JFrame {
         changecolor(BHthem,new Color(0,204,204));
 
         ThemSuaNhanVienForm.btnThemMouseClicked();
+        deleteTable(NVTable);
+        QuanLyNhanVienBUS qlnvBUS = new QuanLyNhanVienBUS();
+        HienThiNhanVien.AddTable(qlnvBUS.getDsnv(), NVTable);
 
         //        setTableCellAlignment(JLabel.CENTER,pTable);
     }//GEN-LAST:event_BHthemMouseReleased

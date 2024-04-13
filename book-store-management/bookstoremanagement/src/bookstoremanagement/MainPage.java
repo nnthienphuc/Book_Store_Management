@@ -4697,6 +4697,13 @@ public class MainPage extends javax.swing.JFrame {
             tongtienNH = 0;
 
             txMaPNNH.setText(qlpnBUS.getNextID());
+            deleteTable(NHSPTable);
+        QuanLySachBUS qlspBUS = new QuanLySachBUS();
+        HienThiSach.AddTable(qlspBUS.getDSSach(), NHSPTable);
+        txMaSPNH.setText("");
+        txTenSPNH.setText("");
+        txDonGiaNH.setText("");
+        txSoLuongNH.setText("1");
             clearNH();
         }
     }//GEN-LAST:event_pnlXacNhanNHMouseReleased
@@ -4883,6 +4890,14 @@ public class MainPage extends javax.swing.JFrame {
                 tongtienBH = 0;
                 txMaHDBH.setText(qlhdBUS.getNextID());
 
+                deleteTable(BHSPTable);
+            QuanLySachBUS qlspBUS = new QuanLySachBUS();
+            HienThiSach.AddTable(qlspBUS.getDSSach(), BHSPTable);
+
+            txMaSPBH.setText("");
+            txTenSPBH.setText("");
+            txDonGiaBH.setText("");
+            txSoLuongBH.setText("1");
                 clearBH();
             }
         }
@@ -5047,7 +5062,11 @@ public class MainPage extends javax.swing.JFrame {
     private void HDNSubButton(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_HDNSubButton
                 if(LoginForm.quyenLogin.getChiTietQuyen().contains("qlHoaDonNhap") || LoginForm.quyenLogin.getChiTietQuyen().contains("xemHoaDonNhap") ){
                 txCurrentPage.setText("Hóa đơn nhập");
-                TabContainer.setSelectedIndex(3);}
+                TabContainer.setSelectedIndex(3);
+                deleteTable(PNTable);
+        QuanLyHoaDonNhapBUS qlhdnBUS = new QuanLyHoaDonNhapBUS();
+        HienThiHoaDonNhap.AddTable(qlhdnBUS.getDshdn(), PNTable);
+                }
         else{
              JOptionPane.showMessageDialog(null, "Bạn không có quyền để xem trang này!");
         }
@@ -5066,7 +5085,11 @@ public class MainPage extends javax.swing.JFrame {
     private void jButton5HDNSubButton(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5HDNSubButton
         if(LoginForm.quyenLogin.getChiTietQuyen().contains("qlHoaDonNhap") || LoginForm.quyenLogin.getChiTietQuyen().contains("xemHoaDonNhap") ){
             txCurrentPage.setText("Hóa đơn nhập");
-                TabContainer.setSelectedIndex(3);}
+                TabContainer.setSelectedIndex(3);
+                deleteTable(PNTable);
+        QuanLyHoaDonNhapBUS qlhdnBUS = new QuanLyHoaDonNhapBUS();
+        HienThiHoaDonNhap.AddTable(qlhdnBUS.getDshdn(), PNTable);
+        }
                 else{
              JOptionPane.showMessageDialog(null, "Bạn không có quyền để xem trang này!");
         }
@@ -5112,6 +5135,14 @@ public class MainPage extends javax.swing.JFrame {
         if(LoginForm.quyenLogin.getChiTietQuyen().contains("qlBanHang")){
             TabContainer.setSelectedIndex(0);
             txCurrentPage.setText("Bán hàng");
+            deleteTable(BHSPTable);
+            QuanLySachBUS qlspBUS = new QuanLySachBUS();
+            HienThiSach.AddTable(qlspBUS.getDSSach(), BHSPTable);
+
+            txMaSPBH.setText("");
+            txTenSPBH.setText("");
+            txDonGiaBH.setText("");
+            txSoLuongBH.setText("1");
         }
         else{
             JOptionPane.showMessageDialog(null, "Bạn không có quyền để xem trang này!");
@@ -5121,7 +5152,15 @@ public class MainPage extends javax.swing.JFrame {
     private void NhapHangButton(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_NhapHangButton
         if(LoginForm.quyenLogin.getChiTietQuyen().contains("qlNhapHang")){
            txCurrentPage.setText("Nhập hàng");
-           TabContainer.setSelectedIndex(1);}
+           TabContainer.setSelectedIndex(1);
+           deleteTable(NHSPTable);
+            QuanLySachBUS qlspBUS = new QuanLySachBUS();
+            HienThiSach.AddTable(qlspBUS.getDSSach(), NHSPTable);
+            txMaSPNH.setText("");
+            txTenSPNH.setText("");
+            txDonGiaNH.setText("");
+            txSoLuongNH.setText("1");
+        }
         else{
              JOptionPane.showMessageDialog(null, "Bạn không có quyền để xem trang này!");
         }
@@ -5130,7 +5169,11 @@ public class MainPage extends javax.swing.JFrame {
     private void HoaDonButton(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_HoaDonButton
         if(LoginForm.quyenLogin.getChiTietQuyen().contains("qlHoaDon") || LoginForm.quyenLogin.getChiTietQuyen().contains("xemHoaDon") ){
              txCurrentPage.setText("Hóa đơn");
-            TabContainer.setSelectedIndex(2);}
+            TabContainer.setSelectedIndex(2);
+            deleteTable(HDTable);
+        QuanLyHoaDonBanBUS qlhdBUS = new QuanLyHoaDonBanBUS();
+        HienThiHoaDonBan.AddTable(qlhdBUS.getDshdb(), HDTable);
+        }
         else{
              JOptionPane.showMessageDialog(null, "Bạn không có quyền để xem trang này!");
         }
@@ -5139,7 +5182,11 @@ public class MainPage extends javax.swing.JFrame {
     private void SachButton(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SachButton
         if(LoginForm.quyenLogin.getChiTietQuyen().contains("qlSach") || LoginForm.quyenLogin.getChiTietQuyen().contains("xemSach") ){
               txCurrentPage.setText("Sách");
-             TabContainer.setSelectedIndex(4);}
+             TabContainer.setSelectedIndex(4);
+             deleteTable(SPTable);
+        QuanLySachBUS qlspBUS = new QuanLySachBUS();
+        HienThiSach.AddTable(qlspBUS.getDSSach(), SPTable);
+        }
         else{
              JOptionPane.showMessageDialog(null, "Bạn không có quyền để xem trang này!");
         }
@@ -5148,7 +5195,11 @@ public class MainPage extends javax.swing.JFrame {
     private void KhuyenMaiButton(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_KhuyenMaiButton
         if(LoginForm.quyenLogin.getChiTietQuyen().contains("qlKhuyenMai") || LoginForm.quyenLogin.getChiTietQuyen().contains("xemKhuyenMai") ){
              txCurrentPage.setText("Khuyến mãi");
-             TabContainer.setSelectedIndex(5);}
+             TabContainer.setSelectedIndex(5);
+             deleteTable(KMTable);
+        QuanLyKhuyenMaiBUS qlkmBUS = new QuanLyKhuyenMaiBUS();
+        HienThiKhuyenMai.AddTable(qlkmBUS.getDskm(), KMTable);
+        }
         else{
              JOptionPane.showMessageDialog(null, "Bạn không có quyền để xem trang này!");
         }
@@ -5157,7 +5208,11 @@ public class MainPage extends javax.swing.JFrame {
     private void KhachHangButton(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_KhachHangButton
         if(LoginForm.quyenLogin.getChiTietQuyen().contains("qlKhachHang") || LoginForm.quyenLogin.getChiTietQuyen().contains("xemKhachHang") ){
             txCurrentPage.setText("Khách hàng");
-            TabContainer.setSelectedIndex(6);}
+            TabContainer.setSelectedIndex(6);
+            deleteTable(KHTable);
+        QuanLyKhachHangBUS qlkhBUS = new QuanLyKhachHangBUS();
+        HienThiKhachHang.addTable(qlkhBUS.getDskh(), KHTable);
+        }
         else{
              JOptionPane.showMessageDialog(null, "Bạn không có quyền để xem trang này!");
         }
@@ -5166,7 +5221,11 @@ public class MainPage extends javax.swing.JFrame {
     private void NhanVienButton(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_NhanVienButton
         if(LoginForm.quyenLogin.getChiTietQuyen().contains("qlNhanVien") || LoginForm.quyenLogin.getChiTietQuyen().contains("xemNhanVien") ){
             txCurrentPage.setText("Nhân viên");
-            TabContainer.setSelectedIndex(7);}
+            TabContainer.setSelectedIndex(7);
+            deleteTable(NVTable);
+        QuanLyNhanVienBUS qlnvBUS = new QuanLyNhanVienBUS();
+        HienThiNhanVien.AddTable(qlnvBUS.getDsnv(), NVTable);
+        }
         else{
              JOptionPane.showMessageDialog(null, "Bạn không có quyền để xem trang này!");
         }
@@ -5175,7 +5234,11 @@ public class MainPage extends javax.swing.JFrame {
     private void NhaCungCapButotn(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_NhaCungCapButotn
         if(LoginForm.quyenLogin.getChiTietQuyen().contains("qlNCC") || LoginForm.quyenLogin.getChiTietQuyen().contains("xemNCC") ){
             txCurrentPage.setText("Nhà cung cấp");
-            TabContainer.setSelectedIndex(8);}
+            TabContainer.setSelectedIndex(8);
+            deleteTable(NCCTable);
+        QuanLyNhaCungCapBUS qlnccBUS = new QuanLyNhaCungCapBUS();
+        HienThiNhaCungCap.AddTable(qlnccBUS.getDsncc(), NCCTable);
+        }
         else{
              JOptionPane.showMessageDialog(null, "Bạn không có quyền để xem trang này!");
         }

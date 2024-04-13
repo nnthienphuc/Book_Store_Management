@@ -7,6 +7,8 @@ package bookstoremanagement.frames;
 import java.awt.Color;
 import javax.swing.JLabel;
 import bookstoremanagement.MainPage;
+import static bookstoremanagement.MainPage.changecolor;
+import static bookstoremanagement.MainPage.deleteTable;
 import bookstoremanagement.model.Backend.KhachHang.QuanLyKhachHangBUS;
 import bookstoremanagement.model.Frontend.FormHienThi.HienThiKhachHang;
 import javax.swing.JFrame;
@@ -51,6 +53,8 @@ public class ChonKHForm extends javax.swing.JFrame {
         cboSearchType = new javax.swing.JComboBox<>();
         BHthem2 = new javax.swing.JPanel();
         jLabel73 = new javax.swing.JLabel();
+        LamMoiSP5 = new javax.swing.JPanel();
+        jLabel70 = new javax.swing.JLabel();
 
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
@@ -195,6 +199,35 @@ public class ChonKHForm extends javax.swing.JFrame {
             .addComponent(jLabel73, javax.swing.GroupLayout.DEFAULT_SIZE, 24, Short.MAX_VALUE)
         );
 
+        LamMoiSP5.setBackground(new java.awt.Color(51, 204, 0));
+        LamMoiSP5.setPreferredSize(new java.awt.Dimension(80, 24));
+        LamMoiSP5.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                LamMoiSP5MousePressed(evt);
+            }
+            public void mouseReleased(java.awt.event.MouseEvent evt) {
+                LamMoiSP5MouseReleased(evt);
+            }
+        });
+
+        jLabel70.setBackground(new java.awt.Color(255, 255, 255));
+        jLabel70.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        jLabel70.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel70.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel70.setIcon(new javax.swing.ImageIcon(getClass().getResource("/bookstoremanagement/icons/icons8-update-left-rotation-15.png"))); // NOI18N
+        jLabel70.setText("Làm mới");
+
+        javax.swing.GroupLayout LamMoiSP5Layout = new javax.swing.GroupLayout(LamMoiSP5);
+        LamMoiSP5.setLayout(LamMoiSP5Layout);
+        LamMoiSP5Layout.setHorizontalGroup(
+            LamMoiSP5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jLabel70, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 120, Short.MAX_VALUE)
+        );
+        LamMoiSP5Layout.setVerticalGroup(
+            LamMoiSP5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jLabel70, javax.swing.GroupLayout.DEFAULT_SIZE, 24, Short.MAX_VALUE)
+        );
+
         javax.swing.GroupLayout pnlChonKHLayout = new javax.swing.GroupLayout(pnlChonKH);
         pnlChonKH.setLayout(pnlChonKHLayout);
         pnlChonKHLayout.setHorizontalGroup(
@@ -219,7 +252,9 @@ public class ChonKHForm extends javax.swing.JFrame {
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(cboSearchType, javax.swing.GroupLayout.PREFERRED_SIZE, 111, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(18, 18, 18)
-                                .addComponent(BHthem2, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                .addComponent(BHthem2, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(LamMoiSP5, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)))
                         .addGap(0, 0, Short.MAX_VALUE)))
                 .addContainerGap())
         );
@@ -232,7 +267,8 @@ public class ChonKHForm extends javax.swing.JFrame {
                     .addGroup(pnlChonKHLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                         .addComponent(cboSearchType, javax.swing.GroupLayout.Alignment.TRAILING)
                         .addComponent(txtSearch, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                    .addComponent(BHthem2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(BHthem2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(LamMoiSP5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(27, 27, 27)
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 407, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -291,6 +327,18 @@ public class ChonKHForm extends javax.swing.JFrame {
         
     }//GEN-LAST:event_BHthem2MouseReleased
 
+    private void LamMoiSP5MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_LamMoiSP5MousePressed
+        changecolor(LamMoiSP5,new Color(0, 176, 0));
+    }//GEN-LAST:event_LamMoiSP5MousePressed
+
+    private void LamMoiSP5MouseReleased(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_LamMoiSP5MouseReleased
+
+        changecolor(LamMoiSP5,new Color(51,204,0));
+          deleteTable(SubKHTable);
+          QuanLyKhachHangBUS dskhBUS = new QuanLyKhachHangBUS();
+        HienThiKhachHang.addTable(dskhBUS.getDskh(),SubKHTable);
+    }//GEN-LAST:event_LamMoiSP5MouseReleased
+
     /**
      * @param args the command line arguments
      */
@@ -329,8 +377,10 @@ public class ChonKHForm extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private static javax.swing.JPanel BHthem2;
+    private javax.swing.JPanel LamMoiSP5;
     public static javax.swing.JTable SubKHTable;
     public static javax.swing.JComboBox<String> cboSearchType;
+    private javax.swing.JLabel jLabel70;
     private javax.swing.JLabel jLabel73;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JLabel lblHuy;

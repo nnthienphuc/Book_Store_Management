@@ -8,8 +8,10 @@ import java.awt.Color;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import static bookstoremanagement.MainPage.NVTable;
+import static bookstoremanagement.MainPage.deleteTable;
 import bookstoremanagement.model.Backend.NhanVien.QuanLyNhanVien;
 import bookstoremanagement.model.Backend.NhanVien.QuanLyNhanVienBUS;
+import bookstoremanagement.model.Frontend.FormHienThi.HienThiNhanVien;
 import bookstoremanagement.model.Frontend.FormThemSua.ThemSuaNhanVienForm;
 import javax.swing.JFrame;
 
@@ -376,6 +378,9 @@ public class editNV extends javax.swing.JFrame {
         changecolor(BHsua,new Color(0,204,204));
 
         ThemSuaNhanVienForm.btnSuaMouseClicked();
+        deleteTable(NVTable);
+        QuanLyNhanVienBUS qlnvBUS = new QuanLyNhanVienBUS();
+        HienThiNhanVien.AddTable(qlnvBUS.getDsnv(), NVTable);
 
     }//GEN-LAST:event_BHsuaMouseReleased
 

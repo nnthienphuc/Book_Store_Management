@@ -7,9 +7,11 @@ import javax.swing.JPanel;
 import java.awt.Color;
 import javax.swing.JOptionPane;
 import static bookstoremanagement.MainPage.TKTable;
+import static bookstoremanagement.MainPage.deleteTable;
 import bookstoremanagement.model.Frontend.FormThemSua.ThemSuaTaiKhoanForm;
 import bookstoremanagement.model.Backend.TaiKhoan.QuanLyTaiKhoanBUS;
 import bookstoremanagement.model.Backend.TaiKhoan.TaiKhoan;
+import bookstoremanagement.model.Frontend.FormHienThi.HienThiTaiKhoan;
 import javax.swing.JFrame;
 
 public class editTK extends javax.swing.JFrame {
@@ -396,6 +398,9 @@ public class editTK extends javax.swing.JFrame {
         changecolor(pnlSua,new Color(0,204,204));
 
         ThemSuaTaiKhoanForm.btnSuaMouseClicked();
+        deleteTable(TKTable);
+        QuanLyTaiKhoanBUS qltkBUS = new QuanLyTaiKhoanBUS();
+        HienThiTaiKhoan.AddTable(qltkBUS.getDstk(), TKTable);
 
         //        setTableCellAlignment(JLabel.CENTER,pTable);
     }//GEN-LAST:event_pnlSuaMouseReleased

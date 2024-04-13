@@ -13,6 +13,8 @@ import bookstoremanagement.model.Backend.KhuyenMai.QuanLyKhuyenMaiBUS;
 import bookstoremanagement.model.Frontend.FormThemSua.ThemSuaKhuyenMaiForm;
 import bookstoremanagement.MainPage;
 import static bookstoremanagement.MainPage.KMTable;
+import static bookstoremanagement.MainPage.deleteTable;
+import bookstoremanagement.model.Frontend.FormHienThi.HienThiKhuyenMai;
 import javax.swing.JFrame;
 /**
  *
@@ -455,6 +457,9 @@ public class editKM extends javax.swing.JFrame {
         changecolor(pnlSua,new Color(0,204,204));
 
         ThemSuaKhuyenMaiForm.btnSuaMouseClicked();
+        deleteTable(KMTable);
+        QuanLyKhuyenMaiBUS qlkmBUS = new QuanLyKhuyenMaiBUS();
+        HienThiKhuyenMai.AddTable(qlkmBUS.getDskm(), KMTable);
 
         //        setTableCellAlignment(JLabel.CENTER,pTable);
     }//GEN-LAST:event_pnlSuaMouseReleased

@@ -4,6 +4,10 @@
  */
 package bookstoremanagement.frames;
 
+import static bookstoremanagement.MainPage.TKTable;
+import static bookstoremanagement.MainPage.deleteTable;
+import bookstoremanagement.model.Backend.TaiKhoan.QuanLyTaiKhoanBUS;
+import bookstoremanagement.model.Frontend.FormHienThi.HienThiTaiKhoan;
 import java.awt.Color;
 import javax.swing.JPanel;
 import bookstoremanagement.model.Frontend.FormThemSua.ThemSuaTaiKhoanForm;
@@ -363,6 +367,9 @@ public class addTK extends javax.swing.JFrame {
         changecolor(pnlThem,new Color(0,204,204));
 
         ThemSuaTaiKhoanForm.btnThemMouseClicked();
+        deleteTable(TKTable);
+        QuanLyTaiKhoanBUS qltkBUS = new QuanLyTaiKhoanBUS();
+        HienThiTaiKhoan.AddTable(qltkBUS.getDstk(), TKTable);
 
         //        setTableCellAlignment(JLabel.CENTER,pTable);
     }//GEN-LAST:event_pnlThemMouseReleased

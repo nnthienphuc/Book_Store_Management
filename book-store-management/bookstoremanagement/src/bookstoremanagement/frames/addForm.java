@@ -9,6 +9,10 @@ import java.awt.Color;
 import java.awt.FileDialog;
 import bookstoremanagement.model.Frontend.FormThemSua.ThemSuaSachForm;
 import bookstoremanagement.MainPage;
+import static bookstoremanagement.MainPage.SPTable;
+import static bookstoremanagement.MainPage.deleteTable;
+import bookstoremanagement.model.Backend.Sach.QuanLySachBUS;
+import bookstoremanagement.model.Frontend.FormHienThi.HienThiSach;
 import javax.swing.JFrame;
 /**
  *
@@ -501,6 +505,9 @@ public class addForm extends javax.swing.JFrame {
         changecolor(pnlThem,new Color(0,204,204));
 
         ThemSuaSachForm.btnThemMouseClicked();
+        deleteTable(SPTable);
+        QuanLySachBUS qlspBUS = new QuanLySachBUS();
+        HienThiSach.AddTable(qlspBUS.getDSSach(), SPTable);
 
         //        setTableCellAlignment(JLabel.CENTER,pTable);
     }//GEN-LAST:event_pnlThemMouseReleased

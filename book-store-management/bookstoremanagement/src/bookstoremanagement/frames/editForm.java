@@ -12,6 +12,8 @@ import bookstoremanagement.model.Backend.Sach.QuanLySachBUS;
 import bookstoremanagement.model.Backend.Sach.Sach;
 import bookstoremanagement.model.Frontend.FormThemSua.ThemSuaSachForm;
 import static bookstoremanagement.MainPage.SPTable;
+import static bookstoremanagement.MainPage.deleteTable;
+import bookstoremanagement.model.Frontend.FormHienThi.HienThiSach;
 import javax.swing.JFrame;
 
 public class editForm extends javax.swing.JFrame {
@@ -574,6 +576,9 @@ public class editForm extends javax.swing.JFrame {
         changecolor(pnlSua,new Color(0,204,204));
 
         ThemSuaSachForm.btnSuaMouseClicked();
+        deleteTable(SPTable);
+        QuanLySachBUS qlspBUS = new QuanLySachBUS();
+        HienThiSach.AddTable(qlspBUS.getDSSach(), SPTable);
 
         //        setTableCellAlignment(JLabel.CENTER,pTable);
     }//GEN-LAST:event_pnlSuaMouseReleased

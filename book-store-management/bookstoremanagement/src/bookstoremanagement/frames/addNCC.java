@@ -4,10 +4,13 @@
  */
 package bookstoremanagement.frames;
 
+import static bookstoremanagement.MainPage.NCCTable;
+import static bookstoremanagement.MainPage.deleteTable;
 import java.awt.Color;
 import javax.swing.JPanel;
 import bookstoremanagement.model.Frontend.FormThemSua.ThemSuaNhaCungCapForm;
 import bookstoremanagement.model.Backend.NhaCungCap.QuanLyNhaCungCapBUS;
+import bookstoremanagement.model.Frontend.FormHienThi.HienThiNhaCungCap;
 import javax.swing.JFrame;
 /**
  *
@@ -304,6 +307,9 @@ public class addNCC extends javax.swing.JFrame {
         changecolor(BHthem,new Color(0,204,204));
 
         ThemSuaNhaCungCapForm.btnThemMouseClicked();
+        deleteTable(NCCTable);
+        QuanLyNhaCungCapBUS qlnccBUS = new QuanLyNhaCungCapBUS();
+        HienThiNhaCungCap.AddTable(qlnccBUS.getDsncc(), NCCTable);
 
         //        setTableCellAlignment(JLabel.CENTER,pTable);
     }//GEN-LAST:event_BHthemMouseReleased

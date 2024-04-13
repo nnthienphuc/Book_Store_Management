@@ -13,7 +13,9 @@ import bookstoremanagement.model.Backend.Quyen.QuanLyQuyen;
 import bookstoremanagement.model.Backend.Quyen.QuanLyQuyenBUS;
 import bookstoremanagement.model.Frontend.FormThemSua.ThemSuaQuyenForm;
 import static bookstoremanagement.MainPage.QuyenTable;
+import static bookstoremanagement.MainPage.deleteTable;
 import static bookstoremanagement.frames.ChonMaQuyenForm.SubQuyenTable;
+import bookstoremanagement.model.Frontend.FormHienThi.HienThiQuyen;
 import javax.swing.JFrame;
 /**
  *
@@ -619,6 +621,9 @@ public class editQuyen extends javax.swing.JFrame {
         changecolor(BHsua,new Color(0,204,204));
 
         ThemSuaQuyenForm.btnSuaMouseClicked();
+        deleteTable(QuyenTable);
+        QuanLyQuyenBUS qlquyenBUS = new QuanLyQuyenBUS();
+        HienThiQuyen.AddTable(qlquyenBUS.getDsq(), QuyenTable);
 
         //        setTableCellAlignment(JLabel.CENTER,pTable);
     }//GEN-LAST:event_BHsuaMouseReleased

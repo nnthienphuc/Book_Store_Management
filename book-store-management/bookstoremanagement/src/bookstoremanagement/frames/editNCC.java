@@ -9,9 +9,11 @@ import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import bookstoremanagement.MainPage;
 import static bookstoremanagement.MainPage.NCCTable;
+import static bookstoremanagement.MainPage.deleteTable;
 import static bookstoremanagement.frames.ChonNCCForm.SubNCCTable;
 import bookstoremanagement.model.Backend.NhaCungCap.NhaCungCap;
 import bookstoremanagement.model.Backend.NhaCungCap.QuanLyNhaCungCapBUS;
+import bookstoremanagement.model.Frontend.FormHienThi.HienThiNhaCungCap;
 import bookstoremanagement.model.Frontend.FormThemSua.ThemSuaNhaCungCapForm;
 import javax.swing.JFrame;
 
@@ -370,6 +372,9 @@ public class editNCC extends javax.swing.JFrame {
         changecolor(pnlSua,new Color(0,204,204));
 
         ThemSuaNhaCungCapForm.btnSuaMouseClicked();
+        deleteTable(NCCTable);
+        QuanLyNhaCungCapBUS qlnccBUS = new QuanLyNhaCungCapBUS();
+        HienThiNhaCungCap.AddTable(qlnccBUS.getDsncc(), NCCTable);
 
         //        setTableCellAlignment(JLabel.CENTER,pTable);
     }//GEN-LAST:event_pnlSuaMouseReleased

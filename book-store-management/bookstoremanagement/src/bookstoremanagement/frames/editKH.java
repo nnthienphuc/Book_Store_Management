@@ -9,9 +9,11 @@ import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import bookstoremanagement.MainPage;
 import static bookstoremanagement.MainPage.KHTable;
+import static bookstoremanagement.MainPage.deleteTable;
 import static bookstoremanagement.frames.ChonKHForm.SubKHTable;
 import bookstoremanagement.model.Backend.KhachHang.KhachHang;
 import bookstoremanagement.model.Backend.KhachHang.QuanLyKhachHangBUS;
+import bookstoremanagement.model.Frontend.FormHienThi.HienThiKhachHang;
 import bookstoremanagement.model.Frontend.FormThemSua.ThemSuaKhachHangForm;
 import javax.swing.JFrame;
 
@@ -398,6 +400,9 @@ public class editKH extends javax.swing.JFrame {
         changecolor(pnlSua,new Color(0,204,204));
 
         ThemSuaKhachHangForm.btnSuaMouseClicked();
+        deleteTable(KHTable);
+        QuanLyKhachHangBUS qlkhBUS = new QuanLyKhachHangBUS();
+        HienThiKhachHang.addTable(qlkhBUS.getDskh(), KHTable);
 
         //        setTableCellAlignment(JLabel.CENTER,pTable);
     }//GEN-LAST:event_pnlSuaMouseReleased
