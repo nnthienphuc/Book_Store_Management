@@ -403,6 +403,7 @@ public class editKH extends javax.swing.JFrame {
         deleteTable(KHTable);
         QuanLyKhachHangBUS qlkhBUS = new QuanLyKhachHangBUS();
         HienThiKhachHang.addTable(qlkhBUS.getDskh(), KHTable);
+        this.dispose();
 
         //        setTableCellAlignment(JLabel.CENTER,pTable);
     }//GEN-LAST:event_pnlSuaMouseReleased

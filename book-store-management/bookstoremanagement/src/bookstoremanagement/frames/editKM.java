@@ -463,6 +463,7 @@ public class editKM extends javax.swing.JFrame {
         deleteTable(KMTable);
         QuanLyKhuyenMaiBUS qlkmBUS = new QuanLyKhuyenMaiBUS();
         HienThiKhuyenMai.AddTable(qlkmBUS.getDskm(), KMTable);
+        this.dispose();
 
         //        setTableCellAlignment(JLabel.CENTER,pTable);
     }//GEN-LAST:event_pnlSuaMouseReleased

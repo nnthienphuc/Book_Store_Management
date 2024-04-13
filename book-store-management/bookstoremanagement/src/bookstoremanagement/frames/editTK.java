@@ -401,6 +401,7 @@ public class editTK extends javax.swing.JFrame {
         deleteTable(TKTable);
         QuanLyTaiKhoanBUS qltkBUS = new QuanLyTaiKhoanBUS();
         HienThiTaiKhoan.AddTable(qltkBUS.getDstk(), TKTable);
+        this.dispose();
 
         //        setTableCellAlignment(JLabel.CENTER,pTable);
     }//GEN-LAST:event_pnlSuaMouseReleased

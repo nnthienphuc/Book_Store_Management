@@ -313,6 +313,7 @@ public class addKH extends javax.swing.JFrame {
         
         deleteTable(SubKHTable);
         HienThiKhachHang.addTable(qlkhBUS.getDskh(),SubKHTable);
+        this.dispose();
 
         //        setTableCellAlignment(JLabel.CENTER,pTable);
     }//GEN-LAST:event_pnlThemMouseReleased

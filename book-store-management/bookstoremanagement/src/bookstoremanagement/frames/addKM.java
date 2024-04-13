@@ -383,7 +383,7 @@ public class addKM extends javax.swing.JFrame {
         deleteTable(KMTable);
         QuanLyKhuyenMaiBUS qlkmBUS = new QuanLyKhuyenMaiBUS();
         HienThiKhuyenMai.AddTable(qlkmBUS.getDskm(), KMTable);
-
+        this.dispose();
         //        ThemSuaSanPhamForm.btnSuaMouseClicked();
     }//GEN-LAST:event_pnlThemMouseReleased
 

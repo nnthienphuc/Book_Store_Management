@@ -375,6 +375,7 @@ public class editNCC extends javax.swing.JFrame {
         deleteTable(NCCTable);
         QuanLyNhaCungCapBUS qlnccBUS = new QuanLyNhaCungCapBUS();
         HienThiNhaCungCap.AddTable(qlnccBUS.getDsncc(), NCCTable);
+        this.dispose();
 
         //        setTableCellAlignment(JLabel.CENTER,pTable);
     }//GEN-LAST:event_pnlSuaMouseReleased

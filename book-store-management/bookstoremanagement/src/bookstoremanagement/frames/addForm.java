@@ -508,6 +508,7 @@ public class addForm extends javax.swing.JFrame {
         deleteTable(SPTable);
         QuanLySachBUS qlspBUS = new QuanLySachBUS();
         HienThiSach.AddTable(qlspBUS.getDSSach(), SPTable);
+        this.dispose();
 
         //        setTableCellAlignment(JLabel.CENTER,pTable);
     }//GEN-LAST:event_pnlThemMouseReleased

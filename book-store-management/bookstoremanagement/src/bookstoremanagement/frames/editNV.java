@@ -381,6 +381,7 @@ public class editNV extends javax.swing.JFrame {
         deleteTable(NVTable);
         QuanLyNhanVienBUS qlnvBUS = new QuanLyNhanVienBUS();
         HienThiNhanVien.AddTable(qlnvBUS.getDsnv(), NVTable);
+        this.dispose();
 
     }//GEN-LAST:event_BHsuaMouseReleased
 

@@ -573,6 +573,7 @@ public class addQuyen extends javax.swing.JFrame {
         deleteTable(QuyenTable);
         QuanLyQuyenBUS qlquyenBUS = new QuanLyQuyenBUS();
         HienThiQuyen.AddTable(qlquyenBUS.getDsq(), QuyenTable);
+        this.dispose();
 
         //        setTableCellAlignment(JLabel.CENTER,pTable);
     }//GEN-LAST:event_BHthemMouseReleased
