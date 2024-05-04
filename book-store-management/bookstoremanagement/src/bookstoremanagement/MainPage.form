@@ -6168,8 +6168,8 @@
                   </Group>
                   <EmptySpace min="-2" pref="42" max="-2" attributes="0"/>
                   <Component id="txCurrentPage" min="-2" pref="183" max="-2" attributes="0"/>
-                  <EmptySpace pref="417" max="32767" attributes="0"/>
-                  <Component id="txNhanVienDangNhap" min="-2" pref="286" max="-2" attributes="0"/>
+                  <EmptySpace pref="363" max="32767" attributes="0"/>
+                  <Component id="txNhanVienDangNhap" min="-2" pref="343" max="-2" attributes="0"/>
                   <EmptySpace max="-2" attributes="0"/>
                   <Component id="jPanel8" min="-2" max="-2" attributes="0"/>
                   <EmptySpace max="-2" attributes="0"/>
