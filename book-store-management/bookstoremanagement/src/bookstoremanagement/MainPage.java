@@ -4101,6 +4101,10 @@ public class MainPage extends javax.swing.JFrame {
             JOptionPane.showMessageDialog(null, "Chưa chọn quyền nào để sửa");
         } else {
             new editQuyen().setVisible(true);
+            changecolor(LamMoiSP12, new Color(51, 204, 0));
+            deleteTable(QuyenTable);
+            QuanLyQuyenBUS qlquyenBUS = new QuanLyQuyenBUS();
+            HienThiQuyen.AddTable(qlquyenBUS.getDsq(), QuyenTable);
         }
     }//GEN-LAST:event_BHsua9MouseReleased
 
@@ -4116,6 +4120,10 @@ public class MainPage extends javax.swing.JFrame {
         } else {
             String maQuyen = (String) QuyenTable.getValueAt(QuyenTable.getSelectedRow(), 1);
             editQuyen.XoaQuyen(maQuyen);
+            changecolor(LamMoiSP12, new Color(51, 204, 0));
+            deleteTable(QuyenTable);
+            QuanLyQuyenBUS qlquyenBUS = new QuanLyQuyenBUS();
+            HienThiQuyen.AddTable(qlquyenBUS.getDsq(), QuyenTable);
         }
     }//GEN-LAST:event_BHxoa9MouseReleased
 
