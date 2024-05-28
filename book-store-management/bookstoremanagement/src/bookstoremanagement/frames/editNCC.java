@@ -371,13 +371,13 @@ public class editNCC extends javax.swing.JFrame {
     private void pnlSuaMouseReleased(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_pnlSuaMouseReleased
         changecolor(pnlSua,new Color(0,204,204));
 
-        ThemSuaNhaCungCapForm.btnSuaMouseClicked();
-        deleteTable(NCCTable);
-        QuanLyNhaCungCapBUS qlnccBUS = new QuanLyNhaCungCapBUS();
-        HienThiNhaCungCap.AddTable(qlnccBUS.getDsncc(), NCCTable);
-        this.dispose();
+        if (ThemSuaNhaCungCapForm.btnSuaMouseClicked() == true) {
+            deleteTable(NCCTable);
+            QuanLyNhaCungCapBUS qlnccBUS = new QuanLyNhaCungCapBUS();
+            HienThiNhaCungCap.AddTable(qlnccBUS.getDsncc(), NCCTable);
+            this.dispose();
+        }
 
-        //        setTableCellAlignment(JLabel.CENTER,pTable);
     }//GEN-LAST:event_pnlSuaMouseReleased
 
     private void pnlHuyMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_pnlHuyMouseClicked

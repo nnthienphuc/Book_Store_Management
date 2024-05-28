@@ -306,11 +306,13 @@ public class addNCC extends javax.swing.JFrame {
     private void BHthemMouseReleased(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BHthemMouseReleased
         changecolor(BHthem,new Color(0,204,204));
 
-        ThemSuaNhaCungCapForm.btnThemMouseClicked();
-        deleteTable(NCCTable);
-        QuanLyNhaCungCapBUS qlnccBUS = new QuanLyNhaCungCapBUS();
-        HienThiNhaCungCap.AddTable(qlnccBUS.getDsncc(), NCCTable);
-        this.dispose();
+        if (ThemSuaNhaCungCapForm.btnThemMouseClicked() == true) {
+            deleteTable(NCCTable);
+            QuanLyNhaCungCapBUS qlnccBUS = new QuanLyNhaCungCapBUS();
+            HienThiNhaCungCap.AddTable(qlnccBUS.getDsncc(), NCCTable);
+            this.dispose();
+        }
+        
 
         //        setTableCellAlignment(JLabel.CENTER,pTable);
     }//GEN-LAST:event_BHthemMouseReleased

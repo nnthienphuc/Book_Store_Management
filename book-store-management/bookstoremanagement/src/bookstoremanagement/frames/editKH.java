@@ -399,11 +399,13 @@ public class editKH extends javax.swing.JFrame {
     private void pnlSuaMouseReleased(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_pnlSuaMouseReleased
         changecolor(pnlSua,new Color(0,204,204));
 
-        ThemSuaKhachHangForm.btnSuaMouseClicked();
-        deleteTable(KHTable);
-        QuanLyKhachHangBUS qlkhBUS = new QuanLyKhachHangBUS();
-        HienThiKhachHang.addTable(qlkhBUS.getDskh(), KHTable);
-        this.dispose();
+        if (ThemSuaKhachHangForm.btnSuaMouseClicked() == true) {
+            deleteTable(KHTable);
+            QuanLyKhachHangBUS qlkhBUS = new QuanLyKhachHangBUS();
+            HienThiKhachHang.addTable(qlkhBUS.getDskh(), KHTable);
+            this.dispose();
+        }
+        
 
         //        setTableCellAlignment(JLabel.CENTER,pTable);
     }//GEN-LAST:event_pnlSuaMouseReleased

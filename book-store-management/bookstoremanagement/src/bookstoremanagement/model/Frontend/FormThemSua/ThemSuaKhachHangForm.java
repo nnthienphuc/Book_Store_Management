@@ -11,7 +11,7 @@ public class ThemSuaKhachHangForm extends JFrame {
 
     static QuanLyKhachHangBUS qlkhBUS = new QuanLyKhachHangBUS();
 
-    public static void btnThemMouseClicked() {
+    public static boolean btnThemMouseClicked() {
         if (checkEmptyAdd()) {
             String makh = addKH.txtMaKH.getText();
             String tenkh = addKH.txtTenKH.getText();
@@ -19,12 +19,14 @@ public class ThemSuaKhachHangForm extends JFrame {
             String sdt = addKH.txtSDT.getText();
             if (qlkhBUS.add(makh, tenkh, diachi, sdt)) {
                 JOptionPane.showMessageDialog(null, "Thêm " + tenkh + " thành công!");
+                return true;
 
             }
         }
+        return false;
     }
 
-    public static void btnSuaMouseClicked() {
+    public static boolean btnSuaMouseClicked() {
         if (checkEmptyEdit()) {
             String makh = editKH.txtMaKH.getText();
             String tenkh = editKH.txtTenKH.getText();
@@ -33,9 +35,11 @@ public class ThemSuaKhachHangForm extends JFrame {
 
             if (qlkhBUS.update(makh, tenkh, diachi, sdt)) {
                 JOptionPane.showMessageDialog(null, "Sửa " + makh + " thành công!");
+                return true;
 
             }
         }
+        return false;
     }
 
     private static Boolean checkEmptyAdd() {

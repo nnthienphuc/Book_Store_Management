@@ -16,7 +16,7 @@ public class ThemSuaNhanVienForm extends JFrame {
    
        
     
-    public static void btnThemMouseClicked() {
+    public static boolean btnThemMouseClicked() {
         if (checkEmptyAdd()) {
             String manv = addNV.txMaNV.getText();
             String tennv = addNV.txTenNV.getText();
@@ -27,12 +27,14 @@ public class ThemSuaNhanVienForm extends JFrame {
 
             if (qlnvBUS.add(manv, tennv, ngaysinh, diachi, sdt, trangthai)) {
                 JOptionPane.showMessageDialog(addNV.txSDT, "Thêm " + tennv + " thành công!");
+                return true;
                 
             }
         }
+        return false;
     }
 
-    public static void btnSuaMouseClicked() {
+    public static boolean btnSuaMouseClicked() {
         if (checkEmptyEdit()) {
             String manv = editNV.txMaNV.getText();
             String tennv = editNV.txTenNV.getText();
@@ -43,9 +45,11 @@ public class ThemSuaNhanVienForm extends JFrame {
 
             if (qlnvBUS.update(manv, tennv, ngaysinh, diachi, sdt, trangthai)) {
                 JOptionPane.showMessageDialog(editNV.txSDT, "Sửa " + manv + " thành công!");
+                return true;
                 
             }
         }
+        return false;
     }
 
     private static Boolean checkEmptyAdd() {

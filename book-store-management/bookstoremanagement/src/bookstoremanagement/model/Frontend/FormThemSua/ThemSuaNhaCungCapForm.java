@@ -11,7 +11,7 @@ public class ThemSuaNhaCungCapForm extends JFrame {
 
     static QuanLyNhaCungCapBUS qlnccBUS = new QuanLyNhaCungCapBUS();
 
-    public static void btnSuaMouseClicked() {
+    public static boolean btnSuaMouseClicked() {
         if (checkEmptyEdit()) {
             String maNCC = editNCC.txtMaNCC.getText();
             String tenNCC = editNCC.txtTenNCC.getText();
@@ -21,21 +21,23 @@ public class ThemSuaNhaCungCapForm extends JFrame {
 
             if (qlnccBUS.update(maNCC, tenNCC, diaChi, SDT, Fax)) {
                 JOptionPane.showMessageDialog(editNCC.txtFax, "Sửa " + maNCC + " thành công!");
-
+                return true;
             }
         }
+        return false;
     }
 
-    public static void btnThemMouseClicked() {
+    public static boolean btnThemMouseClicked() {
         if (checkEmptyAdd()) {
             NhaCungCap ncc = new NhaCungCap(addNCC.txMaNCC.getText(), addNCC.txtTenNCC.getText(), addNCC.txtDiaChi.getText(), addNCC.txtSDT.getText(), addNCC.txtFax.getText());
             if (qlnccBUS.add(ncc)) {
 
                 JOptionPane.showMessageDialog(addNCC.txtFax, "Thêm " + addNCC.txtTenNCC.getText() + " thành công!");
-
+                return true;
             }
 
         }
+        return false;
     }
 
     private static Boolean checkEmptyAdd() {

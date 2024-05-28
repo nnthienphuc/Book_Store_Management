@@ -1559,7 +1559,7 @@ public class MainPage extends javax.swing.JFrame {
         TabHDB.add(jLabel27, new org.netbeans.lib.awtextra.AbsoluteConstraints(5, 120, 30, 40));
 
         searchType7.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        searchType7.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Tất cả", "Mã hóa đơn", "Mã nhân viên", "Mã khách hàng", "Mã khuyến mãi", "Ngày lập", "Giờ lập", "Tổng tiền", " " }));
+        searchType7.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Tất cả", "Mã hóa đơn", "Mã khách hàng", "Mã nhân viên", "Mã khuyến mãi", "Ngày bán", "Giờ bán", "Tổng tiền", "" }));
         searchType7.setEnabled(false);
         TabHDB.add(searchType7, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 126, 110, 30));
 
@@ -1778,7 +1778,7 @@ public class MainPage extends javax.swing.JFrame {
         TabHDN.add(jScrollPane10, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 180, 1110, 500));
 
         searchType9.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        searchType9.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Tất cả", "Mã phiếu nhập", "Mã nhà cung cấp", "Mã nhân viên", "Ngày nhập", "Giờ nhập", "Tổng tiền", " " }));
+        searchType9.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Tất cả", "Mã hóa đơn", "Mã NCC", "Mã nhân viên", "Ngày nhập", "Giờ nhập", "Tổng tiền", "" }));
         searchType9.setEnabled(false);
         TabHDN.add(searchType9, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 126, 110, 30));
 
@@ -1954,7 +1954,7 @@ public class MainPage extends javax.swing.JFrame {
         TabSach.add(FilterSearch1, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 125, 220, 30));
 
         searchType1.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        searchType1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Tất cả", "Mã sản phẩm", "Mã loại", "Tên", "Đơn giá", "Số lượng", "Trạng Thái ", " " }));
+        searchType1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Tất cả", "Mã sách", "Tên sách", "Thể loại", "Tác giả", "Năm xuất bản", "SL tồn", "Giá nhập", "Giá bản", "Trạng Thái", "" }));
         TabSach.add(searchType1, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 126, 110, 30));
 
         LamMoiSP1.setBackground(new java.awt.Color(51, 204, 0));
@@ -3904,8 +3904,11 @@ public class MainPage extends javax.swing.JFrame {
                     spBH = sach;
                 }
             }
-
-//        float giaNhap = spBH.getGiaNhap();
+            if(spBH.getTrangThai() == 1){
+                 JOptionPane.showMessageDialog(null, "Sản phẩm đã bị ẩn");
+            }
+            else{
+              //        float giaNhap = spBH.getGiaNhap();
             float giaBan = spBH.getGiaBan();
             int soLuong = Integer.parseInt(txSoLuongBH.getText());
             float thanhTienBan = giaBan * soLuong;
@@ -3926,7 +3929,10 @@ public class MainPage extends javax.swing.JFrame {
                 soLuong,
                 PriceFormat.format(giaBan),
                 PriceFormat.format(thanhTienBan)
-            }, BHTTTable);
+            }, BHTTTable);  
+            }
+                
+
 
         }
 
@@ -3948,7 +3954,10 @@ public class MainPage extends javax.swing.JFrame {
                     spNH = sp;
                 }
             }
-
+            if(spNH.getTrangThai() == 1){
+                JOptionPane.showMessageDialog(null, "Sản phẩm đã bị ẩn");
+            }
+            else{
             float giaNhap = spNH.getGiaNhap();
 //        float giaBan = spNH.getGiaBan();
             int soluong = Integer.parseInt(txSoLuongNH.getText());
@@ -3968,7 +3977,7 @@ public class MainPage extends javax.swing.JFrame {
                 soluong,
                 PriceFormat.format(giaNhap),
                 PriceFormat.format(thanhTienNhap)
-            }, NHTTTable);
+            }, NHTTTable);}
 
         }
     }

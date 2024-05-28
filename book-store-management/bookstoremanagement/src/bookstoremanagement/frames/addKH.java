@@ -305,15 +305,18 @@ public class addKH extends javax.swing.JFrame {
 
     private void pnlThemMouseReleased(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_pnlThemMouseReleased
         changecolor(pnlThem,new Color(0,204,204));
-
-        ThemSuaKhachHangForm.btnThemMouseClicked();
-        deleteTable(KHTable);
-        QuanLyKhachHangBUS qlkhBUS = new QuanLyKhachHangBUS();
-        HienThiKhachHang.addTable(qlkhBUS.getDskh(), KHTable);
         
-        deleteTable(SubKHTable);
-        HienThiKhachHang.addTable(qlkhBUS.getDskh(),SubKHTable);
-        this.dispose();
+        if (ThemSuaKhachHangForm.btnThemMouseClicked() == true) {
+            deleteTable(KHTable);
+            QuanLyKhachHangBUS qlkhBUS = new QuanLyKhachHangBUS();
+            HienThiKhachHang.addTable(qlkhBUS.getDskh(), KHTable);
+            this.dispose();
+
+            deleteTable(SubKHTable);
+            HienThiKhachHang.addTable(qlkhBUS.getDskh(),SubKHTable);
+            this.dispose();
+        }
+        
 
         //        setTableCellAlignment(JLabel.CENTER,pTable);
     }//GEN-LAST:event_pnlThemMouseReleased

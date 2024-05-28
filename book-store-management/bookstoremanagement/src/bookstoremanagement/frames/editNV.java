@@ -381,12 +381,12 @@ public class editNV extends javax.swing.JFrame {
     private void BHsuaMouseReleased(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BHsuaMouseReleased
         changecolor(BHsua,new Color(0,204,204));
 
-        ThemSuaNhanVienForm.btnSuaMouseClicked();
-        deleteTable(NVTable);
-        QuanLyNhanVienBUS qlnvBUS = new QuanLyNhanVienBUS();
-        HienThiNhanVien.AddTable(qlnvBUS.getDsnv(), NVTable);
-        this.dispose();
-
+        if (ThemSuaNhanVienForm.btnSuaMouseClicked() == true) {
+            deleteTable(NVTable);
+            QuanLyNhanVienBUS qlnvBUS = new QuanLyNhanVienBUS();
+            HienThiNhanVien.AddTable(qlnvBUS.getDsnv(), NVTable);
+            this.dispose();
+        }
     }//GEN-LAST:event_BHsuaMouseReleased
 
     private void BHhuyMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BHhuyMouseClicked

@@ -347,12 +347,12 @@ public class addNV extends javax.swing.JFrame {
     private void BHthemMouseReleased(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BHthemMouseReleased
         changecolor(BHthem,new Color(0,204,204));
 
-        ThemSuaNhanVienForm.btnThemMouseClicked();
-        deleteTable(NVTable);
-        QuanLyNhanVienBUS qlnvBUS = new QuanLyNhanVienBUS();
-        HienThiNhanVien.AddTable(qlnvBUS.getDsnv(), NVTable);
-        
-        //        setTableCellAlignment(JLabel.CENTER,pTable);
+        if (ThemSuaNhanVienForm.btnThemMouseClicked()==true) {
+            deleteTable(NVTable);
+            QuanLyNhanVienBUS qlnvBUS = new QuanLyNhanVienBUS();
+            HienThiNhanVien.AddTable(qlnvBUS.getDsnv(), NVTable);
+            this.dispose();
+        }
     }//GEN-LAST:event_BHthemMouseReleased
 
     private void BHhuyMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BHhuyMouseClicked
