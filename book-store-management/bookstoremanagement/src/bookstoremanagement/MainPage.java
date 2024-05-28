@@ -2175,7 +2175,7 @@ public class MainPage extends javax.swing.JFrame {
         TabKM.add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(5, 120, 30, 40));
 
         searchType3.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        searchType3.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Tất cả", "Mã KM", "Điều kiện", "Phầm trăm KM", "Ngày bắt đầu", "Ngày kết thúc", "Trạng thái" }));
+        searchType3.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Tất cả", "Mã KM", "Tên KM", "Điều kiện", "Phầm trăm KM", "Ngày bắt đầu", "Ngày kết thúc", "Trạng thái" }));
         TabKM.add(searchType3, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 126, 110, 30));
 
         LamMoiSP3.setBackground(new java.awt.Color(51, 204, 0));
@@ -2312,11 +2312,11 @@ public class MainPage extends javax.swing.JFrame {
 
             },
             new String [] {
-                "STT", "Mã khuyến mãi", "Tên", "Điều kiện", "Giảm giá", "Ngày bắt đầu", "Ngày kết thúc"
+                "STT", "Mã khuyến mãi", "Tên", "Điều kiện", "Giảm giá", "Ngày bắt đầu", "Ngày kết thúc", "Trạng Thái"
             }
         ) {
             boolean[] canEdit = new boolean [] {
-                false, false, false, false, false, false, false
+                false, false, false, false, false, false, false, false
             };
 
             public boolean isCellEditable(int rowIndex, int columnIndex) {

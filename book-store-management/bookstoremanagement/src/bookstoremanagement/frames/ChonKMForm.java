@@ -19,6 +19,9 @@ public class ChonKMForm extends javax.swing.JFrame {
         HienThiKhuyenMai.AddTable(dskmBUS.getDskm(),SubKMTable);
         MainPage.setTableCellAlignment(JLabel.CENTER, SubKMTable);
         setLocationRelativeTo(null);
+        String query = "ra".toLowerCase();
+
+        MainPage.filterTable(SubKMTable, query, -1);
         setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
     }
 
@@ -155,6 +158,7 @@ public class ChonKMForm extends javax.swing.JFrame {
 
         cboSearchType.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         cboSearchType.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Tất cả", "Mã loại", "Tên loại", "Mô tả" }));
+        cboSearchType.setEnabled(false);
 
         javax.swing.GroupLayout pnlChonKMLayout = new javax.swing.GroupLayout(pnlChonKM);
         pnlChonKM.setLayout(pnlChonKMLayout);
