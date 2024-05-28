@@ -379,11 +379,13 @@ public class addKM extends javax.swing.JFrame {
     private void pnlThemMouseReleased(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_pnlThemMouseReleased
         changecolor(pnlThem,new Color(0,204,204));
 
-        ThemSuaKhuyenMaiForm.btnThemMouseClicked();
-        deleteTable(KMTable);
-        QuanLyKhuyenMaiBUS qlkmBUS = new QuanLyKhuyenMaiBUS();
-        HienThiKhuyenMai.AddTable(qlkmBUS.getDskm(), KMTable);
-        this.dispose();
+        if (ThemSuaKhuyenMaiForm.btnThemMouseClicked() == true) {
+            deleteTable(KMTable);
+            QuanLyKhuyenMaiBUS qlkmBUS = new QuanLyKhuyenMaiBUS();
+            HienThiKhuyenMai.AddTable(qlkmBUS.getDskm(), KMTable);
+            this.dispose();
+        }
+        
         //        ThemSuaSanPhamForm.btnSuaMouseClicked();
     }//GEN-LAST:event_pnlThemMouseReleased
 

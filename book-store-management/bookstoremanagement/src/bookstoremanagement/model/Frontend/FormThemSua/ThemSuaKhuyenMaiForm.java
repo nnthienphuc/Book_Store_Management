@@ -13,7 +13,7 @@ import bookstoremanagement.frames.editKM;
 public class ThemSuaKhuyenMaiForm extends JFrame{
     static QuanLyKhuyenMaiBUS qlkhBUS = new QuanLyKhuyenMaiBUS();
     
-    public static void btnThemMouseClicked() {
+    public static boolean btnThemMouseClicked() {
         if (checkEmptyAdd()) {
             String makm = addKM.txtMaKM.getText();
             String tenkm = addKM.txtTenKM.getText();
@@ -24,12 +24,13 @@ public class ThemSuaKhuyenMaiForm extends JFrame{
 
             if (qlkhBUS.add(makm, tenkm, dieukien, phantram, ngaybd, ngaykt)) {
                 JOptionPane.showMessageDialog(addKM.txtNgayBD, "Thêm " + tenkm + " thành công!");
-                
+                return true;
             }
         }
+        return false;
     }
     
-    public static void btnSuaMouseClicked() {
+    public static boolean btnSuaMouseClicked() {
         if (checkEmptyEdit()) {
             String makm = editKM.txtMaKM.getText();
             String tenkm = editKM.txtTenKM.getText();
@@ -40,9 +41,10 @@ public class ThemSuaKhuyenMaiForm extends JFrame{
 
             if (qlkhBUS.update(makm, tenkm, dieukien, phantram, ngaybd, ngaykt)) {
                 JOptionPane.showMessageDialog(editKM.txtNgayBD, "Sửa " + makm + " thành công!");
-                
+                return true;
             }
         }
+        return false;
     }
 
     private static Boolean checkEmptyAdd() {
@@ -64,6 +66,10 @@ public class ThemSuaKhuyenMaiForm extends JFrame{
 
         } else if (phantram.trim().equals("")) {
             return showErrorTx(addKM.txtTenKM, "Phần trăm khuyến mãi không được để trống");
+
+        }
+        else if (LocalDate.parse(ngaykt).isBefore(LocalDate.parse(ngaybd))) {
+            return showErrorTx(editKM.txtTenKM, "Ngày kết thúc không được trước ngày bắt đầu");
 
         } else {
             try {
@@ -114,7 +120,12 @@ public class ThemSuaKhuyenMaiForm extends JFrame{
         } else if (phantram.trim().equals("")) {
             return showErrorTx(editKM.txtTenKM, "Phần trăm khuyến mãi không được để trống");
 
-        } else {
+        } 
+        else if (LocalDate.parse(ngaykt).isBefore(LocalDate.parse(ngaybd))) {
+            return showErrorTx(editKM.txtTenKM, "Ngày kết thúc không được trước ngày bắt đầu");
+
+        } 
+        else {
             try {
                 Float.parseFloat(dieukien);
             } catch (NumberFormatException e) {
@@ -138,6 +149,7 @@ public class ThemSuaKhuyenMaiForm extends JFrame{
             } catch (Exception e) {
                 return showErrorTx(editKM.txtNgayKT, "Ngày kết thúc không hợp lệ");
             }
+         
         }
 
         return true;

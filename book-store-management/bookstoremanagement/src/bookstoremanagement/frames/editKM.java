@@ -459,13 +459,13 @@ public class editKM extends javax.swing.JFrame {
     private void pnlSuaMouseReleased(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_pnlSuaMouseReleased
         changecolor(pnlSua,new Color(0,204,204));
 
-        ThemSuaKhuyenMaiForm.btnSuaMouseClicked();
-        deleteTable(KMTable);
-        QuanLyKhuyenMaiBUS qlkmBUS = new QuanLyKhuyenMaiBUS();
-        HienThiKhuyenMai.AddTable(qlkmBUS.getDskm(), KMTable);
-        this.dispose();
-
-        //        setTableCellAlignment(JLabel.CENTER,pTable);
+        if (ThemSuaKhuyenMaiForm.btnSuaMouseClicked() == true) {
+            deleteTable(KMTable);
+            QuanLyKhuyenMaiBUS qlkmBUS = new QuanLyKhuyenMaiBUS();
+            HienThiKhuyenMai.AddTable(qlkmBUS.getDskm(), KMTable);
+            this.dispose();
+        }
+   
     }//GEN-LAST:event_pnlSuaMouseReleased
 
     private void pnlHuyMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_pnlHuyMouseClicked
