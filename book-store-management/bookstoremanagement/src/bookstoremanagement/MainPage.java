@@ -4493,6 +4493,10 @@ public class MainPage extends javax.swing.JFrame {
         } else {
             String masp = (String) SPTable.getValueAt(SPTable.getSelectedRow(), 1);
             editForm.XoaSP(masp);
+            changecolor(LamMoiSP1,new Color(51,204,0));
+            deleteTable(SPTable);
+            QuanLySachBUS qlspBUS = new QuanLySachBUS();
+            HienThiSach.AddTable(qlspBUS.getDSSach(), SPTable);
         }
     }//GEN-LAST:event_BHxoa1MouseReleased
 

@@ -60,18 +60,9 @@ public class editForm extends javax.swing.JFrame {
     
     public static void XoaSP(String masp){
         QuanLySachBUS qlspBUS = new QuanLySachBUS();
-            if (qlspBUS.getSach(masp).getTrangThai() == 0) {
-                if (JOptionPane.showConfirmDialog(null, "Bạn có chắc muốn xóa sản phẩm " + masp + " ? "
-                        + "Sản phẩm sẽ được TẠM ẨN", "Chú ý", JOptionPane.YES_NO_OPTION) == JOptionPane.OK_OPTION) {
-                    qlspBUS.updateTrangThai(masp, 1);
-                    
-                }
-            } else {
-                if (JOptionPane.showConfirmDialog(null, "Bạn có chắc muốn XÓA HOÀN TOÀN sản phẩm " + masp + " ?", 
+            if (JOptionPane.showConfirmDialog(null, "Bạn có chắc muốn xóa sản phẩm " + masp + " ?", 
                         "Chú ý", JOptionPane.YES_NO_OPTION) == JOptionPane.OK_OPTION) {
                     qlspBUS.delete(masp);
-                   
-                }
             }
     }
     
@@ -572,13 +563,12 @@ public class editForm extends javax.swing.JFrame {
     private void pnlSuaMouseReleased(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_pnlSuaMouseReleased
         changecolor(pnlSua,new Color(0,204,204));
 
-        ThemSuaSachForm.btnSuaMouseClicked();
-        deleteTable(SPTable);
-        QuanLySachBUS qlspBUS = new QuanLySachBUS();
-        HienThiSach.AddTable(qlspBUS.getDSSach(), SPTable);
-        this.dispose();
-
-        //        setTableCellAlignment(JLabel.CENTER,pTable);
+        if (ThemSuaSachForm.btnSuaMouseClicked() == true) {
+            deleteTable(SPTable);
+            QuanLySachBUS qlspBUS = new QuanLySachBUS();
+            HienThiSach.AddTable(qlspBUS.getDSSach(), SPTable);
+            this.dispose();
+        }
     }//GEN-LAST:event_pnlSuaMouseReleased
 
     private void pnlHuyMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_pnlHuyMouseClicked

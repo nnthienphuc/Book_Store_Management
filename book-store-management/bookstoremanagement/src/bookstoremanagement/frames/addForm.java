@@ -504,11 +504,13 @@ public class addForm extends javax.swing.JFrame {
     private void pnlThemMouseReleased(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_pnlThemMouseReleased
         changecolor(pnlThem,new Color(0,204,204));
 
-        ThemSuaSachForm.btnThemMouseClicked();
-        deleteTable(SPTable);
-        QuanLySachBUS qlspBUS = new QuanLySachBUS();
-        HienThiSach.AddTable(qlspBUS.getDSSach(), SPTable);
-        this.dispose();
+        if (ThemSuaSachForm.btnThemMouseClicked()== true) {
+            deleteTable(SPTable);
+            QuanLySachBUS qlspBUS = new QuanLySachBUS();
+            HienThiSach.AddTable(qlspBUS.getDSSach(), SPTable);
+            this.dispose();
+        }
+        
 
         //        setTableCellAlignment(JLabel.CENTER,pTable);
     }//GEN-LAST:event_pnlThemMouseReleased
