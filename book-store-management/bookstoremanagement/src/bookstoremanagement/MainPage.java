@@ -3,6 +3,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
 package bookstoremanagement;
+
 import javax.swing.JPanel;
 import javax.swing.JFrame;
 import javax.swing.JTable;
@@ -106,16 +107,15 @@ import bookstoremanagement.model.Backend.ThongKe.ThangNam.BUSThangNam;
 import bookstoremanagement.model.Frontend.FormHienThi.HienThiThongKeNgay;
 import bookstoremanagement.model.Frontend.FormHienThi.HienThiThongKeThangNam;
 import bookstoremanagement.frames.editForm;
+
 /**
  *
  * @author ACER
  */
-
-
-
 public class MainPage extends javax.swing.JFrame {
+
     int mouseX;
-    int mouseY; 
+    int mouseY;
     public float tongtienBH;
     public float tongtienKMBH;
     public float tongtienNH;
@@ -129,20 +129,18 @@ public class MainPage extends javax.swing.JFrame {
     public static String time;
     public static String day;
     public static String date;
-        
-     
+
     /**
      * Creates new form MainPage
      */
     public MainPage() {
-        
+
         initComponents();
         SetIcon();
-        
-        txNhanVienDangNhap.setText(LoginForm.nhanVienLogin.getMaNV()+" - "+LoginForm.nhanVienLogin.getTenNV());
+
+        txNhanVienDangNhap.setText(LoginForm.nhanVienLogin.getMaNV() + " - " + LoginForm.nhanVienLogin.getTenNV());
 //        setBackground(new Color(0,0,0,0));
-        
-        
+
         //Table design
         Tabledesign(BHSPTable);
         Tabledesign(NHSPTable);
@@ -157,9 +155,8 @@ public class MainPage extends javax.swing.JFrame {
         Tabledesign(NCCTable);
         Tabledesign(TKTable);
         Tabledesign(QuyenTable);
-      
+
         //End Table design
-        
     }
 
     /**
@@ -3736,321 +3733,298 @@ public class MainPage extends javax.swing.JFrame {
         pack();
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
-    
 
-    
     //Date time function
-    
     //Table design function
     public void SetIcon() {
         ImageIcon icon = new ImageIcon(getClass().getResource("/bookstoremanagement/images/logo/PTIT_logo__Custom_-removebg-preview.png"));
         Image img = icon.getImage().getScaledInstance(48, 48, Image.SCALE_SMOOTH);
         setIconImage(img);
     }
-    
-    public static void Tabledesign(JTable tab){
+
+    public static void Tabledesign(JTable tab) {
         tab.getTableHeader().setFont(new Font("Segoe UI", Font.BOLD, 18));
         tab.getTableHeader().setOpaque(false);
-        tab.getTableHeader().setBackground(new Color(32,136,203));
-        tab.getTableHeader().setForeground(new Color(255,255,255));
+        tab.getTableHeader().setBackground(new Color(32, 136, 203));
+        tab.getTableHeader().setForeground(new Color(255, 255, 255));
         tab.getTableHeader().setBorder(BorderFactory.createEmptyBorder());
         tab.setRowHeight(25);
     }
     public static DefaultTableCellRenderer renderer = new DefaultTableCellRenderer();
 
+    public static void setColumnTableCellAlignment(int alignment, JTable table, int column) {
+        renderer.setHorizontalAlignment(alignment);
 
-    public static void setColumnTableCellAlignment(int alignment, JTable table,int column) {
-       renderer.setHorizontalAlignment(alignment);
-       
-          table.setDefaultRenderer(table.getColumnClass(column),renderer);
-       
-       // repaint to show table cell changes
-       table.updateUI();
-      }
-    
+        table.setDefaultRenderer(table.getColumnClass(column), renderer);
+
+        // repaint to show table cell changes
+        table.updateUI();
+    }
+
     public static void setTableCellAlignment(int alignment, JTable table) {
-      renderer.setHorizontalAlignment(alignment);
-      for (int i=0; i<table.getColumnCount();i++){
-         table.setDefaultRenderer(table.getColumnClass(i),renderer);
-      }
-     }
-    
-    public static void deleteTable(JTable table){
+        renderer.setHorizontalAlignment(alignment);
+        for (int i = 0; i < table.getColumnCount(); i++) {
+            table.setDefaultRenderer(table.getColumnClass(i), renderer);
+        }
+    }
+
+    public static void deleteTable(JTable table) {
         DefaultTableModel dtm = (DefaultTableModel) table.getModel();
         dtm.setRowCount(0);
     }
-    
-    
-    public static void filterTable(JTable table, String query, int column)
-    {   DefaultTableModel dm = (DefaultTableModel) table.getModel();
+
+    public static void filterTable(JTable table, String query, int column) {
+        DefaultTableModel dm = (DefaultTableModel) table.getModel();
         TableRowSorter<DefaultTableModel> tr = new TableRowSorter<DefaultTableModel>(dm);
         table.setRowSorter(tr);
-        if(column<0)
-        {
+        if (column < 0) {
             tr.setRowFilter(RowFilter.regexFilter("(?i)" + query));
+        } else {
+            tr.setRowFilter(RowFilter.regexFilter("(?i)" + query, column + 1));
         }
-        else{tr.setRowFilter(RowFilter.regexFilter("(?i)" + query, column+1));}
-    }    
-    
-    public static void LoadTables()
-    {
+    }
+
+    public static void LoadTables() {
         QuanLySachBUS qlspBUS = new QuanLySachBUS();
         HienThiSach.AddTable(qlspBUS.getDSSach(), SPTable);
         HienThiSach.AddTable(qlspBUS.getDSSach(), BHSPTable);
         HienThiSach.AddTable(qlspBUS.getDSSach(), NHSPTable);
-        
+
         QuanLyHoaDonBanBUS qlhdBUS = new QuanLyHoaDonBanBUS();
         HienThiHoaDonBan.AddTable(qlhdBUS.getDshdb(), HDTable);
-        
+
         QuanLyHoaDonNhapBUS qlhdnBUS = new QuanLyHoaDonNhapBUS();
         HienThiHoaDonNhap.AddTable(qlhdnBUS.getDshdn(), PNTable);
-        
+
         QuanLyKhuyenMaiBUS qlkmBUS = new QuanLyKhuyenMaiBUS();
         HienThiKhuyenMai.AddTable(qlkmBUS.getDskm(), KMTable);
-        
+
         QuanLyNhanVienBUS qlnvBUS = new QuanLyNhanVienBUS();
         HienThiNhanVien.AddTable(qlnvBUS.getDsnv(), NVTable);
-        
+
         QuanLyKhachHangBUS qlkhBUS = new QuanLyKhachHangBUS();
         HienThiKhachHang.addTable(qlkhBUS.getDskh(), KHTable);
-        
+
         QuanLyNhaCungCapBUS qlnccBUS = new QuanLyNhaCungCapBUS();
         HienThiNhaCungCap.AddTable(qlnccBUS.getDsncc(), NCCTable);
-        
+
         QuanLyTaiKhoanBUS qltkBUS = new QuanLyTaiKhoanBUS();
         HienThiTaiKhoan.AddTable(qltkBUS.getDstk(), TKTable);
-        
+
         QuanLyQuyenBUS qlquyenBUS = new QuanLyQuyenBUS();
         HienThiQuyen.AddTable(qlquyenBUS.getDsq(), QuyenTable);
-        
+
         txMaHDBH.setText(qlhdBUS.getNextID());
         txMaNVBH.setText(LoginForm.nhanVienLogin.getMaNV());
         txNgayLapHD.setText(LocalDate.now().toString());
         txGioLapHD.setText(LocalTime.now().format(DateTimeFormatter.ofPattern("HH:mm:ss")));
-        
+
         txMaPNNH.setText(qlhdnBUS.getNextID());
         txMaNVNH.setText(LoginForm.nhanVienLogin.getMaNV());
         txNgayLapPN.setText(LocalDate.now().toString());
         txGioLapPN.setText(LocalTime.now().format(DateTimeFormatter.ofPattern("HH:mm:ss")));
-        
+
         CheckQuyen();
     }
-    
-    public static void CheckQuyen()
-    {
+
+    public static void CheckQuyen() {
         //SanPham
-          if( LoginForm.quyenLogin.getChiTietQuyen().contains("xemSanPham") ){
-            BHthem1.setVisible(false);
-            BHxoa1.setVisible(false);
-            BHsua1.setVisible(false);
-          }
-        //KhuyenMai
-          if( LoginForm.quyenLogin.getChiTietQuyen().contains("xemKhuyenMai") ){
-            BHthem3.setVisible(false);
-            BHxoa3.setVisible(false);
-            BHsua3.setVisible(false);
-          }
-        //KhachHang
-            if( LoginForm.quyenLogin.getChiTietQuyen().contains("xemKhachHang") ){
-            BHthem2.setVisible(false);
-            BHxoa2.setVisible(false);
-            BHsua2.setVisible(false);
-          }
-        //Nhan Vien
-            if( LoginForm.quyenLogin.getChiTietQuyen().contains("xemNhanVien") ){
-            BHthem4.setVisible(false);
-            BHxoa4.setVisible(false);
-            BHsua4.setVisible(false);
-          }
-        //Nha Cung Cap
-            if( LoginForm.quyenLogin.getChiTietQuyen().contains("xemNCC") ){
-            BHthem5.setVisible(false);
-            BHxoa5.setVisible(false);
-            BHsua5.setVisible(false);
-          }
-        //Tai Khoan
-            if( LoginForm.quyenLogin.getChiTietQuyen().contains("xemTaiKhoan") ){
-            BHthem6.setVisible(false);
-            BHxoa6.setVisible(false);
-            BHsua6.setVisible(false);
-          }
-        //Quyen
-            if( LoginForm.quyenLogin.getChiTietQuyen().contains("xemQuyen") ){
-            BHthem10.setVisible(false);
-            BHxoa9.setVisible(false);
-            BHsua9.setVisible(false);
-          }
-        // sach
-        if (LoginForm.quyenLogin.getChiTietQuyen().contains("xemSach")){
+        if (LoginForm.quyenLogin.getChiTietQuyen().contains("xemSanPham")) {
             BHthem1.setVisible(false);
             BHxoa1.setVisible(false);
             BHsua1.setVisible(false);
         }
-        
+        //KhuyenMai
+        if (LoginForm.quyenLogin.getChiTietQuyen().contains("xemKhuyenMai")) {
+            BHthem3.setVisible(false);
+            BHxoa3.setVisible(false);
+            BHsua3.setVisible(false);
+        }
+        //KhachHang
+        if (LoginForm.quyenLogin.getChiTietQuyen().contains("xemKhachHang")) {
+            BHthem2.setVisible(false);
+            BHxoa2.setVisible(false);
+            BHsua2.setVisible(false);
+        }
+        //Nhan Vien
+        if (LoginForm.quyenLogin.getChiTietQuyen().contains("xemNhanVien")) {
+            BHthem4.setVisible(false);
+            BHxoa4.setVisible(false);
+            BHsua4.setVisible(false);
+        }
+        //Nha Cung Cap
+        if (LoginForm.quyenLogin.getChiTietQuyen().contains("xemNCC")) {
+            BHthem5.setVisible(false);
+            BHxoa5.setVisible(false);
+            BHsua5.setVisible(false);
+        }
+        //Tai Khoan
+        if (LoginForm.quyenLogin.getChiTietQuyen().contains("xemTaiKhoan")) {
+            BHthem6.setVisible(false);
+            BHxoa6.setVisible(false);
+            BHsua6.setVisible(false);
+        }
+        //Quyen
+        if (LoginForm.quyenLogin.getChiTietQuyen().contains("xemQuyen")) {
+            BHthem10.setVisible(false);
+            BHxoa9.setVisible(false);
+            BHsua9.setVisible(false);
+        }
+        // sach
+        if (LoginForm.quyenLogin.getChiTietQuyen().contains("xemSach")) {
+            BHthem1.setVisible(false);
+            BHxoa1.setVisible(false);
+            BHsua1.setVisible(false);
+        }
+
     }
-    
-    public static void AddRowToTable(Object[] dataRow,JTable table)
-    {
-        DefaultTableModel model = (DefaultTableModel)table.getModel();
+
+    public static void AddRowToTable(Object[] dataRow, JTable table) {
+        DefaultTableModel model = (DefaultTableModel) table.getModel();
         model.addRow(dataRow);
     }
-  
-    public void AddTableBH(){
+
+    public void AddTableBH() {
         int index = BHSPTable.getSelectedRow();
-        if(index<0){ JOptionPane.showMessageDialog(null, "Bạn chưa chọn sản phẩm nào");}
-        else if(Integer.parseInt(txSoLuongBH.getText()) > Integer.parseInt(BHSPTable.getModel().getValueAt(index, 6).toString()))
-        {JOptionPane.showMessageDialog(null, "Số lượng tồn kho không đủ!");}
-  
-        else  {
-        TableModel model = BHSPTable.getModel();
-        String masach = model.getValueAt(index, 1).toString();     
-        int insertRow = BHTTTable.getRowCount() + 1;
-        
-        Sach spBH = null;
-        QuanLySachBUS qlsachBUS = new QuanLySachBUS();
-        for (Sach sach : qlsachBUS.getDSSach()) {
+        if (index < 0) {
+            JOptionPane.showMessageDialog(null, "Bạn chưa chọn sản phẩm nào");
+        } else if (Integer.parseInt(txSoLuongBH.getText()) > Integer.parseInt(BHSPTable.getModel().getValueAt(index, 6).toString())) {
+            JOptionPane.showMessageDialog(null, "Số lượng tồn kho không đủ!");
+        } else {
+            TableModel model = BHSPTable.getModel();
+            String masach = model.getValueAt(index, 1).toString();
+            int insertRow = BHTTTable.getRowCount() + 1;
+
+            Sach spBH = null;
+            QuanLySachBUS qlsachBUS = new QuanLySachBUS();
+            for (Sach sach : qlsachBUS.getDSSach()) {
                 if (sach.getMaSach().equals(masach)) {
                     spBH = sach;
                 }
             }
-        
-                               
+
 //        float giaNhap = spBH.getGiaNhap();
-        float giaBan = spBH.getGiaBan();
-        int soLuong = Integer.parseInt(txSoLuongBH.getText());
-        float thanhTienBan = giaBan * soLuong;
+            float giaBan = spBH.getGiaBan();
+            int soLuong = Integer.parseInt(txSoLuongBH.getText());
+            float thanhTienBan = giaBan * soLuong;
 //        int soluongtonkho = spBH.getSoLuong();
 //        float giamtien = thanhtien * KhuyenMai.getPhanTramKM();
 //        float thanhtiensauKM = thanhtien - giamtien;
 //        tongtienBH = 0;
 
-        tongtienBH = tongtienBH + thanhTienBan;
-       
-        
-        txTongTienBH.setText(PriceFormat.format(tongtienBH));
-        txTienTong.setText(Float.toString(tongtienBH));
-      
-        
+            tongtienBH = tongtienBH + thanhTienBan;
+
+            txTongTienBH.setText(PriceFormat.format(tongtienBH));
+            txTienTong.setText(Float.toString(tongtienBH));
+
             AddRowToTable(new Object[]{
-                              insertRow,
-                              masach,
-                              spBH.getTenSach(),
-                              soLuong,
-                              PriceFormat.format(giaBan),
-                              PriceFormat.format(thanhTienBan)
-                              },BHTTTable);            
-        
-        
-        
-       
+                insertRow,
+                masach,
+                spBH.getTenSach(),
+                soLuong,
+                PriceFormat.format(giaBan),
+                PriceFormat.format(thanhTienBan)
+            }, BHTTTable);
+
         }
-       
+
     }
-    public void AddTableNH(){
-             int index = NHSPTable.getSelectedRow();
-        if(index<0){ JOptionPane.showMessageDialog(null, "Bạn chưa chọn sản phẩm nào");}
-        else{
-        TableModel model = NHSPTable.getModel();
-        String masp = model.getValueAt(index, 1).toString();     
-        int insertRow = NHTTTable.getRowCount() + 1;
-        
-        Sach spNH = null;
-        QuanLySachBUS qlspBUS = new QuanLySachBUS();
-        for (Sach sp : qlspBUS.getDSSach()) {
+
+    public void AddTableNH() {
+        int index = NHSPTable.getSelectedRow();
+        if (index < 0) {
+            JOptionPane.showMessageDialog(null, "Bạn chưa chọn sản phẩm nào");
+        } else {
+            TableModel model = NHSPTable.getModel();
+            String masp = model.getValueAt(index, 1).toString();
+            int insertRow = NHTTTable.getRowCount() + 1;
+
+            Sach spNH = null;
+            QuanLySachBUS qlspBUS = new QuanLySachBUS();
+            for (Sach sp : qlspBUS.getDSSach()) {
                 if (sp.getMaSach().equals(masp)) {
                     spNH = sp;
                 }
             }
-        
-                               
-        float giaNhap = spNH.getGiaNhap();
+
+            float giaNhap = spNH.getGiaNhap();
 //        float giaBan = spNH.getGiaBan();
-        int soluong = Integer.parseInt(txSoLuongNH.getText());
-        int soluongtonkho = spNH.getSoLuong();
-        float thanhTienNhap = giaNhap * soluong;
-        
+            int soluong = Integer.parseInt(txSoLuongNH.getText());
+            int soluongtonkho = spNH.getSoLuong();
+            float thanhTienNhap = giaNhap * soluong;
+
 //        tongtienNH = 0;
-        tongtienNH = tongtienNH + thanhTienNhap;
-        txTongTienNH.setText(PriceFormat.format(tongtienNH));
-        txTienTong1.setText(Float.toString(tongtienNH));
+            tongtienNH = tongtienNH + thanhTienNhap;
+            txTongTienNH.setText(PriceFormat.format(tongtienNH));
+            txTienTong1.setText(Float.toString(tongtienNH));
 //        txTongtiensauKM.setText(PriceFormat.format(tongtienBH));
-         
-        
+
             AddRowToTable(new Object[]{
-                              insertRow,
-                              masp,
-                              spNH.getTenSach(),
-                              soluong,
-                              PriceFormat.format(giaNhap),
-                              PriceFormat.format(thanhTienNhap)
-                              },NHTTTable);            
-        
+                insertRow,
+                masp,
+                spNH.getTenSach(),
+                soluong,
+                PriceFormat.format(giaNhap),
+                PriceFormat.format(thanhTienNhap)
+            }, NHTTTable);
+
         }
     }
-    
-    
-    public void AddCTHD(int row)
-    {
+
+    public void AddCTHD(int row) {
 //                TableModel model = SPTable.getModel();
 //        String imageName = model.getValueAt(index, 7).toString();
-        
-        
-        
-        String mahd = txMaHDBH.getText();        
-        TableModel model = BHTTTable.getModel();        
+
+        String mahd = txMaHDBH.getText();
+        TableModel model = BHTTTable.getModel();
         String masp = model.getValueAt(row, 1).toString();
-        String soluong = model.getValueAt(row,3).toString();
-        ChiTietHoaDonBan cthdb = new ChiTietHoaDonBan(mahd,masp,Integer.parseInt(soluong));
-   
+        String soluong = model.getValueAt(row, 3).toString();
+        ChiTietHoaDonBan cthdb = new ChiTietHoaDonBan(mahd, masp, Integer.parseInt(soluong));
+
         QuanLyChiTietHoaDonBanBUS qlcthd = new QuanLyChiTietHoaDonBanBUS();
         qlcthd.add(cthdb);
-        
+
     }
-    
-    public void AddCTPN(int row)
-    {
+
+    public void AddCTPN(int row) {
 //                TableModel model = SPTable.getModel();
 //        String imageName = model.getValueAt(index, 7).toString();
-        
-        
-        
-        String mahdn = txMaPNNH.getText();        
-        TableModel model = NHTTTable.getModel();        
+
+        String mahdn = txMaPNNH.getText();
+        TableModel model = NHTTTable.getModel();
         String masach = model.getValueAt(row, 1).toString();
-        String soluong = model.getValueAt(row,3).toString();
-        ChiTietHoaDonNhap ctpn = new ChiTietHoaDonNhap(mahdn,masach,Integer.parseInt(soluong));
-   
+        String soluong = model.getValueAt(row, 3).toString();
+        ChiTietHoaDonNhap ctpn = new ChiTietHoaDonNhap(mahdn, masach, Integer.parseInt(soluong));
+
         QuanLyChiTietHoaDonNhapBUS qlctpn = new QuanLyChiTietHoaDonNhapBUS();
         qlctpn.add(ctpn);
-        
+
     }
-    
-        void clearBH()
-        {   
-            txKhachHang.setText("");
-            txTongTienBH.setText("");
-            txKhuyenMai.setText("");
-            deleteTable(BHTTTable);
-        }
-        
-         void clearNH()
-        {         
-            txNhaCungCap.setText("");
-            txTongTienNH.setText("");
-            deleteTable(NHTTTable);
-        }
-    
+
+    void clearBH() {
+        txKhachHang.setText("");
+        txTongTienBH.setText("");
+        txKhuyenMai.setText("");
+        deleteTable(BHTTTable);
+    }
+
+    void clearNH() {
+        txNhaCungCap.setText("");
+        txTongTienNH.setText("");
+        deleteTable(NHTTTable);
+    }
+
     //Table design function
     public static void changecolor(JPanel hover, Color rand) {
         hover.setBackground(rand);
     }
-    
+
     private void NutthunhoMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_NutthunhoMouseEntered
-       changecolor(Nutthunho, new Color(74,30,113));
+        changecolor(Nutthunho, new Color(74, 30, 113));
     }//GEN-LAST:event_NutthunhoMouseEntered
 
     private void NutthunhoMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_NutthunhoMouseExited
-       changecolor(Nutthunho, new Color(92,37,141));
+        changecolor(Nutthunho, new Color(92, 37, 141));
     }//GEN-LAST:event_NutthunhoMouseExited
 
     private void NutthunhoMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_NutthunhoMousePressed
@@ -4058,11 +4032,11 @@ public class MainPage extends javax.swing.JFrame {
     }//GEN-LAST:event_NutthunhoMousePressed
 
     private void NutdongMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_NutdongMouseEntered
-        changecolor(Nutdong, new Color(74,30,113));
+        changecolor(Nutdong, new Color(74, 30, 113));
     }//GEN-LAST:event_NutdongMouseEntered
 
     private void NutdongMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_NutdongMouseExited
-        changecolor(Nutdong, new Color(92,37,141));
+        changecolor(Nutdong, new Color(92, 37, 141));
     }//GEN-LAST:event_NutdongMouseExited
 
     private void NutdongMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_NutdongMousePressed
@@ -4071,20 +4045,19 @@ public class MainPage extends javax.swing.JFrame {
         options[1] = "Quay lại Đăng nhập";
         options[2] = "Hủy";
         int reply = JOptionPane.showOptionDialog(this.getContentPane(), "Bạn có chắc chắn muốn thoát chương trình?", "Thông báo", 0, JOptionPane.YES_NO_CANCEL_OPTION, null, options, null);
-        if(reply == JOptionPane.OK_OPTION){
+        if (reply == JOptionPane.OK_OPTION) {
             System.exit(0);
-        }
-        else if(reply == JOptionPane.NO_OPTION){       
+        } else if (reply == JOptionPane.NO_OPTION) {
             new LoginForm().setVisible(true);
             this.dispose();
         }
     }//GEN-LAST:event_NutdongMousePressed
 
     private void headerMouseDragged(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_headerMouseDragged
-       int cordX = evt.getXOnScreen();
-       int cordY = evt.getYOnScreen();
-       
-       this.setLocation(cordX - mouseX,cordY - mouseY);
+        int cordX = evt.getXOnScreen();
+        int cordY = evt.getYOnScreen();
+
+        this.setLocation(cordX - mouseX, cordY - mouseY);
     }//GEN-LAST:event_headerMouseDragged
 
     private void headerMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_headerMousePressed
@@ -4097,11 +4070,11 @@ public class MainPage extends javax.swing.JFrame {
     }//GEN-LAST:event_formWindowOpened
 
     private void jPanel8MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel8MouseEntered
-         changecolor(jPanel8, new Color(74,30,113));
+        changecolor(jPanel8, new Color(74, 30, 113));
     }//GEN-LAST:event_jPanel8MouseEntered
 
     private void jPanel8MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel8MouseExited
-       changecolor(jPanel8, new Color(92,37,141));
+        changecolor(jPanel8, new Color(92, 37, 141));
     }//GEN-LAST:event_jPanel8MouseExited
 
     private void kGradientPanel1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_kGradientPanel1MouseClicked
@@ -4110,56 +4083,50 @@ public class MainPage extends javax.swing.JFrame {
 
     private void LamMoiSP12MouseReleased(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_LamMoiSP12MouseReleased
 
-        changecolor(LamMoiSP12,new Color(51,204,0));
+        changecolor(LamMoiSP12, new Color(51, 204, 0));
         deleteTable(QuyenTable);
         QuanLyQuyenBUS qlquyenBUS = new QuanLyQuyenBUS();
         HienThiQuyen.AddTable(qlquyenBUS.getDsq(), QuyenTable);
     }//GEN-LAST:event_LamMoiSP12MouseReleased
 
     private void LamMoiSP12MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_LamMoiSP12MousePressed
-        changecolor(LamMoiSP12,new Color(0, 176, 0));
+        changecolor(LamMoiSP12, new Color(0, 176, 0));
     }//GEN-LAST:event_LamMoiSP12MousePressed
 
     private void BHsua9MouseReleased(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BHsua9MouseReleased
 
-        changecolor(BHsua9,new Color(255,204,0));
+        changecolor(BHsua9, new Color(255, 204, 0));
 
-        if(QuyenTable.getSelectedRow()<0)
-        {
+        if (QuyenTable.getSelectedRow() < 0) {
             JOptionPane.showMessageDialog(null, "Chưa chọn quyền nào để sửa");
-        }
-        else
-        {
+        } else {
             new editQuyen().setVisible(true);
         }
     }//GEN-LAST:event_BHsua9MouseReleased
 
     private void BHsua9MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BHsua9MousePressed
-        changecolor(BHsua9,new Color(224,177,0));
+        changecolor(BHsua9, new Color(224, 177, 0));
     }//GEN-LAST:event_BHsua9MousePressed
 
     private void BHxoa9MouseReleased(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BHxoa9MouseReleased
 
-        changecolor(BHxoa9,new Color(255,0,0));
-        if(QuyenTable.getSelectedRow()<0)
-        {
+        changecolor(BHxoa9, new Color(255, 0, 0));
+        if (QuyenTable.getSelectedRow() < 0) {
             JOptionPane.showMessageDialog(null, "Chưa chọn quyền nào để xóa");
-        }
-        else
-        {
-            String maQuyen =    (String) QuyenTable.getValueAt(QuyenTable.getSelectedRow(), 1);
+        } else {
+            String maQuyen = (String) QuyenTable.getValueAt(QuyenTable.getSelectedRow(), 1);
             editQuyen.XoaQuyen(maQuyen);
         }
     }//GEN-LAST:event_BHxoa9MouseReleased
 
     private void BHxoa9MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BHxoa9MousePressed
-        changecolor(BHxoa9,new Color(221,0,0));
+        changecolor(BHxoa9, new Color(221, 0, 0));
     }//GEN-LAST:event_BHxoa9MousePressed
 
     private void FilterSearch10KeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_FilterSearch10KeyReleased
         String query = FilterSearch10.getText().toLowerCase();
 
-        filterTable(QuyenTable, query, searchType10.getSelectedIndex()-1);
+        filterTable(QuyenTable, query, searchType10.getSelectedIndex() - 1);
     }//GEN-LAST:event_FilterSearch10KeyReleased
 
     private void FilterSearch10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_FilterSearch10ActionPerformed
@@ -4167,7 +4134,7 @@ public class MainPage extends javax.swing.JFrame {
     }//GEN-LAST:event_FilterSearch10ActionPerformed
 
     private void BHthem10MouseReleased(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BHthem10MouseReleased
-        changecolor(BHthem10,new Color(0,204,204));
+        changecolor(BHthem10, new Color(0, 204, 204));
         addQuyen addQuyen = new addQuyen();
         addQuyen.setVisible(true);
         addQuyen.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
@@ -4175,34 +4142,34 @@ public class MainPage extends javax.swing.JFrame {
     }//GEN-LAST:event_BHthem10MouseReleased
 
     private void BHthem10MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BHthem10MousePressed
-        changecolor(BHthem10,new Color(0,163,163));
+        changecolor(BHthem10, new Color(0, 163, 163));
     }//GEN-LAST:event_BHthem10MousePressed
 
     private void BHthem12MouseReleased(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BHthem12MouseReleased
-        changecolor(BHthem12,new Color(0,204,204));
+        changecolor(BHthem12, new Color(0, 204, 204));
         int index = PNTable.getSelectedRow();
 
-        if(index<0){
+        if (index < 0) {
             JOptionPane.showMessageDialog(null, "Chưa chọn phiếu nhập nào để xem");
-        }else{
+        } else {
             String mapn = (String) PNTable.getValueAt(index, 1);
             new ChonCTHDNForm(mapn).setVisible(true);
         }
     }//GEN-LAST:event_BHthem12MouseReleased
 
     private void BHthem12MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BHthem12MousePressed
-        changecolor(BHthem12,new Color(0,163,163));
+        changecolor(BHthem12, new Color(0, 163, 163));
     }//GEN-LAST:event_BHthem12MousePressed
 
     private void LamMoiSP11MouseReleased(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_LamMoiSP11MouseReleased
-        changecolor(LamMoiSP11,new Color(51,204,0));
+        changecolor(LamMoiSP11, new Color(51, 204, 0));
         deleteTable(PNTable);
         QuanLyHoaDonNhapBUS qlhdnBUS = new QuanLyHoaDonNhapBUS();
         HienThiHoaDonNhap.AddTable(qlhdnBUS.getDshdn(), PNTable);
     }//GEN-LAST:event_LamMoiSP11MouseReleased
 
     private void LamMoiSP11MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_LamMoiSP11MousePressed
-        changecolor(LamMoiSP11,new Color(0, 176, 0));
+        changecolor(LamMoiSP11, new Color(0, 176, 0));
     }//GEN-LAST:event_LamMoiSP11MousePressed
 
     private void FilterSearch9KeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_FilterSearch9KeyReleased
@@ -4215,62 +4182,59 @@ public class MainPage extends javax.swing.JFrame {
 
     private void BHthem6MouseReleased(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BHthem6MouseReleased
 
-        changecolor(BHthem6,new Color(0,204,204));
+        changecolor(BHthem6, new Color(0, 204, 204));
         addTK addTK = new addTK();
         addTK.setVisible(true);
         addTK.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
     }//GEN-LAST:event_BHthem6MouseReleased
 
     private void BHthem6MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BHthem6MousePressed
-        changecolor(BHthem6,new Color(0,163,163));
+        changecolor(BHthem6, new Color(0, 163, 163));
     }//GEN-LAST:event_BHthem6MousePressed
 
     private void BHxoa6MouseReleased(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BHxoa6MouseReleased
 
-        changecolor(BHxoa6,new Color(255,0,0));
-        if(TKTable.getSelectedRow()<0)
-        {
+        changecolor(BHxoa6, new Color(255, 0, 0));
+        if (TKTable.getSelectedRow() < 0) {
             JOptionPane.showMessageDialog(null, "Chưa chọn tài khoản nào để xóa");
-        }
-        else
-        {
-            String maTK =    (String) TKTable.getValueAt(TKTable.getSelectedRow(), 1);
+        } else {
+            String maTK = (String) TKTable.getValueAt(TKTable.getSelectedRow(), 1);
             editTK.XoaTK(maTK);
+            deleteTable(TKTable);
+            QuanLyTaiKhoanBUS qltkBUS = new QuanLyTaiKhoanBUS();
+            HienThiTaiKhoan.AddTable(qltkBUS.getDstk(), TKTable);
         }
     }//GEN-LAST:event_BHxoa6MouseReleased
 
     private void BHxoa6MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BHxoa6MousePressed
-        changecolor(BHxoa6,new Color(221,0,0));
+        changecolor(BHxoa6, new Color(221, 0, 0));
     }//GEN-LAST:event_BHxoa6MousePressed
 
     private void BHsua6MouseReleased(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BHsua6MouseReleased
 
-        changecolor(BHsua6,new Color(255,204,0));
+        changecolor(BHsua6, new Color(255, 204, 0));
 
-        if(TKTable.getSelectedRow()<0)
-        {
+        if (TKTable.getSelectedRow() < 0) {
             JOptionPane.showMessageDialog(null, "Chưa chọn tài khoản nào để sửa");
-        }
-        else
-        {
+        } else {
             new editTK().setVisible(true);
         }
     }//GEN-LAST:event_BHsua6MouseReleased
 
     private void BHsua6MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BHsua6MousePressed
-        changecolor(BHsua6,new Color(224,177,0));
+        changecolor(BHsua6, new Color(224, 177, 0));
     }//GEN-LAST:event_BHsua6MousePressed
 
     private void LamMoiSP8MouseReleased(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_LamMoiSP8MouseReleased
 
-        changecolor(LamMoiSP8,new Color(51,204,0));
+        changecolor(LamMoiSP8, new Color(51, 204, 0));
         deleteTable(TKTable);
         QuanLyTaiKhoanBUS qltkBUS = new QuanLyTaiKhoanBUS();
         HienThiTaiKhoan.AddTable(qltkBUS.getDstk(), TKTable);
     }//GEN-LAST:event_LamMoiSP8MouseReleased
 
     private void LamMoiSP8MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_LamMoiSP8MousePressed
-        changecolor(LamMoiSP8,new Color(0, 176, 0));
+        changecolor(LamMoiSP8, new Color(0, 176, 0));
     }//GEN-LAST:event_LamMoiSP8MousePressed
 
     private void searchType6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_searchType6ActionPerformed
@@ -4280,7 +4244,7 @@ public class MainPage extends javax.swing.JFrame {
     private void FilterSearch6KeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_FilterSearch6KeyReleased
         String query = FilterSearch6.getText().toLowerCase();
 
-        filterTable(TKTable, query, searchType6.getSelectedIndex()-1);
+        filterTable(TKTable, query, searchType6.getSelectedIndex() - 1);
     }//GEN-LAST:event_FilterSearch6KeyReleased
 
     private void FilterSearch6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_FilterSearch6ActionPerformed
@@ -4288,7 +4252,7 @@ public class MainPage extends javax.swing.JFrame {
     }//GEN-LAST:event_FilterSearch6ActionPerformed
 
     private void BHthem5MouseReleased(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BHthem5MouseReleased
-        changecolor(BHthem5,new Color(0,204,204));
+        changecolor(BHthem5, new Color(0, 204, 204));
         addNCC addNCC = new addNCC();
         addNCC.setVisible(true);
         addNCC.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
@@ -4296,68 +4260,61 @@ public class MainPage extends javax.swing.JFrame {
     }//GEN-LAST:event_BHthem5MouseReleased
 
     private void BHthem5MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BHthem5MousePressed
-        changecolor(BHthem5,new Color(0,163,163));
+        changecolor(BHthem5, new Color(0, 163, 163));
     }//GEN-LAST:event_BHthem5MousePressed
 
     private void BHxoa5MouseReleased(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BHxoa5MouseReleased
 
-        changecolor(BHxoa5,new Color(255,0,0));
-        if(NCCTable.getSelectedRow()<0)
-        {
+        changecolor(BHxoa5, new Color(255, 0, 0));
+        if (NCCTable.getSelectedRow() < 0) {
             JOptionPane.showMessageDialog(null, "Chưa chọn nhà cung cấp nào để xóa");
-        }
-        else
-        {
-            String maNCC =    (String) NCCTable.getValueAt(NCCTable.getSelectedRow(), 1);
+        } else {
+            String maNCC = (String) NCCTable.getValueAt(NCCTable.getSelectedRow(), 1);
             editNCC.XoaNCC(maNCC);
-            changecolor(LamMoiSP7,new Color(51,204,0));
-        deleteTable(NCCTable);
-        QuanLyNhaCungCapBUS qlnccBUS = new QuanLyNhaCungCapBUS();
-        HienThiNhaCungCap.AddTable(qlnccBUS.getDsncc(), NCCTable);
-            
-            
+            changecolor(LamMoiSP7, new Color(51, 204, 0));
+            deleteTable(NCCTable);
+            QuanLyNhaCungCapBUS qlnccBUS = new QuanLyNhaCungCapBUS();
+            HienThiNhaCungCap.AddTable(qlnccBUS.getDsncc(), NCCTable);
+
         }
     }//GEN-LAST:event_BHxoa5MouseReleased
 
     private void BHxoa5MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BHxoa5MousePressed
-        changecolor(BHxoa5,new Color(221,0,0));
+        changecolor(BHxoa5, new Color(221, 0, 0));
     }//GEN-LAST:event_BHxoa5MousePressed
 
     private void BHsua5MouseReleased(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BHsua5MouseReleased
 
-        changecolor(BHsua5,new Color(255,204,0));
+        changecolor(BHsua5, new Color(255, 204, 0));
 
-        if(NCCTable.getSelectedRow()<0)
-        {
+        if (NCCTable.getSelectedRow() < 0) {
             JOptionPane.showMessageDialog(null, "Chưa chọn nhà cung cấp nào để sửa");
-        }
-        else
-        {
+        } else {
             new editNCC().setVisible(true);
         }
     }//GEN-LAST:event_BHsua5MouseReleased
 
     private void BHsua5MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BHsua5MousePressed
-        changecolor(BHsua5,new Color(224,177,0));
+        changecolor(BHsua5, new Color(224, 177, 0));
     }//GEN-LAST:event_BHsua5MousePressed
 
     private void LamMoiSP7MouseReleased(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_LamMoiSP7MouseReleased
 
-        changecolor(LamMoiSP7,new Color(51,204,0));
+        changecolor(LamMoiSP7, new Color(51, 204, 0));
         deleteTable(NCCTable);
         QuanLyNhaCungCapBUS qlnccBUS = new QuanLyNhaCungCapBUS();
-        
-        
+
+
     }//GEN-LAST:event_LamMoiSP7MouseReleased
 
     private void LamMoiSP7MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_LamMoiSP7MousePressed
-        changecolor(LamMoiSP7,new Color(0, 176, 0));
+        changecolor(LamMoiSP7, new Color(0, 176, 0));
     }//GEN-LAST:event_LamMoiSP7MousePressed
 
     private void FilterSearch5KeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_FilterSearch5KeyReleased
         String query = FilterSearch5.getText().toLowerCase();
 
-        filterTable(NCCTable, query, searchType5.getSelectedIndex()-1);
+        filterTable(NCCTable, query, searchType5.getSelectedIndex() - 1);
     }//GEN-LAST:event_FilterSearch5KeyReleased
 
     private void FilterSearch5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_FilterSearch5ActionPerformed
@@ -4366,27 +4323,24 @@ public class MainPage extends javax.swing.JFrame {
 
     private void BHthem4MouseReleased(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BHthem4MouseReleased
 
-        changecolor(BHthem4,new Color(0,204,204));
+        changecolor(BHthem4, new Color(0, 204, 204));
         addNV addNV = new addNV();
         addNV.setVisible(true);
         addNV.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
-      
+
     }//GEN-LAST:event_BHthem4MouseReleased
 
     private void BHthem4MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BHthem4MousePressed
-        changecolor(BHthem4,new Color(0,163,163));
+        changecolor(BHthem4, new Color(0, 163, 163));
     }//GEN-LAST:event_BHthem4MousePressed
 
     private void BHxoa4MouseReleased(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BHxoa4MouseReleased
 
-        changecolor(BHxoa4,new Color(255,0,0));
-        if(NVTable.getSelectedRow()<0)
-        {
+        changecolor(BHxoa4, new Color(255, 0, 0));
+        if (NVTable.getSelectedRow() < 0) {
             JOptionPane.showMessageDialog(null, "Chưa chọn nhân viên nào để xóa");
-        }
-        else
-        {
-            String maNV =    (String) NVTable.getValueAt(NVTable.getSelectedRow(), 1);
+        } else {
+            String maNV = (String) NVTable.getValueAt(NVTable.getSelectedRow(), 1);
             editNV.XoaNV(maNV);
             deleteTable(NVTable);
             QuanLyNhanVienBUS qlnvBUS = new QuanLyNhanVienBUS();
@@ -4395,43 +4349,40 @@ public class MainPage extends javax.swing.JFrame {
     }//GEN-LAST:event_BHxoa4MouseReleased
 
     private void BHxoa4MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BHxoa4MousePressed
-        changecolor(BHxoa4,new Color(221,0,0));
+        changecolor(BHxoa4, new Color(221, 0, 0));
     }//GEN-LAST:event_BHxoa4MousePressed
 
     private void BHsua4MouseReleased(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BHsua4MouseReleased
 
-        changecolor(BHsua4,new Color(255,204,0));
+        changecolor(BHsua4, new Color(255, 204, 0));
 
-        if(NVTable.getSelectedRow()<0)
-        {
+        if (NVTable.getSelectedRow() < 0) {
             JOptionPane.showMessageDialog(null, "Chưa chọn nhân viên nào để sửa");
-        }
-        else
-        {
+        } else {
             new editNV().setVisible(true);
         }
     }//GEN-LAST:event_BHsua4MouseReleased
 
     private void BHsua4MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BHsua4MousePressed
-        changecolor(BHsua4,new Color(224,177,0));
+        changecolor(BHsua4, new Color(224, 177, 0));
     }//GEN-LAST:event_BHsua4MousePressed
 
     private void LamMoiSP6MouseReleased(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_LamMoiSP6MouseReleased
 
-        changecolor(LamMoiSP6,new Color(51,204,0));
+        changecolor(LamMoiSP6, new Color(51, 204, 0));
         deleteTable(NVTable);
         QuanLyNhanVienBUS qlnvBUS = new QuanLyNhanVienBUS();
         HienThiNhanVien.AddTable(qlnvBUS.getDsnv(), NVTable);
     }//GEN-LAST:event_LamMoiSP6MouseReleased
 
     private void LamMoiSP6MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_LamMoiSP6MousePressed
-        changecolor(LamMoiSP6,new Color(0, 176, 0));
+        changecolor(LamMoiSP6, new Color(0, 176, 0));
     }//GEN-LAST:event_LamMoiSP6MousePressed
 
     private void FilterSearch4KeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_FilterSearch4KeyReleased
         String query = FilterSearch4.getText().toLowerCase();
 
-        filterTable(NVTable, query, searchType4.getSelectedIndex()-1);
+        filterTable(NVTable, query, searchType4.getSelectedIndex() - 1);
     }//GEN-LAST:event_FilterSearch4KeyReleased
 
     private void FilterSearch4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_FilterSearch4ActionPerformed
@@ -4441,7 +4392,7 @@ public class MainPage extends javax.swing.JFrame {
     private void FilterSearch2KeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_FilterSearch2KeyReleased
         String query = FilterSearch2.getText().toLowerCase();
 
-        filterTable(KHTable, query, searchType2.getSelectedIndex()-1);
+        filterTable(KHTable, query, searchType2.getSelectedIndex() - 1);
     }//GEN-LAST:event_FilterSearch2KeyReleased
 
     private void FilterSearch2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_FilterSearch2ActionPerformed
@@ -4450,7 +4401,7 @@ public class MainPage extends javax.swing.JFrame {
 
     private void BHthem3MouseReleased(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BHthem3MouseReleased
 
-        changecolor(BHthem3,new Color(0,204,204));
+        changecolor(BHthem3, new Color(0, 204, 204));
         addKM addKM = new addKM();
         addKM.setVisible(true);
         addKM.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
@@ -4458,61 +4409,55 @@ public class MainPage extends javax.swing.JFrame {
     }//GEN-LAST:event_BHthem3MouseReleased
 
     private void BHthem3MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BHthem3MousePressed
-        changecolor(BHthem3,new Color(0,163,163));
+        changecolor(BHthem3, new Color(0, 163, 163));
     }//GEN-LAST:event_BHthem3MousePressed
 
     private void BHxoa3MouseReleased(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BHxoa3MouseReleased
 
-        changecolor(BHxoa3,new Color(255,0,0));
-        if(KMTable.getSelectedRow()<0)
-        {
+        changecolor(BHxoa3, new Color(255, 0, 0));
+        if (KMTable.getSelectedRow() < 0) {
             JOptionPane.showMessageDialog(null, "Chưa chọn khuyến mãi nào để xóa");
-        }
-        else
-        {
-            String maKM =    (String) KMTable.getValueAt(KMTable.getSelectedRow(), 1);
+        } else {
+            String maKM = (String) KMTable.getValueAt(KMTable.getSelectedRow(), 1);
             editKM.XoaKM(maKM);
         }
     }//GEN-LAST:event_BHxoa3MouseReleased
 
     private void BHxoa3MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BHxoa3MousePressed
-        changecolor(BHxoa3,new Color(221,0,0));
+        changecolor(BHxoa3, new Color(221, 0, 0));
     }//GEN-LAST:event_BHxoa3MousePressed
 
     private void BHsua3MouseReleased(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BHsua3MouseReleased
 
-        changecolor(BHsua3,new Color(255,204,0));
+        changecolor(BHsua3, new Color(255, 204, 0));
 
-        if(KMTable.getSelectedRow()<0)
-        {
+        if (KMTable.getSelectedRow() < 0) {
             JOptionPane.showMessageDialog(null, "Chưa chọn khuyến mãi nào để sửa");
-        }
-        else
-        {
+        } else {
             new editKM().setVisible(true);
         }
     }//GEN-LAST:event_BHsua3MouseReleased
 
     private void BHsua3MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BHsua3MousePressed
-        changecolor(BHsua3,new Color(224,177,0));
+        changecolor(BHsua3, new Color(224, 177, 0));
     }//GEN-LAST:event_BHsua3MousePressed
 
     private void LamMoiSP3MouseReleased(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_LamMoiSP3MouseReleased
 
-        changecolor(LamMoiSP3,new Color(51,204,0));
+        changecolor(LamMoiSP3, new Color(51, 204, 0));
         deleteTable(KMTable);
         QuanLyKhuyenMaiBUS qlkmBUS = new QuanLyKhuyenMaiBUS();
         HienThiKhuyenMai.AddTable(qlkmBUS.getDskm(), KMTable);
     }//GEN-LAST:event_LamMoiSP3MouseReleased
 
     private void LamMoiSP3MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_LamMoiSP3MousePressed
-        changecolor(LamMoiSP3,new Color(0, 176, 0));
+        changecolor(LamMoiSP3, new Color(0, 176, 0));
     }//GEN-LAST:event_LamMoiSP3MousePressed
 
     private void FilterSearch3KeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_FilterSearch3KeyReleased
         String query = FilterSearch3.getText().toLowerCase();
 
-        filterTable(KMTable, query, searchType3.getSelectedIndex()-1);
+        filterTable(KMTable, query, searchType3.getSelectedIndex() - 1);
     }//GEN-LAST:event_FilterSearch3KeyReleased
 
     private void FilterSearch3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_FilterSearch3ActionPerformed
@@ -4530,7 +4475,7 @@ public class MainPage extends javax.swing.JFrame {
     }//GEN-LAST:event_SPTableMouseClicked
 
     private void BHthem1MouseReleased(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BHthem1MouseReleased
-        changecolor(BHthem1,new Color(0,204,204));
+        changecolor(BHthem1, new Color(0, 204, 204));
         addForm addform = new addForm();
         addform.setVisible(true);
         addform.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
@@ -4538,61 +4483,55 @@ public class MainPage extends javax.swing.JFrame {
     }//GEN-LAST:event_BHthem1MouseReleased
 
     private void BHthem1MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BHthem1MousePressed
-        changecolor(BHthem1,new Color(0,163,163));
+        changecolor(BHthem1, new Color(0, 163, 163));
     }//GEN-LAST:event_BHthem1MousePressed
 
     private void BHxoa1MouseReleased(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BHxoa1MouseReleased
-        changecolor(BHxoa1,new Color(255,0,0));
-        if(SPTable.getSelectedRow()<0)
-        {
+        changecolor(BHxoa1, new Color(255, 0, 0));
+        if (SPTable.getSelectedRow() < 0) {
             JOptionPane.showMessageDialog(null, "Chưa chọn sản phẩm nào để xóa");
-        }
-        else
-        {
-            String masp =    (String) SPTable.getValueAt(SPTable.getSelectedRow(), 1);
+        } else {
+            String masp = (String) SPTable.getValueAt(SPTable.getSelectedRow(), 1);
             editForm.XoaSP(masp);
         }
     }//GEN-LAST:event_BHxoa1MouseReleased
 
     private void BHxoa1MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BHxoa1MousePressed
-        changecolor(BHxoa1,new Color(221,0,0));
+        changecolor(BHxoa1, new Color(221, 0, 0));
     }//GEN-LAST:event_BHxoa1MousePressed
 
     private void BHsua1MouseReleased(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BHsua1MouseReleased
-        changecolor(BHsua1,new Color(255,204,0));
+        changecolor(BHsua1, new Color(255, 204, 0));
 
-        if(SPTable.getSelectedRow()<0)
-        {
+        if (SPTable.getSelectedRow() < 0) {
             JOptionPane.showMessageDialog(null, "Chưa chọn sản phẩm nào để sửa");
-        }
-        else
-        {
+        } else {
             new editForm().setVisible(true);
-            
+
         }
-        
+
     }//GEN-LAST:event_BHsua1MouseReleased
 
     private void BHsua1MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BHsua1MousePressed
 
-        changecolor(BHsua1,new Color(224,177,0));
+        changecolor(BHsua1, new Color(224, 177, 0));
     }//GEN-LAST:event_BHsua1MousePressed
 
     private void LamMoiSP1MouseReleased(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_LamMoiSP1MouseReleased
-        changecolor(LamMoiSP1,new Color(51,204,0));
+        changecolor(LamMoiSP1, new Color(51, 204, 0));
         deleteTable(SPTable);
         QuanLySachBUS qlspBUS = new QuanLySachBUS();
         HienThiSach.AddTable(qlspBUS.getDSSach(), SPTable);
     }//GEN-LAST:event_LamMoiSP1MouseReleased
 
     private void LamMoiSP1MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_LamMoiSP1MousePressed
-        changecolor(LamMoiSP1,new Color(0, 176, 0));
+        changecolor(LamMoiSP1, new Color(0, 176, 0));
     }//GEN-LAST:event_LamMoiSP1MousePressed
 
     private void FilterSearch1KeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_FilterSearch1KeyReleased
         String query = FilterSearch1.getText().toLowerCase();
 
-        filterTable(SPTable, query, searchType1.getSelectedIndex()-1);
+        filterTable(SPTable, query, searchType1.getSelectedIndex() - 1);
     }//GEN-LAST:event_FilterSearch1KeyReleased
 
     private void FilterSearch1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_FilterSearch1ActionPerformed
@@ -4600,31 +4539,31 @@ public class MainPage extends javax.swing.JFrame {
     }//GEN-LAST:event_FilterSearch1ActionPerformed
 
     private void BHthem7MouseReleased(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BHthem7MouseReleased
-        changecolor(BHthem7,new Color(0,204,204));
+        changecolor(BHthem7, new Color(0, 204, 204));
         int index = HDTable.getSelectedRow();
 
-        if(index<0){
+        if (index < 0) {
             JOptionPane.showMessageDialog(null, "Chưa chọn hóa đơn nào để xem");
-        }else{
+        } else {
             String mahd = (String) HDTable.getValueAt(index, 1);
             new ChonCTHDBForm(mahd).setVisible(true);
         }
     }//GEN-LAST:event_BHthem7MouseReleased
 
     private void BHthem7MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BHthem7MousePressed
-        changecolor(BHthem7,new Color(0,163,163));
+        changecolor(BHthem7, new Color(0, 163, 163));
     }//GEN-LAST:event_BHthem7MousePressed
 
     private void LamMoiSP9MouseReleased(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_LamMoiSP9MouseReleased
 
-        changecolor(LamMoiSP9,new Color(51,204,0));
+        changecolor(LamMoiSP9, new Color(51, 204, 0));
         deleteTable(HDTable);
         QuanLyHoaDonBanBUS qlhdBUS = new QuanLyHoaDonBanBUS();
         HienThiHoaDonBan.AddTable(qlhdBUS.getDshdb(), HDTable);
     }//GEN-LAST:event_LamMoiSP9MouseReleased
 
     private void LamMoiSP9MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_LamMoiSP9MousePressed
-        changecolor(LamMoiSP9,new Color(0, 176, 0));
+        changecolor(LamMoiSP9, new Color(0, 176, 0));
     }//GEN-LAST:event_LamMoiSP9MousePressed
 
     private void FilterSearch7KeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_FilterSearch7KeyReleased
@@ -4641,7 +4580,7 @@ public class MainPage extends javax.swing.JFrame {
 
     private void LamMoiSP4MouseReleased(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_LamMoiSP4MouseReleased
 
-        changecolor(LamMoiSP4,new Color(51,204,0));
+        changecolor(LamMoiSP4, new Color(51, 204, 0));
         deleteTable(NHSPTable);
         QuanLySachBUS qlspBUS = new QuanLySachBUS();
         HienThiSach.AddTable(qlspBUS.getDSSach(), NHSPTable);
@@ -4652,19 +4591,19 @@ public class MainPage extends javax.swing.JFrame {
     }//GEN-LAST:event_LamMoiSP4MouseReleased
 
     private void LamMoiSP4MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_LamMoiSP4MousePressed
-        changecolor(LamMoiSP4,new Color(0, 176, 0));
+        changecolor(LamMoiSP4, new Color(0, 176, 0));
     }//GEN-LAST:event_LamMoiSP4MousePressed
 
     private void pnlHuyNHMouseReleased(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_pnlHuyNHMouseReleased
 
-        changecolor(pnlHuyNH,new Color(255,0,0));
+        changecolor(pnlHuyNH, new Color(255, 0, 0));
         tongtienNH = 0;
         deleteTable(NHTTTable);
         clearNH();
     }//GEN-LAST:event_pnlHuyNHMouseReleased
 
     private void pnlHuyNHMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_pnlHuyNHMousePressed
-        changecolor(pnlHuyNH,new Color(221,0,0));
+        changecolor(pnlHuyNH, new Color(221, 0, 0));
     }//GEN-LAST:event_pnlHuyNHMousePressed
 
     private void FilterSearchBH1KeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_FilterSearchBH1KeyReleased
@@ -4681,35 +4620,30 @@ public class MainPage extends javax.swing.JFrame {
 
     private void pnlXacNhanNHMouseReleased(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_pnlXacNhanNHMouseReleased
 
-        changecolor(pnlXacNhanNH,new Color(51,204,0));
+        changecolor(pnlXacNhanNH, new Color(51, 204, 0));
 
-        if(txTongTienNH.getText().equals(""))
-        {
+        if (txTongTienNH.getText().equals("")) {
             JOptionPane.showMessageDialog(null, "Bảng nhập hàng trống!");
-        }
-        else if(txNhaCungCap.getText().equals(""))
-        {
+        } else if (txNhaCungCap.getText().equals("")) {
             JOptionPane.showMessageDialog(null, "Chưa chọn nhà cung cấp!");
-        }
-        else{
+        } else {
             QuanLyHoaDonNhapBUS qlpnBUS = new QuanLyHoaDonNhapBUS();
 //                    QuanLyChiTietHoaDonNhapBUS qlcthdnbus = new QuanLyChiTietHoaDonNhapBUS();
 //                    ArrayList<ChiTietHoaDonNhap> dscthd = qlcthdnDAO.readDB();
 
             HoaDonNhap pn = new HoaDonNhap(
-                txMaPNNH.getText(),
-                NhaCungCap.getMaNCC(),
-                LoginForm.nhanVienLogin.getMaNV(),
-                LocalDate.parse(txNgayLapPN.getText()),
-                LocalTime.parse(txGioLapPN.getText()),
-                Float.parseFloat(txTienTong1.getText()));
+                    txMaPNNH.getText(),
+                    NhaCungCap.getMaNCC(),
+                    LoginForm.nhanVienLogin.getMaNV(),
+                    LocalDate.parse(txNgayLapPN.getText()),
+                    LocalTime.parse(txGioLapPN.getText()),
+                    Float.parseFloat(txTienTong1.getText()));
 
             qlpnBUS.add(pn);
 
             TableModel model = NHTTTable.getModel();
             int rowcount = model.getRowCount();
-            for(int i = 0; i<rowcount; i++)
-            {
+            for (int i = 0; i < rowcount; i++) {
                 AddCTPN(i);
             }
 
@@ -4718,28 +4652,28 @@ public class MainPage extends javax.swing.JFrame {
 
             txMaPNNH.setText(qlpnBUS.getNextID());
             deleteTable(NHSPTable);
-        QuanLySachBUS qlspBUS = new QuanLySachBUS();
-        HienThiSach.AddTable(qlspBUS.getDSSach(), NHSPTable);
-        txMaSPNH.setText("");
-        txTenSPNH.setText("");
-        txDonGiaNH.setText("");
-        txSoLuongNH.setText("1");
+            QuanLySachBUS qlspBUS = new QuanLySachBUS();
+            HienThiSach.AddTable(qlspBUS.getDSSach(), NHSPTable);
+            txMaSPNH.setText("");
+            txTenSPNH.setText("");
+            txDonGiaNH.setText("");
+            txSoLuongNH.setText("1");
             clearNH();
         }
     }//GEN-LAST:event_pnlXacNhanNHMouseReleased
 
     private void pnlXacNhanNHMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_pnlXacNhanNHMousePressed
-        changecolor(pnlXacNhanNH,new Color(0, 176, 0));
+        changecolor(pnlXacNhanNH, new Color(0, 176, 0));
     }//GEN-LAST:event_pnlXacNhanNHMousePressed
 
     private void BHthem11MouseReleased(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BHthem11MouseReleased
 
-        changecolor(BHthem11,new Color(0,204,204));
+        changecolor(BHthem11, new Color(0, 204, 204));
         AddTableNH();
     }//GEN-LAST:event_BHthem11MouseReleased
 
     private void BHthem11MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BHthem11MousePressed
-        changecolor(BHthem11,new Color(0,163,163));
+        changecolor(BHthem11, new Color(0, 163, 163));
     }//GEN-LAST:event_BHthem11MousePressed
 
     private void txGioLapPNActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txGioLapPNActionPerformed
@@ -4748,12 +4682,12 @@ public class MainPage extends javax.swing.JFrame {
 
     private void ChonNCCMouseReleased(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ChonNCCMouseReleased
 
-        changecolor(ChonNCC,new Color(204,204,204));
+        changecolor(ChonNCC, new Color(204, 204, 204));
         new ChonNCCForm().setVisible(true);
     }//GEN-LAST:event_ChonNCCMouseReleased
 
     private void ChonNCCMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ChonNCCMousePressed
-        changecolor(ChonNCC,new Color(60,63,65));
+        changecolor(ChonNCC, new Color(60, 63, 65));
     }//GEN-LAST:event_ChonNCCMousePressed
 
     private void txNgayLapPNActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txNgayLapPNActionPerformed
@@ -4794,14 +4728,14 @@ public class MainPage extends javax.swing.JFrame {
 
     private void BHxoa7MouseReleased(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BHxoa7MouseReleased
 
-        changecolor(BHxoa7,new Color(255,0,0));
+        changecolor(BHxoa7, new Color(255, 0, 0));
         tongtienBH = 0;
         deleteTable(BHTTTable);
         clearBH();
     }//GEN-LAST:event_BHxoa7MouseReleased
 
     private void BHxoa7MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BHxoa7MousePressed
-        changecolor(BHxoa7,new Color(221,0,0));
+        changecolor(BHxoa7, new Color(221, 0, 0));
     }//GEN-LAST:event_BHxoa7MousePressed
 
     private void txTienTongActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txTienTongActionPerformed
@@ -4809,18 +4743,16 @@ public class MainPage extends javax.swing.JFrame {
     }//GEN-LAST:event_txTienTongActionPerformed
 
     private void ChonMaLoai1MouseReleased(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ChonMaLoai1MouseReleased
-        changecolor(ChonMaLoai1,new Color(204,204,204));
-        if(BHTTTable.getRowCount()==0)
-        {
+        changecolor(ChonMaLoai1, new Color(204, 204, 204));
+        if (BHTTTable.getRowCount() == 0) {
             JOptionPane.showMessageDialog(null, "Bảng thanh toán trống!");
-        }else
-        {
+        } else {
             new ChonKMForm().setVisible(true);
         }
     }//GEN-LAST:event_ChonMaLoai1MouseReleased
 
     private void ChonMaLoai1MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ChonMaLoai1MousePressed
-        changecolor(ChonMaLoai1,new Color(60,63,65));
+        changecolor(ChonMaLoai1, new Color(60, 63, 65));
     }//GEN-LAST:event_ChonMaLoai1MousePressed
 
     private void txKhuyenMaiActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txKhuyenMaiActionPerformed
@@ -4833,12 +4765,12 @@ public class MainPage extends javax.swing.JFrame {
 
     private void ChonMaLoaiMouseReleased(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ChonMaLoaiMouseReleased
 
-        changecolor(ChonMaLoai,new Color(204,204,204));
+        changecolor(ChonMaLoai, new Color(204, 204, 204));
         new ChonKHForm().setVisible(true);
     }//GEN-LAST:event_ChonMaLoaiMouseReleased
 
     private void ChonMaLoaiMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ChonMaLoaiMousePressed
-        changecolor(ChonMaLoai,new Color(60,63,65));
+        changecolor(ChonMaLoai, new Color(60, 63, 65));
     }//GEN-LAST:event_ChonMaLoaiMousePressed
 
     private void txNgayLapHDActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txNgayLapHDActionPerformed
@@ -4863,46 +4795,39 @@ public class MainPage extends javax.swing.JFrame {
 
     private void BHxacNhanMouseReleased(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BHxacNhanMouseReleased
 
-        changecolor(BHxacNhan,new Color(51,204,0));
+        changecolor(BHxacNhan, new Color(51, 204, 0));
 
-        if(txTongTienBH.getText().equals(""))
-        {
+        if (txTongTienBH.getText().equals("")) {
 
             JOptionPane.showMessageDialog(null, "Bảng thanh toán trống!");
-        }
-        else if(txKhachHang.getText().equals(""))
-        {
+        } else if (txKhachHang.getText().equals("")) {
 
             JOptionPane.showMessageDialog(null, "Chưa chọn khách hàng!");
-        }
-        else if(txKhuyenMai.getText().equals(""))
-        {
+        } else if (txKhuyenMai.getText().equals("")) {
 
             JOptionPane.showMessageDialog(null, "Chưa chọn khuyến mãi");
-        }
-        else{
+        } else {
             float tongtien = Float.parseFloat(txTienTong.getText());
-            float tongtiensauKM = tongtien - (tongtien * KhuyenMai.getPhanTramKM()/100);
+            float tongtiensauKM = tongtien - (tongtien * KhuyenMai.getPhanTramKM() / 100);
 
             int reply = JOptionPane.showConfirmDialog(getRootPane(),
-                "Hóa đơn được giảm "+KhuyenMai.getPhanTramKM()+"% tổng thanh toán còn " + PriceFormat.format(tongtiensauKM)+
-                ". Thanh toán ngay?", "Thanh toán",
-                JOptionPane.YES_NO_OPTION);
-            if(reply == JOptionPane.OK_OPTION) {
+                    "Hóa đơn được giảm " + KhuyenMai.getPhanTramKM() + "% tổng thanh toán còn " + PriceFormat.format(tongtiensauKM)
+                    + ". Thanh toán ngay?", "Thanh toán",
+                    JOptionPane.YES_NO_OPTION);
+            if (reply == JOptionPane.OK_OPTION) {
                 QuanLyHoaDonBanBUS qlhdBUS = new QuanLyHoaDonBanBUS();
 
                 qlhdBUS.add(txMaHDBH.getText(),
-                    KhachHang.getMaKH(),
-                    LoginForm.nhanVienLogin.getMaNV(),
-                    KhuyenMai.getMaKM(),
-                    LocalDate.parse(txNgayLapHD.getText()),
-                    LocalTime.parse(txGioLapHD.getText()),
-                    tongtiensauKM);
+                        KhachHang.getMaKH(),
+                        LoginForm.nhanVienLogin.getMaNV(),
+                        KhuyenMai.getMaKM(),
+                        LocalDate.parse(txNgayLapHD.getText()),
+                        LocalTime.parse(txGioLapHD.getText()),
+                        tongtiensauKM);
 
                 TableModel model = BHTTTable.getModel();
                 int rowcount = model.getRowCount();
-                for(int i = 0; i<rowcount; i++)
-                {
+                for (int i = 0; i < rowcount; i++) {
                     AddCTHD(i);
                 }
 
@@ -4911,38 +4836,38 @@ public class MainPage extends javax.swing.JFrame {
                 txMaHDBH.setText(qlhdBUS.getNextID());
 
                 deleteTable(BHSPTable);
-            QuanLySachBUS qlspBUS = new QuanLySachBUS();
-            HienThiSach.AddTable(qlspBUS.getDSSach(), BHSPTable);
+                QuanLySachBUS qlspBUS = new QuanLySachBUS();
+                HienThiSach.AddTable(qlspBUS.getDSSach(), BHSPTable);
 
-            txMaSPBH.setText("");
-            txTenSPBH.setText("");
-            txDonGiaBH.setText("");
-            txSoLuongBH.setText("1");
+                txMaSPBH.setText("");
+                txTenSPBH.setText("");
+                txDonGiaBH.setText("");
+                txSoLuongBH.setText("1");
                 clearBH();
             }
         }
     }//GEN-LAST:event_BHxacNhanMouseReleased
 
     private void BHxacNhanMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BHxacNhanMousePressed
-        changecolor(BHxacNhan,new Color(0, 176, 0));
+        changecolor(BHxacNhan, new Color(0, 176, 0));
     }//GEN-LAST:event_BHxacNhanMousePressed
 
     private void BHthemMouseReleased(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BHthemMouseReleased
 
-        changecolor(BHthem,new Color(0,204,204));
+        changecolor(BHthem, new Color(0, 204, 204));
         AddTableBH();
         //        TableModel model = SPTable.getModel();
         //        String imageName = model.getValueAt(index, 7).toString();
     }//GEN-LAST:event_BHthemMouseReleased
 
     private void BHthemMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BHthemMousePressed
-        changecolor(BHthem,new Color(0,163,163));
+        changecolor(BHthem, new Color(0, 163, 163));
     }//GEN-LAST:event_BHthemMousePressed
 
     private void FilterSearchBHKeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_FilterSearchBHKeyReleased
         String query = FilterSearchBH.getText().toLowerCase();
 
-        filterTable(BHSPTable, query, searchTypeBH.getSelectedIndex()-1);
+        filterTable(BHSPTable, query, searchTypeBH.getSelectedIndex() - 1);
     }//GEN-LAST:event_FilterSearchBHKeyReleased
 
     private void FilterSearchBHActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_FilterSearchBHActionPerformed
@@ -4978,11 +4903,11 @@ public class MainPage extends javax.swing.JFrame {
     }//GEN-LAST:event_txMaSPNHActionPerformed
 
     private void LamMoiSP2MouseReleased(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_LamMoiSP2MouseReleased
-        changecolor(LamMoiSP2,new Color(51,204,0));
+        changecolor(LamMoiSP2, new Color(51, 204, 0));
         deleteTable(BHSPTable);
         QuanLySachBUS qlspBUS = new QuanLySachBUS();
         HienThiSach.AddTable(qlspBUS.getDSSach(), BHSPTable);
-        
+
         txMaSPBH.setText("");
         txTenSPBH.setText("");
         txDonGiaBH.setText("");
@@ -4990,7 +4915,7 @@ public class MainPage extends javax.swing.JFrame {
     }//GEN-LAST:event_LamMoiSP2MouseReleased
 
     private void LamMoiSP2MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_LamMoiSP2MousePressed
-        changecolor(LamMoiSP2,new Color(0, 176, 0));
+        changecolor(LamMoiSP2, new Color(0, 176, 0));
     }//GEN-LAST:event_LamMoiSP2MousePressed
 
     private void txMaSPBHActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txMaSPBHActionPerformed
@@ -5010,7 +4935,7 @@ public class MainPage extends javax.swing.JFrame {
     }//GEN-LAST:event_txSoLuongBHActionPerformed
 
     private void BHthem2MouseReleased(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BHthem2MouseReleased
-        changecolor(BHthem2,new Color(0,204,204));
+        changecolor(BHthem2, new Color(0, 204, 204));
         addKH addKH = new addKH();
         addKH.setVisible(true);
         addKH.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
@@ -5018,141 +4943,134 @@ public class MainPage extends javax.swing.JFrame {
     }//GEN-LAST:event_BHthem2MouseReleased
 
     private void BHthem2MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BHthem2MousePressed
-        changecolor(BHthem2,new Color(0,163,163));
+        changecolor(BHthem2, new Color(0, 163, 163));
     }//GEN-LAST:event_BHthem2MousePressed
 
     private void BHxoa2MouseReleased(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BHxoa2MouseReleased
 
-        changecolor(BHxoa2,new Color(255,0,0));
-        if(KHTable.getSelectedRow()<0)
-        {
+        changecolor(BHxoa2, new Color(255, 0, 0));
+        if (KHTable.getSelectedRow() < 0) {
             JOptionPane.showMessageDialog(null, "Chưa chọn khách hàng nào để xóa");
-        }
-        else
-        {
-            String maKH =    (String) KHTable.getValueAt(KHTable.getSelectedRow(), 1);
+        } else {
+            String maKH = (String) KHTable.getValueAt(KHTable.getSelectedRow(), 1);
             editKH.XoaKH(maKH);
+            deleteTable(KHTable);
+            QuanLyKhachHangBUS qlkhBUS = new QuanLyKhachHangBUS();
+            HienThiKhachHang.addTable(qlkhBUS.getDskh(), KHTable);
         }
     }//GEN-LAST:event_BHxoa2MouseReleased
 
     private void BHxoa2MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BHxoa2MousePressed
-        changecolor(BHxoa2,new Color(221,0,0));
+        changecolor(BHxoa2, new Color(221, 0, 0));
     }//GEN-LAST:event_BHxoa2MousePressed
 
     private void BHsua2MouseReleased(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BHsua2MouseReleased
 
-        changecolor(BHsua2,new Color(255,204,0));
+        changecolor(BHsua2, new Color(255, 204, 0));
 
-        if(KHTable.getSelectedRow()<0)
-        {
+        if (KHTable.getSelectedRow() < 0) {
             JOptionPane.showMessageDialog(null, "Chưa chọn khách hàng nào để sửa");
-        }
-        else
-        {
+        } else {
             new editKH().setVisible(true);
         }
     }//GEN-LAST:event_BHsua2MouseReleased
 
     private void BHsua2MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BHsua2MousePressed
-        changecolor(BHsua2,new Color(224,177,0));
+        changecolor(BHsua2, new Color(224, 177, 0));
     }//GEN-LAST:event_BHsua2MousePressed
 
     private void LamMoiSP5MouseReleased(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_LamMoiSP5MouseReleased
 
-        changecolor(LamMoiSP5,new Color(51,204,0));
+        changecolor(LamMoiSP5, new Color(51, 204, 0));
         deleteTable(KHTable);
         QuanLyKhachHangBUS qlkhBUS = new QuanLyKhachHangBUS();
         HienThiKhachHang.addTable(qlkhBUS.getDskh(), KHTable);
     }//GEN-LAST:event_LamMoiSP5MouseReleased
 
     private void LamMoiSP5MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_LamMoiSP5MousePressed
-        changecolor(LamMoiSP5,new Color(0, 176, 0));
+        changecolor(LamMoiSP5, new Color(0, 176, 0));
     }//GEN-LAST:event_LamMoiSP5MousePressed
 
     private void HDBSubButton(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_HDBSubButton
-            if(LoginForm.quyenLogin.getChiTietQuyen().contains("qlHoaDonBan") || LoginForm.quyenLogin.getChiTietQuyen().contains("xemHoaDonBan") ){
-                txCurrentPage.setText("Hóa đơn bán");
-                TabContainer.setSelectedIndex(2);
-        }
-        else{
-             JOptionPane.showMessageDialog(null, "Bạn không có quyền để xem trang này!");
+        if (LoginForm.quyenLogin.getChiTietQuyen().contains("qlHoaDonBan") || LoginForm.quyenLogin.getChiTietQuyen().contains("xemHoaDonBan")) {
+            txCurrentPage.setText("Hóa đơn bán");
+            TabContainer.setSelectedIndex(2);
+        } else {
+            JOptionPane.showMessageDialog(null, "Bạn không có quyền để xem trang này!");
         }
     }//GEN-LAST:event_HDBSubButton
 
     private void HDNSubButton(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_HDNSubButton
-                if(LoginForm.quyenLogin.getChiTietQuyen().contains("qlHoaDonNhap") || LoginForm.quyenLogin.getChiTietQuyen().contains("xemHoaDonNhap") ){
-                txCurrentPage.setText("Hóa đơn nhập");
-                TabContainer.setSelectedIndex(3);
-                deleteTable(PNTable);
-        QuanLyHoaDonNhapBUS qlhdnBUS = new QuanLyHoaDonNhapBUS();
-        HienThiHoaDonNhap.AddTable(qlhdnBUS.getDshdn(), PNTable);
-                }
-        else{
-             JOptionPane.showMessageDialog(null, "Bạn không có quyền để xem trang này!");
+        if (LoginForm.quyenLogin.getChiTietQuyen().contains("qlHoaDonNhap") || LoginForm.quyenLogin.getChiTietQuyen().contains("xemHoaDonNhap")) {
+            txCurrentPage.setText("Hóa đơn nhập");
+            TabContainer.setSelectedIndex(3);
+            deleteTable(PNTable);
+            QuanLyHoaDonNhapBUS qlhdnBUS = new QuanLyHoaDonNhapBUS();
+            HienThiHoaDonNhap.AddTable(qlhdnBUS.getDshdn(), PNTable);
+        } else {
+            JOptionPane.showMessageDialog(null, "Bạn không có quyền để xem trang này!");
         }
     }//GEN-LAST:event_HDNSubButton
-    
+
     private void jButton4HDBSubButton(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4HDBSubButton
-                if(LoginForm.quyenLogin.getChiTietQuyen().contains("qlHoaDonBan") || LoginForm.quyenLogin.getChiTietQuyen().contains("xemHoaDonBan") ){
-                txCurrentPage.setText("Hóa đơn bán");
-                TabContainer.setSelectedIndex(2);
-            }
-        else{
+        if (LoginForm.quyenLogin.getChiTietQuyen().contains("qlHoaDonBan") || LoginForm.quyenLogin.getChiTietQuyen().contains("xemHoaDonBan")) {
+            txCurrentPage.setText("Hóa đơn bán");
+            TabContainer.setSelectedIndex(2);
+        } else {
             JOptionPane.showMessageDialog(null, "Bạn không có quyền để xem trang này!");
         }
     }//GEN-LAST:event_jButton4HDBSubButton
-    
+
     private void jButton5HDNSubButton(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5HDNSubButton
-        if(LoginForm.quyenLogin.getChiTietQuyen().contains("qlHoaDonNhap") || LoginForm.quyenLogin.getChiTietQuyen().contains("xemHoaDonNhap") ){
+        if (LoginForm.quyenLogin.getChiTietQuyen().contains("qlHoaDonNhap") || LoginForm.quyenLogin.getChiTietQuyen().contains("xemHoaDonNhap")) {
             txCurrentPage.setText("Hóa đơn nhập");
-                TabContainer.setSelectedIndex(3);
-                deleteTable(PNTable);
-        QuanLyHoaDonNhapBUS qlhdnBUS = new QuanLyHoaDonNhapBUS();
-        HienThiHoaDonNhap.AddTable(qlhdnBUS.getDshdn(), PNTable);
-        }
-                else{
-             JOptionPane.showMessageDialog(null, "Bạn không có quyền để xem trang này!");
+            TabContainer.setSelectedIndex(3);
+            deleteTable(PNTable);
+            QuanLyHoaDonNhapBUS qlhdnBUS = new QuanLyHoaDonNhapBUS();
+            HienThiHoaDonNhap.AddTable(qlhdnBUS.getDshdn(), PNTable);
+        } else {
+            JOptionPane.showMessageDialog(null, "Bạn không có quyền để xem trang này!");
         }
     }//GEN-LAST:event_jButton5HDNSubButton
 
     private void TKSubButton(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TKSubButton
-        if(LoginForm.quyenLogin.getChiTietQuyen().contains("qlTaiKhoan") || LoginForm.quyenLogin.getChiTietQuyen().contains("xemTaiKhoan") ){
-              txCurrentPage.setText("Tài khoản");
-             TabContainer.setSelectedIndex(9);}
-        else{
-             JOptionPane.showMessageDialog(null, "Bạn không có quyền để xem trang này!");
+        if (LoginForm.quyenLogin.getChiTietQuyen().contains("qlTaiKhoan") || LoginForm.quyenLogin.getChiTietQuyen().contains("xemTaiKhoan")) {
+            txCurrentPage.setText("Tài khoản");
+            TabContainer.setSelectedIndex(9);
+        } else {
+            JOptionPane.showMessageDialog(null, "Bạn không có quyền để xem trang này!");
         }
     }//GEN-LAST:event_TKSubButton
 
     private void QuyenSubButton(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_QuyenSubButton
-        if(LoginForm.quyenLogin.getChiTietQuyen().contains("qlQuyen") || LoginForm.quyenLogin.getChiTietQuyen().contains("xemQuyen") ){
-              txCurrentPage.setText("Quyền");
-             TabContainer.setSelectedIndex(10);}
-        else{
-             JOptionPane.showMessageDialog(null, "Bạn không có quyền để xem trang này!");
+        if (LoginForm.quyenLogin.getChiTietQuyen().contains("qlQuyen") || LoginForm.quyenLogin.getChiTietQuyen().contains("xemQuyen")) {
+            txCurrentPage.setText("Quyền");
+            TabContainer.setSelectedIndex(10);
+        } else {
+            JOptionPane.showMessageDialog(null, "Bạn không có quyền để xem trang này!");
         }
     }//GEN-LAST:event_QuyenSubButton
 
     private void jButton7TKSubButton(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton7TKSubButton
-        if(LoginForm.quyenLogin.getChiTietQuyen().contains("qlTaiKhoan") || LoginForm.quyenLogin.getChiTietQuyen().contains("xemTaiKhoan") ){
-              txCurrentPage.setText("Tài khoản");
-             TabContainer.setSelectedIndex(9);}
-        else{
-             JOptionPane.showMessageDialog(null, "Bạn không có quyền để xem trang này!");
+        if (LoginForm.quyenLogin.getChiTietQuyen().contains("qlTaiKhoan") || LoginForm.quyenLogin.getChiTietQuyen().contains("xemTaiKhoan")) {
+            txCurrentPage.setText("Tài khoản");
+            TabContainer.setSelectedIndex(9);
+        } else {
+            JOptionPane.showMessageDialog(null, "Bạn không có quyền để xem trang này!");
         }
     }//GEN-LAST:event_jButton7TKSubButton
 
     private void jButton8QuyenSubButton(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton8QuyenSubButton
-        if(LoginForm.quyenLogin.getChiTietQuyen().contains("qlQuyen") || LoginForm.quyenLogin.getChiTietQuyen().contains("xemQuyen") ){
-              txCurrentPage.setText("Quyền");
-             TabContainer.setSelectedIndex(10);}
-        else{
-             JOptionPane.showMessageDialog(null, "Bạn không có quyền để xem trang này!");
+        if (LoginForm.quyenLogin.getChiTietQuyen().contains("qlQuyen") || LoginForm.quyenLogin.getChiTietQuyen().contains("xemQuyen")) {
+            txCurrentPage.setText("Quyền");
+            TabContainer.setSelectedIndex(10);
+        } else {
+            JOptionPane.showMessageDialog(null, "Bạn không có quyền để xem trang này!");
         }
     }//GEN-LAST:event_jButton8QuyenSubButton
 
     private void BanHangButton(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BanHangButton
-        if(LoginForm.quyenLogin.getChiTietQuyen().contains("qlBanHang")){
+        if (LoginForm.quyenLogin.getChiTietQuyen().contains("qlBanHang")) {
             TabContainer.setSelectedIndex(0);
             txCurrentPage.setText("Bán hàng");
             deleteTable(BHSPTable);
@@ -5163,122 +5081,114 @@ public class MainPage extends javax.swing.JFrame {
             txTenSPBH.setText("");
             txDonGiaBH.setText("");
             txSoLuongBH.setText("1");
-        }
-        else{
+        } else {
             JOptionPane.showMessageDialog(null, "Bạn không có quyền để xem trang này!");
         }
     }//GEN-LAST:event_BanHangButton
 
     private void NhapHangButton(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_NhapHangButton
-        if(LoginForm.quyenLogin.getChiTietQuyen().contains("qlNhapHang")){
-           txCurrentPage.setText("Nhập hàng");
-           TabContainer.setSelectedIndex(1);
-           deleteTable(NHSPTable);
+        if (LoginForm.quyenLogin.getChiTietQuyen().contains("qlNhapHang")) {
+            txCurrentPage.setText("Nhập hàng");
+            TabContainer.setSelectedIndex(1);
+            deleteTable(NHSPTable);
             QuanLySachBUS qlspBUS = new QuanLySachBUS();
             HienThiSach.AddTable(qlspBUS.getDSSach(), NHSPTable);
             txMaSPNH.setText("");
             txTenSPNH.setText("");
             txDonGiaNH.setText("");
             txSoLuongNH.setText("1");
-        }
-        else{
-             JOptionPane.showMessageDialog(null, "Bạn không có quyền để xem trang này!");
+        } else {
+            JOptionPane.showMessageDialog(null, "Bạn không có quyền để xem trang này!");
         }
     }//GEN-LAST:event_NhapHangButton
 
     private void HoaDonButton(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_HoaDonButton
-        if(LoginForm.quyenLogin.getChiTietQuyen().contains("qlHoaDon") || LoginForm.quyenLogin.getChiTietQuyen().contains("xemHoaDon") ){
-             txCurrentPage.setText("Hóa đơn");
+        if (LoginForm.quyenLogin.getChiTietQuyen().contains("qlHoaDon") || LoginForm.quyenLogin.getChiTietQuyen().contains("xemHoaDon")) {
+            txCurrentPage.setText("Hóa đơn");
             TabContainer.setSelectedIndex(2);
             deleteTable(HDTable);
-        QuanLyHoaDonBanBUS qlhdBUS = new QuanLyHoaDonBanBUS();
-        HienThiHoaDonBan.AddTable(qlhdBUS.getDshdb(), HDTable);
-        }
-        else{
-             JOptionPane.showMessageDialog(null, "Bạn không có quyền để xem trang này!");
+            QuanLyHoaDonBanBUS qlhdBUS = new QuanLyHoaDonBanBUS();
+            HienThiHoaDonBan.AddTable(qlhdBUS.getDshdb(), HDTable);
+        } else {
+            JOptionPane.showMessageDialog(null, "Bạn không có quyền để xem trang này!");
         }
     }//GEN-LAST:event_HoaDonButton
 
     private void SachButton(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SachButton
-        if(LoginForm.quyenLogin.getChiTietQuyen().contains("qlSach") || LoginForm.quyenLogin.getChiTietQuyen().contains("xemSach") ){
-              txCurrentPage.setText("Sách");
-             TabContainer.setSelectedIndex(4);
-             deleteTable(SPTable);
-        QuanLySachBUS qlspBUS = new QuanLySachBUS();
-        HienThiSach.AddTable(qlspBUS.getDSSach(), SPTable);
-        }
-        else{
-             JOptionPane.showMessageDialog(null, "Bạn không có quyền để xem trang này!");
+        if (LoginForm.quyenLogin.getChiTietQuyen().contains("qlSach") || LoginForm.quyenLogin.getChiTietQuyen().contains("xemSach")) {
+            txCurrentPage.setText("Sách");
+            TabContainer.setSelectedIndex(4);
+            deleteTable(SPTable);
+            QuanLySachBUS qlspBUS = new QuanLySachBUS();
+            HienThiSach.AddTable(qlspBUS.getDSSach(), SPTable);
+        } else {
+            JOptionPane.showMessageDialog(null, "Bạn không có quyền để xem trang này!");
         }
     }//GEN-LAST:event_SachButton
 
     private void KhuyenMaiButton(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_KhuyenMaiButton
-        if(LoginForm.quyenLogin.getChiTietQuyen().contains("qlKhuyenMai") || LoginForm.quyenLogin.getChiTietQuyen().contains("xemKhuyenMai") ){
-             txCurrentPage.setText("Khuyến mãi");
-             TabContainer.setSelectedIndex(5);
-             deleteTable(KMTable);
-        QuanLyKhuyenMaiBUS qlkmBUS = new QuanLyKhuyenMaiBUS();
-        HienThiKhuyenMai.AddTable(qlkmBUS.getDskm(), KMTable);
-        }
-        else{
-             JOptionPane.showMessageDialog(null, "Bạn không có quyền để xem trang này!");
+        if (LoginForm.quyenLogin.getChiTietQuyen().contains("qlKhuyenMai") || LoginForm.quyenLogin.getChiTietQuyen().contains("xemKhuyenMai")) {
+            txCurrentPage.setText("Khuyến mãi");
+            TabContainer.setSelectedIndex(5);
+            deleteTable(KMTable);
+            QuanLyKhuyenMaiBUS qlkmBUS = new QuanLyKhuyenMaiBUS();
+            HienThiKhuyenMai.AddTable(qlkmBUS.getDskm(), KMTable);
+        } else {
+            JOptionPane.showMessageDialog(null, "Bạn không có quyền để xem trang này!");
         }
     }//GEN-LAST:event_KhuyenMaiButton
 
     private void KhachHangButton(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_KhachHangButton
-        if(LoginForm.quyenLogin.getChiTietQuyen().contains("qlKhachHang") || LoginForm.quyenLogin.getChiTietQuyen().contains("xemKhachHang") ){
+        if (LoginForm.quyenLogin.getChiTietQuyen().contains("qlKhachHang") || LoginForm.quyenLogin.getChiTietQuyen().contains("xemKhachHang")) {
             txCurrentPage.setText("Khách hàng");
             TabContainer.setSelectedIndex(6);
             deleteTable(KHTable);
-        QuanLyKhachHangBUS qlkhBUS = new QuanLyKhachHangBUS();
-        HienThiKhachHang.addTable(qlkhBUS.getDskh(), KHTable);
-        }
-        else{
-             JOptionPane.showMessageDialog(null, "Bạn không có quyền để xem trang này!");
+            QuanLyKhachHangBUS qlkhBUS = new QuanLyKhachHangBUS();
+            HienThiKhachHang.addTable(qlkhBUS.getDskh(), KHTable);
+        } else {
+            JOptionPane.showMessageDialog(null, "Bạn không có quyền để xem trang này!");
         }
     }//GEN-LAST:event_KhachHangButton
 
     private void NhanVienButton(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_NhanVienButton
-        if(LoginForm.quyenLogin.getChiTietQuyen().contains("qlNhanVien") || LoginForm.quyenLogin.getChiTietQuyen().contains("xemNhanVien") ){
+        if (LoginForm.quyenLogin.getChiTietQuyen().contains("qlNhanVien") || LoginForm.quyenLogin.getChiTietQuyen().contains("xemNhanVien")) {
             txCurrentPage.setText("Nhân viên");
             TabContainer.setSelectedIndex(7);
             deleteTable(NVTable);
-        QuanLyNhanVienBUS qlnvBUS = new QuanLyNhanVienBUS();
-        HienThiNhanVien.AddTable(qlnvBUS.getDsnv(), NVTable);
-        }
-        else{
-             JOptionPane.showMessageDialog(null, "Bạn không có quyền để xem trang này!");
+            QuanLyNhanVienBUS qlnvBUS = new QuanLyNhanVienBUS();
+            HienThiNhanVien.AddTable(qlnvBUS.getDsnv(), NVTable);
+        } else {
+            JOptionPane.showMessageDialog(null, "Bạn không có quyền để xem trang này!");
         }
     }//GEN-LAST:event_NhanVienButton
 
     private void NhaCungCapButotn(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_NhaCungCapButotn
-        if(LoginForm.quyenLogin.getChiTietQuyen().contains("qlNCC") || LoginForm.quyenLogin.getChiTietQuyen().contains("xemNCC") ){
+        if (LoginForm.quyenLogin.getChiTietQuyen().contains("qlNCC") || LoginForm.quyenLogin.getChiTietQuyen().contains("xemNCC")) {
             txCurrentPage.setText("Nhà cung cấp");
             TabContainer.setSelectedIndex(8);
             deleteTable(NCCTable);
-        QuanLyNhaCungCapBUS qlnccBUS = new QuanLyNhaCungCapBUS();
-        HienThiNhaCungCap.AddTable(qlnccBUS.getDsncc(), NCCTable);
-        }
-        else{
-             JOptionPane.showMessageDialog(null, "Bạn không có quyền để xem trang này!");
+            QuanLyNhaCungCapBUS qlnccBUS = new QuanLyNhaCungCapBUS();
+            HienThiNhaCungCap.AddTable(qlnccBUS.getDsncc(), NCCTable);
+        } else {
+            JOptionPane.showMessageDialog(null, "Bạn không có quyền để xem trang này!");
         }
     }//GEN-LAST:event_NhaCungCapButotn
 
     private void TaiKhoanButton(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TaiKhoanButton
-        if(LoginForm.quyenLogin.getChiTietQuyen().contains("qlTaiKhoan") || LoginForm.quyenLogin.getChiTietQuyen().contains("xemTaiKhoan") ){
-             txCurrentPage.setText("Tài khoản");
-             TabContainer.setSelectedIndex(9);}
-        else{
-             JOptionPane.showMessageDialog(null, "Bạn không có quyền để xem trang này!");
+        if (LoginForm.quyenLogin.getChiTietQuyen().contains("qlTaiKhoan") || LoginForm.quyenLogin.getChiTietQuyen().contains("xemTaiKhoan")) {
+            txCurrentPage.setText("Tài khoản");
+            TabContainer.setSelectedIndex(9);
+        } else {
+            JOptionPane.showMessageDialog(null, "Bạn không có quyền để xem trang này!");
         }
     }//GEN-LAST:event_TaiKhoanButton
 
     private void jPanel7MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel7MouseExited
-        changecolor(jPanel7, new Color(92,37,141));
+        changecolor(jPanel7, new Color(92, 37, 141));
     }//GEN-LAST:event_jPanel7MouseExited
 
     private void jPanel7MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel7MouseEntered
-        changecolor(jPanel7, new Color(74,30,113));
+        changecolor(jPanel7, new Color(74, 30, 113));
     }//GEN-LAST:event_jPanel7MouseEntered
 
     private void ThongKeBanMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ThongKeBanMousePressed
@@ -5311,47 +5221,34 @@ public class MainPage extends javax.swing.JFrame {
 //                              },table);
 //        }
 //    }
-    
-    
-    public static void main(String args[])
-    {
+    public static void main(String args[]) {
         System.setProperty("sun.java2d.uiScale", "1.0");
 
-        
-        try
-        {
-            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels())
-            {
-                if ("Windows".equals(info.getName()))
-                {
+        try {
+            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
+                if ("Windows".equals(info.getName())) {
                     javax.swing.UIManager.setLookAndFeel(info.getClassName());
                     break;
                 }
             }
-        } catch (ClassNotFoundException ex) 
-        {
+        } catch (ClassNotFoundException ex) {
             java.util.logging.Logger.getLogger(MainPage.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (InstantiationException ex) 
-        {
+        } catch (InstantiationException ex) {
             java.util.logging.Logger.getLogger(MainPage.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (IllegalAccessException ex) 
-        {
+        } catch (IllegalAccessException ex) {
             java.util.logging.Logger.getLogger(MainPage.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (javax.swing.UnsupportedLookAndFeelException ex) 
-        {
+        } catch (javax.swing.UnsupportedLookAndFeelException ex) {
             java.util.logging.Logger.getLogger(MainPage.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
-        
+
         /* Create and display the form */
-        java.awt.EventQueue.invokeLater(new Runnable() 
-        {
-            public void run() 
-            {
+        java.awt.EventQueue.invokeLater(new Runnable() {
+            public void run() {
                 MainPage page = new MainPage();
                 page.setVisible(true);
                 page.setResizable(true);
             }
-            
+
         });
     }
 

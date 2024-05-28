@@ -1,6 +1,5 @@
 package bookstoremanagement.model.Frontend.FormThemSua;
 
-
 import javax.swing.JFrame;
 import javax.swing.JOptionPane;
 import javax.swing.JTextField;
@@ -8,13 +7,9 @@ import bookstoremanagement.frames.addKH;
 import bookstoremanagement.frames.editKH;
 import bookstoremanagement.model.Backend.KhachHang.QuanLyKhachHangBUS;
 
-
 public class ThemSuaKhachHangForm extends JFrame {
 
-
     static QuanLyKhachHangBUS qlkhBUS = new QuanLyKhachHangBUS();
-  
-   
 
     public static void btnThemMouseClicked() {
         if (checkEmptyAdd()) {
@@ -23,8 +18,8 @@ public class ThemSuaKhachHangForm extends JFrame {
             String diachi = addKH.txtDiaChi.getText();
             String sdt = addKH.txtSDT.getText();
             if (qlkhBUS.add(makh, tenkh, diachi, sdt)) {
-                JOptionPane.showMessageDialog( null, "Thêm " + tenkh + " thành công!");
-                
+                JOptionPane.showMessageDialog(null, "Thêm " + tenkh + " thành công!");
+
             }
         }
     }
@@ -38,7 +33,7 @@ public class ThemSuaKhachHangForm extends JFrame {
 
             if (qlkhBUS.update(makh, tenkh, diachi, sdt)) {
                 JOptionPane.showMessageDialog(null, "Sửa " + makh + " thành công!");
-                
+
             }
         }
     }
@@ -60,12 +55,14 @@ public class ThemSuaKhachHangForm extends JFrame {
 
         } else if (sdt.trim().equals("")) {
             return showErrorTx(addKH.txtSDT, "Số điện thoại không được để trống");
+        } else if (sdt.trim().length() != 10 || sdt.trim().charAt(0) != '0') {
+            return showErrorTx(editKH.txtSDT, "Số điện thoại phải có đúng 10 ký tự và kí tự đầu tiên phải là số 0");
         }
 
         return true;
     }
-        
-        private static Boolean checkEmptyEdit() {
+
+    private static Boolean checkEmptyEdit() {
         String makh = editKH.txtTenKH.getText();
         String tenkh = editKH.txtTenKH.getText();
         String diachi = editKH.txtDiaChi.getText();
@@ -80,8 +77,8 @@ public class ThemSuaKhachHangForm extends JFrame {
         } else if (diachi.trim().equals("")) {
             return showErrorTx(editKH.txtDiaChi, "Địa chỉ không được để trống");
 
-        } else if (sdt.trim().equals("")) {
-            return showErrorTx(editKH.txtSDT, "Số điện thoại không được để trống");
+        } else if (sdt.trim().length() != 10 || sdt.trim().charAt(0) != '0') {
+            return showErrorTx(editKH.txtSDT, "Số điện thoại phải có đúng 10 ký tự và kí tự đầu tiên phải là số 0");
         }
 
         return true;
