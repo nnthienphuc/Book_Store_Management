@@ -4305,7 +4305,7 @@ public class MainPage extends javax.swing.JFrame {
             editNCC.XoaNCC(maNCC);
             changecolor(LamMoiSP7,new Color(51,204,0));
         deleteTable(NCCTable);
-      QuanLyNhaCungCapBUS qlnccBUS = new QuanLyNhaCungCapBUS();
+        QuanLyNhaCungCapBUS qlnccBUS = new QuanLyNhaCungCapBUS();
         HienThiNhaCungCap.AddTable(qlnccBUS.getDsncc(), NCCTable);
             
             
@@ -4381,6 +4381,9 @@ public class MainPage extends javax.swing.JFrame {
         {
             String maNV =    (String) NVTable.getValueAt(NVTable.getSelectedRow(), 1);
             editNV.XoaNV(maNV);
+            deleteTable(NVTable);
+            QuanLyNhanVienBUS qlnvBUS = new QuanLyNhanVienBUS();
+            HienThiNhanVien.AddTable(qlnvBUS.getDsnv(), NVTable);
         }
     }//GEN-LAST:event_BHxoa4MouseReleased
 
