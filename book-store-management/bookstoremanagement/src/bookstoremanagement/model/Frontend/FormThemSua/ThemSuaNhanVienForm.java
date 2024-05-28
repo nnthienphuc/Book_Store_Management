@@ -56,25 +56,30 @@ public class ThemSuaNhanVienForm extends JFrame {
         String sdt = addNV.txSDT.getText();
 
         if (manv.trim().equals("")) {
-            return showErrorTx(addNV.txMaNV, "Mã nhân viên không được để trống");
+            JOptionPane.showMessageDialog(addNV.txMaNV, "Mã nhân viên không được để trống");
+            return false;
 
         } else if (tennv.trim().equals("")) {
-            return showErrorTx(addNV.txTenNV, "Tên nhân viên không được để trống");
-
+            JOptionPane.showMessageDialog(addNV.txTenNV, "Tên nhân viên không được để trống");
+            return false;
         } else if (ngaysinh.trim().equals("")) {
-            return showErrorTx(addNV.txTenNV, "Ngày sinh không được để trống");
-
+            JOptionPane.showMessageDialog(addNV.txTenNV, "Ngày sinh không được để trống");
+            return false;
         } else if (diachi.trim().equals("")) {
-            return showErrorTx(addNV.txTenNV, "Địa chỉ không được để trống");
-
+            JOptionPane.showMessageDialog(addNV.txTenNV, "Địa chỉ không được để trống");
+            return false;
         } else if (sdt.trim().equals("")) {
-            return showErrorTx(addNV.txTenNV, "Số điện thoại không được để trống");
-
+            JOptionPane.showMessageDialog(addNV.txTenNV, "Số điện thoại không được để trống");
+            return false;
+        } else if (sdt.length() != 10 || !(sdt.matches("\\d+"))) {
+            JOptionPane.showMessageDialog(addNV.txSDT, "SĐT không hợp lệ");
+            return false;
         } else {
             try {
                 LocalDate.parse(ngaysinh);
             } catch (Exception e) {
-                return showErrorTx(addNV.txTenNV, "Ngày sinh không hợp lệ");
+                JOptionPane.showMessageDialog(addNV.txTenNV, "Ngày sinh không hợp lệ");
+                return false;
             }
         }
 
@@ -89,25 +94,32 @@ public class ThemSuaNhanVienForm extends JFrame {
         String sdt = editNV.txSDT.getText();
 
         if (manv.trim().equals("")) {
-            return showErrorTx(editNV.txMaNV, "Mã nhân viên không được để trống");
+            JOptionPane.showMessageDialog(editNV.txMaNV, "Mã nhân viên không được để trống");
+            return false;
 
         } else if (tennv.trim().equals("")) {
-            return showErrorTx(editNV.txTenNV, "Tên nhân viên không được để trống");
-
+            JOptionPane.showMessageDialog(editNV.txTenNV, "Tên nhân viên không được để trống");
+            return false;
         } else if (ngaysinh.trim().equals("")) {
-            return showErrorTx(editNV.txTenNV, "Ngày sinh không được để trống");
-
+            JOptionPane.showMessageDialog(editNV.txTenNV, "Ngày sinh không được để trống");
+            return false;
         } else if (diachi.trim().equals("")) {
-            return showErrorTx(editNV.txTenNV, "Địa chỉ không được để trống");
-
+            JOptionPane.showMessageDialog(editNV.txTenNV, "Địa chỉ không được để trống");
+            return false;
         } else if (sdt.trim().equals("")) {
-            return showErrorTx(editNV.txTenNV, "Số điện thoại không được để trống");
-
-        } else {
+            JOptionPane.showMessageDialog(editNV.txTenNV, "Số điện thoại không được để trống");
+            return false;
+        } else if (sdt.length() != 10 || !(sdt.matches("\\d+"))) {
+            JOptionPane.showMessageDialog(editNV.txSDT, "SĐT không hợp lệ");
+            return false;
+        }
+        
+        else {
             try {
                 LocalDate.parse(ngaysinh);
             } catch (Exception e) {
-                return showErrorTx(editNV.txTenNV, "Ngày sinh không hợp lệ");
+                JOptionPane.showMessageDialog(editNV.txTenNV, "Ngày sinh không hợp lệ");
+                return false;
             }
         }
 
@@ -115,9 +127,4 @@ public class ThemSuaNhanVienForm extends JFrame {
     }
 
     
-    private static Boolean showErrorTx(JTextField tx, String errorInfo) {
-        JOptionPane.showMessageDialog(tx, errorInfo);
-        tx.requestFocus();
-        return false;
-    }
 }

@@ -351,7 +351,7 @@ public class addNV extends javax.swing.JFrame {
         deleteTable(NVTable);
         QuanLyNhanVienBUS qlnvBUS = new QuanLyNhanVienBUS();
         HienThiNhanVien.AddTable(qlnvBUS.getDsnv(), NVTable);
-        this.dispose();
+        
         //        setTableCellAlignment(JLabel.CENTER,pTable);
     }//GEN-LAST:event_BHthemMouseReleased
 

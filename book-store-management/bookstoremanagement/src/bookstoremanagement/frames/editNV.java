@@ -44,6 +44,10 @@ public class editNV extends javax.swing.JFrame {
             txNgaySinh.setText(String.valueOf(nvSua.getNgaySinh()));
             txDiaChi.setText(nvSua.getDiaChi());
             txSDT.setText(nvSua.getSDT());
+            if (nvSua.getTrangThai() == 1){
+                cbChonTrangThai.setSelectedIndex(1);
+            }
+            else cbChonTrangThai.setSelectedIndex(0);
     }
     
     public static void XoaNV(String manv){
