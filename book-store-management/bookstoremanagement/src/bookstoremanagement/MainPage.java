@@ -4324,7 +4324,7 @@ public class MainPage extends javax.swing.JFrame {
         changecolor(LamMoiSP7, new Color(51, 204, 0));
         deleteTable(NCCTable);
         QuanLyNhaCungCapBUS qlnccBUS = new QuanLyNhaCungCapBUS();
-        HienThiNhaCungCap.AddTable(qlnccBUS.getDsncc(), NVTable);
+        HienThiNhaCungCap.AddTable(qlnccBUS.getDsncc(), NCCTable);
 
 
     }//GEN-LAST:event_LamMoiSP7MouseReleased
