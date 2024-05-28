@@ -72,5 +72,4 @@ public class NhaCungCap {
     public String toString() {
         return "NhaCungCap{" + "maNCC=" + maNCC + ", tenNcC=" + tenNCC + ", diachi=" + diaChi + ", SDT=" + SDT + ", FAX=" + FAX + '}';
     }
- 
 }

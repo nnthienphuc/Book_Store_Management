@@ -2760,7 +2760,10 @@ public class MainPage extends javax.swing.JFrame {
         LamMoiSP7.setLayout(LamMoiSP7Layout);
         LamMoiSP7Layout.setHorizontalGroup(
             LamMoiSP7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jLabel82, javax.swing.GroupLayout.DEFAULT_SIZE, 120, Short.MAX_VALUE)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, LamMoiSP7Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jLabel82, javax.swing.GroupLayout.DEFAULT_SIZE, 108, Short.MAX_VALUE)
+                .addContainerGap())
         );
         LamMoiSP7Layout.setVerticalGroup(
             LamMoiSP7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -4300,6 +4303,12 @@ public class MainPage extends javax.swing.JFrame {
         {
             String maNCC =    (String) NCCTable.getValueAt(NCCTable.getSelectedRow(), 1);
             editNCC.XoaNCC(maNCC);
+            changecolor(LamMoiSP7,new Color(51,204,0));
+        deleteTable(NCCTable);
+      QuanLyNhaCungCapBUS qlnccBUS = new QuanLyNhaCungCapBUS();
+        HienThiNhaCungCap.AddTable(qlnccBUS.getDsncc(), NCCTable);
+            
+            
         }
     }//GEN-LAST:event_BHxoa5MouseReleased
 
@@ -4330,7 +4339,8 @@ public class MainPage extends javax.swing.JFrame {
         changecolor(LamMoiSP7,new Color(51,204,0));
         deleteTable(NCCTable);
         QuanLyNhaCungCapBUS qlnccBUS = new QuanLyNhaCungCapBUS();
-        HienThiNhaCungCap.AddTable(qlnccBUS.getDsncc(), NCCTable);
+        
+        
     }//GEN-LAST:event_LamMoiSP7MouseReleased
 
     private void LamMoiSP7MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_LamMoiSP7MousePressed
