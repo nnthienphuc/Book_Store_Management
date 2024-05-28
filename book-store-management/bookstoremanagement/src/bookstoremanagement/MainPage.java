@@ -2138,9 +2138,9 @@ public class MainPage extends javax.swing.JFrame {
             SPTable.getColumnModel().getColumn(8).setMinWidth(100);
             SPTable.getColumnModel().getColumn(8).setPreferredWidth(100);
             SPTable.getColumnModel().getColumn(8).setMaxWidth(100);
-            SPTable.getColumnModel().getColumn(9).setMinWidth(0);
-            SPTable.getColumnModel().getColumn(9).setPreferredWidth(0);
-            SPTable.getColumnModel().getColumn(9).setMaxWidth(0);
+            SPTable.getColumnModel().getColumn(9).setMinWidth(70);
+            SPTable.getColumnModel().getColumn(9).setPreferredWidth(70);
+            SPTable.getColumnModel().getColumn(9).setMaxWidth(70);
         }
 
         TabSach.add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 180, 1110, 500));
