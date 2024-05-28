@@ -1560,6 +1560,7 @@ public class MainPage extends javax.swing.JFrame {
 
         searchType7.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         searchType7.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Tất cả", "Mã hóa đơn", "Mã nhân viên", "Mã khách hàng", "Mã khuyến mãi", "Ngày lập", "Giờ lập", "Tổng tiền", " " }));
+        searchType7.setEnabled(false);
         TabHDB.add(searchType7, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 126, 110, 30));
 
         jScrollPane8.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
@@ -1778,6 +1779,7 @@ public class MainPage extends javax.swing.JFrame {
 
         searchType9.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         searchType9.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Tất cả", "Mã phiếu nhập", "Mã nhà cung cấp", "Mã nhân viên", "Ngày nhập", "Giờ nhập", "Tổng tiền", " " }));
+        searchType9.setEnabled(false);
         TabHDN.add(searchType9, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 126, 110, 30));
 
         FilterSearch9.setFont(new java.awt.Font("Dialog", 0, 18)); // NOI18N
@@ -2090,7 +2092,7 @@ public class MainPage extends javax.swing.JFrame {
 
             },
             new String [] {
-                "STT", "Mã sách", "Tên sách", "Thể loại", "Tác giả", "Năm xb", "SL Tồn", "Giá nhập", "Giá bán", "Trạng thái"
+                "STT", "Mã", "Tên", "Thể loại", "Tác giả", "Năm xb", "SL tồn", "Giá nhập", "Giá bán", "Ghi chú"
             }
         ) {
             boolean[] canEdit = new boolean [] {
@@ -2117,12 +2119,12 @@ public class MainPage extends javax.swing.JFrame {
             SPTable.getColumnModel().getColumn(0).setMinWidth(35);
             SPTable.getColumnModel().getColumn(0).setPreferredWidth(35);
             SPTable.getColumnModel().getColumn(0).setMaxWidth(35);
-            SPTable.getColumnModel().getColumn(1).setMinWidth(100);
-            SPTable.getColumnModel().getColumn(1).setPreferredWidth(100);
-            SPTable.getColumnModel().getColumn(1).setMaxWidth(100);
-            SPTable.getColumnModel().getColumn(2).setMinWidth(200);
-            SPTable.getColumnModel().getColumn(2).setPreferredWidth(300);
-            SPTable.getColumnModel().getColumn(2).setMaxWidth(400);
+            SPTable.getColumnModel().getColumn(1).setMinWidth(70);
+            SPTable.getColumnModel().getColumn(1).setPreferredWidth(70);
+            SPTable.getColumnModel().getColumn(1).setMaxWidth(70);
+            SPTable.getColumnModel().getColumn(2).setMinWidth(250);
+            SPTable.getColumnModel().getColumn(2).setPreferredWidth(250);
+            SPTable.getColumnModel().getColumn(2).setMaxWidth(250);
             SPTable.getColumnModel().getColumn(4).setMinWidth(200);
             SPTable.getColumnModel().getColumn(4).setPreferredWidth(200);
             SPTable.getColumnModel().getColumn(4).setMaxWidth(200);
@@ -4181,7 +4183,9 @@ public class MainPage extends javax.swing.JFrame {
     }//GEN-LAST:event_LamMoiSP11MousePressed
 
     private void FilterSearch9KeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_FilterSearch9KeyReleased
-        // TODO add your handling code here:
+        String query = FilterSearch9.getText().toLowerCase();
+
+        filterTable(PNTable, query, searchType1.getSelectedIndex() - 1);
     }//GEN-LAST:event_FilterSearch9KeyReleased
 
     private void FilterSearch9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_FilterSearch9ActionPerformed
@@ -4579,7 +4583,9 @@ public class MainPage extends javax.swing.JFrame {
     }//GEN-LAST:event_LamMoiSP9MousePressed
 
     private void FilterSearch7KeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_FilterSearch7KeyReleased
-        // TODO add your handling code here:
+        String query = FilterSearch7.getText().toLowerCase();
+
+        filterTable(HDTable, query, searchType1.getSelectedIndex() - 1);
     }//GEN-LAST:event_FilterSearch7KeyReleased
 
     private void FilterSearch7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_FilterSearch7ActionPerformed
