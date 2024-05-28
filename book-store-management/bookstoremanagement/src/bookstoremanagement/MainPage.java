@@ -3880,6 +3880,13 @@ public class MainPage extends javax.swing.JFrame {
             BHxoa9.setVisible(false);
             BHsua9.setVisible(false);
           }
+        // sach
+        if (LoginForm.quyenLogin.getChiTietQuyen().contains("xemSach")){
+            BHthem1.setVisible(false);
+            BHxoa1.setVisible(false);
+            BHsua1.setVisible(false);
+        }
+        
     }
     
     public static void AddRowToTable(Object[] dataRow,JTable table)
