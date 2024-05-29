@@ -140,6 +140,8 @@ public class ChonKMForm extends javax.swing.JFrame {
         );
 
         txtSearch.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
+        txtSearch.setEditable(false);
+        txtSearch.setEnabled(false);
         txtSearch.setFont(new java.awt.Font("Dialog", 0, 18)); // NOI18N
         txtSearch.setMinimumSize(new java.awt.Dimension(28, 25));
         txtSearch.addActionListener(new java.awt.event.ActionListener() {

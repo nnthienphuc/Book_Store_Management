@@ -3652,7 +3652,11 @@ public class MainPage extends javax.swing.JFrame {
             JOptionPane.showMessageDialog(null, "Bạn chưa chọn sản phẩm nào");
         } else if (Integer.parseInt(txSoLuongBH.getText()) > Integer.parseInt(BHSPTable.getModel().getValueAt(index, 6).toString())) {
             JOptionPane.showMessageDialog(null, "Số lượng tồn kho không đủ!");
-        } else {
+        } 
+        else if (Integer.parseInt(txSoLuongBH.getText()) <= 0) {
+            JOptionPane.showMessageDialog(null, "Số lượng phải > 0!");
+        }
+        else {
             TableModel model = BHSPTable.getModel();
             String masach = model.getValueAt(index, 1).toString();
             int insertRow = BHTTTable.getRowCount() + 1;
@@ -3702,7 +3706,11 @@ public class MainPage extends javax.swing.JFrame {
         int index = NHSPTable.getSelectedRow();
         if (index < 0) {
             JOptionPane.showMessageDialog(null, "Bạn chưa chọn sản phẩm nào");
-        } else {
+        } 
+        else if (Integer.parseInt(txSoLuongNH.getText()) <= 0) {
+            JOptionPane.showMessageDialog(null, "Số lượng phải > 0!");
+        }
+            else {
             TableModel model = NHSPTable.getModel();
             String masp = model.getValueAt(index, 1).toString();
             int insertRow = NHTTTable.getRowCount() + 1;

@@ -90,7 +90,7 @@ public class LoginForm extends javax.swing.JFrame {
 
         txtUsername.setFont(new java.awt.Font("Didot", 0, 16)); // NOI18N
         txtUsername.setForeground(new java.awt.Color(153, 153, 153));
-        txtUsername.setText("nnthienphuc");
+        txtUsername.setText("Enter your username");
         txtUsername.setBorder(null);
         txtUsername.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
