@@ -255,26 +255,32 @@ public class LoginForm extends javax.swing.JFrame {
         if (tk != null) {
            
             QuanLyNhanVien nv = new QuanLyNhanVienBUS().getNhanVien(tk.getMaNV());
-            
-
-            // check password
-            if (tk.getMatKhau().equals(mk)) {
-                taiKhoanLogin = tk;
-                nhanVienLogin = nv;
-                quyenLogin = new QuanLyQuyenBUS().getQuyen(taiKhoanLogin.getMaQuyen());
-
-                // Đăng nhập thành công
-               
-                
-                new MainPage().setVisible(true);
-                this.dispose();
-
-            } else {
-                JOptionPane.showMessageDialog(this, "Sai mật khẩu!");
-                changecolor(pnlLogin, new Color(255, 149, 63));
-                pwdPwd.requestFocus();
+           
+            if (nv.getTrangThai() == 1) {
+               JOptionPane.showMessageDialog(this, "Tài khoản đã bị khóa!"); 
+               changecolor(pnlLogin, new Color(255, 149,63));
             }
+            else {
+                
+            
+            // check password
+                if (tk.getMatKhau().equals(mk)) {
+                    taiKhoanLogin = tk;
+                    nhanVienLogin = nv;
+                    quyenLogin = new QuanLyQuyenBUS().getQuyen(taiKhoanLogin.getMaQuyen());
 
+                    // Đăng nhập thành công
+
+
+                    new MainPage().setVisible(true);
+                    this.dispose();
+
+                } else {
+                    JOptionPane.showMessageDialog(this, "Sai mật khẩu!");
+                    changecolor(pnlLogin, new Color(255, 149, 63));
+                    pwdPwd.requestFocus();
+                }
+            }
         } else {
             JOptionPane.showMessageDialog(this, "Sai tên đăng nhập!");
             changecolor(pnlLogin, new Color(255, 149, 63));
