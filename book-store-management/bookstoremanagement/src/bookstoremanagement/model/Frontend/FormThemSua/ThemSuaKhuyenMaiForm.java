@@ -69,7 +69,7 @@ public class ThemSuaKhuyenMaiForm extends JFrame{
 
         }
         else if (LocalDate.parse(ngaykt).isBefore(LocalDate.parse(ngaybd))) {
-            return showErrorTx(editKM.txtTenKM, "Ngày kết thúc không được trước ngày bắt đầu");
+            return showErrorTx(addKM.txtTenKM, "Ngày kết thúc không được trước ngày bắt đầu");
 
         } else {
             try {
