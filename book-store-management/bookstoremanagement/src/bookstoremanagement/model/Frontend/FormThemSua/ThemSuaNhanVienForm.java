@@ -7,6 +7,7 @@ import javax.swing.JOptionPane;
 import javax.swing.JTextField;
 import bookstoremanagement.frames.addNV;
 import bookstoremanagement.frames.editNV;
+import java.time.Period;
 
 public class ThemSuaNhanVienForm extends JFrame {
 
@@ -78,7 +79,12 @@ public class ThemSuaNhanVienForm extends JFrame {
         } else if (sdt.length() != 10 || !(sdt.matches("\\d+"))) {
             JOptionPane.showMessageDialog(addNV.txSDT, "SĐT không hợp lệ");
             return false;
-        } else {
+        
+        } else if(Period.between(LocalDate.parse(ngaysinh),LocalDate.now()).getYears() < 18){
+            JOptionPane.showMessageDialog(addNV.txSDT, "Nhân viên phải đủ 18 tuổi");
+            return false;
+        } 
+        else {
             try {
                 LocalDate.parse(ngaysinh);
             } catch (Exception e) {
@@ -116,7 +122,10 @@ public class ThemSuaNhanVienForm extends JFrame {
         } else if (sdt.length() != 10 || !(sdt.matches("\\d+"))) {
             JOptionPane.showMessageDialog(editNV.txSDT, "SĐT không hợp lệ");
             return false;
-        }
+        } else if(Period.between(LocalDate.parse(ngaysinh),LocalDate.now()).getYears() < 18){
+            JOptionPane.showMessageDialog(editNV.txSDT, "Nhân viên phải đủ 18 tuổi");
+            return false;
+        } 
         
         else {
             try {
