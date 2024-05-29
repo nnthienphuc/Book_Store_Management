@@ -47,7 +47,7 @@ public class addQuyen extends javax.swing.JFrame {
         }
         if(checkboxSP.getState())
         {
-            chitietquyen += comboSP.getSelectedIndex() == 0 ? "xemSanPham" : "qlSanPham";
+            chitietquyen += comboSP.getSelectedIndex() == 0 ? "xemSach" : "qlSach";
         }
         if(checkboxHD.getState())
         {
@@ -277,7 +277,7 @@ public class addQuyen extends javax.swing.JFrame {
         });
 
         checkboxSP.setForeground(new java.awt.Color(0, 0, 0));
-        checkboxSP.setLabel("Sản phẩm");
+        checkboxSP.setLabel("Sách");
         checkboxSP.addItemListener(new java.awt.event.ItemListener() {
             public void itemStateChanged(java.awt.event.ItemEvent evt) {
                 checkboxSPItemStateChanged(evt);
@@ -508,7 +508,7 @@ public class addQuyen extends javax.swing.JFrame {
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(BHhuy, javax.swing.GroupLayout.PREFERRED_SIZE, 117, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, 219, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(111, Short.MAX_VALUE))
+                .addContainerGap(116, Short.MAX_VALUE))
             .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(jPanel1Layout.createSequentialGroup()
                     .addContainerGap()

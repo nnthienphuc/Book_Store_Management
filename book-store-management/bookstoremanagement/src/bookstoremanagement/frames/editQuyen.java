@@ -22,14 +22,19 @@ import javax.swing.JFrame;
  * @author songnguyen
  */
 public class editQuyen extends javax.swing.JFrame {
+    
+    
+    
+    
+    
     public void changecolor(JPanel hover, Color rand) {
         hover.setBackground(rand);
     }
-       public static void setText()
+    public static void setText()
     {
-        String text = (String) SubQuyenTable.getValueAt(SubQuyenTable.getSelectedRow(), 1);
         
-        txTenQuyen.setText(text);
+        txMaQuyen.setText((String)QuyenTable.getValueAt(QuyenTable.getSelectedRow(), 1));
+        txTenQuyen.setText((String)QuyenTable.getValueAt(QuyenTable.getSelectedRow(), 2));
     }
     
     public void GetInput(){
@@ -41,7 +46,7 @@ public class editQuyen extends javax.swing.JFrame {
         }
         else
         {
-        SuaQuyen(maQuyen);
+            SuaQuyen(maQuyen);
         }
     }
     
@@ -58,7 +63,7 @@ public class editQuyen extends javax.swing.JFrame {
         }
         if(checkboxSP.getState())
         {
-            chitietquyen += comboSP.getSelectedIndex() == 0 ? "xemSanPham" : "qlSanPham";
+            chitietquyen += comboSP.getSelectedIndex() == 0 ? "xemSach" : "qlSach";
         }
         
         if(checkboxHD.getState())
@@ -111,8 +116,7 @@ public class editQuyen extends javax.swing.JFrame {
 //            }
 
             
-            txMaQuyen.setText(quyenSua.getMaQuyen());
-            txTenQuyen.setText(quyenSua.getTenQuyen());
+            setText();
            
     }
     
@@ -138,6 +142,7 @@ public class editQuyen extends javax.swing.JFrame {
      */
     public editQuyen() {
         initComponents();
+        GetInput();
         setLocationRelativeTo(null);
         setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
     }
@@ -330,7 +335,7 @@ public class editQuyen extends javax.swing.JFrame {
         });
 
         checkboxSP.setForeground(new java.awt.Color(0, 0, 0));
-        checkboxSP.setLabel("Sản phẩm");
+        checkboxSP.setLabel("Sách");
         checkboxSP.addItemListener(new java.awt.event.ItemListener() {
             public void itemStateChanged(java.awt.event.ItemEvent evt) {
                 checkboxSPItemStateChanged(evt);
@@ -752,7 +757,9 @@ public class editQuyen extends javax.swing.JFrame {
             comboQuyen.setEnabled(false);
         }
     }//GEN-LAST:event_checkboxQuyenItemStateChanged
-
+     private void formWindowOpened(java.awt.event.WindowEvent evt) {                                  
+        GetInput();
+    }     
     /**
      * @param args the command line arguments
      */

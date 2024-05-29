@@ -297,8 +297,6 @@ public class MainPage extends javax.swing.JFrame {
         jLabel67 = new javax.swing.JLabel();
         BHsua1 = new javax.swing.JPanel();
         jLabel68 = new javax.swing.JLabel();
-        BHxoa1 = new javax.swing.JPanel();
-        jLabel63 = new javax.swing.JLabel();
         BHthem1 = new javax.swing.JPanel();
         jLabel69 = new javax.swing.JLabel();
         jScrollPane2 = new javax.swing.JScrollPane();
@@ -312,8 +310,6 @@ public class MainPage extends javax.swing.JFrame {
         jLabel74 = new javax.swing.JLabel();
         BHsua3 = new javax.swing.JPanel();
         jLabel75 = new javax.swing.JLabel();
-        BHxoa3 = new javax.swing.JPanel();
-        jLabel76 = new javax.swing.JLabel();
         BHthem3 = new javax.swing.JPanel();
         jLabel77 = new javax.swing.JLabel();
         jScrollPane5 = new javax.swing.JScrollPane();
@@ -326,8 +322,6 @@ public class MainPage extends javax.swing.JFrame {
         jLabel70 = new javax.swing.JLabel();
         BHsua2 = new javax.swing.JPanel();
         jLabel71 = new javax.swing.JLabel();
-        BHxoa2 = new javax.swing.JPanel();
-        jLabel72 = new javax.swing.JLabel();
         BHthem2 = new javax.swing.JPanel();
         jLabel73 = new javax.swing.JLabel();
         jScrollPane3 = new javax.swing.JScrollPane();
@@ -340,8 +334,6 @@ public class MainPage extends javax.swing.JFrame {
         jLabel78 = new javax.swing.JLabel();
         BHsua4 = new javax.swing.JPanel();
         jLabel79 = new javax.swing.JLabel();
-        BHxoa4 = new javax.swing.JPanel();
-        jLabel80 = new javax.swing.JLabel();
         BHthem4 = new javax.swing.JPanel();
         jLabel81 = new javax.swing.JLabel();
         jScrollPane4 = new javax.swing.JScrollPane();
@@ -354,8 +346,6 @@ public class MainPage extends javax.swing.JFrame {
         jLabel82 = new javax.swing.JLabel();
         BHsua5 = new javax.swing.JPanel();
         jLabel83 = new javax.swing.JLabel();
-        BHxoa5 = new javax.swing.JPanel();
-        jLabel84 = new javax.swing.JLabel();
         BHthem5 = new javax.swing.JPanel();
         jLabel85 = new javax.swing.JLabel();
         jScrollPane6 = new javax.swing.JScrollPane();
@@ -368,8 +358,6 @@ public class MainPage extends javax.swing.JFrame {
         jLabel86 = new javax.swing.JLabel();
         BHsua6 = new javax.swing.JPanel();
         jLabel87 = new javax.swing.JLabel();
-        BHxoa6 = new javax.swing.JPanel();
-        jLabel88 = new javax.swing.JLabel();
         BHthem6 = new javax.swing.JPanel();
         jLabel89 = new javax.swing.JLabel();
         jScrollPane7 = new javax.swing.JScrollPane();
@@ -382,8 +370,6 @@ public class MainPage extends javax.swing.JFrame {
         searchType10 = new javax.swing.JComboBox<>();
         jLabel32 = new javax.swing.JLabel();
         FilterSearch10 = new java.awt.TextField();
-        BHxoa9 = new javax.swing.JPanel();
-        jLabel100 = new javax.swing.JLabel();
         BHsua9 = new javax.swing.JPanel();
         jLabel102 = new javax.swing.JLabel();
         LamMoiSP12 = new javax.swing.JPanel();
@@ -1986,7 +1972,7 @@ public class MainPage extends javax.swing.JFrame {
             .addComponent(jLabel67, javax.swing.GroupLayout.DEFAULT_SIZE, 24, Short.MAX_VALUE)
         );
 
-        TabSach.add(LamMoiSP1, new org.netbeans.lib.awtextra.AbsoluteConstraints(850, 130, 120, -1));
+        TabSach.add(LamMoiSP1, new org.netbeans.lib.awtextra.AbsoluteConstraints(710, 130, 120, -1));
 
         BHsua1.setBackground(new java.awt.Color(255, 204, 0));
         BHsua1.setPreferredSize(new java.awt.Dimension(80, 24));
@@ -2017,39 +2003,7 @@ public class MainPage extends javax.swing.JFrame {
             .addComponent(jLabel68, javax.swing.GroupLayout.DEFAULT_SIZE, 24, Short.MAX_VALUE)
         );
 
-        TabSach.add(BHsua1, new org.netbeans.lib.awtextra.AbsoluteConstraints(710, 130, 120, -1));
-
-        BHxoa1.setBackground(new java.awt.Color(255, 0, 0));
-        BHxoa1.setEnabled(false);
-        BHxoa1.setPreferredSize(new java.awt.Dimension(80, 24));
-        BHxoa1.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mousePressed(java.awt.event.MouseEvent evt) {
-                BHxoa1MousePressed(evt);
-            }
-            public void mouseReleased(java.awt.event.MouseEvent evt) {
-                BHxoa1MouseReleased(evt);
-            }
-        });
-
-        jLabel63.setBackground(new java.awt.Color(255, 255, 255));
-        jLabel63.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
-        jLabel63.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel63.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel63.setIcon(new javax.swing.ImageIcon(getClass().getResource("/bookstoremanagement/icons/icons8-close-15.png"))); // NOI18N
-        jLabel63.setText("Xóa");
-
-        javax.swing.GroupLayout BHxoa1Layout = new javax.swing.GroupLayout(BHxoa1);
-        BHxoa1.setLayout(BHxoa1Layout);
-        BHxoa1Layout.setHorizontalGroup(
-            BHxoa1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jLabel63, javax.swing.GroupLayout.DEFAULT_SIZE, 120, Short.MAX_VALUE)
-        );
-        BHxoa1Layout.setVerticalGroup(
-            BHxoa1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jLabel63, javax.swing.GroupLayout.DEFAULT_SIZE, 24, Short.MAX_VALUE)
-        );
-
-        TabSach.add(BHxoa1, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 130, 120, -1));
+        TabSach.add(BHsua1, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 130, 120, -1));
 
         BHthem1.setBackground(new java.awt.Color(0, 204, 204));
         BHthem1.setPreferredSize(new java.awt.Dimension(80, 24));
@@ -2207,7 +2161,7 @@ public class MainPage extends javax.swing.JFrame {
             .addComponent(jLabel74, javax.swing.GroupLayout.DEFAULT_SIZE, 24, Short.MAX_VALUE)
         );
 
-        TabKM.add(LamMoiSP3, new org.netbeans.lib.awtextra.AbsoluteConstraints(850, 130, 120, -1));
+        TabKM.add(LamMoiSP3, new org.netbeans.lib.awtextra.AbsoluteConstraints(710, 130, 120, -1));
 
         BHsua3.setBackground(new java.awt.Color(255, 204, 0));
         BHsua3.setPreferredSize(new java.awt.Dimension(80, 24));
@@ -2238,38 +2192,7 @@ public class MainPage extends javax.swing.JFrame {
             .addComponent(jLabel75, javax.swing.GroupLayout.DEFAULT_SIZE, 24, Short.MAX_VALUE)
         );
 
-        TabKM.add(BHsua3, new org.netbeans.lib.awtextra.AbsoluteConstraints(710, 130, 120, -1));
-
-        BHxoa3.setBackground(new java.awt.Color(255, 0, 0));
-        BHxoa3.setPreferredSize(new java.awt.Dimension(80, 24));
-        BHxoa3.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mousePressed(java.awt.event.MouseEvent evt) {
-                BHxoa3MousePressed(evt);
-            }
-            public void mouseReleased(java.awt.event.MouseEvent evt) {
-                BHxoa3MouseReleased(evt);
-            }
-        });
-
-        jLabel76.setBackground(new java.awt.Color(255, 255, 255));
-        jLabel76.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
-        jLabel76.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel76.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel76.setIcon(new javax.swing.ImageIcon(getClass().getResource("/bookstoremanagement/icons/icons8-close-15.png"))); // NOI18N
-        jLabel76.setText("Xóa");
-
-        javax.swing.GroupLayout BHxoa3Layout = new javax.swing.GroupLayout(BHxoa3);
-        BHxoa3.setLayout(BHxoa3Layout);
-        BHxoa3Layout.setHorizontalGroup(
-            BHxoa3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jLabel76, javax.swing.GroupLayout.DEFAULT_SIZE, 120, Short.MAX_VALUE)
-        );
-        BHxoa3Layout.setVerticalGroup(
-            BHxoa3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jLabel76, javax.swing.GroupLayout.DEFAULT_SIZE, 24, Short.MAX_VALUE)
-        );
-
-        TabKM.add(BHxoa3, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 130, 120, -1));
+        TabKM.add(BHsua3, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 130, 120, -1));
 
         BHthem3.setBackground(new java.awt.Color(0, 204, 204));
         BHthem3.setPreferredSize(new java.awt.Dimension(80, 24));
@@ -2394,7 +2317,7 @@ public class MainPage extends javax.swing.JFrame {
             .addComponent(jLabel70, javax.swing.GroupLayout.DEFAULT_SIZE, 24, Short.MAX_VALUE)
         );
 
-        TabKH.add(LamMoiSP5, new org.netbeans.lib.awtextra.AbsoluteConstraints(850, 130, 120, -1));
+        TabKH.add(LamMoiSP5, new org.netbeans.lib.awtextra.AbsoluteConstraints(710, 130, 120, -1));
 
         BHsua2.setBackground(new java.awt.Color(255, 204, 0));
         BHsua2.setPreferredSize(new java.awt.Dimension(80, 24));
@@ -2425,38 +2348,7 @@ public class MainPage extends javax.swing.JFrame {
             .addComponent(jLabel71, javax.swing.GroupLayout.DEFAULT_SIZE, 24, Short.MAX_VALUE)
         );
 
-        TabKH.add(BHsua2, new org.netbeans.lib.awtextra.AbsoluteConstraints(710, 130, 120, -1));
-
-        BHxoa2.setBackground(new java.awt.Color(255, 0, 0));
-        BHxoa2.setPreferredSize(new java.awt.Dimension(80, 24));
-        BHxoa2.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mousePressed(java.awt.event.MouseEvent evt) {
-                BHxoa2MousePressed(evt);
-            }
-            public void mouseReleased(java.awt.event.MouseEvent evt) {
-                BHxoa2MouseReleased(evt);
-            }
-        });
-
-        jLabel72.setBackground(new java.awt.Color(255, 255, 255));
-        jLabel72.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
-        jLabel72.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel72.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel72.setIcon(new javax.swing.ImageIcon(getClass().getResource("/bookstoremanagement/icons/icons8-close-15.png"))); // NOI18N
-        jLabel72.setText("Xóa");
-
-        javax.swing.GroupLayout BHxoa2Layout = new javax.swing.GroupLayout(BHxoa2);
-        BHxoa2.setLayout(BHxoa2Layout);
-        BHxoa2Layout.setHorizontalGroup(
-            BHxoa2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jLabel72, javax.swing.GroupLayout.DEFAULT_SIZE, 120, Short.MAX_VALUE)
-        );
-        BHxoa2Layout.setVerticalGroup(
-            BHxoa2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jLabel72, javax.swing.GroupLayout.DEFAULT_SIZE, 24, Short.MAX_VALUE)
-        );
-
-        TabKH.add(BHxoa2, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 130, 120, -1));
+        TabKH.add(BHsua2, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 130, 120, -1));
 
         BHthem2.setBackground(new java.awt.Color(0, 204, 204));
         BHthem2.setPreferredSize(new java.awt.Dimension(80, 24));
@@ -2580,7 +2472,7 @@ public class MainPage extends javax.swing.JFrame {
             .addComponent(jLabel78, javax.swing.GroupLayout.DEFAULT_SIZE, 24, Short.MAX_VALUE)
         );
 
-        TabNV.add(LamMoiSP6, new org.netbeans.lib.awtextra.AbsoluteConstraints(850, 130, 120, -1));
+        TabNV.add(LamMoiSP6, new org.netbeans.lib.awtextra.AbsoluteConstraints(710, 130, 120, -1));
 
         BHsua4.setBackground(new java.awt.Color(255, 204, 0));
         BHsua4.setPreferredSize(new java.awt.Dimension(80, 24));
@@ -2611,38 +2503,7 @@ public class MainPage extends javax.swing.JFrame {
             .addComponent(jLabel79, javax.swing.GroupLayout.DEFAULT_SIZE, 24, Short.MAX_VALUE)
         );
 
-        TabNV.add(BHsua4, new org.netbeans.lib.awtextra.AbsoluteConstraints(710, 130, 120, -1));
-
-        BHxoa4.setBackground(new java.awt.Color(255, 0, 0));
-        BHxoa4.setPreferredSize(new java.awt.Dimension(80, 24));
-        BHxoa4.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mousePressed(java.awt.event.MouseEvent evt) {
-                BHxoa4MousePressed(evt);
-            }
-            public void mouseReleased(java.awt.event.MouseEvent evt) {
-                BHxoa4MouseReleased(evt);
-            }
-        });
-
-        jLabel80.setBackground(new java.awt.Color(255, 255, 255));
-        jLabel80.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
-        jLabel80.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel80.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel80.setIcon(new javax.swing.ImageIcon(getClass().getResource("/bookstoremanagement/icons/icons8-close-15.png"))); // NOI18N
-        jLabel80.setText("Xóa");
-
-        javax.swing.GroupLayout BHxoa4Layout = new javax.swing.GroupLayout(BHxoa4);
-        BHxoa4.setLayout(BHxoa4Layout);
-        BHxoa4Layout.setHorizontalGroup(
-            BHxoa4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jLabel80, javax.swing.GroupLayout.DEFAULT_SIZE, 120, Short.MAX_VALUE)
-        );
-        BHxoa4Layout.setVerticalGroup(
-            BHxoa4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jLabel80, javax.swing.GroupLayout.DEFAULT_SIZE, 24, Short.MAX_VALUE)
-        );
-
-        TabNV.add(BHxoa4, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 130, 120, -1));
+        TabNV.add(BHsua4, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 130, 120, -1));
 
         BHthem4.setBackground(new java.awt.Color(0, 204, 204));
         BHthem4.setPreferredSize(new java.awt.Dimension(80, 24));
@@ -2769,7 +2630,7 @@ public class MainPage extends javax.swing.JFrame {
             .addComponent(jLabel82, javax.swing.GroupLayout.DEFAULT_SIZE, 24, Short.MAX_VALUE)
         );
 
-        TabNCC.add(LamMoiSP7, new org.netbeans.lib.awtextra.AbsoluteConstraints(850, 130, 120, -1));
+        TabNCC.add(LamMoiSP7, new org.netbeans.lib.awtextra.AbsoluteConstraints(710, 130, 120, -1));
 
         BHsua5.setBackground(new java.awt.Color(255, 204, 0));
         BHsua5.setPreferredSize(new java.awt.Dimension(80, 24));
@@ -2800,38 +2661,7 @@ public class MainPage extends javax.swing.JFrame {
             .addComponent(jLabel83, javax.swing.GroupLayout.DEFAULT_SIZE, 24, Short.MAX_VALUE)
         );
 
-        TabNCC.add(BHsua5, new org.netbeans.lib.awtextra.AbsoluteConstraints(710, 130, 120, -1));
-
-        BHxoa5.setBackground(new java.awt.Color(255, 0, 0));
-        BHxoa5.setPreferredSize(new java.awt.Dimension(80, 24));
-        BHxoa5.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mousePressed(java.awt.event.MouseEvent evt) {
-                BHxoa5MousePressed(evt);
-            }
-            public void mouseReleased(java.awt.event.MouseEvent evt) {
-                BHxoa5MouseReleased(evt);
-            }
-        });
-
-        jLabel84.setBackground(new java.awt.Color(255, 255, 255));
-        jLabel84.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
-        jLabel84.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel84.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel84.setIcon(new javax.swing.ImageIcon(getClass().getResource("/bookstoremanagement/icons/icons8-close-15.png"))); // NOI18N
-        jLabel84.setText("Xóa");
-
-        javax.swing.GroupLayout BHxoa5Layout = new javax.swing.GroupLayout(BHxoa5);
-        BHxoa5.setLayout(BHxoa5Layout);
-        BHxoa5Layout.setHorizontalGroup(
-            BHxoa5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jLabel84, javax.swing.GroupLayout.DEFAULT_SIZE, 120, Short.MAX_VALUE)
-        );
-        BHxoa5Layout.setVerticalGroup(
-            BHxoa5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jLabel84, javax.swing.GroupLayout.DEFAULT_SIZE, 24, Short.MAX_VALUE)
-        );
-
-        TabNCC.add(BHxoa5, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 130, 120, -1));
+        TabNCC.add(BHsua5, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 130, 120, -1));
 
         BHthem5.setBackground(new java.awt.Color(0, 204, 204));
         BHthem5.setPreferredSize(new java.awt.Dimension(80, 24));
@@ -2975,7 +2805,7 @@ public class MainPage extends javax.swing.JFrame {
             .addComponent(jLabel86, javax.swing.GroupLayout.DEFAULT_SIZE, 24, Short.MAX_VALUE)
         );
 
-        TabTK.add(LamMoiSP8, new org.netbeans.lib.awtextra.AbsoluteConstraints(850, 130, 120, -1));
+        TabTK.add(LamMoiSP8, new org.netbeans.lib.awtextra.AbsoluteConstraints(710, 130, 120, -1));
 
         BHsua6.setBackground(new java.awt.Color(255, 204, 0));
         BHsua6.setPreferredSize(new java.awt.Dimension(80, 24));
@@ -3006,38 +2836,7 @@ public class MainPage extends javax.swing.JFrame {
             .addComponent(jLabel87, javax.swing.GroupLayout.DEFAULT_SIZE, 24, Short.MAX_VALUE)
         );
 
-        TabTK.add(BHsua6, new org.netbeans.lib.awtextra.AbsoluteConstraints(710, 130, 120, -1));
-
-        BHxoa6.setBackground(new java.awt.Color(255, 0, 0));
-        BHxoa6.setPreferredSize(new java.awt.Dimension(80, 24));
-        BHxoa6.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mousePressed(java.awt.event.MouseEvent evt) {
-                BHxoa6MousePressed(evt);
-            }
-            public void mouseReleased(java.awt.event.MouseEvent evt) {
-                BHxoa6MouseReleased(evt);
-            }
-        });
-
-        jLabel88.setBackground(new java.awt.Color(255, 255, 255));
-        jLabel88.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
-        jLabel88.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel88.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel88.setIcon(new javax.swing.ImageIcon(getClass().getResource("/bookstoremanagement/icons/icons8-close-15.png"))); // NOI18N
-        jLabel88.setText("Xóa");
-
-        javax.swing.GroupLayout BHxoa6Layout = new javax.swing.GroupLayout(BHxoa6);
-        BHxoa6.setLayout(BHxoa6Layout);
-        BHxoa6Layout.setHorizontalGroup(
-            BHxoa6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jLabel88, javax.swing.GroupLayout.DEFAULT_SIZE, 120, Short.MAX_VALUE)
-        );
-        BHxoa6Layout.setVerticalGroup(
-            BHxoa6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jLabel88, javax.swing.GroupLayout.DEFAULT_SIZE, 24, Short.MAX_VALUE)
-        );
-
-        TabTK.add(BHxoa6, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 130, 120, -1));
+        TabTK.add(BHsua6, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 130, 120, -1));
 
         BHthem6.setBackground(new java.awt.Color(0, 204, 204));
         BHthem6.setPreferredSize(new java.awt.Dimension(80, 24));
@@ -3187,37 +2986,6 @@ public class MainPage extends javax.swing.JFrame {
         });
         TabQuyen.add(FilterSearch10, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 125, 220, 30));
 
-        BHxoa9.setBackground(new java.awt.Color(255, 0, 0));
-        BHxoa9.setPreferredSize(new java.awt.Dimension(80, 24));
-        BHxoa9.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mousePressed(java.awt.event.MouseEvent evt) {
-                BHxoa9MousePressed(evt);
-            }
-            public void mouseReleased(java.awt.event.MouseEvent evt) {
-                BHxoa9MouseReleased(evt);
-            }
-        });
-
-        jLabel100.setBackground(new java.awt.Color(255, 255, 255));
-        jLabel100.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
-        jLabel100.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel100.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel100.setIcon(new javax.swing.ImageIcon(getClass().getResource("/bookstoremanagement/icons/icons8-close-15.png"))); // NOI18N
-        jLabel100.setText("Xóa");
-
-        javax.swing.GroupLayout BHxoa9Layout = new javax.swing.GroupLayout(BHxoa9);
-        BHxoa9.setLayout(BHxoa9Layout);
-        BHxoa9Layout.setHorizontalGroup(
-            BHxoa9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jLabel100, javax.swing.GroupLayout.DEFAULT_SIZE, 120, Short.MAX_VALUE)
-        );
-        BHxoa9Layout.setVerticalGroup(
-            BHxoa9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jLabel100, javax.swing.GroupLayout.DEFAULT_SIZE, 24, Short.MAX_VALUE)
-        );
-
-        TabQuyen.add(BHxoa9, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 130, 120, -1));
-
         BHsua9.setBackground(new java.awt.Color(255, 204, 0));
         BHsua9.setPreferredSize(new java.awt.Dimension(80, 24));
         BHsua9.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -3240,16 +3008,16 @@ public class MainPage extends javax.swing.JFrame {
         BHsua9.setLayout(BHsua9Layout);
         BHsua9Layout.setHorizontalGroup(
             BHsua9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, BHsua9Layout.createSequentialGroup()
-                .addGap(0, 16, Short.MAX_VALUE)
-                .addComponent(jLabel102, javax.swing.GroupLayout.PREFERRED_SIZE, 104, javax.swing.GroupLayout.PREFERRED_SIZE))
+            .addGroup(BHsua9Layout.createSequentialGroup()
+                .addComponent(jLabel102, javax.swing.GroupLayout.DEFAULT_SIZE, 114, Short.MAX_VALUE)
+                .addContainerGap())
         );
         BHsua9Layout.setVerticalGroup(
             BHsua9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(jLabel102, javax.swing.GroupLayout.DEFAULT_SIZE, 24, Short.MAX_VALUE)
         );
 
-        TabQuyen.add(BHsua9, new org.netbeans.lib.awtextra.AbsoluteConstraints(710, 130, 120, -1));
+        TabQuyen.add(BHsua9, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 130, 120, -1));
 
         LamMoiSP12.setBackground(new java.awt.Color(51, 204, 0));
         LamMoiSP12.setPreferredSize(new java.awt.Dimension(80, 24));
@@ -3280,7 +3048,7 @@ public class MainPage extends javax.swing.JFrame {
             .addComponent(jLabel103, javax.swing.GroupLayout.DEFAULT_SIZE, 24, Short.MAX_VALUE)
         );
 
-        TabQuyen.add(LamMoiSP12, new org.netbeans.lib.awtextra.AbsoluteConstraints(850, 130, 120, -1));
+        TabQuyen.add(LamMoiSP12, new org.netbeans.lib.awtextra.AbsoluteConstraints(710, 130, 120, -1));
 
         jScrollPane11.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
         jScrollPane11.setForeground(new java.awt.Color(255, 255, 255));
@@ -3833,49 +3601,41 @@ public class MainPage extends javax.swing.JFrame {
         //SanPham
         if (LoginForm.quyenLogin.getChiTietQuyen().contains("xemSanPham")) {
             BHthem1.setVisible(false);
-            BHxoa1.setVisible(false);
             BHsua1.setVisible(false);
         }
         //KhuyenMai
         if (LoginForm.quyenLogin.getChiTietQuyen().contains("xemKhuyenMai")) {
             BHthem3.setVisible(false);
-            BHxoa3.setVisible(false);
             BHsua3.setVisible(false);
         }
         //KhachHang
         if (LoginForm.quyenLogin.getChiTietQuyen().contains("xemKhachHang")) {
             BHthem2.setVisible(false);
-            BHxoa2.setVisible(false);
             BHsua2.setVisible(false);
         }
         //Nhan Vien
         if (LoginForm.quyenLogin.getChiTietQuyen().contains("xemNhanVien")) {
             BHthem4.setVisible(false);
-            BHxoa4.setVisible(false);
             BHsua4.setVisible(false);
         }
         //Nha Cung Cap
         if (LoginForm.quyenLogin.getChiTietQuyen().contains("xemNCC")) {
             BHthem5.setVisible(false);
-            BHxoa5.setVisible(false);
             BHsua5.setVisible(false);
         }
         //Tai Khoan
         if (LoginForm.quyenLogin.getChiTietQuyen().contains("xemTaiKhoan")) {
             BHthem6.setVisible(false);
-            BHxoa6.setVisible(false);
             BHsua6.setVisible(false);
         }
         //Quyen
         if (LoginForm.quyenLogin.getChiTietQuyen().contains("xemQuyen")) {
             BHthem10.setVisible(false);
-            BHxoa9.setVisible(false);
             BHsua9.setVisible(false);
         }
         // sach
         if (LoginForm.quyenLogin.getChiTietQuyen().contains("xemSach")) {
             BHthem1.setVisible(false);
-            BHxoa1.setVisible(false);
             BHsua1.setVisible(false);
         }
 
@@ -4123,25 +3883,6 @@ public class MainPage extends javax.swing.JFrame {
         changecolor(BHsua9, new Color(224, 177, 0));
     }//GEN-LAST:event_BHsua9MousePressed
 
-    private void BHxoa9MouseReleased(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BHxoa9MouseReleased
-
-        changecolor(BHxoa9, new Color(255, 0, 0));
-        if (QuyenTable.getSelectedRow() < 0) {
-            JOptionPane.showMessageDialog(null, "Chưa chọn quyền nào để xóa");
-        } else {
-            String maQuyen = (String) QuyenTable.getValueAt(QuyenTable.getSelectedRow(), 1);
-            editQuyen.XoaQuyen(maQuyen);
-            changecolor(LamMoiSP12, new Color(51, 204, 0));
-            deleteTable(QuyenTable);
-            QuanLyQuyenBUS qlquyenBUS = new QuanLyQuyenBUS();
-            HienThiQuyen.AddTable(qlquyenBUS.getDsq(), QuyenTable);
-        }
-    }//GEN-LAST:event_BHxoa9MouseReleased
-
-    private void BHxoa9MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BHxoa9MousePressed
-        changecolor(BHxoa9, new Color(221, 0, 0));
-    }//GEN-LAST:event_BHxoa9MousePressed
-
     private void FilterSearch10KeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_FilterSearch10KeyReleased
         String query = FilterSearch10.getText().toLowerCase();
 
@@ -4213,24 +3954,6 @@ public class MainPage extends javax.swing.JFrame {
         changecolor(BHthem6, new Color(0, 163, 163));
     }//GEN-LAST:event_BHthem6MousePressed
 
-    private void BHxoa6MouseReleased(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BHxoa6MouseReleased
-
-        changecolor(BHxoa6, new Color(255, 0, 0));
-        if (TKTable.getSelectedRow() < 0) {
-            JOptionPane.showMessageDialog(null, "Chưa chọn tài khoản nào để xóa");
-        } else {
-            String maTK = (String) TKTable.getValueAt(TKTable.getSelectedRow(), 1);
-            editTK.XoaTK(maTK);
-            deleteTable(TKTable);
-            QuanLyTaiKhoanBUS qltkBUS = new QuanLyTaiKhoanBUS();
-            HienThiTaiKhoan.AddTable(qltkBUS.getDstk(), TKTable);
-        }
-    }//GEN-LAST:event_BHxoa6MouseReleased
-
-    private void BHxoa6MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BHxoa6MousePressed
-        changecolor(BHxoa6, new Color(221, 0, 0));
-    }//GEN-LAST:event_BHxoa6MousePressed
-
     private void BHsua6MouseReleased(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BHsua6MouseReleased
 
         changecolor(BHsua6, new Color(255, 204, 0));
@@ -4284,26 +4007,6 @@ public class MainPage extends javax.swing.JFrame {
         changecolor(BHthem5, new Color(0, 163, 163));
     }//GEN-LAST:event_BHthem5MousePressed
 
-    private void BHxoa5MouseReleased(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BHxoa5MouseReleased
-
-        changecolor(BHxoa5, new Color(255, 0, 0));
-        if (NCCTable.getSelectedRow() < 0) {
-            JOptionPane.showMessageDialog(null, "Chưa chọn nhà cung cấp nào để xóa");
-        } else {
-            String maNCC = (String) NCCTable.getValueAt(NCCTable.getSelectedRow(), 1);
-            editNCC.XoaNCC(maNCC);
-            changecolor(LamMoiSP7, new Color(51, 204, 0));
-            deleteTable(NCCTable);
-            QuanLyNhaCungCapBUS qlnccBUS = new QuanLyNhaCungCapBUS();
-            HienThiNhaCungCap.AddTable(qlnccBUS.getDsncc(), NCCTable);
-
-        }
-    }//GEN-LAST:event_BHxoa5MouseReleased
-
-    private void BHxoa5MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BHxoa5MousePressed
-        changecolor(BHxoa5, new Color(221, 0, 0));
-    }//GEN-LAST:event_BHxoa5MousePressed
-
     private void BHsua5MouseReleased(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BHsua5MouseReleased
 
         changecolor(BHsua5, new Color(255, 204, 0));
@@ -4355,24 +4058,6 @@ public class MainPage extends javax.swing.JFrame {
     private void BHthem4MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BHthem4MousePressed
         changecolor(BHthem4, new Color(0, 163, 163));
     }//GEN-LAST:event_BHthem4MousePressed
-
-    private void BHxoa4MouseReleased(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BHxoa4MouseReleased
-
-        changecolor(BHxoa4, new Color(255, 0, 0));
-        if (NVTable.getSelectedRow() < 0) {
-            JOptionPane.showMessageDialog(null, "Chưa chọn nhân viên nào để xóa");
-        } else {
-            String maNV = (String) NVTable.getValueAt(NVTable.getSelectedRow(), 1);
-            editNV.XoaNV(maNV);
-            deleteTable(NVTable);
-            QuanLyNhanVienBUS qlnvBUS = new QuanLyNhanVienBUS();
-            HienThiNhanVien.AddTable(qlnvBUS.getDsnv(), NVTable);
-        }
-    }//GEN-LAST:event_BHxoa4MouseReleased
-
-    private void BHxoa4MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BHxoa4MousePressed
-        changecolor(BHxoa4, new Color(221, 0, 0));
-    }//GEN-LAST:event_BHxoa4MousePressed
 
     private void BHsua4MouseReleased(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BHsua4MouseReleased
 
@@ -4434,21 +4119,6 @@ public class MainPage extends javax.swing.JFrame {
         changecolor(BHthem3, new Color(0, 163, 163));
     }//GEN-LAST:event_BHthem3MousePressed
 
-    private void BHxoa3MouseReleased(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BHxoa3MouseReleased
-
-        changecolor(BHxoa3, new Color(255, 0, 0));
-        if (KMTable.getSelectedRow() < 0) {
-            JOptionPane.showMessageDialog(null, "Chưa chọn khuyến mãi nào để xóa");
-        } else {
-            String maKM = (String) KMTable.getValueAt(KMTable.getSelectedRow(), 1);
-            editKM.XoaKM(maKM);
-        }
-    }//GEN-LAST:event_BHxoa3MouseReleased
-
-    private void BHxoa3MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BHxoa3MousePressed
-        changecolor(BHxoa3, new Color(221, 0, 0));
-    }//GEN-LAST:event_BHxoa3MousePressed
-
     private void BHsua3MouseReleased(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BHsua3MouseReleased
 
         changecolor(BHsua3, new Color(255, 204, 0));
@@ -4507,24 +4177,6 @@ public class MainPage extends javax.swing.JFrame {
     private void BHthem1MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BHthem1MousePressed
         changecolor(BHthem1, new Color(0, 163, 163));
     }//GEN-LAST:event_BHthem1MousePressed
-
-    private void BHxoa1MouseReleased(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BHxoa1MouseReleased
-        changecolor(BHxoa1, new Color(255, 0, 0));
-        if (SPTable.getSelectedRow() < 0) {
-            JOptionPane.showMessageDialog(null, "Chưa chọn sản phẩm nào để xóa");
-        } else {
-            String masp = (String) SPTable.getValueAt(SPTable.getSelectedRow(), 1);
-            editForm.XoaSP(masp);
-            changecolor(LamMoiSP1,new Color(51,204,0));
-            deleteTable(SPTable);
-            QuanLySachBUS qlspBUS = new QuanLySachBUS();
-            HienThiSach.AddTable(qlspBUS.getDSSach(), SPTable);
-        }
-    }//GEN-LAST:event_BHxoa1MouseReleased
-
-    private void BHxoa1MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BHxoa1MousePressed
-        changecolor(BHxoa1, new Color(221, 0, 0));
-    }//GEN-LAST:event_BHxoa1MousePressed
 
     private void BHsua1MouseReleased(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BHsua1MouseReleased
         changecolor(BHsua1, new Color(255, 204, 0));
@@ -4974,24 +4626,6 @@ public class MainPage extends javax.swing.JFrame {
         changecolor(BHthem2, new Color(0, 163, 163));
     }//GEN-LAST:event_BHthem2MousePressed
 
-    private void BHxoa2MouseReleased(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BHxoa2MouseReleased
-
-        changecolor(BHxoa2, new Color(255, 0, 0));
-        if (KHTable.getSelectedRow() < 0) {
-            JOptionPane.showMessageDialog(null, "Chưa chọn khách hàng nào để xóa");
-        } else {
-            String maKH = (String) KHTable.getValueAt(KHTable.getSelectedRow(), 1);
-            editKH.XoaKH(maKH);
-            deleteTable(KHTable);
-            QuanLyKhachHangBUS qlkhBUS = new QuanLyKhachHangBUS();
-            HienThiKhachHang.addTable(qlkhBUS.getDskh(), KHTable);
-        }
-    }//GEN-LAST:event_BHxoa2MouseReleased
-
-    private void BHxoa2MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BHxoa2MousePressed
-        changecolor(BHxoa2, new Color(221, 0, 0));
-    }//GEN-LAST:event_BHxoa2MousePressed
-
     private void BHsua2MouseReleased(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BHsua2MouseReleased
 
         changecolor(BHsua2, new Color(255, 204, 0));
@@ -5302,14 +4936,7 @@ public class MainPage extends javax.swing.JFrame {
     private static javax.swing.JPanel BHthem6;
     private javax.swing.JPanel BHthem7;
     private javax.swing.JPanel BHxacNhan;
-    private static javax.swing.JPanel BHxoa1;
-    private static javax.swing.JPanel BHxoa2;
-    private static javax.swing.JPanel BHxoa3;
-    private static javax.swing.JPanel BHxoa4;
-    private static javax.swing.JPanel BHxoa5;
-    private static javax.swing.JPanel BHxoa6;
     private javax.swing.JPanel BHxoa7;
-    private static javax.swing.JPanel BHxoa9;
     private javax.swing.JButton BanHang;
     private javax.swing.JPanel ChonMaLoai;
     private javax.swing.JPanel ChonMaLoai1;
@@ -5386,7 +5013,6 @@ public class MainPage extends javax.swing.JFrame {
     private javax.swing.JButton jButton7;
     private javax.swing.JButton jButton8;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel100;
     private javax.swing.JLabel jLabel101;
     private javax.swing.JLabel jLabel102;
     private javax.swing.JLabel jLabel103;
@@ -5438,7 +5064,6 @@ public class MainPage extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel60;
     private javax.swing.JLabel jLabel61;
     private javax.swing.JLabel jLabel62;
-    private javax.swing.JLabel jLabel63;
     private javax.swing.JLabel jLabel64;
     private javax.swing.JLabel jLabel65;
     private javax.swing.JLabel jLabel66;
@@ -5448,23 +5073,18 @@ public class MainPage extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel70;
     private javax.swing.JLabel jLabel71;
-    private javax.swing.JLabel jLabel72;
     private javax.swing.JLabel jLabel73;
     private javax.swing.JLabel jLabel74;
     private javax.swing.JLabel jLabel75;
-    private javax.swing.JLabel jLabel76;
     private javax.swing.JLabel jLabel77;
     private javax.swing.JLabel jLabel78;
     private javax.swing.JLabel jLabel79;
-    private javax.swing.JLabel jLabel80;
     private javax.swing.JLabel jLabel81;
     private javax.swing.JLabel jLabel82;
     private javax.swing.JLabel jLabel83;
-    private javax.swing.JLabel jLabel84;
     private javax.swing.JLabel jLabel85;
     private javax.swing.JLabel jLabel86;
     private javax.swing.JLabel jLabel87;
-    private javax.swing.JLabel jLabel88;
     private javax.swing.JLabel jLabel89;
     private javax.swing.JLabel jLabel90;
     private javax.swing.JLabel jLabel91;

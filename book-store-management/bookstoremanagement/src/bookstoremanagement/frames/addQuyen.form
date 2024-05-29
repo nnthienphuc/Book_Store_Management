@@ -68,7 +68,7 @@
                       <Component id="BHhuy" min="-2" pref="117" max="-2" attributes="0"/>
                       <Component id="jPanel3" min="-2" pref="219" max="-2" attributes="0"/>
                   </Group>
-                  <EmptySpace pref="111" max="32767" attributes="0"/>
+                  <EmptySpace pref="116" max="32767" attributes="0"/>
               </Group>
               <Group type="103" rootIndex="1" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="0" attributes="0">
@@ -487,7 +487,7 @@
                 <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="0" green="0" red="0" type="rgb"/>
                 </Property>
-                <Property name="label" type="java.lang.String" value="S&#x1ea3;n ph&#x1ea9;m"/>
+                <Property name="label" type="java.lang.String" value="Sa&#x301;ch"/>
               </Properties>
               <Events>
                 <EventHandler event="itemStateChanged" listener="java.awt.event.ItemListener" parameters="java.awt.event.ItemEvent" handler="checkboxSPItemStateChanged"/>

@@ -490,7 +490,7 @@
                 <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="0" green="0" red="0" type="rgb"/>
                 </Property>
-                <Property name="label" type="java.lang.String" value="S&#x1ea3;n ph&#x1ea9;m"/>
+                <Property name="label" type="java.lang.String" value="Sa&#x301;ch"/>
               </Properties>
               <Events>
                 <EventHandler event="itemStateChanged" listener="java.awt.event.ItemListener" parameters="java.awt.event.ItemEvent" handler="checkboxSPItemStateChanged"/>
