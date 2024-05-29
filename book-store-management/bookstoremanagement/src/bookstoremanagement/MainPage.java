@@ -3821,7 +3821,7 @@ public class MainPage extends javax.swing.JFrame {
     private void NutdongMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_NutdongMousePressed
         String[] options = new String[3];
         options[0] = "Thoát";
-        options[1] = "Quay lại Đăng nhập";
+        options[1] = "Đăng xuất";
         options[2] = "Hủy";
         int reply = JOptionPane.showOptionDialog(this.getContentPane(), "Bạn có chắc chắn muốn thoát chương trình?", "Thông báo", 0, JOptionPane.YES_NO_CANCEL_OPTION, null, options, null);
         if (reply == JOptionPane.OK_OPTION) {
