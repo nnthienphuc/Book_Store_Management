@@ -17,6 +17,10 @@ public class QuanLyChiTietHoaDonBanBUS {
         dscthd = qlcthdDAO.readDB();
     }
 
+    public void Delete (String mahdb) {
+        qlcthdDAO.deleteAll(mahdb);
+    }
+    
     public ArrayList<ChiTietHoaDonBan> getDscthd() {
         return this.dscthd;
     }
@@ -48,32 +52,36 @@ public class QuanLyChiTietHoaDonBanBUS {
         int soLuongChiTietMoi = ct.getSoLuong();
 
         // tìm các chi tiết cùng mã, và tính tổng số lượng
-        ArrayList<ChiTietHoaDonBan> toRemove = new ArrayList<>();
+        //ArrayList<ChiTietHoaDonBan> toRemove = new ArrayList<>();
         int tongSoLuong = ct.getSoLuong();
-
-        for (ChiTietHoaDonBan cthd : dscthd) {
-            if (cthd.getMaHDB().equals(ct.getMaHDB()) && cthd.getMaSach().equals(ct.getMaSach())) {
-                tongSoLuong += cthd.getSoLuong();
-                toRemove.add(cthd);
-            }
+        for (Sach sach : qlsBUS.getDSSach()) {
+            if (sach.getMaSach().equals(ct.getMaSach()) && (sach.getSoLuong() >= soLuongChiTietMoi)) {
+               for (ChiTietHoaDonBan cthd : dscthd) {
+                    if (cthd.getMaHDB().equals(ct.getMaHDB()) && cthd.getMaSach().equals(ct.getMaSach())) {
+                        tongSoLuong += cthd.getSoLuong();
+                //toRemove.add(cthd);
+                }
         }
         // xóa chi tiết cũ cùng mã
-        dscthd.removeAll(toRemove);
-        qlcthdDAO.delete(ct.getMaHDB(), ct.getMaSach());
+        //dscthd.removeAll(toRemove);
+        
+            qlcthdDAO.delete(ct.getMaHDB(), ct.getMaSach());
 
-        // thêm chi tiết mới có số lượng = tổng số lượng tìm ở trên
-        ct.setSoLuong(tongSoLuong);
-        Boolean success = qlcthdDAO.add(ct);
-        if (success) {
-            dscthd.add(ct);
-            // update số lượng bên bảng sach
-            updateSoLuongSach(ct.getMaSach(), -soLuongChiTietMoi);
-            
-            // update tổng tiền hóa đơn
-            //updateTongTien(ct.getMaHDB());
-           
-            return true;
+            // thêm chi tiết mới có số lượng = tổng số lượng tìm ở trên
+            ct.setSoLuong(tongSoLuong);
+            Boolean success = qlcthdDAO.add(ct);
+            if (success) {
+                dscthd.add(ct);
+
+                updateSoLuongSach(ct.getMaSach(), -soLuongChiTietMoi);
+
+
+                return true;
+                }
+            }
         }
+        
+        
         return false;
     }
     
@@ -114,7 +122,7 @@ public class QuanLyChiTietHoaDonBanBUS {
     
     private Boolean updateSoLuongSach(String _masach, int _soLuongThayDoi) {
         for (Sach sach : qlsBUS.getDSSach()) {
-            if (sach.getMaSach().equals(_masach)) {
+            if (sach.getMaSach().equals(_masach) && (sach.getSoLuong() + _soLuongThayDoi) >= 0) {
                 return qlsBUS.updateSoLuong(_masach, sach.getSoLuong() + _soLuongThayDoi);
             }
         }

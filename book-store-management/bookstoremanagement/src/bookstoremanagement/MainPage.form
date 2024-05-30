@@ -1286,7 +1286,7 @@
                             <Column editable="false" title="M&#xe3; sa&#x301;ch" type="java.lang.Object"/>
                             <Column editable="false" title="T&#xea;n sa&#x301;ch" type="java.lang.Object"/>
                             <Column editable="false" title="Th&#xea;&#x309; loa&#x323;i" type="java.lang.Object"/>
-                            <Column editable="false" title="Ta&#x301;c gia" type="java.lang.Object"/>
+                            <Column editable="false" title="Ta&#x301;c gia&#x309;" type="java.lang.Object"/>
                             <Column editable="false" title="N&#x103;m xb" type="java.lang.Object"/>
                             <Column editable="false" title="SL" type="java.lang.Object"/>
                             <Column editable="false" title="Gia&#x301; nh&#x1ead;p" type="java.lang.Object"/>

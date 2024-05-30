@@ -115,6 +115,7 @@ import bookstoremanagement.frames.editForm;
 public class MainPage extends javax.swing.JFrame {
 
     int mouseX;
+    int tmp = 0;
     int mouseY;
     public float tongtienBH;
     public float tongtienKMBH;
@@ -1106,7 +1107,7 @@ public class MainPage extends javax.swing.JFrame {
 
             },
             new String [] {
-                "STT", "Mã sách", "Tên sách", "Thể loại", "Tác gia", "Năm xb", "SL", "Giá nhập"
+                "STT", "Mã sách", "Tên sách", "Thể loại", "Tác giả", "Năm xb", "SL", "Giá nhập"
             }
         ) {
             boolean[] canEdit = new boolean [] {
@@ -3751,7 +3752,7 @@ public class MainPage extends javax.swing.JFrame {
         }
     }
 
-    public void AddCTHD(int row) {
+    public boolean AddCTHD(int row) {
 //                TableModel model = SPTable.getModel();
 //        String imageName = model.getValueAt(index, 7).toString();
 
@@ -3760,9 +3761,24 @@ public class MainPage extends javax.swing.JFrame {
         String masp = model.getValueAt(row, 1).toString();
         String soluong = model.getValueAt(row, 3).toString();
         ChiTietHoaDonBan cthdb = new ChiTietHoaDonBan(mahd, masp, Integer.parseInt(soluong));
-
+        
         QuanLyChiTietHoaDonBanBUS qlcthd = new QuanLyChiTietHoaDonBanBUS();
-        qlcthd.add(cthdb);
+        if(qlcthd.add(cthdb) == false){
+        JOptionPane.showMessageDialog(null, "Vượt quá sl tồn kho, hệ thống roll back");
+        QuanLySachBUS qls = new QuanLySachBUS();
+        
+        QuanLyHoaDonBanBUS qlhdb = new QuanLyHoaDonBanBUS();
+        
+        qlcthd.Delete(mahd);
+        qlhdb.delete(mahd);
+        tmp = tmp + qls.getSach(masp).getSoLuong();
+        qls.updateSoLuong(masp,  tmp);
+        txMaHDBH.setText("");
+        tmp = 0;
+        return false;
+        }
+        tmp = tmp + Integer.parseInt(soluong);
+        return true;
 
     }
 
@@ -4485,7 +4501,7 @@ public class MainPage extends javax.swing.JFrame {
     private void BHxacNhanMouseReleased(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BHxacNhanMouseReleased
 
         changecolor(BHxacNhan, new Color(51, 204, 0));
-
+        tmp = 0;
         if (txTongTienBH.getText().equals("")) {
 
             JOptionPane.showMessageDialog(null, "Bảng thanh toán trống!");
@@ -4513,16 +4529,19 @@ public class MainPage extends javax.swing.JFrame {
                         LocalDate.parse(txNgayLapHD.getText()),
                         LocalTime.parse(txGioLapHD.getText()),
                         tongtiensauKM);
-
+                JOptionPane.showMessageDialog(null, "Thanh toán thành công");
                 TableModel model = BHTTTable.getModel();
                 int rowcount = model.getRowCount();
                 for (int i = 0; i < rowcount; i++) {
-                    AddCTHD(i);
+                    if(AddCTHD(i) == false){
+                        break;
+                    } 
                 }
 
-                JOptionPane.showMessageDialog(null, "Thanh toán thành công");
+                
                 tongtienBH = 0;
-                txMaHDBH.setText(qlhdBUS.getNextID());
+                QuanLyHoaDonBanBUS qlhdBUSmoi = new QuanLyHoaDonBanBUS();
+                txMaHDBH.setText(qlhdBUSmoi.getNextID());
 
                 deleteTable(BHSPTable);
                 QuanLySachBUS qlspBUS = new QuanLySachBUS();
