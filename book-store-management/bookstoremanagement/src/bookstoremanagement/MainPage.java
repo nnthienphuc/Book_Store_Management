@@ -566,7 +566,7 @@ public class MainPage extends javax.swing.JFrame {
         TabBH.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 10, 30, 30));
 
         searchTypeBH.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        searchTypeBH.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Tất cả", "Mã", "Loại", "Tên", "Đơn giá", "Số lượng" }));
+        searchTypeBH.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Tất cả", "Mã sách", "Tên sách", "Thể loại", "Tác giả", "Năm xuất bản", "SL tồn", "Giá nhập", "Giá bản", "Trạng Thái", "" }));
         TabBH.add(searchTypeBH, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 10, 110, 30));
 
         jLabel43.setText("Mã hóa đơn bán");
@@ -1451,7 +1451,7 @@ public class MainPage extends javax.swing.JFrame {
         TabNH.add(jLabel109, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 10, 30, 30));
 
         searchTypeBH1.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        searchTypeBH1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Tất cả", "Mã", "Loại", "Tên", "Đơn giá", "Số lượng" }));
+        searchTypeBH1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Tất cả", "Mã sách", "Tên sách", "Thể loại", "Tác giả", "Năm xuất bản", "SL tồn", "Giá nhập", "Giá bản", "Trạng Thái", "" }));
         TabNH.add(searchTypeBH1, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 10, 110, 30));
 
         pnlHuyNH.setBackground(new java.awt.Color(255, 0, 0));
