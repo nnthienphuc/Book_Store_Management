@@ -14,7 +14,6 @@ import java.text.SimpleDateFormat;
 import java.time.LocalDate;
 import java.time.LocalTime;
 import java.time.format.DateTimeFormatter;
-import java.util.ArrayList;
 import java.util.Calendar;
 import javax.swing.BorderFactory;
 import javax.swing.ImageIcon;
@@ -29,7 +28,6 @@ import bookstoremanagement.frames.ChonCTHDNForm;
 import bookstoremanagement.frames.ChonKHForm;
 import bookstoremanagement.frames.ChonKMForm;
 import bookstoremanagement.frames.ChonNCCForm;
-import bookstoremanagement.frames.ChonNVForm;
 import bookstoremanagement.frames.LoginForm;
 import bookstoremanagement.frames.addForm;
 import bookstoremanagement.frames.addKM;
@@ -38,7 +36,6 @@ import bookstoremanagement.frames.addNCC;
 import bookstoremanagement.frames.addNV;
 import bookstoremanagement.frames.addQuyen;
 import bookstoremanagement.frames.addTK;
-import bookstoremanagement.frames.editForm;
 import bookstoremanagement.frames.editKM;
 import bookstoremanagement.frames.editKH;
 import bookstoremanagement.frames.editNCC;
@@ -51,33 +48,8 @@ import bookstoremanagement.model.Backend.QuanLyChiTietHoaDonBan.ChiTietHoaDonBan
 import bookstoremanagement.model.Backend.QuanLyChiTietHoaDonBan.QuanLyChiTietHoaDonBanBUS;
 import bookstoremanagement.model.Backend.QuanLyChiTietHoaDonNhap.ChiTietHoaDonNhap;
 import bookstoremanagement.model.Backend.QuanLyChiTietHoaDonNhap.QuanLyChiTietHoaDonNhapBUS;
-import bookstoremanagement.model.Backend.HoaDonBan.QuanLyHoaDonBanBUS;
-import bookstoremanagement.model.Backend.HoaDonNhap.HoaDonNhap;
-import bookstoremanagement.model.Backend.HoaDonNhap.QuanLyHoaDonNhapBUS;
-import bookstoremanagement.model.Backend.KhachHang.QuanLyKhachHangBUS;
-import bookstoremanagement.model.Backend.KhuyenMai.QuanLyKhuyenMaiBUS;
-import bookstoremanagement.model.Backend.NhaCungCap.QuanLyNhaCungCapBUS;
-import bookstoremanagement.model.Backend.NhanVien.QuanLyNhanVien;
-import bookstoremanagement.model.Backend.NhanVien.QuanLyNhanVienBUS;
-import bookstoremanagement.model.Backend.NhanVien.QuanLyNhanVienDAO;
-import bookstoremanagement.model.Backend.Quyen.QuanLyQuyenBUS;
-import bookstoremanagement.model.Backend.Sach.QuanLySachBUS;
 import bookstoremanagement.model.Backend.Sach.Sach;
-import bookstoremanagement.model.Backend.TaiKhoan.QuanLyTaiKhoanBUS;
-import bookstoremanagement.model.Frontend.FormHienThi.HienThiHoaDonBan;
-import bookstoremanagement.model.Frontend.FormHienThi.HienThiHoaDonNhap;
-import bookstoremanagement.model.Frontend.FormHienThi.HienThiKhachHang;
-import bookstoremanagement.model.Frontend.FormHienThi.HienThiKhuyenMai;
-import bookstoremanagement.model.Frontend.FormHienThi.HienThiNhaCungCap;
-import bookstoremanagement.model.Frontend.FormHienThi.HienThiNhanVien;
-import bookstoremanagement.model.Frontend.FormHienThi.HienThiQuyen;
-import bookstoremanagement.model.Frontend.FormHienThi.HienThiSach;
-import bookstoremanagement.model.Frontend.FormHienThi.HienThiTaiKhoan;
-import bookstoremanagement.model.Backend.HoaDonNhap.QuanLyHoaDonNhapBUS;
-import bookstoremanagement.model.Backend.HoaDonBan.QuanLyHoaDonBanBUS;
 import bookstoremanagement.model.Backend.KhachHang.QuanLyKhachHangBUS;
-import bookstoremanagement.model.Backend.Sach.QuanLySachBUS;
-import bookstoremanagement.model.Frontend.FormHienThi.HienThiSach;
 import bookstoremanagement.model.Backend.KhuyenMai.KhuyenMai;
 import bookstoremanagement.model.Backend.KhuyenMai.QuanLyKhuyenMaiBUS;
 import bookstoremanagement.model.Backend.NhaCungCap.QuanLyNhaCungCapBUS;
@@ -86,12 +58,10 @@ import bookstoremanagement.model.Backend.HoaDonNhap.QuanLyHoaDonNhapBUS;
 import bookstoremanagement.model.Backend.Quyen.QuanLyQuyenBUS;
 import bookstoremanagement.model.Backend.KhachHang.KhachHang;
 import bookstoremanagement.model.Backend.TaiKhoan.QuanLyTaiKhoanBUS;
-import bookstoremanagement.model.Backend.HoaDonBan.HoaDonBan;
 import bookstoremanagement.model.Backend.NhaCungCap.NhaCungCap;
 import bookstoremanagement.model.Backend.HoaDonNhap.HoaDonNhap;
 import bookstoremanagement.model.Backend.HoaDonBan.QuanLyHoaDonBanBUS;
 import bookstoremanagement.model.Backend.Sach.QuanLySachBUS;
-import bookstoremanagement.model.Frontend.FormHienThi.HienThiHoaDonBan;
 import bookstoremanagement.model.Frontend.FormHienThi.HienThiKhachHang;
 import bookstoremanagement.model.Frontend.FormHienThi.HienThiKhuyenMai;
 import bookstoremanagement.model.Frontend.FormHienThi.HienThiNhaCungCap;
@@ -102,10 +72,6 @@ import bookstoremanagement.model.Frontend.FormHienThi.HienThiTaiKhoan;
 import bookstoremanagement.model.Frontend.FormHienThi.HienThiHoaDonBan;
 import bookstoremanagement.model.Frontend.FormHienThi.HienThiSach;
 import bookstoremanagement.model.Backend.Price.PriceFormat;
-import bookstoremanagement.model.Backend.ThongKe.Ngay.BUS;
-import bookstoremanagement.model.Backend.ThongKe.ThangNam.BUSThangNam;
-import bookstoremanagement.model.Frontend.FormHienThi.HienThiThongKeNgay;
-import bookstoremanagement.model.Frontend.FormHienThi.HienThiThongKeThangNam;
 import bookstoremanagement.frames.editForm;
 
 /**
@@ -3783,8 +3749,6 @@ public class MainPage extends javax.swing.JFrame {
     }
 
     public void AddCTPN(int row) {
-//                TableModel model = SPTable.getModel();
-//        String imageName = model.getValueAt(index, 7).toString();
 
         String mahdn = txMaPNNH.getText();
         TableModel model = NHTTTable.getModel();
@@ -3810,7 +3774,6 @@ public class MainPage extends javax.swing.JFrame {
         deleteTable(NHTTTable);
     }
 
-    //Table design function
     public static void changecolor(JPanel hover, Color rand) {
         hover.setBackground(rand);
     }
@@ -4893,24 +4856,6 @@ public class MainPage extends javax.swing.JFrame {
         tkn.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);        // TODO add your handling code here:
     }//GEN-LAST:event_PanelTKNhapMousePressed
 
-//    
-//    public static void AddRowToTable(Object[] dataRow,JTable table)
-//    {
-//        DefaultTableModel model = (DefaultTableModel)table.getModel();
-//        model.addRow(dataRow);
-//    }
-//  
-//        public static void AddTable(ArrayList<SanPham> data,JTable table){
-//        for (SanPham sp : data) {
-//            AddRowToTable(new Object[]{sp.getMaSP(),
-//                              sp.getMaLSP(), 
-//                              sp.getTenSP(),
-//                              PriceFormat.format(sp.getDonGia()),
-//                              String.valueOf(sp.getSoLuong()),
-//                              (sp.getTrangThai() == 0 ? "Hiện" : "Ẩn")
-//                              },table);
-//        }
-//    }
     public static void main(String args[]) {
         System.setProperty("sun.java2d.uiScale", "1.0");
 
