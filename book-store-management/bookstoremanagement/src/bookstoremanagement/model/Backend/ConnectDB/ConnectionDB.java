@@ -30,7 +30,7 @@ public class ConnectionDB {
     String userName = null;
     String pwd = null;
 
-    String ipAddress = "localhost:3300";
+    String ipAddress = "localhost:3306";
 
     public ConnectionDB() {
         checkDriver();
